@@ -1,1 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Que — The Mood Djinn</title>
 
+  <style>
+    body {
+      margin: 0;
+      background: #0b0f0d;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 720px;
+      text-align: center;
+    }
+
+    .comic-image {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    }
+
+    .title {
+      font-size: 24px;
+      margin-top: 16px;
+      font-weight: bold;
+    }
+
+    .story {
+      margin-top: 12px;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #ccc;
+    }
+
+    .controls {
+      margin-top: 20px;
+    }
+
+    button {
+      background: #1f7a63;
+      border: none;
+      padding: 10px 16px;
+      margin: 5px;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #2fa98a;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <img id="comicImage" class="comic-image" src="" />
+
+    <div id="title" class="title"></div>
+
+    <div id="story" class="story"></div>
+
+    <div class="controls">
+      <button onclick="setTime('morning')">Morning</button>
+      <button onclick="setTime('noon')">Noon</button>
+      <button onclick="setTime('night')">Night</button>
+    </div>
+
+  </div>
+
+  <script>
+    // 👇 Simple story database (replace later with Google Sheets / Firebase)
+    const stories = {
+      "QUE-001": {
+        centroid: "release",
+        title: "The First Signal",
+        story: "Que finds a quiet bench where the city finally exhales. Nothing to hold. Nothing to prove."
+      }
+    };
+
+    // Default values
+    let currentStoryId = "QUE-001";
+    let currentTime = "noon";
+
+    // Read URL param
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("story")) {
+      currentStoryId = params.get("story");
+    }
+
+    function loadPage() {
+      const storyData = stories[currentStoryId];
+
+      if (!storyData) return;
+
+      // Set text
+      document.getElementById("title").innerText =
+        `${storyData.centroid.toUpperCase()} • ${capitalize(currentTime)}`;
+
+      document.getElementById("story").innerText =
+        storyData.story;
+
+      // Set image path
+      const imagePath = `assets/centroids/${storyData.centroid}_${currentTime}.png`;
+
+      document.getElementById("comicImage").src = imagePath;
+    }
+
+    function setTime(time) {
+      currentTime = time;
+      loadPage();
+    }
+
+    function capitalize(str) {
+      return str.charAt(0).toUpperCase() + str.slice(1);
+    }
+
+    // Load page initially
+    loadPage();
+  </script>
+
+</body>
+</html>
