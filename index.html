@@ -9,7 +9,7 @@
     body {
       margin: 0;
       background: #0b0f0d;
-      color: #fff;
+      color: white;
       font-family: Arial, sans-serif;
       display: flex;
       justify-content: center;
@@ -18,117 +18,115 @@
 
     .container {
       width: 100%;
-      max-width: 720px;
+      max-width: 760px;
       text-align: center;
     }
 
     .comic-image {
       width: 100%;
-      border-radius: 16px;
-      box-shadow: 0 0 40px rgba(0,0,0,0.5);
+      border-radius: 18px;
+      box-shadow: 0 0 40px rgba(0,0,0,.55);
     }
 
     .title {
-      font-size: 24px;
-      margin-top: 16px;
+      font-size: 26px;
       font-weight: bold;
+      margin-top: 18px;
     }
 
     .story {
-      margin-top: 12px;
-      font-size: 16px;
+      color: #d7d7d7;
+      font-size: 17px;
       line-height: 1.5;
-      color: #ccc;
+      margin-top: 12px;
     }
 
-    .controls {
-      margin-top: 20px;
+    .qr-box {
+      margin-top: 22px;
+      padding: 16px;
+      background: #111a17;
+      border-radius: 14px;
+      display: inline-block;
     }
 
-    button {
-      background: #1f7a63;
-      border: none;
-      padding: 10px 16px;
-      margin: 5px;
-      border-radius: 8px;
-      color: white;
-      cursor: pointer;
-      font-weight: bold;
+    .qr-box img {
+      width: 160px;
+      height: 160px;
     }
 
-    button:hover {
-      background: #2fa98a;
+    .small {
+      color: #aaa;
+      font-size: 13px;
+      margin-top: 8px;
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-
-    <img id="comicImage" class="comic-image" src="" />
-
-    <div id="title" class="title"></div>
-
+    <img id="comicImage" class="comic-image" src="" alt="Que Comic Scene" />
+    <div id="title" class="title">Loading...</div>
     <div id="story" class="story"></div>
 
-    <div class="controls">
-      <button onclick="setTime('morning')">Morning</button>
-      <button onclick="setTime('noon')">Noon</button>
-      <button onclick="setTime('night')">Night</button>
+    <div class="qr-box">
+      <img id="qrCode" src="" alt="Story QR Code" />
+      <div class="small">Scan to return to this story moment</div>
     </div>
-
   </div>
 
   <script>
-    // 👇 Simple story database (replace later with Google Sheets / Firebase)
-    const stories = {
-      "QUE-001": {
-        centroid: "release",
-        title: "The First Signal",
-        story: "Que finds a quiet bench where the city finally exhales. Nothing to hold. Nothing to prove."
-      }
-    };
+    const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1do3Qbf_oCKeWT8cePoSib4XnodAbUs9t_QjiEUeFCbQ/edit?usp=sharing";
 
-    // Default values
-    let currentStoryId = "QUE-001";
-    let currentTime = "noon";
-
-    // Read URL param
     const params = new URLSearchParams(window.location.search);
-    if (params.get("story")) {
-      currentStoryId = params.get("story");
-    }
+    const storyId = params.get("story") || "QUE-001";
 
-    function loadPage() {
-      const storyData = stories[currentStoryId];
+    async function loadStory() {
+      const response = await fetch(SHEET_CSV_URL);
+      const csvText = await response.text();
+      const rows = parseCSV(csvText);
 
-      if (!storyData) return;
+      const story = rows.find(row => row.story_id === storyId);
 
-      // Set text
+      if (!story) {
+        document.getElementById("title").innerText = "Story Not Found";
+        document.getElementById("story").innerText = "This Que signal has not been created yet.";
+        return;
+      }
+
+      document.getElementById("comicImage").src =
+        story.image_url || `assets/centroids/${story.centroid}_${story.time_block}.png`;
+
       document.getElementById("title").innerText =
-        `${storyData.centroid.toUpperCase()} • ${capitalize(currentTime)}`;
+        `${story.title} — ${story.centroid.toUpperCase()} • ${story.time_block.toUpperCase()}`;
 
-      document.getElementById("story").innerText =
-        storyData.story;
+      document.getElementById("story").innerText = story.story;
 
-      // Set image path
-      const imagePath = `assets/centroids/${storyData.centroid}_${currentTime}.png`;
+      const currentUrl = `${window.location.origin}${window.location.pathname}?story=${story.story_id}`;
 
-      document.getElementById("comicImage").src = imagePath;
+      document.getElementById("qrCode").src =
+        `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(currentUrl)}`;
     }
 
-    function setTime(time) {
-      currentTime = time;
-      loadPage();
+    function parseCSV(text) {
+      const lines = text.trim().split("\n");
+      const headers = lines[0].split(",").map(h => h.trim());
+
+      return lines.slice(1).map(line => {
+        const values = line.match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g) || [];
+        const row = {};
+
+        headers.forEach((header, index) => {
+          row[header] = (values[index] || "")
+            .replace(/^"|"$/g, "")
+            .replace(/""/g, '"')
+            .trim();
+        });
+
+        return row;
+      });
     }
 
-    function capitalize(str) {
-      return str.charAt(0).toUpperCase() + str.slice(1);
-    }
-
-    // Load page initially
-    loadPage();
+    loadStory();
   </script>
-
 </body>
 </html>
