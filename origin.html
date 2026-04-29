@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Que — The Wandering Mood Djinn</title>
+  <link rel="stylesheet" href="css/centroids.css">
+
+  <style>
+    /* ── Hero ──────────────────────────────────────────── */
+    .origin-hero {
+      position: relative;
+      min-height: 780px;
+      padding: 56px;
+      background:
+        linear-gradient(to right, rgba(7,17,28,.92) 55%, rgba(7,17,28,.3) 100%),
+        url("assets/centroids/the-calm-night.png");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* Djinn pose — right-side overlay */
+    .pose-overlay {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      max-height: 760px;
+      width: auto;
+      object-fit: contain;
+      object-position: bottom right;
+      pointer-events: none;
+      /* soft left-edge fade so character blends into scene */
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 18%);
+      mask-image: linear-gradient(to right, transparent 0%, black 18%);
+    }
+
+    .origin-card {
+      position: relative;
+      z-index: 2;
+      max-width: 600px;
+      background: rgba(0,0,0,.72);
+      border: 3px solid var(--ink);
+      padding: 36px;
+      box-shadow: 8px 8px 0 #000;
+    }
+
+    .origin-card h1 {
+      font-size: clamp(42px, 6vw, 80px);
+      margin: 10px 0 0;
+      line-height: 0.92;
+    }
+
+    .origin-card .origin-body {
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--muted);
+      margin: 20px 0 28px;
+      white-space: pre-line;
+    }
+
+    /* ── Territory Grid ────────────────────────────────── */
+    .territories-section {
+      padding: 48px 56px;
+      border-top: 3px solid rgba(244,241,223,.18);
+    }
+
+    .territories-section h2 {
+      font-size: 28px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin: 0 0 32px;
+      letter-spacing: 2px;
+    }
+
+    .territory-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .t-card {
+      background: rgba(0,0,0,.55);
+      border: 2px solid var(--ink);
+      padding: 20px;
+      box-shadow: 5px 5px 0 #000;
+      text-decoration: none;
+      color: var(--ink);
+      display: block;
+      transition: background .15s;
+    }
+
+    .t-card:hover {
+      background: rgba(119,217,230,.08);
+    }
+
+    .t-card .t-name {
+      font-size: 22px;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .t-card .t-theme {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+
+    .t-card p {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    /* ── Story Divider Signal ──────────────────────────── */
+    .signal-bar {
+      padding: 20px 56px;
+      background: rgba(119,217,230,.06);
+      border-top: 2px solid var(--accent);
+      border-bottom: 2px solid var(--accent);
+      font-size: 13px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--accent);
+      text-align: center;
+    }
+
+    @media (max-width: 900px) {
+      .origin-hero { padding: 32px; min-height: 620px; }
+      .territories-section { padding: 32px; }
+      .pose-overlay { max-height: 420px; opacity: .6; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <section class="frame">
+
+      <!-- Hero -->
+      <div class="origin-hero">
+        <img
+          class="pose-overlay"
+          src="assets/poses/que_elevated.png"
+          alt="Que — The Wandering Mood Djinn"
+        />
+
+        <div class="origin-card">
+          <div class="eyebrow">The Wandering Mood Djinn</div>
+          <h1>Que</h1>
+
+          <div class="origin-body">Before playlists… before algorithms…
+before the endless scroll—
+
+There was rhythm.
+
+Not music. Not yet.
+Something older.
+
+A pulse that moved through everything—
+through wind and fire, through oceans and stars…
+through people.
+
+Most never noticed it.
+Some felt it.
+But only one could shape it.
+
+Que was not born.
+He <em style="color:var(--ink);font-style:normal;font-weight:900">formed</em>—from the space between moments.
+
+A flicker in the quiet.
+A shift in energy.
+A feeling you couldn't name… but knew was real.
+
+He wandered not through places—
+but through <em style="color:var(--accent);font-style:normal;font-weight:900">states of being</em>.
+
+Twelve in total.
+Twelve territories of the human experience.
+
+If you've ever felt your mood shift without knowing why…
+If the right song found you at the perfect moment…
+
+<strong style="color:var(--ink)">You've crossed paths with him.</strong></div>
+
+          <div class="btns">
+            <a class="btn" href="story/ember.html">Begin the Journey</a>
+            <a class="btn secondary" href="index.html">Story Signal</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Signal bar -->
+      <div class="signal-bar">Twelve Territories &nbsp;·&nbsp; One System &nbsp;·&nbsp; Guided by Que</div>
+
+      <!-- Territory grid -->
+      <div class="territories-section" id="territories">
+        <h2>The Twelve Territories</h2>
+        <div class="territory-grid">
+
+          <a class="t-card" href="story/ember.html">
+            <div class="t-name">Ember</div>
+            <div class="t-theme">Awakening · Energy Rising</div>
+            <p>A spark before intention becomes fire. The city hasn't decided what it will be yet.</p>
+          </a>
+
+          <a class="t-card" href="story/pulse.html">
+            <div class="t-name">Pulse</div>
+            <div class="t-theme">Momentum · Drive</div>
+            <p>Heartbeat to traffic. Energy to motion. Momentum isn't chaos — it's controlled fire.</p>
+          </a>
+
+          <a class="t-card" href="story/lumen.html">
+            <div class="t-name">Lumen</div>
+            <div class="t-theme">Clarity · Focus</div>
+            <p>Noise faded. Not gone — just distant. Clarity isn't found. It's entered.</p>
+          </a>
+
+          <a class="t-card" href="story/haven.html">
+            <div class="t-name">Haven</div>
+            <div class="t-theme">Calm · Peace</div>
+            <p>Rain fell. Soft. Constant. Stillness isn't empty — it's full of everything you've been avoiding.</p>
+          </a>
+
+          <a class="t-card" href="story/drift.html">
+            <div class="t-name">Drift</div>
+            <div class="t-theme">Reflection · Melancholy</div>
+            <p>Night settled in. Not heavy — just honest. Not all moods need fixing. Some need space.</p>
+          </a>
+
+          <a class="t-card" href="story/echo.html">
+            <div class="t-name">Echo</div>
+            <div class="t-theme">Memory · Nostalgia</div>
+            <p>A song played. Old — but not forgotten. Nothing truly leaves. It waits to be felt again.</p>
+          </a>
+
+          <a class="t-card" href="story/flux.html">
+            <div class="t-name">Flux</div>
+            <div class="t-theme">Chaos · Disruption</div>
+            <p>Patterns failed. Rhythm collapsed. Chaos isn't the end — it's where new patterns are born.</p>
+          </a>
+
+          <a class="t-card" href="story/apex.html">
+            <div class="t-name">Apex</div>
+            <div class="t-theme">Intensity · Peak Energy</div>
+            <p>Energy surged. Unstable. Powerful. Intensity is dangerous unless you know where to direct it.</p>
+          </a>
+
+          <a class="t-card" href="story/nova.html">
+            <div class="t-name">Nova</div>
+            <div class="t-theme">Inspiration · Creation</div>
+            <p>Something new formed — not from nothing, but from everything before it. Creation is recognition.</p>
+          </a>
+
+          <a class="t-card" href="story/veil.html">
+            <div class="t-name">Veil</div>
+            <div class="t-theme">Mystery · Unknown</div>
+            <p>Not everything revealed itself. And that was the point. You don't need to see the whole path.</p>
+          </a>
+
+          <a class="t-card" href="story/terra.html">
+            <div class="t-name">Terra</div>
+            <div class="t-theme">Grounding · Stability</div>
+            <p>Everything slowed. Settled. Strength isn't loud. It's steady.</p>
+          </a>
+
+          <a class="t-card" href="story/zenith.html">
+            <div class="t-name">Zenith</div>
+            <div class="t-theme">Alignment · Mastery</div>
+            <p>All territories connected. Not separate — one system. Que wasn't traveling through moods. He was conducting them.</p>
+          </a>
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+</body>
+</html>

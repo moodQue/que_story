@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nova — Inspiration | MoodQue</title>
+  <link rel="stylesheet" href="../css/centroids.css">
+  <style>
+    .hero {
+      position: relative;
+      background-image:
+        linear-gradient(rgba(20,10,5,.15), rgba(0,0,0,.7)),
+        url('../assets/centroids/gathering-afternoon.png');
+      overflow: hidden;
+    }
+    .pose {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 95%;
+      width: auto;
+      object-fit: contain;
+      object-position: bottom right;
+      z-index: 2;
+      pointer-events: none;
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%);
+      mask-image: linear-gradient(to right, transparent 0%, black 20%);
+    }
+    .content { position: relative; z-index: 3; }
+    .episode-label { font-size: 12px; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 4px; }
+    .episode-body { white-space: pre-line; color: var(--muted); font-size: 17px; line-height: 1.8; margin: 16px 0 28px; }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="frame">
+      <div class="hero">
+        <img class="pose" src="../assets/poses/que_engaged.png" alt="Que — Nova" />
+        <div class="content">
+          <div class="eyebrow">Territory 09 &nbsp;·&nbsp; Creation</div>
+          <h1>Nova</h1>
+          <div class="episode-label">Episode 09</div>
+          <div class="episode-body">Something new formed.
+
+Not from nothing—
+but from everything before it.
+
+Que watched ideas connect.
+
+Creation isn't random.
+
+It's recognition.</div>
+          <div class="btns">
+            <a class="btn" href="../origin.html">Home</a>
+            <a class="btn secondary" href="veil.html">Next Territory</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

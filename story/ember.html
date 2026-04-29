@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ember — Awakening | MoodQue</title>
+  <link rel="stylesheet" href="../css/centroids.css">
+  <style>
+    .hero {
+      position: relative;
+      background-image:
+        linear-gradient(rgba(30,10,5,.25), rgba(10,5,0,.78)),
+        url('../assets/centroids/the-calm-day.png');
+      filter: none;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url('../assets/centroids/the-calm-day.png');
+      background-size: cover;
+      background-position: center;
+      filter: sepia(.5) saturate(1.4) hue-rotate(-10deg);
+      z-index: 0;
+    }
+    .hero::after { display: none; }
+    .hero-bg-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(rgba(30,10,5,.3), rgba(10,5,0,.82));
+      z-index: 1;
+    }
+    .pose {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 95%;
+      width: auto;
+      object-fit: contain;
+      object-position: bottom right;
+      z-index: 2;
+      pointer-events: none;
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%);
+      mask-image: linear-gradient(to right, transparent 0%, black 20%);
+    }
+    .content { position: relative; z-index: 3; }
+    .episode-label { font-size: 12px; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 4px; }
+    .episode-body { white-space: pre-line; color: var(--muted); font-size: 17px; line-height: 1.8; margin: 16px 0 28px; }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="frame">
+      <div class="hero">
+        <div class="hero-bg-overlay"></div>
+        <img class="pose" src="../assets/poses/que_elevated.png" alt="Que — Ember" />
+        <div class="content">
+          <div class="eyebrow">Territory 01 &nbsp;·&nbsp; Awakening</div>
+          <h1>Ember</h1>
+          <div class="episode-label">Episode 01</div>
+          <div class="episode-body">It started as a spark.
+
+Not fire—
+but intention.
+
+Que felt it first in the early hours,
+when the world hadn't decided what it would be yet.
+
+A subtle pull.
+Forward.
+
+He followed it…
+and something followed back.</div>
+          <div class="btns">
+            <a class="btn" href="../origin.html">Home</a>
+            <a class="btn secondary" href="pulse.html">Next Territory</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

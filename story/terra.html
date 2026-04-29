@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terra — Grounding | MoodQue</title>
+  <link rel="stylesheet" href="../css/centroids.css">
+  <style>
+    .hero {
+      position: relative;
+      background-image:
+        linear-gradient(rgba(5,10,18,.25), rgba(0,5,12,.82)),
+        url('../assets/centroids/focus-night-workstation.png');
+      overflow: hidden;
+    }
+    .pose {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 95%;
+      width: auto;
+      object-fit: contain;
+      object-position: bottom right;
+      z-index: 2;
+      pointer-events: none;
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%);
+      mask-image: linear-gradient(to right, transparent 0%, black 20%);
+    }
+    .content { position: relative; z-index: 3; }
+    .episode-label { font-size: 12px; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 4px; }
+    .episode-body { white-space: pre-line; color: var(--muted); font-size: 17px; line-height: 1.8; margin: 16px 0 28px; }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="frame">
+      <div class="hero">
+        <img class="pose" src="../assets/poses/que_calm.png" alt="Que — Terra" />
+        <div class="content">
+          <div class="eyebrow">Territory 11 &nbsp;·&nbsp; Stability</div>
+          <h1>Terra</h1>
+          <div class="episode-label">Episode 11</div>
+          <div class="episode-body">He returned.
+
+Not to a place—
+but to balance.
+
+Everything slowed.
+
+Settled.
+
+Strength isn't loud.
+
+It's steady.</div>
+          <div class="btns">
+            <a class="btn" href="../origin.html">Home</a>
+            <a class="btn secondary" href="zenith.html">Next Territory</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
