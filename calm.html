@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Calm | MoodQue</title>
+
+  <style>
+    :root {
+      --bg: #07111c;
+      --panel: #0d1d2c;
+      --ink: #f4f1df;
+      --muted: #b8c7d9;
+      --aqua: #77d9e6;
+      --blue: #3b6f9f;
+      --gold: #f1c76a;
+      --shadow: #02060a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Trebuchet MS", Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(119, 217, 230, 0.18), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(59, 111, 159, 0.35), transparent 40%),
+        var(--bg);
+      color: var(--ink);
+      overflow-x: hidden;
+    }
+
+    .page {
+      min-height: 100vh;
+      padding: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .comic-frame {
+      width: min(1200px, 100%);
+      border: 5px solid var(--ink);
+      box-shadow: 14px 14px 0 var(--shadow);
+      background: linear-gradient(135deg, #0d1d2c, #102f43);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .comic-frame::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+      background-size: 22px 22px;
+      pointer-events: none;
+    }
+
+    .hero {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 32px;
+      padding: 56px;
+      z-index: 2;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: var(--gold);
+      color: #111;
+      font-weight: 900;
+      letter-spacing: 2px;
+      padding: 8px 14px;
+      border: 3px solid #111;
+      box-shadow: 5px 5px 0 #111;
+      transform: rotate(-2deg);
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: clamp(54px, 9vw, 112px);
+      line-height: 0.9;
+      margin: 0;
+      text-transform: uppercase;
+      text-shadow: 5px 5px 0 #000;
+    }
+
+    .subtitle {
+      font-size: clamp(20px, 3vw, 32px);
+      color: var(--aqua);
+      margin: 18px 0 24px;
+      font-weight: 800;
+    }
+
+    .copy {
+      font-size: 18px;
+      line-height: 1.65;
+      color: var(--muted);
+      max-width: 600px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+
+    .btn {
+      text-decoration: none;
+      color: #081018;
+      background: var(--aqua);
+      padding: 14px 22px;
+      font-weight: 900;
+      border: 3px solid #111;
+      box-shadow: 6px 6px 0 #000;
+      text-transform: uppercase;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      color: var(--ink);
+      border-color: var(--ink);
+    }
+
+    .art-card {
+      align-self: center;
+      min-height: 520px;
+      border: 4px solid var(--ink);
+      background:
+        linear-gradient(rgba(7,17,28,0.25), rgba(7,17,28,0.65)),
+        url("images/the-calm-scene.jpg");
+      background-size: cover;
+      background-position: center;
+      box-shadow: 10px 10px 0 #000;
+      position: relative;
+    }
+
+    .art-card::after {
+      content: "BREATHE IN. RESET. FLOW.";
+      position: absolute;
+      left: 24px;
+      bottom: 24px;
+      background: rgba(7, 17, 28, 0.9);
+      color: var(--ink);
+      border: 3px solid var(--ink);
+      padding: 12px 16px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    .panels {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      padding: 0 56px 56px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .panel {
+      background: rgba(244, 241, 223, 0.08);
+      border: 3px solid var(--ink);
+      padding: 24px;
+      box-shadow: 7px 7px 0 #000;
+    }
+
+    .panel h3 {
+      margin: 0 0 10px;
+      color: var(--gold);
+      text-transform: uppercase;
+      font-size: 22px;
+    }
+
+    .panel p {
+      color: var(--muted);
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .footer {
+      border-top: 4px solid var(--ink);
+      padding: 24px 56px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      background: rgba(0,0,0,0.25);
+      position: relative;
+      z-index: 2;
+      font-weight: 800;
+      color: var(--muted);
+    }
+
+    .footer span {
+      color: var(--aqua);
+    }
+
+    @media (max-width: 900px) {
+      .page {
+        padding: 16px;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 32px;
+      }
+
+      .art-card {
+        min-height: 360px;
+      }
+
+      .panels {
+        grid-template-columns: 1fr;
+        padding: 0 32px 32px;
+      }
+
+      .footer {
+        padding: 22px 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <section class="comic-frame">
+
+      <div class="hero">
+        <div>
+          <div class="eyebrow">Centroid 01</div>
+
+          <h1>The Calm</h1>
+
+          <div class="subtitle">
+            A soft reset for the noise around you.
+          </div>
+
+          <p class="copy">
+            The Calm is the mood territory where the city slows down, the lights soften,
+            and Que guides the atmosphere into balance. This page represents low tension,
+            steady focus, peaceful energy, and quiet motion.
+          </p>
+
+          <div class="buttons">
+            <a class="btn" href="#story">Enter The Calm</a>
+            <a class="btn secondary" href="index.html">Back to MoodQue</a>
+          </div>
+        </div>
+
+        <div class="art-card" role="img" aria-label="The Calm comic-style scene"></div>
+      </div>
+
+      <div class="panels" id="story">
+        <article class="panel">
+          <h3>Energy</h3>
+          <p>Low to medium activation. Smooth, steady, and grounded.</p>
+        </article>
+
+        <article class="panel">
+          <h3>Sound</h3>
+          <p>Lo-fi textures, soft drums, warm keys, rain, vinyl, and ambient city air.</p>
+        </article>
+
+        <article class="panel">
+          <h3>Scene</h3>
+          <p>Quiet cafés, rainy train stops, blue-hour rooftops, and soft-lit streets.</p>
+        </article>
+      </div>
+
+      <footer class="footer">
+        <div>MoodQue Territory: <span>The Calm</span></div>
+        <div>Guided by Que — The Wandering Mood Djinn</div>
+      </footer>
+
+    </section>
+  </main>
+</body>
+</html>
