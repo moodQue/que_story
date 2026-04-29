@@ -13,29 +13,19 @@
         url('../assets/centroids/gathering-afternoon.png');
       overflow: hidden;
     }
-    .pose {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      height: 95%;
-      width: auto;
-      object-fit: contain;
-      object-position: bottom right;
-      z-index: 2;
-      pointer-events: none;
-      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%);
-      mask-image: linear-gradient(to right, transparent 0%, black 20%);
-    }
+    :root { --pose-filter: brightness(.9) saturate(1.1); }
     .content { position: relative; z-index: 3; }
     .episode-label { font-size: 12px; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 4px; }
     .episode-body { white-space: pre-line; color: var(--muted); font-size: 17px; line-height: 1.8; margin: 16px 0 28px; }
   </style>
 </head>
-<body>
+<body data-territory="apex">
   <main class="page">
     <section class="frame">
       <div class="hero">
-        <img class="pose" src="../assets/poses/que_elevated.png" alt="Que — Apex" />
+        <div class="pose-wrap">
+          <img class="pose" src="../assets/poses/que_elevated.png" alt="Que — Apex" />
+        </div>
         <div class="content">
           <div class="eyebrow">Territory 08 &nbsp;·&nbsp; Peak Energy</div>
           <h1>Apex</h1>
@@ -60,5 +50,6 @@ unless you know where to direct it.</div>
       </div>
     </section>
   </main>
+  <script src="../assets/story-loader.js"></script>
 </body>
 </html>

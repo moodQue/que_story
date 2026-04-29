@@ -23,20 +23,8 @@
     }
 
     /* Djinn pose — right-side overlay */
-    .pose-overlay {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      height: 100%;
-      max-height: 760px;
-      width: auto;
-      object-fit: contain;
-      object-position: bottom right;
-      pointer-events: none;
-      /* soft left-edge fade so character blends into scene */
-      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 18%);
-      mask-image: linear-gradient(to right, transparent 0%, black 18%);
-    }
+    /* Djinn pose — scene-grounded overlay */
+    :root { --pose-filter: brightness(.85) saturate(.95); }
 
     .origin-card {
       position: relative;
@@ -147,11 +135,13 @@
 
       <!-- Hero -->
       <div class="origin-hero">
-        <img
-          class="pose-overlay"
-          src="assets/poses/que_elevated.png"
-          alt="Que — The Wandering Mood Djinn"
-        />
+        <div class="pose-wrap">
+          <img
+            class="pose"
+            src="assets/poses/que_elevated.png"
+            alt="Que — The Wandering Mood Djinn"
+          />
+        </div>
 
         <div class="origin-card">
           <div class="eyebrow">The Wandering Mood Djinn</div>

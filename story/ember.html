@@ -31,30 +31,20 @@
       background: linear-gradient(rgba(30,10,5,.3), rgba(10,5,0,.82));
       z-index: 1;
     }
-    .pose {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      height: 95%;
-      width: auto;
-      object-fit: contain;
-      object-position: bottom right;
-      z-index: 2;
-      pointer-events: none;
-      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%);
-      mask-image: linear-gradient(to right, transparent 0%, black 20%);
-    }
+    :root { --pose-filter: brightness(.88) sepia(.18) saturate(1.15); }
     .content { position: relative; z-index: 3; }
     .episode-label { font-size: 12px; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 4px; }
     .episode-body { white-space: pre-line; color: var(--muted); font-size: 17px; line-height: 1.8; margin: 16px 0 28px; }
   </style>
 </head>
-<body>
+<body data-territory="ember">
   <main class="page">
     <section class="frame">
       <div class="hero">
         <div class="hero-bg-overlay"></div>
-        <img class="pose" src="../assets/poses/que_elevated.png" alt="Que — Ember" />
+        <div class="pose-wrap">
+          <img class="pose" src="../assets/poses/que_elevated.png" alt="Que — Ember" />
+        </div>
         <div class="content">
           <div class="eyebrow">Territory 01 &nbsp;·&nbsp; Awakening</div>
           <h1>Ember</h1>
@@ -80,5 +70,6 @@ and something followed back.</div>
       </div>
     </section>
   </main>
+  <script src="../assets/story-loader.js"></script>
 </body>
 </html>

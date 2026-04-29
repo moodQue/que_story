@@ -13,29 +13,19 @@
         url('../assets/centroids/ethereal-night.png');
       overflow: hidden;
     }
-    .pose {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      height: 95%;
-      width: auto;
-      object-fit: contain;
-      object-position: bottom right;
-      z-index: 2;
-      pointer-events: none;
-      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%);
-      mask-image: linear-gradient(to right, transparent 0%, black 20%);
-    }
+    :root { --pose-filter: brightness(.84) saturate(1.2); }
     .content { position: relative; z-index: 3; }
     .episode-label { font-size: 12px; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 4px; }
     .episode-body { white-space: pre-line; color: var(--muted); font-size: 17px; line-height: 1.8; margin: 16px 0 28px; }
   </style>
 </head>
-<body>
+<body data-territory="zenith">
   <main class="page">
     <section class="frame">
       <div class="hero">
-        <img class="pose" src="../assets/poses/que_elevated.png" alt="Que — Zenith" />
+        <div class="pose-wrap">
+          <img class="pose" src="../assets/poses/que_elevated.png" alt="Que — Zenith" />
+        </div>
         <div class="content">
           <div class="eyebrow">Territory 12 &nbsp;·&nbsp; Mastery</div>
           <h1>Zenith</h1>
@@ -58,5 +48,6 @@ He was conducting them.</div>
       </div>
     </section>
   </main>
+  <script src="../assets/story-loader.js"></script>
 </body>
 </html>
