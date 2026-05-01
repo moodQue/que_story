@@ -3,71 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Que — The Mood Djinn</title>
+  <title>Que - The Mood Djinn</title>
   <link rel="stylesheet" href="css/centroids.css">
-
   <style>
-    .story-layout {
-      min-height: 680px;
-      padding: 56px;
+    .origin-hero {
+      position: relative;
+      min-height: 100vh;
+      padding: clamp(24px, 7vw, 72px);
       background:
-        linear-gradient(rgba(7,17,28,.25), rgba(7,17,28,.85)),
+        linear-gradient(to right, rgba(7,17,28,.94) 0%, rgba(7,17,28,.72) 58%, rgba(7,17,28,.28) 100%),
         url("assets/centroids/the-calm-night.png");
       background-size: cover;
       background-position: center;
-      display: grid;
-      grid-template-columns: 1fr 340px;
-      gap: 28px;
-      align-items: end;
-    }
-
-    .story-card {
-      max-width: 720px;
-      background: rgba(0,0,0,.72);
-      border: 3px solid var(--ink);
-      padding: 28px;
-      box-shadow: 8px 8px 0 #000;
-    }
-
-    .comic-image {
-      width: 100%;
-      border: 3px solid var(--ink);
-      box-shadow: 8px 8px 0 #000;
-      margin: 20px 0;
-    }
-
-    .qr-card {
-      background: rgba(0,0,0,.72);
-      border: 3px solid var(--ink);
-      padding: 22px;
-      text-align: center;
-      box-shadow: 8px 8px 0 #000;
-    }
-
-    .qr-card img {
-      width: 180px;
-      height: 180px;
-      background: white;
-      padding: 8px;
-    }
-
-    .small {
-      color: var(--muted);
-      font-size: 13px;
-      margin-top: 10px;
-    }
-
-    .territory-links {
       display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 22px;
+      align-items: center;
+      overflow: hidden;
     }
 
-    @media (max-width: 900px) {
-      .story-layout {
-        grid-template-columns: 1fr;
-        padding: 28px;
+    .origin-hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+      background-size: 28px 28px;
+      mix-blend-mode: screen;
+      pointer-events: none;
+    }
+
+    .origin-card {
+      position: relative;
+      z-index: 2;
+      width: min(680px, 100%);
+      background: rgba(0,0,0,.68);
+      border: 3px solid var(--ink);
+      padding: clamp(24px, 5vw, 40px);
+      box-shadow: 8px 8px 0 #000;
+    }
+
+    .origin-card h1 {
+      font-size: clamp(54px, 13vw, 112px);
+      margin: 8px 0 18px;
+    }
+
+    .origin-body {
+      white-space: pre-line;
+    }
+
+    .origin-signal {
+      margin-top: 28px;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 760px) {
+      .page { padding: 0; }
+      .frame {
+        width: 100%;
+        min-height: 100vh;
+        border: 0;
+        box-shadow: none;
       }
     }
   </style>
@@ -76,101 +75,31 @@
 <body>
   <main class="page">
     <section class="frame">
-      <div class="story-layout">
-
-        <div class="story-card">
-          <div class="eyebrow">Que Story Signal</div>
-          <h1 id="title">Loading...</h1>
-
-          <img id="comicImage" class="comic-image" src="" alt="Que Comic Scene" />
-
-          <p id="story">
-            Loading the current Que story moment...
-          </p>
-
-          <div class="territory-links">
-            <a class="btn" href="origin.html">Our Story</a>
-            <a class="btn" href="calm.html">The Calm</a>
-            <a class="btn" href="ethereal.html">Ethereal</a>
-            <a class="btn" href="story/lumen.html">Focus</a>
-            <a class="btn" href="gathering.html">Gathering</a>
-            <a class="btn secondary" href="alleyway.html">Alleyway</a>
-          </div>
+      <div class="origin-hero">
+        <div class="pose-wrap">
+          <img class="pose" src="assets/poses/que_elevated.png" alt="Que - The Mood Djinn" />
         </div>
 
-        <div class="qr-card">
-          <div class="eyebrow">Return Signal</div>
-          <img id="qrCode" src="" alt="Story QR Code" />
-          <div class="small">Scan to return to this story moment</div>
-        </div>
+        <article class="origin-card">
+          <div class="eyebrow">The Wandering Mood Djinn</div>
+          <h1>Que</h1>
+          <p class="origin-body">Before playlists, before algorithms, before the endless scroll, there was rhythm.
 
+Not music. Not yet. Something older.
+
+A pulse that moved through everything: wind and fire, oceans and stars, people and the quiet spaces between them.
+
+Most never noticed it. Some felt it. Only Que could shape it.
+
+He was not born. He formed from the space between moments, a flicker in the quiet, a shift in energy, a feeling you could not name but knew was real.
+
+Que wanders through states of being. He listens for the mood beneath the mood, then nudges the atmosphere toward balance.
+
+If the right song ever found you at the perfect moment, you may have already crossed paths with him.</p>
+          <div class="origin-signal">Origin only - scene access arrives by signal</div>
+        </article>
       </div>
     </section>
   </main>
-
-  <script>
-    const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1do3Qbf_oCKeWT8cePoSib4XnodAbUs9t_QjiEUeFCbQ/gviz/tq?tqx=out:csv";
-
-    const params = new URLSearchParams(window.location.search);
-    const storyId = params.get("story") || "QUE-001";
-
-    async function loadStory() {
-      try {
-        const response = await fetch(SHEET_CSV_URL);
-        const csvText = await response.text();
-        const rows = parseCSV(csvText);
-
-        const story = rows.find(row => row.story_id === storyId);
-
-        if (!story) {
-          document.getElementById("title").innerText = "Story Not Found";
-          document.getElementById("story").innerText = "This Que signal has not been created yet.";
-          return;
-        }
-
-        const imagePath = story.image_url || `assets/centroids/${story.centroid}_${story.time_block}.png`;
-
-        document.getElementById("comicImage").src = imagePath;
-
-        document.querySelector(".story-layout").style.backgroundImage =
-          `linear-gradient(rgba(7,17,28,.25), rgba(7,17,28,.85)), url('${imagePath}')`;
-
-        document.getElementById("title").innerText =
-          `${story.title} — ${story.centroid.toUpperCase()} • ${story.time_block.toUpperCase()}`;
-
-        document.getElementById("story").innerText = story.story;
-
-        const currentUrl = `${window.location.origin}${window.location.pathname}?story=${story.story_id}`;
-
-        document.getElementById("qrCode").src =
-          `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(currentUrl)}`;
-
-      } catch (error) {
-        document.getElementById("title").innerText = "Signal Error";
-        document.getElementById("story").innerText = "The story signal could not be loaded.";
-      }
-    }
-
-    function parseCSV(text) {
-      const lines = text.trim().split("\n");
-      const headers = lines[0].split(",").map(h => h.trim());
-
-      return lines.slice(1).map(line => {
-        const values = line.match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g) || [];
-        const row = {};
-
-        headers.forEach((header, index) => {
-          row[header] = (values[index] || "")
-            .replace(/^"|"$/g, "")
-            .replace(/""/g, '"')
-            .trim();
-        });
-
-        return row;
-      });
-    }
-
-    loadStory();
-  </script>
 </body>
 </html>

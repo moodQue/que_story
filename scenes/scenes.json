@@ -1,0 +1,112 @@
+[
+  {
+    "week": "2026-04-28",
+    "centroid": "ember",
+    "title": "Ember",
+    "url": "/scenes/2026-04-28/ember.html",
+    "image": "/assets/centroids/the-calm-day.png",
+    "copy": "A spark before intention becomes fire. Que feels the city deciding what it wants to become.",
+    "easter_egg": "/merch/founders-pack.html",
+    "merch": "/merch/founders-pack.html",
+    "qr": "/qr_codes/2026-04-28/ember.png"
+  },
+  {
+    "week": "2026-04-28",
+    "centroid": "pulse",
+    "title": "Pulse",
+    "url": "/scenes/2026-04-28/pulse.html",
+    "image": "/assets/centroids/focus-day-workstation.png",
+    "copy": "Heartbeat to traffic. Energy to motion. Que steps into the rush and finds the pattern inside it.",
+    "qr": "/qr_codes/2026-04-28/pulse.png"
+  },
+  {
+    "week": "2026-04-28",
+    "centroid": "lumen",
+    "title": "Lumen",
+    "url": "/scenes/2026-04-28/lumen.html",
+    "image": "/assets/centroids/focus-night-workstation.png",
+    "copy": "Noise fades to the edge of the room. Direction appears where distraction used to live.",
+    "qr": "/qr_codes/2026-04-28/lumen.png"
+  },
+  {
+    "week": "2026-04-28",
+    "centroid": "haven",
+    "title": "Haven",
+    "url": "/scenes/2026-04-28/haven.html",
+    "image": "/assets/centroids/the-calm-night.png",
+    "copy": "Rain softens the signal. Que waits in the stillness until calm becomes natural again.",
+    "qr": "/qr_codes/2026-04-28/haven.png"
+  },
+  {
+    "week": "2026-04-28",
+    "centroid": "drift",
+    "title": "Drift",
+    "url": "/scenes/2026-04-28/drift.html",
+    "image": "/assets/centroids/ethereal-night.png",
+    "copy": "Not all moods need fixing. Some need space, shadow, and enough silence to be honest.",
+    "qr": "/qr_codes/2026-04-28/drift.png"
+  },
+  {
+    "week": "2026-04-28",
+    "centroid": "echo",
+    "title": "Echo",
+    "url": "/scenes/2026-04-28/echo.html",
+    "image": "/assets/centroids/alleyway-music-day.png",
+    "copy": "An old rhythm returns under new light. Nothing truly leaves; it waits to be felt again.",
+    "qr": "/qr_codes/2026-04-28/echo.png"
+  },
+  {
+    "week": "2026-04-28",
+    "centroid": "flux",
+    "title": "Flux",
+    "url": "/scenes/2026-04-28/flux.html",
+    "image": "/assets/centroids/gathering-evening.png",
+    "copy": "Patterns fail, then reform. Que does not fight disruption; he listens for what it is becoming.",
+    "qr": "/qr_codes/2026-04-28/flux.png"
+  },
+  {
+    "week": "2026-04-28",
+    "centroid": "apex",
+    "title": "Apex",
+    "url": "/scenes/2026-04-28/apex.html",
+    "image": "/assets/centroids/gathering-afternoon.png",
+    "copy": "Energy surges, unstable and bright. Intensity becomes useful when Que gives it direction.",
+    "qr": "/qr_codes/2026-04-28/apex.png"
+  },
+  {
+    "week": "2026-04-28",
+    "centroid": "nova",
+    "title": "Nova",
+    "url": "/scenes/2026-04-28/nova.html",
+    "image": "/assets/centroids/ethereal-day.png",
+    "copy": "Something new forms from everything before it. Creation is not invention; it is recognition.",
+    "qr": "/qr_codes/2026-04-28/nova.png"
+  },
+  {
+    "week": "2026-04-28",
+    "centroid": "veil",
+    "title": "Veil",
+    "url": "/scenes/2026-04-28/veil.html",
+    "image": "/assets/centroids/ethereal-night.png",
+    "copy": "The path withholds itself. Que moves anyway, guided by the part of the signal that cannot be seen.",
+    "qr": "/qr_codes/2026-04-28/veil.png"
+  },
+  {
+    "week": "2026-04-28",
+    "centroid": "terra",
+    "title": "Terra",
+    "url": "/scenes/2026-04-28/terra.html",
+    "image": "/assets/centroids/the-calm-day.png",
+    "copy": "Everything slows and settles. Strength does not announce itself; it holds the ground.",
+    "qr": "/qr_codes/2026-04-28/terra.png"
+  },
+  {
+    "week": "2026-04-28",
+    "centroid": "zenith",
+    "title": "Zenith",
+    "url": "/scenes/2026-04-28/zenith.html",
+    "image": "/assets/centroids/ethereal-day.png",
+    "copy": "The territories connect into one system. Que is not traveling through moods; he is conducting them.",
+    "qr": "/qr_codes/2026-04-28/zenith.png"
+  }
+]
