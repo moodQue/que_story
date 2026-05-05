@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Que — Territory Signal</title>
+  <link rel="stylesheet" href="css/centroids.css">
+  <style>
+    .territory-hero {
+      position: relative;
+      min-height: 100vh;
+      padding: clamp(24px, 7vw, 72px);
+      background:
+        linear-gradient(to right, rgba(7,17,28,.92) 0%, rgba(7,17,28,.65) 55%, rgba(7,17,28,.22) 100%),
+        url("assets/centroids/the-calm-night.png");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 32px;
+    }
+    .territory-card {
+      position: relative;
+      z-index: 2;
+      width: min(720px, 100%);
+      background: rgba(0,0,0,.62);
+      border: 3px solid var(--ink);
+      padding: clamp(24px, 5vw, 40px);
+      box-shadow: 8px 8px 0 #000;
+    }
+    .territory-card h1 { font-size: clamp(42px, 10vw, 84px); margin: 8px 0 16px; }
+    .territory-label {
+      font-size: 11px;
+      letter-spacing: 3px;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .story-list { list-style: none; padding: 0; margin: 0; }
+    .story-list li {
+      border-top: 1px solid rgba(255,255,255,.08);
+      padding: 14px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .story-list li:last-child { border-bottom: 1px solid rgba(255,255,255,.08); }
+    .story-title { font-size: 15px; color: var(--text); font-weight: 700; }
+    .story-blurb {
+      font-size: 13px;
+      color: var(--muted);
+      white-space: pre-line;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    .story-id { font-size: 10px; letter-spacing: 2px; color: var(--gold); opacity: .6; text-transform: uppercase; }
+    #status { color: var(--muted); font-size: 13px; letter-spacing: 1px; }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="frame">
+      <div class="territory-hero">
+        <article class="territory-card">
+          <div class="eyebrow" id="territory-eyebrow">Territory Signal</div>
+          <h1 id="territory-name">Que</h1>
+          <div class="territory-label" id="territory-label">Loading signals…</div>
+          <ul class="story-list" id="story-list"></ul>
+          <p id="status"></p>
+          <div class="btns" style="margin-top:28px;">
+            <a class="btn secondary" href="index.html">Return to Origin</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      var STORIES_URL = "https://moodque.github.io/que_story/data/stories.json";
+      var p = new URLSearchParams(window.location.search);
+      var territoryId = p.get("territory") || "";
+
+      var TERRITORY_LABELS = {
+        alignment: "The Alignment",
+        flowstate: "The Flowstate",
+      };
+
+      var label = TERRITORY_LABELS[territoryId] || territoryId.charAt(0).toUpperCase() + territoryId.slice(1);
+
+      document.getElementById("territory-eyebrow").textContent = "Territory · " + territoryId.toUpperCase();
+      document.getElementById("territory-name").textContent = label;
+      document.title = label + " | MoodQue";
+
+      fetch(STORIES_URL)
+        .then(function (r) { return r.json(); })
+        .then(function (stories) {
+          var matches = Object.entries(stories)
+            .filter(function (e) { return e[1].territory_id === territoryId; })
+            .sort(function (a, b) { return b[0].localeCompare(a[0]); });
+
+          if (!matches.length) {
+            document.getElementById("status").textContent = "No signals logged for this territory yet.";
+            document.getElementById("territory-label").textContent = "Awaiting signals";
+            return;
+          }
+
+          document.getElementById("territory-label").textContent =
+            matches.length + " signal" + (matches.length !== 1 ? "s" : "") + " logged";
+
+          var list = document.getElementById("story-list");
+          matches.forEach(function (entry) {
+            var id = entry[0];
+            var s  = entry[1];
+            var li = document.createElement("li");
+            li.innerHTML =
+              '<span class="story-title">' + escHtml(s.title) + "</span>" +
+              '<span class="story-blurb">' + escHtml(s.blurb) + "</span>" +
+              '<span class="story-id">' + escHtml(id) + "</span>";
+            list.appendChild(li);
+          });
+        })
+        .catch(function () {
+          document.getElementById("status").textContent = "Signal error — try again shortly.";
+        });
+
+      function escHtml(str) {
+        return (str || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      }
+    })();
+  </script>
+</body>
+</html>

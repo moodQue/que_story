@@ -72,6 +72,39 @@
   </style>
 </head>
 
+<script>
+  // QR code router — runs before page renders so there's no flash of wrong content.
+  // Handles ?story=ISSUE_ID, ?territory=TERRITORY_ID, and ?t=TOKEN params.
+  (function () {
+    var p = new URLSearchParams(window.location.search);
+    var storyId    = p.get("story");
+    var territoryId = p.get("territory");
+    var token      = p.get("t");
+
+    if (storyId) {
+      window.location.replace("story.html?story=" + encodeURIComponent(storyId));
+      return;
+    }
+    if (territoryId) {
+      window.location.replace("territory.html?territory=" + encodeURIComponent(territoryId));
+      return;
+    }
+    if (token) {
+      fetch("tokens.json")
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+          var resolved = data.tokens && data.tokens[token];
+          if (!resolved) return;
+          if (resolved.type === "story") {
+            window.location.replace("story.html?story=" + encodeURIComponent(resolved.id));
+          } else if (resolved.type === "territory") {
+            window.location.replace("territory.html?territory=" + encodeURIComponent(resolved.id));
+          }
+        })
+        .catch(function() {});
+    }
+  })();
+</script>
 <body>
   <main class="page">
     <section class="frame">
