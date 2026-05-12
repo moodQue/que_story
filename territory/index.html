@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Territory Hunt | Que</title>
+  <link rel="stylesheet" href="../css/centroids.css">
+  <style>
+    .hero {
+      position: relative;
+      background-image:
+        linear-gradient(rgba(7,17,28,.3), rgba(7,17,28,.88)),
+        url('../assets/centroids/the-calm-night.png');
+      overflow: hidden;
+    }
+    .content { position: relative; z-index: 3; }
+
+    .hunt-label {
+      font-size: 12px;
+      letter-spacing: 3px;
+      color: var(--muted);
+      text-transform: uppercase;
+      display: block;
+      margin: 16px 0 8px;
+    }
+
+    .hunt-input {
+      width: 100%;
+      background: rgba(0,0,0,.5);
+      border: 2px solid rgba(244,241,223,.35);
+      color: var(--ink);
+      font-family: "Trebuchet MS", Arial, sans-serif;
+      font-size: 16px;
+      padding: 10px 14px;
+      outline: none;
+      transition: border-color .15s;
+      box-sizing: border-box;
+    }
+    .hunt-input:focus { border-color: var(--accent); }
+    .hunt-input::placeholder { color: rgba(184,199,217,.35); }
+
+    button.btn {
+      color: #081018;
+      background: var(--accent);
+      padding: 12px 18px;
+      border: 3px solid #000;
+      box-shadow: 5px 5px 0 #000;
+      font-weight: 900;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-family: "Trebuchet MS", Arial, sans-serif;
+      font-size: inherit;
+    }
+    button.btn:hover { background: #9ae8f3; }
+
+    .phrase-display {
+      font-size: clamp(22px, 5.5vw, 38px);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: var(--gold);
+      background: rgba(241,199,106,.06);
+      border: 2px solid var(--gold);
+      padding: 16px 20px;
+      box-shadow: 5px 5px 0 rgba(0,0,0,.6);
+      margin: 20px 0 10px;
+      text-align: center;
+      word-break: break-word;
+    }
+
+    .hunt-status {
+      font-size: 13px;
+      letter-spacing: 1px;
+      color: var(--muted);
+      margin: 8px 0 0;
+      min-height: 20px;
+    }
+
+    .hunt-instruction {
+      color: var(--muted);
+      font-size: 13px;
+      opacity: .65;
+      margin-top: 18px;
+      line-height: 1.6;
+    }
+  </style>
+  <!-- Firebase compat SDK (browser) -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database-compat.js"></script>
+</head>
+<body>
+  <main class="page">
+    <section class="frame">
+      <div class="hero">
+        <div class="pose-wrap">
+          <img class="pose" src="../assets/poses/que_elevated.png" alt="Que — Territory Hunt" />
+        </div>
+        <div class="content">
+          <div class="eyebrow">Territory Hunt</div>
+          <h1 id="territory-name">Loading…</h1>
+
+          <div id="hunt-ui">
+            <form id="hunt-form">
+              <label class="hunt-label" for="kick-username">Enter your Kick username to reveal your phrase:</label>
+              <input
+                class="hunt-input"
+                type="text"
+                id="kick-username"
+                placeholder="your_kick_name"
+                autocomplete="off"
+                spellcheck="false"
+              />
+              <div class="btns" style="margin-top:14px;">
+                <button class="btn" type="submit">Reveal My Phrase</button>
+              </div>
+            </form>
+
+            <div id="phrase-display" class="phrase-display" style="display:none;"></div>
+            <p id="status-msg" class="hunt-status"></p>
+            <p class="hunt-instruction">Type your phrase <strong>exactly as shown</strong> in MoodQue Kick chat to log your visit.</p>
+          </div>
+
+          <div class="btns" style="margin-top:28px;">
+            <a class="btn secondary" href="../index.html">Return to Origin</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // ── Firebase config ─────────────────────────────────────────────────────
+    // Fill in apiKey, messagingSenderId, appId from:
+    // Firebase Console → Project Settings → Your apps → Web app config
+    const firebaseConfig = {
+      apiKey:            "AIzaSyD5wmZYrsEWzWX0widS8BI_yjFfPPHuxRg",
+      authDomain:        "moodque-data.firebaseapp.com",
+      databaseURL:       "https://moodque-data-default-rtdb.firebaseio.com",
+      projectId:         "moodque-data",
+      storageBucket:     "moodque-data.appspot.com",
+      messagingSenderId: "118808686621",
+      appId:             "1:118808686621:web:fe7cb9d05a916b9448d6f",
+    };
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.database();
+
+    // ── Territory data ──────────────────────────────────────────────────────
+
+    const TERRITORY_NAMES = {
+      flowstate:   "The Flowstate",
+      crucible:    "The Crucible",
+      void:        "The Void",
+      convergence: "The Convergence",
+      ascendance:  "The Ascendance",
+      fracture:    "The Fracture",
+      surge:       "The Surge",
+      burden:      "The Burden",
+      fade:        "The Fade",
+      alignment:   "The Alignment",
+      stillness:   "The Stillness",
+      drift:       "The Drift",
+      nexus:       "The Nexus",
+    };
+
+    const TERRITORY_POOL = {
+      flowstate: "q1", convergence: "q1", ascendance: "q1",
+      crucible:  "q2", fracture:    "q2", surge:      "q2",
+      void:      "q3", burden:      "q3", fade:       "q3",
+      alignment: "q4", stillness:   "q4", drift:      "q4",
+      nexus:     "nexus",
+    };
+
+    const WORD_POOLS = {
+      // Q1 — high energy, positive (flowstate / convergence / ascendance)
+      q1: {
+        adj:  ["amber","blazing","radiant","electric","vivid","crisp","bright","sharp","golden","clear",
+               "rising","fluid","swift","warm","pure","fresh","alive","bold","luminous","free",
+               "active","keen","strong","steady","focused","vital","wide","lifted","soaring","open"],
+        noun: ["signal","spark","current","horizon","flare","beam","pulse","surge","dawn","crest",
+               "arc","light","rhythm","climb","reach","flow","peak","wave","path","lift",
+               "line","rush","fire","force","leap","rise","stream","glow","drive","lock"],
+      },
+      // Q2 — high energy, negative pressure (crucible / fracture / surge)
+      q2: {
+        adj:  ["fractured","stark","raw","wired","dark","restless","taut","bitter","dense","cracked",
+               "split","torn","charged","volatile","loud","fierce","rough","broken","frantic","jagged",
+               "coiled","strained","heated","pressed","twisted","severed","urgent","live","blunt","hard"],
+        noun: ["wire","edge","storm","friction","noise","grit","tension","crack","shard","break",
+               "fault","strain","shock","blast","clash","snap","burn","crash","lash","bolt",
+               "grind","blade","forge","heat","force","wreck","fracture","pressure","spike","coil"],
+      },
+      // Q3 — low energy, negative (void / burden / fade)
+      q3: {
+        adj:  ["hollow","heavy","dim","muted","grey","deep","low","worn","distant","cold",
+               "empty","lost","numb","bare","dull","bleak","hushed","faint","pale","frail",
+               "spent","quiet","thin","slow","flat","blank","sealed","closed","ashen","still"],
+        noun: ["weight","static","shadow","ash","stone","dust","fog","silence","void","rust",
+               "echo","husk","ache","veil","silt","smoke","fade","shell","mist","haze",
+               "coat","debris","grey","hollow","drift","stain","sorrow","absence","dark","residue"],
+      },
+      // Q4 — balanced, peaceful (alignment / stillness / drift)
+      q4: {
+        adj:  ["soft","drifting","gentle","quiet","still","warm","hazy","mellow","faded","slow",
+               "clear","calm","loose","light","smooth","settled","restful","even","bare","steady",
+               "grounded","whole","simple","honest","pure","real","true","open","tender","easy"],
+        noun: ["mist","current","thread","ember","cloud","shore","tide","vapor","echo","glass",
+               "pause","space","breath","rest","note","chord","leaf","room","bench","field",
+               "stone","window","book","garden","water","ground","peace","hour","door","frame"],
+      },
+      // Nexus — center / neutral
+      nexus: {
+        adj:  ["shifting","neutral","open","floating","suspended","centered","whole","clear","balanced",
+               "present","aware","vast","deep","wide","full","empty","real","raw","true","still",
+               "awake","poised","unbound","free","between","turning","calm","loose","grey","quiet"],
+        noun: ["drift","center","space","path","crossing","pause","bridge","turn","point","axis",
+               "heart","root","origin","core","link","thread","source","ground","anchor","ring",
+               "lens","map","gate","circle","line","pulse","field","node","web","layer"],
+      },
+    };
+
+    // ── URL params ──────────────────────────────────────────────────────────
+
+    function getParams() {
+      const p = new URLSearchParams(window.location.search);
+      return {
+        tid: p.get("tid") || "",
+        wk:  parseInt(p.get("wk") || "0", 10),
+      };
+    }
+
+    // ── Phrase generation ───────────────────────────────────────────────────
+
+    function generatePhrase(tid) {
+      const poolKey = TERRITORY_POOL[tid] || "nexus";
+      const pool    = WORD_POOLS[poolKey];
+      const adj     = pool.adj[Math.floor(Math.random() * pool.adj.length)];
+      const noun    = pool.noun[Math.floor(Math.random() * pool.noun.length)];
+      return `${adj} ${noun}`;
+    }
+
+    // ── Firebase write ──────────────────────────────────────────────────────
+    // Path: /hunts/week_{wk}/{tid}/{kick_username}
+    // Returns the existing phrase if the user already logged this territory this week.
+
+    async function logVisit(kickUsername, tid, wk, phrase) {
+      const ref      = db.ref(`hunts/week_${wk}/${tid}/${kickUsername}`);
+      const snapshot = await ref.once("value");
+
+      if (snapshot.exists()) {
+        return { alreadyVisited: true, phrase: snapshot.val().phrase };
+      }
+
+      await ref.set({
+        kick_username: kickUsername,
+        territory_id:  tid,
+        week:          wk,
+        phrase:        phrase,
+        confirmed:     false,
+        timestamp:     Date.now(),
+      });
+
+      return { alreadyVisited: false, phrase };
+    }
+
+    // ── Init ────────────────────────────────────────────────────────────────
+
+    async function initHunt() {
+      const { tid, wk } = getParams();
+      const displayName = TERRITORY_NAMES[tid];
+
+      if (!displayName || !wk) {
+        document.getElementById("territory-name").textContent = "Unknown Territory";
+        document.getElementById("hunt-ui").style.display = "none";
+        return;
+      }
+
+      document.getElementById("territory-name").textContent = displayName;
+
+      const form          = document.getElementById("hunt-form");
+      const usernameInput = document.getElementById("kick-username");
+      const phraseDisplay = document.getElementById("phrase-display");
+      const statusMsg     = document.getElementById("status-msg");
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const kickUsername = usernameInput.value.trim().toLowerCase().replace(/\s+/g, "_");
+        if (!kickUsername) {
+          statusMsg.textContent = "Please enter your Kick username.";
+          return;
+        }
+
+        const phrase = generatePhrase(tid);
+        statusMsg.textContent = "Logging your visit…";
+
+        try {
+          const result = await logVisit(kickUsername, tid, wk, phrase);
+
+          phraseDisplay.textContent   = result.phrase;
+          phraseDisplay.style.display = "block";
+
+          statusMsg.textContent = result.alreadyVisited
+            ? "Welcome back! Your phrase for this territory is still active this week."
+            : "Visit logged! Type your phrase in the MoodQue Kick chat to confirm.";
+
+        } catch (err) {
+          console.error("[hunt] Firebase write failed:", err);
+          statusMsg.textContent = "Something went wrong — try again.";
+        }
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", initHunt);
+  </script>
+</body>
+</html>
