@@ -131,8 +131,20 @@
 
   <script>
     // ── Firebase config ─────────────────────────────────────────────────────
-    // Fill in apiKey, messagingSenderId, appId from:
     // Firebase Console → Project Settings → Your apps → Web app config
+    //
+    // Realtime Database rules (Firebase Console → Realtime Database → Rules):
+    // {
+    //   "rules": {
+    //     "hunts": {
+    //       "$week": { "$tid": { "$username": { ".write": true, ".read": true } } }
+    //     },
+    //     "codes":       { ".write": true, ".read": true, ".indexOn": ["phrase"] },
+    //     "completions": { ".write": false, ".read": false }
+    //   }
+    // }
+    // Note: read:true at the record level (not the tree root) so individual
+    // records can be fetched by path but the full hunts tree cannot be listed.
     const firebaseConfig = {
       apiKey:            "AIzaSyD5wmZYrsEWzWX0widS8BI_yjFfPPHuxRg",
       authDomain:        "moodque-data.firebaseapp.com",
