@@ -1,7 +1,8 @@
 {
   "permissions": {
     "additionalDirectories": [
-      "c:\\Users\\jrbns\\que_engine\\scripts"
+      "c:\\Users\\jrbns\\que_engine\\scripts",
+      "c:\\Users\\jrbns\\que_engine"
     ]
   }
 }
