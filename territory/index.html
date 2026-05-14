@@ -233,11 +233,20 @@
 
     // ── URL params ──────────────────────────────────────────────────────────
 
+    function currentISOWeek() {
+      const now   = new Date();
+      const jan4  = new Date(now.getFullYear(), 0, 4);
+      const start = new Date(jan4);
+      start.setDate(jan4.getDate() - ((jan4.getDay() + 6) % 7));
+      return Math.ceil(((now - start) / 86400000 + 1) / 7);
+    }
+
     function getParams() {
-      const p = new URLSearchParams(window.location.search);
+      const p      = new URLSearchParams(window.location.search);
+      const wkRaw  = parseInt(p.get("wk") || "0", 10);
       return {
         tid: p.get("tid") || "",
-        wk:  parseInt(p.get("wk") || "0", 10),
+        wk:  wkRaw || currentISOWeek(),
       };
     }
 
