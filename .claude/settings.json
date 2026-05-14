@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "PowerShell(.\\\\scripts\\\\setup_hunt_scheduler.ps1)",
-      "PowerShell(Set-Location \"C:\\\\Users\\\\jrbns\\\\que_engine\" && powershell -ExecutionPolicy Bypass -File \"scripts\\\\setup_hunt_scheduler.ps1\")"
+      "PowerShell(Set-Location \"C:\\\\Users\\\\jrbns\\\\que_engine\" && powershell -ExecutionPolicy Bypass -File \"scripts\\\\setup_hunt_scheduler.ps1\")",
+      "Bash(python -c ' *)"
     ],
     "additionalDirectories": [
       "c:\\Users\\jrbns\\que_engine\\scripts",

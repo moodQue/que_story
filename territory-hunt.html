@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MoodQue · Territory Hunt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cyan: #14E6F3;
+    --orange: #ECA35E;
+    --magenta: #A553A5;
+    --purple: #7D619E;
+    --dark: #282828;
+    --darker: #1a1a1a;
+    --darkest: #111111;
+    --card-bg: #1e1e1e;
+    --border: rgba(20, 230, 243, 0.15);
+    --text-muted: rgba(255,255,255,0.45);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--darkest);
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* —— NOISE OVERLAY —— */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.6;
+  }
+
+  /* —— HERO —— */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 2rem;
+    overflow: hidden;
+  }
+
+  .hero-glow {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(165,83,165,0.18) 0%, transparent 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+
+  .hero-glow-2 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(20,230,243,0.10) 0%, transparent 70%);
+    top: 30%;
+    right: 10%;
+    pointer-events: none;
+  }
+
+  .eyebrow {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    color: var(--cyan);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards 0.2s;
+  }
+
+  .hero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(5rem, 14vw, 11rem);
+    line-height: 0.9;
+    letter-spacing: 0.02em;
+    color: #fff;
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards 0.4s;
+  }
+
+  .hero h1 span { color: var(--cyan); }
+
+  .hero-sub {
+    font-family: 'Space Mono', monospace;
+    font-size: clamp(0.75rem, 1.5vw, 0.9rem);
+    color: var(--orange);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin: 1rem 0 2rem;
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards 0.6s;
+  }
+
+  .hero-desc {
+    max-width: 600px;
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.8;
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards 0.8s;
+  }
+
+  .cta-row {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards 1s;
+  }
+
+  .btn {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.85rem 2rem;
+    border-radius: 2px;
+    transition: all 0.2s;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+  }
+
+  .btn-primary {
+    background: var(--cyan);
+    color: var(--darkest);
+    font-weight: 700;
+  }
+
+  .btn-primary:hover { background: #fff; }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--cyan);
+    border: 1px solid var(--cyan);
+  }
+
+  .btn-secondary:hover {
+    background: rgba(20,230,243,0.08);
+  }
+
+  .scroll-hint {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  /* —— HOW IT WORKS —— */
+  .section {
+    position: relative;
+    z-index: 1;
+    padding: 5rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    color: var(--cyan);
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+  }
+
+  .section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    line-height: 1;
+    margin-bottom: 3rem;
+  }
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border) 20%, var(--border) 80%, transparent);
+    margin: 0 auto 5rem;
+  }
+
+  /* —— HOW-TO STEPS —— */
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .step-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    padding: 1.75rem;
+    position: relative;
+    transition: border-color 0.3s;
+  }
+
+  .step-card:hover { border-color: rgba(20,230,243,0.4); }
+
+  .step-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.5rem;
+    color: rgba(20,230,243,0.15);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .step-card h3 {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    color: var(--orange);
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+  }
+
+  .step-card p {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.7;
+  }
+
+  /* —— TERRITORY GRID —— */
+  .territory-section {
+    position: relative;
+    z-index: 1;
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .quadrant-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.75rem;
+    border-radius: 1px;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+  }
+
+  .q1 { background: rgba(236,163,94,0.15); color: var(--orange); border: 1px solid rgba(236,163,94,0.3); }
+  .q2 { background: rgba(165,83,165,0.15); color: var(--magenta); border: 1px solid rgba(165,83,165,0.3); }
+  .q3 { background: rgba(125,97,158,0.15); color: var(--purple); border: 1px solid rgba(125,97,158,0.3); }
+  .q4 { background: rgba(20,230,243,0.10); color: var(--cyan); border: 1px solid rgba(20,230,243,0.2); }
+  .qw { background: rgba(255,255,255,0.05); color: rgba(255,255,255,0.5); border: 1px solid rgba(255,255,255,0.15); }
+
+  .quadrant-block { margin-bottom: 4rem; }
+
+  .quad-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: rgba(255,255,255,0.85);
+  }
+
+  .territory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .t-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    padding: 1.5rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .t-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    transition: opacity 0.3s;
+    opacity: 0;
+  }
+
+  .t-card:hover { border-color: rgba(20,230,243,0.35); transform: translateY(-2px); }
+  .t-card:hover::before { opacity: 1; }
+
+  .t-card.q1-card::before { background: var(--orange); }
+  .t-card.q2-card::before { background: var(--magenta); }
+  .t-card.q3-card::before { background: var(--purple); }
+  .t-card.q4-card::before { background: var(--cyan); }
+  .t-card.qw-card::before { background: rgba(255,255,255,0.4); }
+
+  .t-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.85rem;
+  }
+
+  .t-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 0.03em;
+    color: #fff;
+  }
+
+  .t-emoji {
+    font-size: 1.4rem;
+    opacity: 0.85;
+  }
+
+  .t-id {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  .t-vac {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    padding: 0.2rem 0.6rem;
+    border-radius: 1px;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+
+  .vac-q1 { background: rgba(236,163,94,0.12); color: rgba(236,163,94,0.8); }
+  .vac-q2 { background: rgba(165,83,165,0.12); color: rgba(165,83,165,0.8); }
+  .vac-q3 { background: rgba(125,97,158,0.12); color: rgba(125,97,158,0.8); }
+  .vac-q4 { background: rgba(20,230,243,0.08); color: rgba(20,230,243,0.7); }
+  .vac-w  { background: rgba(255,255,255,0.05); color: rgba(255,255,255,0.4); }
+
+  .t-lens {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.65;
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+
+  .t-scene {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.7;
+  }
+
+  .t-scene-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    display: block;
+    margin-bottom: 0.4rem;
+  }
+
+  /* wandering — full width hero card */
+  .wandering-card {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, #1a1a1a 0%, #1e1a28 100%);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 2px;
+    padding: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  @media (max-width: 640px) {
+    .wandering-card { grid-template-columns: 1fr; gap: 1.5rem; }
+  }
+
+  .wandering-left .t-name { font-size: 3rem; }
+
+  /* —— ILLUSTRATOR BRIEF SECTION —— */
+  .brief-box {
+    background: var(--card-bg);
+    border: 1px solid rgba(236,163,94,0.25);
+    border-radius: 2px;
+    padding: 2rem 2.5rem;
+    margin-top: 1rem;
+  }
+
+  .brief-box h3 {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    color: var(--orange);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  .brief-box p {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.8;
+    margin-bottom: 0.75rem;
+  }
+
+  .brief-box p:last-child { margin-bottom: 0; }
+
+  /* —— FOOTER / KICK BANNER —— */
+  .kick-section {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 5rem 2rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .kick-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #53FC18;
+    color: #000;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.5rem 1.25rem;
+    border-radius: 1px;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  .kick-badge:hover { background: #fff; }
+
+  .live-dot {
+    width: 8px;
+    height: 8px;
+    background: #000;
+    border-radius: 50%;
+    animation: pulse-dot 1.5s ease-in-out infinite;
+  }
+
+  .kick-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 0.75rem;
+  }
+
+  .kick-sub {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+  }
+
+  .footer-meta {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    color: var(--text-muted);
+    margin-top: 4rem;
+    text-transform: uppercase;
+  }
+
+  /* —— ANIMATIONS —— */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.8; }
+  }
+
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  /* —— GRID LINES —— */
+  .hero-lines {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  .hero-lines::before,
+  .hero-lines::after {
+    content: '';
+    position: absolute;
+    background: rgba(20,230,243,0.04);
+  }
+
+  .hero-lines::before {
+    width: 1px;
+    top: 0; bottom: 0;
+    left: 30%;
+  }
+
+  .hero-lines::after {
+    height: 1px;
+    left: 0; right: 0;
+    top: 40%;
+  }
+
+  .vac-axis {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    color: rgba(20,230,243,0.35);
+    text-transform: uppercase;
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .axis-item { display: flex; align-items: center; gap: 0.5rem; }
+  .axis-dot { width: 6px; height: 6px; border-radius: 50%; }
+</style>
+</head>
+<body>
+
+<!-- ————————————————————————— HERO ————————————————————————— -->
+<section class="hero">
+  <div class="hero-lines"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow-2"></div>
+
+  <p class="eyebrow">MoodQue Ambient Intelligence · 24/7 Live Stream</p>
+  <h1>TERRITORY<br><span>HUNT</span></h1>
+  <p class="hero-sub">The Mood Djinn is wandering. Find him.</p>
+  <p class="hero-desc">
+    Que drifts through 13 emotional territories, pulled by lunar cycles, collective mood signals, and the rhythm of the internet. Each territory is a different world. Each world leaves a different QR code. Hunt them. Claim them.
+  </p>
+
+  <div class="vac-axis" style="margin-top:2rem;">
+    <span class="axis-item"><span class="axis-dot" style="background:var(--orange)"></span>Valence · emotional charge</span>
+    <span class="axis-item"><span class="axis-dot" style="background:var(--magenta)"></span>Arousal · energetic intensity</span>
+    <span class="axis-item"><span class="axis-dot" style="background:var(--cyan)"></span>Control · directional pull</span>
+  </div>
+
+  <div class="cta-row">
+    <a href="#territories" class="btn btn-primary">Explore the Territories</a>
+    <a href="#how-to-play" class="btn btn-secondary">How to Play</a>
+  </div>
+
+  <p class="scroll-hint">↓ scroll to begin</p>
+</section>
+
+<!-- ————————————————————————— HOW TO PLAY ————————————————————————— -->
+<div class="divider"></div>
+<section class="section" id="how-to-play">
+  <p class="section-label">The Game</p>
+  <h2 class="section-title">How Territory Hunt Works</h2>
+
+  <div class="steps-grid">
+    <div class="step-card">
+      <div class="step-num">01</div>
+      <h3>Watch the Stream</h3>
+      <p>Tune into MoodQue on Kick. Que is always broadcasting — drifting through territories based on the real-time Mood Intelligence System.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">02</div>
+      <h3>Spot the QR Code</h3>
+      <p>Each territory displays a unique QR code embedded in the scene. When Que arrives in a new territory, the code changes. Scan it fast.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">03</div>
+      <h3>Claim the Territory</h3>
+      <p>The QR code links to a territory page. First scan wins the claim. Collect territories over time to build your personal mood map.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">04</div>
+      <h3>Read the Signal</h3>
+      <p>Each territory comes with a story — an AI-written dispatch about the collective mood that drove Que there. Part game, part mood science.</p>
+    </div>
+  </div>
+
+  <div class="brief-box">
+    <h3>Powered by the Mood Intelligence System</h3>
+    <p>Territory Hunt isn't random. The MIS reads lunar phases, social sentiment trends, YouTube creator signals, and a live community engagement index — then plots Que's position across a VAC coordinate space (Valence · Arousal · Control). The territories Que visits are a direct reflection of what the collective mood of the internet actually looks like right now.</p>
+    <p>Waning moon? Expect more time in the Hollow Grounds. High arousal weeks push toward the Storm Lands or the Lit Realms. The Wandering appears when the signal is unclear — when the mood of the world refuses to be named.</p>
+  </div>
+</section>
+
+<!-- ————————————————————————— TERRITORIES ————————————————————————— -->
+<div class="divider"></div>
+<section class="territory-section" id="territories">
+  <p class="section-label">The 13 Territories</p>
+  <h2 class="section-title" style="font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,6vw,4.5rem);line-height:1;margin-bottom:0.5rem;">Where Que Roams</h2>
+  <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:3rem;font-family:'Space Mono',monospace;letter-spacing:0.05em;">13 worlds. One Mood Djinn. Infinite drift.</p>
+
+  <!-- —— Q1: THE LIT REALMS —— -->
+  <div class="quadrant-block">
+    <span class="quadrant-label q1">Q1 · The Lit Realms</span>
+    <p class="quad-title">High Valence · High Arousal</p>
+    <div class="territory-grid">
+
+      <div class="t-card q1-card">
+        <div class="t-id">territory_id: apex</div>
+        <div class="t-header">
+          <div class="t-name">The Apex</div>
+          <div class="t-emoji">🏔</div>
+        </div>
+        <div class="t-vac vac-q1">V↑ A↑ C↑ · Peak Confidence</div>
+        <p class="t-lens">"The moment just before everything breaks open. The air is thin up here, and it tastes like certainty."</p>
+        <span class="t-scene-label">Atmosphere</span>
+        <p class="t-scene">A mountain summit bathed in golden-hour light. The horizon is impossibly wide — no edges, no limits. A silhouette against a burning sky. No other figures. Just the wind and the view. Sparse clouds far below. A marker stone at the very tip of the summit.</p>
+      </div>
+
+      <div class="t-card q1-card">
+        <div class="t-id">territory_id: nova</div>
+        <div class="t-header">
+          <div class="t-name">The Nova</div>
+          <div class="t-emoji">✦</div>
+        </div>
+        <div class="t-vac vac-q1">V↑ A↑ C↓ · Explosive Release</div>
+        <p class="t-lens">"Something just ignited. Not a warning — a becoming. The kind of energy that rewrites what comes next."</p>
+        <span class="t-scene-label">Atmosphere</span>
+        <p class="t-scene">A vast dark field under a sky erupting with light — not fireworks, something more cosmic. A star expanding outward. A figure mid-stride, pulled forward by the blast of color behind them. Clothing billowing. Musical notes streaming outward like sparks. Cyan and magenta dominate the palette. Fragments of light floating in the air.</p>
+      </div>
+
+      <div class="t-card q1-card">
+        <div class="t-id">territory_id: pulse</div>
+        <div class="t-header">
+          <div class="t-name">The Pulse</div>
+          <div class="t-emoji">⬡</div>
+        </div>
+        <div class="t-vac vac-q1">V↑ A↑ C· · Raw Momentum</div>
+        <p class="t-lens">"This is the frequency of everything moving at once. Not chaos — current. You don't fight the pulse. You become it."</p>
+        <span class="t-scene-label">Atmosphere</span>
+        <p class="t-scene">An underground club or tunnel space where the architecture itself seems to vibrate — walls rippling with concentric wave patterns, neon cyan traces. A single figure at the center of the movement, headphones on, surrounded by radiating sound wave rings. Maximum intensity. A dropped flyer on the floor.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- —— Q2: THE STORM LANDS —— -->
+  <div class="quadrant-block">
+    <span class="quadrant-label q2">Q2 · The Storm Lands</span>
+    <p class="quad-title">Low Valence · High Arousal</p>
+    <div class="territory-grid">
+
+      <div class="t-card q2-card">
+        <div class="t-id">territory_id: ember</div>
+        <div class="t-header">
+          <div class="t-name">The Ember</div>
+          <div class="t-emoji">🔥</div>
+        </div>
+        <div class="t-vac vac-q2">V↓ A↑ C↑ · Controlled Burn</div>
+        <p class="t-lens">"Anger that has learned patience. A coal that refuses to go out. This is what grief looks like when it decides to become fuel."</p>
+        <span class="t-scene-label">Atmosphere</span>
+        <p class="t-scene">A cracked, dry landscape at dusk — earth split open with a dull orange glow from below, like the ground itself is smoldering. A figure crouched low, one hand pressed against the cracked earth. Hood up. Smoke curls slowly upward. Scorched wood nearby, grain deepened by heat.</p>
+      </div>
+
+      <div class="t-card q2-card">
+        <div class="t-id">territory_id: flux</div>
+        <div class="t-header">
+          <div class="t-name">The Flux</div>
+          <div class="t-emoji">⚡</div>
+        </div>
+        <div class="t-vac vac-q2">V↓ A↑ C↓ · Volatile Transition</div>
+        <p class="t-lens">"Nothing is fixed here. The ground changes as you walk it. The feeling you arrived with isn't the feeling you'll leave with."</p>
+        <span class="t-scene-label">Atmosphere</span>
+        <p class="t-scene">A landscape mid-transformation — half-city, half-wilderness, as if two worlds are overlapping. Weather is severe: lightning in the distance, wind bending everything sideways. A figure turned slightly away, clothing whipping in the gusts. A flickering digital billboard half-swallowed by vines at the edge of the frame.</p>
+      </div>
+
+      <div class="t-card q2-card">
+        <div class="t-id">territory_id: zenith</div>
+        <div class="t-header">
+          <div class="t-name">The Zenith</div>
+          <div class="t-emoji">⚡</div>
+        </div>
+        <div class="t-vac vac-q2">V↓ A↑ C↑ · Maximum Tension</div>
+        <p class="t-lens">"The highest point of pressure before the system breaks. Nothing goes up forever. But right now — it is still climbing."</p>
+        <span class="t-scene-label">Atmosphere</span>
+        <p class="t-scene">An observation tower or rooftop at the peak of a storm — dark clouds churning at eye level, city lights below blurred by rain. A figure at the very edge, arms slightly out, chin up, facing the storm directly. Magenta and deep purple tones. A puddle at the tower's edge mirrors the churning sky.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- —— Q3: THE HOLLOW GROUNDS —— -->
+  <div class="quadrant-block">
+    <span class="quadrant-label q3">Q3 · The Hollow Grounds</span>
+    <p class="quad-title">Low Valence · Low Arousal</p>
+    <div class="territory-grid">
+
+      <div class="t-card q3-card">
+        <div class="t-id">territory_id: drift</div>
+        <div class="t-header">
+          <div class="t-name">The Drift</div>
+          <div class="t-emoji">〰</div>
+        </div>
+        <div class="t-vac vac-q3">V↓ A↓ C↓ · Directionless Float</div>
+        <p class="t-lens">"No anchor, no destination. Just the current carrying you somewhere you didn't choose. This isn't lost — it's between."</p>
+        <span class="t-scene-label">Atmosphere</span>
+        <p class="t-scene">An open ocean at twilight — calm but grey. A small, barely-there wooden raft. Nothing on the horizon in any direction. Everything damp and still. A single musical note drifts upward like a soap bubble. A folded note held close, waiting.</p>
+      </div>
+
+      <div class="t-card q3-card">
+        <div class="t-id">territory_id: echo</div>
+        <div class="t-header">
+          <div class="t-name">The Echo</div>
+          <div class="t-emoji">○</div>
+        </div>
+        <div class="t-vac vac-q3">V↓ A↓ C↓ · Residual Signal</div>
+        <p class="t-lens">"Something was here. The feeling is still reverberating. You're not sure if it was yours or someone else's — but you can't stop hearing it."</p>
+        <span class="t-scene-label">Atmosphere</span>
+        <p class="t-scene">A long empty hallway or tunnel with curved walls — the kind of space that holds sound. Pale blue-grey tones. A figure at one end, looking toward the far point where the corridor curves out of sight. A long shadow stretches ahead. Faint concentric ring patterns radiate from a single standing point. Something scratched into the wall at head height.</p>
+      </div>
+
+      <div class="t-card q3-card">
+        <div class="t-id">territory_id: veil</div>
+        <div class="t-header">
+          <div class="t-name">The Veil</div>
+          <div class="t-emoji">⬛</div>
+        </div>
+        <div class="t-vac vac-q3">V↓ A↓ C↓ · Deep Obscurity</div>
+        <p class="t-lens">"Something is hidden here — from you, or by you. The fog doesn't lift. You learn to move through it anyway."</p>
+        <span class="t-scene-label">Atmosphere</span>
+        <p class="t-scene">A dense fog environment — a forest clearing at night, trees barely visible as dark shapes. A single pale light source rises from below, bioluminescent rather than artificial. Purple and deep grey tones. Everything barely lit, almost extinguished. Something half-obscured by mist, visible only if you lean close.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- —— Q4: THE STILL PLACES —— -->
+  <div class="quadrant-block">
+    <span class="quadrant-label q4">Q4 · The Still Places</span>
+    <p class="quad-title">High Valence · Low Arousal</p>
+    <div class="territory-grid">
+
+      <div class="t-card q4-card">
+        <div class="t-id">territory_id: haven</div>
+        <div class="t-header">
+          <div class="t-name">The Haven</div>
+          <div class="t-emoji">⌂</div>
+        </div>
+        <div class="t-vac vac-q4">V↑ A↓ C↑ · Safe Ground</div>
+        <p class="t-lens">"You don't have to perform here. The door is closed. The warmth is real. This is where the signal comes to rest."</p>
+        <span class="t-scene-label">Atmosphere</span>
+        <p class="t-scene">A small, warm interior space — cozy but not cluttered. A window with rain outside, a soft lamp, a worn couch. Headphones resting, not in use. One musical note floats lazily near the ceiling. A sticky note pressed to the rain-spotted window glass.</p>
+      </div>
+
+      <div class="t-card q4-card">
+        <div class="t-id">territory_id: lumen</div>
+        <div class="t-header">
+          <div class="t-name">The Lumen</div>
+          <div class="t-emoji">○</div>
+        </div>
+        <div class="t-vac vac-q4">V↑ A↓ C· · Gentle Clarity</div>
+        <p class="t-lens">"The moment after confusion ends. Not a flash — a slow brightening. Things are becoming clear without you having to force them."</p>
+        <span class="t-scene-label">Atmosphere</span>
+        <p class="t-scene">Dawn breaking over a calm landscape — a field or a flat rooftop. Everything soft gold-white. Light diffuse, not harsh. A figure standing relaxed, face tilted slightly upward toward the growing glow. Mist at ground level catches the light. A glass bottle on the ground refracts the sunrise into scattered colour.</p>
+      </div>
+
+      <div class="t-card q4-card">
+        <div class="t-id">territory_id: terra</div>
+        <div class="t-header">
+          <div class="t-name">The Terra</div>
+          <div class="t-emoji">⬡</div>
+        </div>
+        <div class="t-vac vac-q4">V↑ A↓ C↑ · Grounded Presence</div>
+        <p class="t-lens">"Feet on soil. Weight in the body. This is what it feels like when you stop trying to be somewhere else and let where you are be enough."</p>
+        <span class="t-scene-label">Atmosphere</span>
+        <p class="t-scene">A wide open meadow or earth path through tall grass at late afternoon. Warm tones, long shadows, no rush. A figure moving slowly, unhurried, hands in pockets. Fireflies or seeds drifting on the breeze. A stone marker along the path.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- —— THE WANDERING —— -->
+  <div class="quadrant-block">
+    <span class="quadrant-label qw">Center · The Wandering</span>
+    <p class="quad-title">Signal Unclear · Between Territories</p>
+    <div class="territory-grid">
+      <div class="t-card qw-card wandering-card">
+        <div class="wandering-left">
+          <div class="t-id">territory_id: the_wandering</div>
+          <div class="t-header" style="margin-bottom:1rem;">
+            <div class="t-name" style="font-size:3rem;">The Wandering</div>
+            <div class="t-emoji" style="font-size:2rem;">☿</div>
+          </div>
+          <div class="t-vac vac-w">V· A· C· · No Fixed Coordinate</div>
+          <br>
+          <p class="t-lens" style="font-size:1rem;">"The mood of the world refuses to be named today. The signal is real — it's just not pointing anywhere. Que moves. The territory does not."</p>
+        </div>
+        <div class="wandering-right">
+          <span class="t-scene-label">Atmosphere</span>
+          <p class="t-scene" style="font-size:0.9rem;line-height:1.8;">A crossroads in an indeterminate place — could be an intersection in a city, a fork in a forest path, or a junction in an abstract space. No signs point anywhere. The environment shifts subtly at the edges — like the background can't quite decide what it is. A figure at the exact center, not walking, just observing. Multiple musical notes drift in different directions. Something suspended in the air at chest height — no surface, just hovering. A waning moon visible overhead.</p>
+          <br>
+          <p class="t-scene" style="font-size:0.85rem;color:rgba(255,255,255,0.4);font-style:italic;">The Wandering appears most during waning moon phases and when the MIS cannot determine a dominant territory with confidence. It is the most common landing state — and the most mysterious.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ————————————————————————— KICK BANNER ————————————————————————— -->
+<div class="divider"></div>
+<section class="kick-section">
+  <a href="https://kick.com/moodque" class="kick-badge" target="_blank" rel="noopener">
+    <span class="live-dot"></span>
+    Watch Live on Kick
+  </a>
+  <h2 class="kick-title">Que is Always Moving.</h2>
+  <p class="kick-sub">24/7 ambient livestream · Mood Intelligence System · Territory Hunt active</p>
+  <div class="cta-row" style="opacity:1;animation:none;">
+    <a href="https://kick.com/moodque" class="btn btn-primary" target="_blank" rel="noopener">Open Stream on Kick</a>
+    <a href="#territories" class="btn btn-secondary">Review the Territories</a>
+  </div>
+
+  <p class="footer-meta" style="margin-top:5rem;">© MoodQue Ambient Intelligence · Powered by MIS · Que is a Mood Djinn</p>
+</section>
+
+</body>
+</html>
