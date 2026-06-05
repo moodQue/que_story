@@ -1,0 +1,205 @@
+{
+  "variant_id": "field_scan_20260605_A",
+  "tier": "field_scan",
+  "campaign_id": "field_scan_20260605",
+  "created_at": "2026-06-05T07:41:48.883376",
+  "question_count": 5,
+  "cta": "Comment your faction. Finish the full scan in Discord.",
+  "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts"
+  ],
+  "questions": [
+    {
+      "id": "q20_conflict",
+      "gate": 5,
+      "theme": "conflict response",
+      "tone": "social_quick",
+      "platforms": [
+        "instagram",
+        "tiktok",
+        "youtube_shorts"
+      ],
+      "question": "When there's unresolved tension between you and someone else:",
+      "answers": [
+        {
+          "label": "A",
+          "text": "Address it now. You'd rather have the conversation than carry it.",
+          "faction_id": "current",
+          "weight": 2
+        },
+        {
+          "label": "B",
+          "text": "Wait for the right moment. You're usually the one who resolves it.",
+          "faction_id": "calm",
+          "weight": 2
+        },
+        {
+          "label": "C",
+          "text": "Go quiet. Most things aren't worth the energy.",
+          "faction_id": "hollow",
+          "weight": 2
+        },
+        {
+          "label": "D",
+          "text": "Feel everything first. Say something when you're sure what it is.",
+          "faction_id": "static",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "q06_work_environment",
+      "gate": 1,
+      "theme": "ideal work environment",
+      "tone": "social_quick",
+      "platforms": [
+        "instagram",
+        "tiktok",
+        "youtube_shorts"
+      ],
+      "question": "Your ideal work environment:",
+      "answers": [
+        {
+          "label": "A",
+          "text": "Busy. Noise. Energy around you that you can plug into.",
+          "faction_id": "current",
+          "weight": 2
+        },
+        {
+          "label": "B",
+          "text": "Alone. Minimal. No one interrupting your thinking.",
+          "faction_id": "hollow",
+          "weight": 2
+        },
+        {
+          "label": "C",
+          "text": "Quiet and organized. You know where everything is.",
+          "faction_id": "calm",
+          "weight": 2
+        },
+        {
+          "label": "D",
+          "text": "High stakes. Something that demands everything you've got.",
+          "faction_id": "static",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "q15_chasing",
+      "gate": 5,
+      "theme": "core emotional drive",
+      "tone": "social_quick",
+      "platforms": [
+        "instagram",
+        "tiktok",
+        "youtube_shorts"
+      ],
+      "question": "The feeling you're always chasing:",
+      "answers": [
+        {
+          "label": "A",
+          "text": "Stillness that isn't empty — when the quiet finally means something.",
+          "faction_id": "hollow",
+          "weight": 2
+        },
+        {
+          "label": "B",
+          "text": "The moment right after you've held on through something hard.",
+          "faction_id": "static",
+          "weight": 2
+        },
+        {
+          "label": "C",
+          "text": "Clarity. When you know what matters and nothing else is making noise.",
+          "faction_id": "calm",
+          "weight": 2
+        },
+        {
+          "label": "D",
+          "text": "Momentum. When things are moving and you're part of it.",
+          "faction_id": "current",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "q05_recovery",
+      "gate": 5,
+      "theme": "post-stress recovery preference",
+      "tone": "social_quick",
+      "platforms": [
+        "instagram",
+        "tiktok",
+        "youtube_shorts"
+      ],
+      "question": "After something hard, you come back by:",
+      "answers": [
+        {
+          "label": "A",
+          "text": "Returning to your routines. Structure is how you restore.",
+          "faction_id": "calm",
+          "weight": 2
+        },
+        {
+          "label": "B",
+          "text": "Getting back into motion. Inaction makes it worse.",
+          "faction_id": "current",
+          "weight": 2
+        },
+        {
+          "label": "C",
+          "text": "Waiting. You'll process when the pressure lifts.",
+          "faction_id": "static",
+          "weight": 2
+        },
+        {
+          "label": "D",
+          "text": "Going somewhere quiet where no one expects you to be okay yet.",
+          "faction_id": "hollow",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "q10_creating",
+      "gate": 5,
+      "theme": "creative process preference",
+      "tone": "social_quick",
+      "platforms": [
+        "instagram",
+        "tiktok",
+        "youtube_shorts"
+      ],
+      "question": "When you're creating something, you need:",
+      "answers": [
+        {
+          "label": "A",
+          "text": "Total isolation. Even ambient sound breaks the thread.",
+          "faction_id": "hollow",
+          "weight": 2
+        },
+        {
+          "label": "B",
+          "text": "Deadlines and pressure. You work best against resistance.",
+          "faction_id": "current",
+          "weight": 2
+        },
+        {
+          "label": "C",
+          "text": "A clear structure to work inside. Freedom within form.",
+          "faction_id": "calm",
+          "weight": 2
+        },
+        {
+          "label": "D",
+          "text": "The right conditions. If the environment is off, nothing comes out.",
+          "faction_id": "static",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+# configs/scoring_rules.yaml
+# Point values and tiebreaker logic for quiz scoring
+
+tiebreaker:
+  priority_order:
+    arousal_wins_first: true
+    valence_wins_second: true
+    final_fallback: "wandering"
+
+  faction_axes:
+    current:
+      valence: 1
+      arousal: 1
+    static:
+      valence: 0
+      arousal: 1
+    hollow:
+      valence: 0
+      arousal: 0
+    calm:
+      valence: 1
+      arousal: 0
+
+  tie_resolution_table:
+    current_vs_calm:    "current"
+    static_vs_hollow:   "static"
+    current_vs_static:  "current"
+    hollow_vs_calm:     "calm"
+    three_way_or_more:  "wandering"
+
+faction_points:
+  quiz_field_scan_complete: 5
+  quiz_faction_alignment_complete: 10
+  quiz_twelve_gates_complete: 20
+  territory_hunt_claimed: 8
+  faction_challenge_complete: 15
+  faction_challenge_win: 25
+  discord_daily_checkin: 2
+  recruit_new_member: 10
+
+wandering_unlock:
+  total_fp_required: 100
+  twelve_gates_required: true
+  territories_claimed_min: 3
+  factions_challenged_min: 2
+  announcement_template: >
+    "A signal has stabilized. **{username}** has entered The Wandering.
+    They have traveled through all four territories and returned changed."

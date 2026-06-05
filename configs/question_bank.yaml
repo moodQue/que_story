@@ -1,0 +1,266 @@
+# configs/question_bank.yaml
+# MoodQue Field Scan — behavioral preference question bank
+#
+# Design principle: "What would you choose?" not "What do you do when X?"
+# Perceived or aspirational preferences are valid mood signals.
+# A person's ideal morning reveals their VAC tendency whether they live it or not.
+#
+# Each answer maps to one quadrant:
+#   current  ⚡  Q1 — High Valence, High Arousal
+#   static   🌩️  Q2 — Low Valence,  High Arousal
+#   hollow   🌑  Q3 — Low Valence,  Low Arousal
+#   calm     🌿  Q4 — High Valence, Low Arousal
+#
+# Expand with: python scripts/generate_faction_questions.py --count 20
+
+version: "2026-06-05"
+
+questions:
+
+  # ── VARIANT A (questions 1–5) ─────────────────────────────────────────────
+
+  - id: "q01_morning_start"
+    gate: 1
+    theme: "morning energy preference"
+    tone: "social_quick"
+    platforms: ["instagram", "tiktok", "youtube_shorts"]
+    question: "Your ideal way to start the morning:"
+    answers:
+      - {label: "A", text: "Intense workout or run before anything else.", faction_id: "current", weight: 2}
+      - {label: "B", text: "Scroll through everything you missed overnight.", faction_id: "static", weight: 2}
+      - {label: "C", text: "Lie in bed until your body decides you're done.", faction_id: "hollow", weight: 2}
+      - {label: "D", text: "One quiet ritual — coffee, journal, something that's just yours.", faction_id: "calm", weight: 2}
+
+  - id: "q02_free_weekend"
+    gate: 2
+    theme: "leisure preference"
+    tone: "social_quick"
+    platforms: ["instagram", "tiktok", "youtube_shorts"]
+    question: "A free weekend with no obligations:"
+    answers:
+      - {label: "A", text: "Fill it. Plans, people, movement.", faction_id: "current", weight: 2}
+      - {label: "B", text: "Feel the weight of everything you haven't dealt with yet.", faction_id: "static", weight: 2}
+      - {label: "C", text: "Close the curtains and disappear into yourself.", faction_id: "hollow", weight: 2}
+      - {label: "D", text: "Light structure. One thing to look forward to, the rest left open.", faction_id: "calm", weight: 2}
+
+  - id: "q03_shift_playlist"
+    gate: 3
+    theme: "music as mood tool"
+    tone: "social_quick"
+    platforms: ["instagram", "tiktok", "youtube_shorts"]
+    question: "The playlist you reach for when you need to shift your state:"
+    answers:
+      - {label: "A", text: "Something fast and forward — you need momentum.", faction_id: "current", weight: 2}
+      - {label: "B", text: "Something that matches the tension, not fights it.", faction_id: "static", weight: 2}
+      - {label: "C", text: "Something slow and dark that goes quiet with you.", faction_id: "hollow", weight: 2}
+      - {label: "D", text: "Something clean and minimal that brings you back to center.", faction_id: "calm", weight: 2}
+
+  - id: "q04_good_day"
+    gate: 4
+    theme: "definition of a good day"
+    tone: "social_quick"
+    platforms: ["instagram", "tiktok", "youtube_shorts"]
+    question: "What a good day actually feels like:"
+    answers:
+      - {label: "A", text: "You moved through a lot. Things happened. You were in it.", faction_id: "current", weight: 2}
+      - {label: "B", text: "You held it together under pressure. That counts.", faction_id: "static", weight: 2}
+      - {label: "C", text: "Nobody needed anything from you. That's the whole thing.", faction_id: "hollow", weight: 2}
+      - {label: "D", text: "You did exactly what mattered. Nothing more.", faction_id: "calm", weight: 2}
+
+  - id: "q05_recovery"
+    gate: 5
+    theme: "post-stress recovery preference"
+    tone: "social_quick"
+    platforms: ["instagram", "tiktok", "youtube_shorts"]
+    question: "After something hard, you come back by:"
+    answers:
+      - {label: "A", text: "Getting back into motion. Inaction makes it worse.", faction_id: "current", weight: 2}
+      - {label: "B", text: "Waiting. You'll process when the pressure lifts.", faction_id: "static", weight: 2}
+      - {label: "C", text: "Going somewhere quiet where no one expects you to be okay yet.", faction_id: "hollow", weight: 2}
+      - {label: "D", text: "Returning to your routines. Structure is how you restore.", faction_id: "calm", weight: 2}
+
+  # ── VARIANT B (questions 6–10) ────────────────────────────────────────────
+
+  - id: "q06_work_environment"
+    gate: 1
+    theme: "ideal work environment"
+    tone: "social_quick"
+    platforms: ["instagram", "tiktok", "youtube_shorts"]
+    question: "Your ideal work environment:"
+    answers:
+      - {label: "A", text: "Busy. Noise. Energy around you that you can plug into.", faction_id: "current", weight: 2}
+      - {label: "B", text: "High stakes. Something that demands everything you've got.", faction_id: "static", weight: 2}
+      - {label: "C", text: "Alone. Minimal. No one interrupting your thinking.", faction_id: "hollow", weight: 2}
+      - {label: "D", text: "Quiet and organized. You know where everything is.", faction_id: "calm", weight: 2}
+
+  - id: "q07_recharge"
+    gate: 2
+    theme: "recharge method"
+    tone: "social_quick"
+    platforms: ["instagram", "tiktok", "youtube_shorts"]
+    question: "When you need to recharge, you:"
+    answers:
+      - {label: "A", text: "Do something physical. Your body knows before your mind does.", faction_id: "current", weight: 2}
+      - {label: "B", text: "Sit with it. Don't try to fix the feeling yet.", faction_id: "static", weight: 2}
+      - {label: "C", text: "Disappear. No calls, no plans, no explaining yourself.", faction_id: "hollow", weight: 2}
+      - {label: "D", text: "Sleep, or a long walk. Something that asks nothing of you.", faction_id: "calm", weight: 2}
+
+  - id: "q08_look_forward_to"
+    gate: 3
+    theme: "daily peak moment"
+    tone: "social_quick"
+    platforms: ["instagram", "tiktok", "youtube_shorts"]
+    question: "The part of the day you actually look forward to:"
+    answers:
+      - {label: "A", text: "Mornings. Before anyone else is up. Momentum starts there.", faction_id: "current", weight: 2}
+      - {label: "B", text: "Late night. When the pressure drops and you can finally think.", faction_id: "static", weight: 2}
+      - {label: "C", text: "Whenever everyone leaves and the house goes quiet.", faction_id: "hollow", weight: 2}
+      - {label: "D", text: "The hour before bed. Everything done. Nothing left to do.", faction_id: "calm", weight: 2}
+
+  - id: "q09_vacation"
+    gate: 4
+    theme: "ideal vacation style"
+    tone: "social_quick"
+    platforms: ["instagram", "tiktok", "youtube_shorts"]
+    question: "Your version of a perfect trip:"
+    answers:
+      - {label: "A", text: "Move every two days. New places, full schedule.", faction_id: "current", weight: 2}
+      - {label: "B", text: "A city that demands your attention. Stakes and all.", faction_id: "static", weight: 2}
+      - {label: "C", text: "Somewhere remote. No itinerary. Just disappear.", faction_id: "hollow", weight: 2}
+      - {label: "D", text: "One place, completely unhurried. You want to know it slowly.", faction_id: "calm", weight: 2}
+
+  - id: "q10_creating"
+    gate: 5
+    theme: "creative process preference"
+    tone: "social_quick"
+    platforms: ["instagram", "tiktok", "youtube_shorts"]
+    question: "When you're creating something, you need:"
+    answers:
+      - {label: "A", text: "Deadlines and pressure. You work best against resistance.", faction_id: "current", weight: 2}
+      - {label: "B", text: "The right conditions. If the environment is off, nothing comes out.", faction_id: "static", weight: 2}
+      - {label: "C", text: "Total isolation. Even ambient sound breaks the thread.", faction_id: "hollow", weight: 2}
+      - {label: "D", text: "A clear structure to work inside. Freedom within form.", faction_id: "calm", weight: 2}
+
+  # ── VARIANT C (questions 11–15) ───────────────────────────────────────────
+
+  - id: "q11_alone_music"
+    gate: 1
+    theme: "ambient music preference"
+    tone: "social_quick"
+    platforms: ["instagram", "tiktok", "youtube_shorts"]
+    question: "The music you listen to when you're alone with no agenda:"
+    answers:
+      - {label: "A", text: "Something alive. You want the energy of someone making something.", faction_id: "current", weight: 2}
+      - {label: "B", text: "Something heavy and honest. You want it to say the thing.", faction_id: "static", weight: 2}
+      - {label: "C", text: "Ambient. Slow. Something that doesn't ask you to feel anything specific.", faction_id: "hollow", weight: 2}
+      - {label: "D", text: "Something warm and familiar. Music that feels like it's yours.", faction_id: "calm", weight: 2}
+
+  - id: "q12_after_social"
+    gate: 2
+    theme: "social energy management"
+    tone: "social_quick"
+    platforms: ["instagram", "tiktok", "youtube_shorts"]
+    question: "What you actually need after a long social day:"
+    answers:
+      - {label: "A", text: "More people. You get energy from being around others.", faction_id: "current", weight: 2}
+      - {label: "B", text: "Time to decompress the pressure. It builds even with people you like.", faction_id: "static", weight: 2}
+      - {label: "C", text: "Complete quiet. You need to remember who you are without an audience.", faction_id: "hollow", weight: 2}
+      - {label: "D", text: "Something low-key with one person you don't have to perform for.", faction_id: "calm", weight: 2}
+
+  - id: "q13_feel_like_yourself"
+    gate: 3
+    theme: "authentic state"
+    tone: "social_quick"
+    platforms: ["instagram", "tiktok", "youtube_shorts"]
+    question: "The thing that makes you feel most like yourself:"
+    answers:
+      - {label: "A", text: "Building something that's working and you can feel it working.", faction_id: "current", weight: 2}
+      - {label: "B", text: "Getting through something difficult and still standing at the end.", faction_id: "static", weight: 2}
+      - {label: "C", text: "Being alone and not performing anything for anyone.", faction_id: "hollow", weight: 2}
+      - {label: "D", text: "Knowing what you're doing and why. That clarity.", faction_id: "calm", weight: 2}
+
+  - id: "q14_rest"
+    gate: 4
+    theme: "rest style"
+    tone: "social_quick"
+    platforms: ["instagram", "tiktok", "youtube_shorts"]
+    question: "Your version of actual rest:"
+    answers:
+      - {label: "A", text: "Something active — a hike, a game. Rest isn't passive for you.", faction_id: "current", weight: 2}
+      - {label: "B", text: "Holding still. Not trying to fix the feeling. Just letting it be.", faction_id: "static", weight: 2}
+      - {label: "C", text: "Not existing for a few hours. No output. No input.", faction_id: "hollow", weight: 2}
+      - {label: "D", text: "Reading, or something small that asks nothing of you.", faction_id: "calm", weight: 2}
+
+  - id: "q15_chasing"
+    gate: 5
+    theme: "core emotional drive"
+    tone: "social_quick"
+    platforms: ["instagram", "tiktok", "youtube_shorts"]
+    question: "The feeling you're always chasing:"
+    answers:
+      - {label: "A", text: "Momentum. When things are moving and you're part of it.", faction_id: "current", weight: 2}
+      - {label: "B", text: "The moment right after you've held on through something hard.", faction_id: "static", weight: 2}
+      - {label: "C", text: "Stillness that isn't empty — when the quiet finally means something.", faction_id: "hollow", weight: 2}
+      - {label: "D", text: "Clarity. When you know what matters and nothing else is making noise.", faction_id: "calm", weight: 2}
+
+  # ── VARIANT D (questions 16–20) ───────────────────────────────────────────
+
+  - id: "q16_too_loud"
+    gate: 1
+    theme: "response to overstimulation"
+    tone: "social_quick"
+    platforms: ["instagram", "tiktok", "youtube_shorts"]
+    question: "When the environment is too loud or too much:"
+    answers:
+      - {label: "A", text: "You raise your own signal to match it. You don't retreat.", faction_id: "current", weight: 2}
+      - {label: "B", text: "You feel it accumulate. Eventually something has to give.", faction_id: "static", weight: 2}
+      - {label: "C", text: "You leave. Or you go quiet inside it and wait it out.", faction_id: "hollow", weight: 2}
+      - {label: "D", text: "You find the quietest corner and build your own zone.", faction_id: "calm", weight: 2}
+
+  - id: "q17_tuesday_morning"
+    gate: 2
+    theme: "typical day energy"
+    tone: "social_quick"
+    platforms: ["instagram", "tiktok", "youtube_shorts"]
+    question: "Your version of a regular Tuesday morning:"
+    answers:
+      - {label: "A", text: "Three steps into the day before most people are awake.", faction_id: "current", weight: 2}
+      - {label: "B", text: "Already carrying something. The day starts with weight.", faction_id: "static", weight: 2}
+      - {label: "C", text: "Slow. The world can wait until you're ready for it.", faction_id: "hollow", weight: 2}
+      - {label: "D", text: "You have a rhythm. You follow it. It works.", faction_id: "calm", weight: 2}
+
+  - id: "q18_new_song"
+    gate: 3
+    theme: "music discovery instinct"
+    tone: "social_quick"
+    platforms: ["instagram", "tiktok", "youtube_shorts"]
+    question: "What pulls you toward a song you've never heard:"
+    answers:
+      - {label: "A", text: "The energy. If it's alive, you'll follow it.", faction_id: "current", weight: 2}
+      - {label: "B", text: "The tension. You want something that knows something is wrong.", faction_id: "static", weight: 2}
+      - {label: "C", text: "The atmosphere. If it sounds like a place, you want to be there.", faction_id: "hollow", weight: 2}
+      - {label: "D", text: "The craft. Clean production, clear intention. You hear it immediately.", faction_id: "calm", weight: 2}
+
+  - id: "q19_long_decision"
+    gate: 4
+    theme: "decision-making style"
+    tone: "social_quick"
+    platforms: ["instagram", "tiktok", "youtube_shorts"]
+    question: "A decision that's been sitting too long:"
+    answers:
+      - {label: "A", text: "Just decide. You can correct later. Waiting is the problem.", faction_id: "current", weight: 2}
+      - {label: "B", text: "Keep turning it over. You'll know when you know.", faction_id: "static", weight: 2}
+      - {label: "C", text: "Let it sit until it decides itself. You trust that.", faction_id: "hollow", weight: 2}
+      - {label: "D", text: "Find the one thing that matters most and let that be the answer.", faction_id: "calm", weight: 2}
+
+  - id: "q20_conflict"
+    gate: 5
+    theme: "conflict response"
+    tone: "social_quick"
+    platforms: ["instagram", "tiktok", "youtube_shorts"]
+    question: "When there's unresolved tension between you and someone else:"
+    answers:
+      - {label: "A", text: "Address it now. You'd rather have the conversation than carry it.", faction_id: "current", weight: 2}
+      - {label: "B", text: "Feel everything first. Say something when you're sure what it is.", faction_id: "static", weight: 2}
+      - {label: "C", text: "Go quiet. Most things aren't worth the energy.", faction_id: "hollow", weight: 2}
+      - {label: "D", text: "Wait for the right moment. You're usually the one who resolves it.", faction_id: "calm", weight: 2}

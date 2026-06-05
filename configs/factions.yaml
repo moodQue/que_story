@@ -1,0 +1,97 @@
+# configs/factions.yaml
+# MoodQue faction definitions — single source of truth for all quiz scripts
+# Maps directly to the VAC quadrant system in the MIS
+# LOCKED: do not rename faction IDs or change quadrant assignments
+
+factions:
+
+  current:
+    id: "current"
+    name: "The Current"
+    quadrant: "Q1"
+    valence: "high"
+    arousal: "high"
+    color: "#14E6F3"
+    emoji: "⚡"
+    signal: "movement, momentum, action, collective energy"
+    motto: "Forward is enough."
+    discord_role: "The Current"
+    discord_role_id: "1512356286337908817"
+    description: >
+      You move before you think. The energy is already running through you.
+      The Current is not a place — it is a force in motion.
+    challenge_archetype: "speed, coordination, first response"
+
+  static:
+    id: "static"
+    name: "The Static"
+    quadrant: "Q2"
+    valence: "low"
+    arousal: "high"
+    color: "#A553A5"
+    emoji: "🌩️"
+    signal: "tension, charged waiting, friction, pressure"
+    motto: "Strength under weight."
+    discord_role: "The Static"
+    discord_role_id: "1512357300260700240"
+    description: >
+      You carry something that has not broken yet. The charge is real.
+      The Static does not apologize for the weight it holds.
+    challenge_archetype: "endurance, holding position, pressure resistance"
+
+  hollow:
+    id: "hollow"
+    name: "The Hollow"
+    quadrant: "Q3"
+    valence: "low"
+    arousal: "low"
+    color: "#7D619E"
+    emoji: "🌑"
+    signal: "void, grief, weight, stillness without peace"
+    motto: "Some things end without a sound."
+    discord_role: "The Hollow"
+    discord_role_id: "1512357520901935275"
+    description: >
+      You have been somewhere quiet and not entirely by choice.
+      The Hollow does not ask you to explain.
+    challenge_archetype: "observation, patience, hidden knowledge"
+
+  calm:
+    id: "calm"
+    name: "The Calm"
+    quadrant: "Q4"
+    valence: "high"
+    arousal: "low"
+    color: "#ECA35E"
+    emoji: "🌿"
+    signal: "clarity, focus, ease, quiet confidence"
+    motto: "Stillness is not absence."
+    discord_role: "The Calm"
+    discord_role_id: "1512357694848241756"
+    description: >
+      You found the frequency. Not everyone can hear it.
+      The Calm rewards those who slow down enough to look.
+    challenge_archetype: "precision, sustained focus, pattern recognition"
+
+  wandering:
+    id: "wandering"
+    name: "The Wandering"
+    quadrant: "CENTER"
+    valence: "neutral"
+    arousal: "neutral"
+    color: "#282828"
+    emoji: "🌀"
+    signal: "ambiguity, liminality, mastery, nostalgia"
+    motto: "Between is also a place."
+    discord_role: "The Wandering"
+    discord_role_id: ""
+    earned_only: true
+    description: >
+      You cannot be assigned here. You arrive by traveling everywhere else first.
+      The Wandering recognizes those who have moved through all four territories
+      and returned changed.
+    unlock_requirements:
+      twelve_gates_completed: true
+      territory_hunts_claimed: 3
+      faction_challenges_completed_across: 2
+      total_faction_points: 100

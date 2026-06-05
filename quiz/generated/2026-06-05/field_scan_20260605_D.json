@@ -1,0 +1,205 @@
+{
+  "variant_id": "field_scan_20260605_D",
+  "tier": "field_scan",
+  "campaign_id": "field_scan_20260605",
+  "created_at": "2026-06-05T07:41:48.886361",
+  "question_count": 5,
+  "cta": "Comment your faction. Finish the full scan in Discord.",
+  "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts"
+  ],
+  "questions": [
+    {
+      "id": "q17_tuesday_morning",
+      "gate": 2,
+      "theme": "typical day energy",
+      "tone": "social_quick",
+      "platforms": [
+        "instagram",
+        "tiktok",
+        "youtube_shorts"
+      ],
+      "question": "Your version of a regular Tuesday morning:",
+      "answers": [
+        {
+          "label": "A",
+          "text": "Three steps into the day before most people are awake.",
+          "faction_id": "current",
+          "weight": 2
+        },
+        {
+          "label": "B",
+          "text": "Slow. The world can wait until you're ready for it.",
+          "faction_id": "hollow",
+          "weight": 2
+        },
+        {
+          "label": "C",
+          "text": "You have a rhythm. You follow it. It works.",
+          "faction_id": "calm",
+          "weight": 2
+        },
+        {
+          "label": "D",
+          "text": "Already carrying something. The day starts with weight.",
+          "faction_id": "static",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "q08_look_forward_to",
+      "gate": 3,
+      "theme": "daily peak moment",
+      "tone": "social_quick",
+      "platforms": [
+        "instagram",
+        "tiktok",
+        "youtube_shorts"
+      ],
+      "question": "The part of the day you actually look forward to:",
+      "answers": [
+        {
+          "label": "A",
+          "text": "Mornings. Before anyone else is up. Momentum starts there.",
+          "faction_id": "current",
+          "weight": 2
+        },
+        {
+          "label": "B",
+          "text": "The hour before bed. Everything done. Nothing left to do.",
+          "faction_id": "calm",
+          "weight": 2
+        },
+        {
+          "label": "C",
+          "text": "Whenever everyone leaves and the house goes quiet.",
+          "faction_id": "hollow",
+          "weight": 2
+        },
+        {
+          "label": "D",
+          "text": "Late night. When the pressure drops and you can finally think.",
+          "faction_id": "static",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "q09_vacation",
+      "gate": 4,
+      "theme": "ideal vacation style",
+      "tone": "social_quick",
+      "platforms": [
+        "instagram",
+        "tiktok",
+        "youtube_shorts"
+      ],
+      "question": "Your version of a perfect trip:",
+      "answers": [
+        {
+          "label": "A",
+          "text": "A city that demands your attention. Stakes and all.",
+          "faction_id": "static",
+          "weight": 2
+        },
+        {
+          "label": "B",
+          "text": "One place, completely unhurried. You want to know it slowly.",
+          "faction_id": "calm",
+          "weight": 2
+        },
+        {
+          "label": "C",
+          "text": "Somewhere remote. No itinerary. Just disappear.",
+          "faction_id": "hollow",
+          "weight": 2
+        },
+        {
+          "label": "D",
+          "text": "Move every two days. New places, full schedule.",
+          "faction_id": "current",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "q01_morning_start",
+      "gate": 1,
+      "theme": "morning energy preference",
+      "tone": "social_quick",
+      "platforms": [
+        "instagram",
+        "tiktok",
+        "youtube_shorts"
+      ],
+      "question": "Your ideal way to start the morning:",
+      "answers": [
+        {
+          "label": "A",
+          "text": "Lie in bed until your body decides you're done.",
+          "faction_id": "hollow",
+          "weight": 2
+        },
+        {
+          "label": "B",
+          "text": "One quiet ritual — coffee, journal, something that's just yours.",
+          "faction_id": "calm",
+          "weight": 2
+        },
+        {
+          "label": "C",
+          "text": "Intense workout or run before anything else.",
+          "faction_id": "current",
+          "weight": 2
+        },
+        {
+          "label": "D",
+          "text": "Scroll through everything you missed overnight.",
+          "faction_id": "static",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "q04_good_day",
+      "gate": 4,
+      "theme": "definition of a good day",
+      "tone": "social_quick",
+      "platforms": [
+        "instagram",
+        "tiktok",
+        "youtube_shorts"
+      ],
+      "question": "What a good day actually feels like:",
+      "answers": [
+        {
+          "label": "A",
+          "text": "Nobody needed anything from you. That's the whole thing.",
+          "faction_id": "hollow",
+          "weight": 2
+        },
+        {
+          "label": "B",
+          "text": "You moved through a lot. Things happened. You were in it.",
+          "faction_id": "current",
+          "weight": 2
+        },
+        {
+          "label": "C",
+          "text": "You held it together under pressure. That counts.",
+          "faction_id": "static",
+          "weight": 2
+        },
+        {
+          "label": "D",
+          "text": "You did exactly what mattered. Nothing more.",
+          "faction_id": "calm",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

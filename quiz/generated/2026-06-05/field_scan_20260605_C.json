@@ -1,0 +1,205 @@
+{
+  "variant_id": "field_scan_20260605_C",
+  "tier": "field_scan",
+  "campaign_id": "field_scan_20260605",
+  "created_at": "2026-06-05T07:41:48.885655",
+  "question_count": 5,
+  "cta": "Comment your faction. Finish the full scan in Discord.",
+  "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts"
+  ],
+  "questions": [
+    {
+      "id": "q18_new_song",
+      "gate": 3,
+      "theme": "music discovery instinct",
+      "tone": "social_quick",
+      "platforms": [
+        "instagram",
+        "tiktok",
+        "youtube_shorts"
+      ],
+      "question": "What pulls you toward a song you've never heard:",
+      "answers": [
+        {
+          "label": "A",
+          "text": "The craft. Clean production, clear intention. You hear it immediately.",
+          "faction_id": "calm",
+          "weight": 2
+        },
+        {
+          "label": "B",
+          "text": "The energy. If it's alive, you'll follow it.",
+          "faction_id": "current",
+          "weight": 2
+        },
+        {
+          "label": "C",
+          "text": "The atmosphere. If it sounds like a place, you want to be there.",
+          "faction_id": "hollow",
+          "weight": 2
+        },
+        {
+          "label": "D",
+          "text": "The tension. You want something that knows something is wrong.",
+          "faction_id": "static",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "q11_alone_music",
+      "gate": 1,
+      "theme": "ambient music preference",
+      "tone": "social_quick",
+      "platforms": [
+        "instagram",
+        "tiktok",
+        "youtube_shorts"
+      ],
+      "question": "The music you listen to when you're alone with no agenda:",
+      "answers": [
+        {
+          "label": "A",
+          "text": "Something heavy and honest. You want it to say the thing.",
+          "faction_id": "static",
+          "weight": 2
+        },
+        {
+          "label": "B",
+          "text": "Something warm and familiar. Music that feels like it's yours.",
+          "faction_id": "calm",
+          "weight": 2
+        },
+        {
+          "label": "C",
+          "text": "Ambient. Slow. Something that doesn't ask you to feel anything specific.",
+          "faction_id": "hollow",
+          "weight": 2
+        },
+        {
+          "label": "D",
+          "text": "Something alive. You want the energy of someone making something.",
+          "faction_id": "current",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "q02_free_weekend",
+      "gate": 2,
+      "theme": "leisure preference",
+      "tone": "social_quick",
+      "platforms": [
+        "instagram",
+        "tiktok",
+        "youtube_shorts"
+      ],
+      "question": "A free weekend with no obligations:",
+      "answers": [
+        {
+          "label": "A",
+          "text": "Feel the weight of everything you haven't dealt with yet.",
+          "faction_id": "static",
+          "weight": 2
+        },
+        {
+          "label": "B",
+          "text": "Light structure. One thing to look forward to, the rest left open.",
+          "faction_id": "calm",
+          "weight": 2
+        },
+        {
+          "label": "C",
+          "text": "Fill it. Plans, people, movement.",
+          "faction_id": "current",
+          "weight": 2
+        },
+        {
+          "label": "D",
+          "text": "Close the curtains and disappear into yourself.",
+          "faction_id": "hollow",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "q12_after_social",
+      "gate": 2,
+      "theme": "social energy management",
+      "tone": "social_quick",
+      "platforms": [
+        "instagram",
+        "tiktok",
+        "youtube_shorts"
+      ],
+      "question": "What you actually need after a long social day:",
+      "answers": [
+        {
+          "label": "A",
+          "text": "Something low-key with one person you don't have to perform for.",
+          "faction_id": "calm",
+          "weight": 2
+        },
+        {
+          "label": "B",
+          "text": "Complete quiet. You need to remember who you are without an audience.",
+          "faction_id": "hollow",
+          "weight": 2
+        },
+        {
+          "label": "C",
+          "text": "Time to decompress the pressure. It builds even with people you like.",
+          "faction_id": "static",
+          "weight": 2
+        },
+        {
+          "label": "D",
+          "text": "More people. You get energy from being around others.",
+          "faction_id": "current",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "q03_shift_playlist",
+      "gate": 3,
+      "theme": "music as mood tool",
+      "tone": "social_quick",
+      "platforms": [
+        "instagram",
+        "tiktok",
+        "youtube_shorts"
+      ],
+      "question": "The playlist you reach for when you need to shift your state:",
+      "answers": [
+        {
+          "label": "A",
+          "text": "Something fast and forward — you need momentum.",
+          "faction_id": "current",
+          "weight": 2
+        },
+        {
+          "label": "B",
+          "text": "Something that matches the tension, not fights it.",
+          "faction_id": "static",
+          "weight": 2
+        },
+        {
+          "label": "C",
+          "text": "Something slow and dark that goes quiet with you.",
+          "faction_id": "hollow",
+          "weight": 2
+        },
+        {
+          "label": "D",
+          "text": "Something clean and minimal that brings you back to center.",
+          "faction_id": "calm",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

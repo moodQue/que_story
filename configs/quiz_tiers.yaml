@@ -1,0 +1,44 @@
+# configs/quiz_tiers.yaml
+# Rules for each quiz tier
+
+tiers:
+  field_scan:
+    id: "field_scan"
+    name: "The Field Scan"
+    question_count: 5
+    tone: "social_quick"
+    max_words_per_question: 18
+    answer_count: 4
+    platforms: ["instagram", "tiktok", "youtube_shorts"]
+    goal: "faction curiosity, comments, Discord funneling"
+    cta: "Comment your faction. Finish the full scan in Discord."
+    result_depth: "primary_faction_only"
+    faction_points_awarded: 5
+    retarget: true
+
+  faction_alignment:
+    id: "faction_alignment"
+    name: "The Faction Alignment"
+    question_count: 8
+    tone: "direct_mystery"
+    answer_count: 4
+    platforms: ["discord", "retarget_email"]
+    goal: "accurate faction assignment, Discord role claim"
+    cta: "Your faction has been assigned. Claim your Discord role."
+    result_depth: "primary_and_secondary"
+    faction_points_awarded: 10
+    retarget: false
+
+  twelve_gates:
+    id: "twelve_gates"
+    name: "The Twelve Gates"
+    question_count: 12
+    tone: "deep_lore"
+    answer_count: 4
+    platforms: ["discord_lore", "facebook", "website"]
+    goal: "emotional investment, territory-level faction identity"
+    cta: "Your gate has opened. Enter the Hunt."
+    result_depth: "faction_and_territory"
+    faction_points_awarded: 20
+    required_for_wandering: true
+    retarget: false

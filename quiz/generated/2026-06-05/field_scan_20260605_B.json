@@ -1,0 +1,205 @@
+{
+  "variant_id": "field_scan_20260605_B",
+  "tier": "field_scan",
+  "campaign_id": "field_scan_20260605",
+  "created_at": "2026-06-05T07:41:48.884993",
+  "question_count": 5,
+  "cta": "Comment your faction. Finish the full scan in Discord.",
+  "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts"
+  ],
+  "questions": [
+    {
+      "id": "q14_rest",
+      "gate": 4,
+      "theme": "rest style",
+      "tone": "social_quick",
+      "platforms": [
+        "instagram",
+        "tiktok",
+        "youtube_shorts"
+      ],
+      "question": "Your version of actual rest:",
+      "answers": [
+        {
+          "label": "A",
+          "text": "Not existing for a few hours. No output. No input.",
+          "faction_id": "hollow",
+          "weight": 2
+        },
+        {
+          "label": "B",
+          "text": "Reading, or something small that asks nothing of you.",
+          "faction_id": "calm",
+          "weight": 2
+        },
+        {
+          "label": "C",
+          "text": "Holding still. Not trying to fix the feeling. Just letting it be.",
+          "faction_id": "static",
+          "weight": 2
+        },
+        {
+          "label": "D",
+          "text": "Something active — a hike, a game. Rest isn't passive for you.",
+          "faction_id": "current",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "q16_too_loud",
+      "gate": 1,
+      "theme": "response to overstimulation",
+      "tone": "social_quick",
+      "platforms": [
+        "instagram",
+        "tiktok",
+        "youtube_shorts"
+      ],
+      "question": "When the environment is too loud or too much:",
+      "answers": [
+        {
+          "label": "A",
+          "text": "You raise your own signal to match it. You don't retreat.",
+          "faction_id": "current",
+          "weight": 2
+        },
+        {
+          "label": "B",
+          "text": "You find the quietest corner and build your own zone.",
+          "faction_id": "calm",
+          "weight": 2
+        },
+        {
+          "label": "C",
+          "text": "You feel it accumulate. Eventually something has to give.",
+          "faction_id": "static",
+          "weight": 2
+        },
+        {
+          "label": "D",
+          "text": "You leave. Or you go quiet inside it and wait it out.",
+          "faction_id": "hollow",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "q19_long_decision",
+      "gate": 4,
+      "theme": "decision-making style",
+      "tone": "social_quick",
+      "platforms": [
+        "instagram",
+        "tiktok",
+        "youtube_shorts"
+      ],
+      "question": "A decision that's been sitting too long:",
+      "answers": [
+        {
+          "label": "A",
+          "text": "Find the one thing that matters most and let that be the answer.",
+          "faction_id": "calm",
+          "weight": 2
+        },
+        {
+          "label": "B",
+          "text": "Keep turning it over. You'll know when you know.",
+          "faction_id": "static",
+          "weight": 2
+        },
+        {
+          "label": "C",
+          "text": "Let it sit until it decides itself. You trust that.",
+          "faction_id": "hollow",
+          "weight": 2
+        },
+        {
+          "label": "D",
+          "text": "Just decide. You can correct later. Waiting is the problem.",
+          "faction_id": "current",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "q07_recharge",
+      "gate": 2,
+      "theme": "recharge method",
+      "tone": "social_quick",
+      "platforms": [
+        "instagram",
+        "tiktok",
+        "youtube_shorts"
+      ],
+      "question": "When you need to recharge, you:",
+      "answers": [
+        {
+          "label": "A",
+          "text": "Disappear. No calls, no plans, no explaining yourself.",
+          "faction_id": "hollow",
+          "weight": 2
+        },
+        {
+          "label": "B",
+          "text": "Sleep, or a long walk. Something that asks nothing of you.",
+          "faction_id": "calm",
+          "weight": 2
+        },
+        {
+          "label": "C",
+          "text": "Sit with it. Don't try to fix the feeling yet.",
+          "faction_id": "static",
+          "weight": 2
+        },
+        {
+          "label": "D",
+          "text": "Do something physical. Your body knows before your mind does.",
+          "faction_id": "current",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": "q13_feel_like_yourself",
+      "gate": 3,
+      "theme": "authentic state",
+      "tone": "social_quick",
+      "platforms": [
+        "instagram",
+        "tiktok",
+        "youtube_shorts"
+      ],
+      "question": "The thing that makes you feel most like yourself:",
+      "answers": [
+        {
+          "label": "A",
+          "text": "Building something that's working and you can feel it working.",
+          "faction_id": "current",
+          "weight": 2
+        },
+        {
+          "label": "B",
+          "text": "Getting through something difficult and still standing at the end.",
+          "faction_id": "static",
+          "weight": 2
+        },
+        {
+          "label": "C",
+          "text": "Knowing what you're doing and why. That clarity.",
+          "faction_id": "calm",
+          "weight": 2
+        },
+        {
+          "label": "D",
+          "text": "Being alone and not performing anything for anyone.",
+          "faction_id": "hollow",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}
