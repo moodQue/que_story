@@ -1,0 +1,55 @@
+{
+  "quiz_id": "field_scan_daily",
+  "quiz_version": "2026.06.22",
+  "quiz_type": "field_scan",
+  "date": "2026-06-22",
+  "territory": "The Wandering",
+  "quadrant": "The Wandering",
+  "lunar_phase": "",
+  "dominant_signal": "unknown",
+  "question_count": 1,
+  "variant": "C",
+  "result_mode": "temporary_reading",
+  "official_assignment": false,
+  "full_quiz_url": "https://moodque.github.io/que_story/territory-scan.html",
+  "cta": "Take the full 12-question Territory Scan to confirm your faction.",
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "If your inner state had weather today, what's the forecast?",
+      "options": [
+        {
+          "label": "Bright, open, moving",
+          "symbol": "🌕",
+          "score_key": "lit_realms",
+          "reading": "The Gathering"
+        },
+        {
+          "label": "Pressure building, no release",
+          "symbol": "⚡",
+          "score_key": "storm_lands",
+          "reading": "The Storm"
+        },
+        {
+          "label": "Low, grey, and slow",
+          "symbol": "🌧",
+          "score_key": "hollow_grounds",
+          "reading": "The Hollow"
+        },
+        {
+          "label": "Clear and still",
+          "symbol": "🌙",
+          "score_key": "still_places",
+          "reading": "The Ethereal"
+        }
+      ]
+    }
+  ],
+  "field_readings": {
+    "storm_lands": "Your Field Scan reads like Storm Lands energy today.",
+    "hollow_grounds": "Your Field Scan reads like Hollow Grounds energy today.",
+    "still_places": "Your Field Scan reads like Still Places energy today.",
+    "lit_realms": "Your Field Scan reads like Lit Realms energy today."
+  },
+  "disclaimer": "This is a daily scan, not your confirmed faction."
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MoodQue Territory Scan</title>
+  <link rel="stylesheet" href="css/territory-scan.css" />
+</head>
+<body>
+  <main class="scan-shell">
+    <section class="report" aria-labelledby="scan-title">
+      <header class="report-head">
+        <span>moodQue · FIELD CHECK</span>
+        <span id="scan-date">Loading</span>
+      </header>
+
+      <div class="hero-block">
+        <p class="kicker">Today's Question</p>
+        <h1 id="scan-title">Territory Scan</h1>
+        <p id="scan-prompt" class="prompt">Loading today's field scan...</p>
+      </div>
+
+      <div id="options" class="options" aria-live="polite"></div>
+
+      <section id="result" class="result" hidden>
+        <p class="kicker">Today's Field Reading</p>
+        <h2 id="result-title"></h2>
+        <p id="result-copy"></p>
+        <p id="result-context" class="muted"></p>
+      </section>
+
+      <footer class="report-foot">
+        <p id="scan-disclaimer">This is a daily scan, not your confirmed faction.</p>
+        <a id="full-scan-link" href="territory.html">Take the full Territory Scan</a>
+      </footer>
+    </section>
+  </main>
+
+  <script src="assets/territory-scan.js"></script>
+</body>
+</html>

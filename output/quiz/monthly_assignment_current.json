@@ -1,0 +1,2678 @@
+{
+  "quiz_id": "monthly_assignment",
+  "quiz_version": "2026.06",
+  "quiz_type": "monthly_assignment",
+  "source_month": "2026-06",
+  "question_count": 36,
+  "official_assignment": true,
+  "captures_personal_vac": true,
+  "capture_target": "firebase_realtime_db",
+  "firebase_path": "quiz_assignments/2026-06",
+  "discord_role_claim": "second_hop",
+  "questions": [
+    {
+      "id": "q01_calm_lofi_1",
+      "source_topic_id": "calm_lofi",
+      "category": "creation",
+      "centroid": "calm",
+      "topic_summary": "Lofi and ambient music kept showing up as a place people used to steady themselves.",
+      "prompt": "Lofi and ambient music kept showing up as a place people used to steady themselves. When this shows up in your feed, what is your honest first response?",
+      "options": [
+        {
+          "id": "current_1",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_calm",
+          "domains": [
+            "creation"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "calm_lofi"
+        },
+        {
+          "id": "static_1",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_calm",
+          "domains": [
+            "creation"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "calm_lofi"
+        },
+        {
+          "id": "hollow_1",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_calm",
+          "domains": [
+            "creation"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "calm_lofi"
+        },
+        {
+          "id": "calm_1",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_calm",
+          "domains": [
+            "creation"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "calm_lofi"
+        }
+      ]
+    },
+    {
+      "id": "q02_calm_lofi_2",
+      "source_topic_id": "calm_lofi",
+      "category": "creation",
+      "centroid": "calm",
+      "topic_summary": "Lofi and ambient music kept showing up as a place people used to steady themselves.",
+      "prompt": "Lofi and ambient music kept showing up as a place people used to steady themselves. If this became the mood of your day, how would you move with it?",
+      "options": [
+        {
+          "id": "current_2",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_calm",
+          "domains": [
+            "creation"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "calm_lofi"
+        },
+        {
+          "id": "static_2",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_calm",
+          "domains": [
+            "creation"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "calm_lofi"
+        },
+        {
+          "id": "hollow_2",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_calm",
+          "domains": [
+            "creation"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "calm_lofi"
+        },
+        {
+          "id": "calm_2",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_calm",
+          "domains": [
+            "creation"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "calm_lofi"
+        }
+      ]
+    },
+    {
+      "id": "q03_calm_lofi_3",
+      "source_topic_id": "calm_lofi",
+      "category": "creation",
+      "centroid": "calm",
+      "topic_summary": "Lofi and ambient music kept showing up as a place people used to steady themselves.",
+      "prompt": "Lofi and ambient music kept showing up as a place people used to steady themselves. What would you need from music after absorbing this kind of signal?",
+      "options": [
+        {
+          "id": "current_3",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_calm",
+          "domains": [
+            "creation"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "calm_lofi"
+        },
+        {
+          "id": "static_3",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_calm",
+          "domains": [
+            "creation"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "calm_lofi"
+        },
+        {
+          "id": "hollow_3",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_calm",
+          "domains": [
+            "creation"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "calm_lofi"
+        },
+        {
+          "id": "calm_3",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_calm",
+          "domains": [
+            "creation"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "calm_lofi"
+        }
+      ]
+    },
+    {
+      "id": "q04_focus_science_1",
+      "source_topic_id": "focus_science",
+      "category": "studies",
+      "centroid": "focus",
+      "topic_summary": "Science and long-form learning drew sustained attention.",
+      "prompt": "Science and long-form learning drew sustained attention. When this shows up in your feed, what is your honest first response?",
+      "options": [
+        {
+          "id": "current_4",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_focus",
+          "domains": [
+            "studies"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "focus_science"
+        },
+        {
+          "id": "static_4",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_focus",
+          "domains": [
+            "studies"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "focus_science"
+        },
+        {
+          "id": "hollow_4",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_focus",
+          "domains": [
+            "studies"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "focus_science"
+        },
+        {
+          "id": "calm_4",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_focus",
+          "domains": [
+            "studies"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "focus_science"
+        }
+      ]
+    },
+    {
+      "id": "q05_focus_science_2",
+      "source_topic_id": "focus_science",
+      "category": "studies",
+      "centroid": "focus",
+      "topic_summary": "Science and long-form learning drew sustained attention.",
+      "prompt": "Science and long-form learning drew sustained attention. If this became the mood of your day, how would you move with it?",
+      "options": [
+        {
+          "id": "current_5",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_focus",
+          "domains": [
+            "studies"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "focus_science"
+        },
+        {
+          "id": "static_5",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_focus",
+          "domains": [
+            "studies"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "focus_science"
+        },
+        {
+          "id": "hollow_5",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_focus",
+          "domains": [
+            "studies"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "focus_science"
+        },
+        {
+          "id": "calm_5",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_focus",
+          "domains": [
+            "studies"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "focus_science"
+        }
+      ]
+    },
+    {
+      "id": "q06_focus_science_3",
+      "source_topic_id": "focus_science",
+      "category": "studies",
+      "centroid": "focus",
+      "topic_summary": "Science and long-form learning drew sustained attention.",
+      "prompt": "Science and long-form learning drew sustained attention. What would you need from music after absorbing this kind of signal?",
+      "options": [
+        {
+          "id": "current_6",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_focus",
+          "domains": [
+            "studies"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "focus_science"
+        },
+        {
+          "id": "static_6",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_focus",
+          "domains": [
+            "studies"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "focus_science"
+        },
+        {
+          "id": "hollow_6",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_focus",
+          "domains": [
+            "studies"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "focus_science"
+        },
+        {
+          "id": "calm_6",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_focus",
+          "domains": [
+            "studies"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "focus_science"
+        }
+      ]
+    },
+    {
+      "id": "q07_sports_motion_1",
+      "source_topic_id": "sports_motion",
+      "category": "physical_activity",
+      "centroid": "intensity",
+      "topic_summary": "Sports highlights and movement-heavy content spiked engagement.",
+      "prompt": "Sports highlights and movement-heavy content spiked engagement. When this shows up in your feed, what is your honest first response?",
+      "options": [
+        {
+          "id": "current_7",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_current",
+          "domains": [
+            "physical_activity"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "sports_motion"
+        },
+        {
+          "id": "static_7",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_current",
+          "domains": [
+            "physical_activity"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "sports_motion"
+        },
+        {
+          "id": "hollow_7",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_current",
+          "domains": [
+            "physical_activity"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "sports_motion"
+        },
+        {
+          "id": "calm_7",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_current",
+          "domains": [
+            "physical_activity"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "sports_motion"
+        }
+      ]
+    },
+    {
+      "id": "q08_sports_motion_2",
+      "source_topic_id": "sports_motion",
+      "category": "physical_activity",
+      "centroid": "intensity",
+      "topic_summary": "Sports highlights and movement-heavy content spiked engagement.",
+      "prompt": "Sports highlights and movement-heavy content spiked engagement. If this became the mood of your day, how would you move with it?",
+      "options": [
+        {
+          "id": "current_8",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_current",
+          "domains": [
+            "physical_activity"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "sports_motion"
+        },
+        {
+          "id": "static_8",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_current",
+          "domains": [
+            "physical_activity"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "sports_motion"
+        },
+        {
+          "id": "hollow_8",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_current",
+          "domains": [
+            "physical_activity"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "sports_motion"
+        },
+        {
+          "id": "calm_8",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_current",
+          "domains": [
+            "physical_activity"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "sports_motion"
+        }
+      ]
+    },
+    {
+      "id": "q09_sports_motion_3",
+      "source_topic_id": "sports_motion",
+      "category": "physical_activity",
+      "centroid": "intensity",
+      "topic_summary": "Sports highlights and movement-heavy content spiked engagement.",
+      "prompt": "Sports highlights and movement-heavy content spiked engagement. What would you need from music after absorbing this kind of signal?",
+      "options": [
+        {
+          "id": "current_9",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_current",
+          "domains": [
+            "physical_activity"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "sports_motion"
+        },
+        {
+          "id": "static_9",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_current",
+          "domains": [
+            "physical_activity"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "sports_motion"
+        },
+        {
+          "id": "hollow_9",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_current",
+          "domains": [
+            "physical_activity"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "sports_motion"
+        },
+        {
+          "id": "calm_9",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_current",
+          "domains": [
+            "physical_activity"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "sports_motion"
+        }
+      ]
+    },
+    {
+      "id": "q10_market_pressure_1",
+      "source_topic_id": "market_pressure",
+      "category": "business",
+      "centroid": "tension",
+      "topic_summary": "Markets, work, and money pressure stayed visible across attention surfaces.",
+      "prompt": "Markets, work, and money pressure stayed visible across attention surfaces. When this shows up in your feed, what is your honest first response?",
+      "options": [
+        {
+          "id": "current_10",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_pressure",
+          "domains": [
+            "business"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "market_pressure"
+        },
+        {
+          "id": "static_10",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_pressure",
+          "domains": [
+            "business"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "market_pressure"
+        },
+        {
+          "id": "hollow_10",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_pressure",
+          "domains": [
+            "business"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "market_pressure"
+        },
+        {
+          "id": "calm_10",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_pressure",
+          "domains": [
+            "business"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "market_pressure"
+        }
+      ]
+    },
+    {
+      "id": "q11_market_pressure_2",
+      "source_topic_id": "market_pressure",
+      "category": "business",
+      "centroid": "tension",
+      "topic_summary": "Markets, work, and money pressure stayed visible across attention surfaces.",
+      "prompt": "Markets, work, and money pressure stayed visible across attention surfaces. If this became the mood of your day, how would you move with it?",
+      "options": [
+        {
+          "id": "current_11",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_pressure",
+          "domains": [
+            "business"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "market_pressure"
+        },
+        {
+          "id": "static_11",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_pressure",
+          "domains": [
+            "business"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "market_pressure"
+        },
+        {
+          "id": "hollow_11",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_pressure",
+          "domains": [
+            "business"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "market_pressure"
+        },
+        {
+          "id": "calm_11",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_pressure",
+          "domains": [
+            "business"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "market_pressure"
+        }
+      ]
+    },
+    {
+      "id": "q12_market_pressure_3",
+      "source_topic_id": "market_pressure",
+      "category": "business",
+      "centroid": "tension",
+      "topic_summary": "Markets, work, and money pressure stayed visible across attention surfaces.",
+      "prompt": "Markets, work, and money pressure stayed visible across attention surfaces. What would you need from music after absorbing this kind of signal?",
+      "options": [
+        {
+          "id": "current_12",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_pressure",
+          "domains": [
+            "business"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "market_pressure"
+        },
+        {
+          "id": "static_12",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_pressure",
+          "domains": [
+            "business"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "market_pressure"
+        },
+        {
+          "id": "hollow_12",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_pressure",
+          "domains": [
+            "business"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "market_pressure"
+        },
+        {
+          "id": "calm_12",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_pressure",
+          "domains": [
+            "business"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "market_pressure"
+        }
+      ]
+    },
+    {
+      "id": "q13_relationship_language_1",
+      "source_topic_id": "relationship_language",
+      "category": "communication",
+      "centroid": "social",
+      "topic_summary": "Relationship and communication advice pulled people into conversation.",
+      "prompt": "Relationship and communication advice pulled people into conversation. When this shows up in your feed, what is your honest first response?",
+      "options": [
+        {
+          "id": "current_13",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_gathering",
+          "domains": [
+            "communication"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "relationship_language"
+        },
+        {
+          "id": "static_13",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_gathering",
+          "domains": [
+            "communication"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "relationship_language"
+        },
+        {
+          "id": "hollow_13",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_gathering",
+          "domains": [
+            "communication"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "relationship_language"
+        },
+        {
+          "id": "calm_13",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_gathering",
+          "domains": [
+            "communication"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "relationship_language"
+        }
+      ]
+    },
+    {
+      "id": "q14_relationship_language_2",
+      "source_topic_id": "relationship_language",
+      "category": "communication",
+      "centroid": "social",
+      "topic_summary": "Relationship and communication advice pulled people into conversation.",
+      "prompt": "Relationship and communication advice pulled people into conversation. If this became the mood of your day, how would you move with it?",
+      "options": [
+        {
+          "id": "current_14",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_gathering",
+          "domains": [
+            "communication"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "relationship_language"
+        },
+        {
+          "id": "static_14",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_gathering",
+          "domains": [
+            "communication"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "relationship_language"
+        },
+        {
+          "id": "hollow_14",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_gathering",
+          "domains": [
+            "communication"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "relationship_language"
+        },
+        {
+          "id": "calm_14",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_gathering",
+          "domains": [
+            "communication"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "relationship_language"
+        }
+      ]
+    },
+    {
+      "id": "q15_relationship_language_3",
+      "source_topic_id": "relationship_language",
+      "category": "communication",
+      "centroid": "social",
+      "topic_summary": "Relationship and communication advice pulled people into conversation.",
+      "prompt": "Relationship and communication advice pulled people into conversation. What would you need from music after absorbing this kind of signal?",
+      "options": [
+        {
+          "id": "current_15",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_gathering",
+          "domains": [
+            "communication"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "relationship_language"
+        },
+        {
+          "id": "static_15",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_gathering",
+          "domains": [
+            "communication"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "relationship_language"
+        },
+        {
+          "id": "hollow_15",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_gathering",
+          "domains": [
+            "communication"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "relationship_language"
+        },
+        {
+          "id": "calm_15",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_gathering",
+          "domains": [
+            "communication"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "relationship_language"
+        }
+      ]
+    },
+    {
+      "id": "q16_mental_health_1",
+      "source_topic_id": "mental_health",
+      "category": "personal_relationships",
+      "centroid": "introspection",
+      "topic_summary": "Mental health content carried a quieter but persistent signal.",
+      "prompt": "Mental health content carried a quieter but persistent signal. When this shows up in your feed, what is your honest first response?",
+      "options": [
+        {
+          "id": "current_16",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_drift",
+          "domains": [
+            "personal_relationships"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "mental_health"
+        },
+        {
+          "id": "static_16",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_drift",
+          "domains": [
+            "personal_relationships"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "mental_health"
+        },
+        {
+          "id": "hollow_16",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_drift",
+          "domains": [
+            "personal_relationships"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "mental_health"
+        },
+        {
+          "id": "calm_16",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_drift",
+          "domains": [
+            "personal_relationships"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "mental_health"
+        }
+      ]
+    },
+    {
+      "id": "q17_mental_health_2",
+      "source_topic_id": "mental_health",
+      "category": "personal_relationships",
+      "centroid": "introspection",
+      "topic_summary": "Mental health content carried a quieter but persistent signal.",
+      "prompt": "Mental health content carried a quieter but persistent signal. If this became the mood of your day, how would you move with it?",
+      "options": [
+        {
+          "id": "current_17",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_drift",
+          "domains": [
+            "personal_relationships"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "mental_health"
+        },
+        {
+          "id": "static_17",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_drift",
+          "domains": [
+            "personal_relationships"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "mental_health"
+        },
+        {
+          "id": "hollow_17",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_drift",
+          "domains": [
+            "personal_relationships"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "mental_health"
+        },
+        {
+          "id": "calm_17",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_drift",
+          "domains": [
+            "personal_relationships"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "mental_health"
+        }
+      ]
+    },
+    {
+      "id": "q18_mental_health_3",
+      "source_topic_id": "mental_health",
+      "category": "personal_relationships",
+      "centroid": "introspection",
+      "topic_summary": "Mental health content carried a quieter but persistent signal.",
+      "prompt": "Mental health content carried a quieter but persistent signal. What would you need from music after absorbing this kind of signal?",
+      "options": [
+        {
+          "id": "current_18",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_drift",
+          "domains": [
+            "personal_relationships"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "mental_health"
+        },
+        {
+          "id": "static_18",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_drift",
+          "domains": [
+            "personal_relationships"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "mental_health"
+        },
+        {
+          "id": "hollow_18",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_drift",
+          "domains": [
+            "personal_relationships"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "mental_health"
+        },
+        {
+          "id": "calm_18",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_drift",
+          "domains": [
+            "personal_relationships"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "mental_health"
+        }
+      ]
+    },
+    {
+      "id": "q19_creator_optimism_1",
+      "source_topic_id": "creator_optimism",
+      "category": "dreams",
+      "centroid": "optimism",
+      "topic_summary": "Entrepreneurship and self-improvement content pushed possibility and ambition.",
+      "prompt": "Entrepreneurship and self-improvement content pushed possibility and ambition. When this shows up in your feed, what is your honest first response?",
+      "options": [
+        {
+          "id": "current_19",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_radiance",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "creator_optimism"
+        },
+        {
+          "id": "static_19",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_radiance",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "creator_optimism"
+        },
+        {
+          "id": "hollow_19",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_radiance",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "creator_optimism"
+        },
+        {
+          "id": "calm_19",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_radiance",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "creator_optimism"
+        }
+      ]
+    },
+    {
+      "id": "q20_creator_optimism_2",
+      "source_topic_id": "creator_optimism",
+      "category": "dreams",
+      "centroid": "optimism",
+      "topic_summary": "Entrepreneurship and self-improvement content pushed possibility and ambition.",
+      "prompt": "Entrepreneurship and self-improvement content pushed possibility and ambition. If this became the mood of your day, how would you move with it?",
+      "options": [
+        {
+          "id": "current_20",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_radiance",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "creator_optimism"
+        },
+        {
+          "id": "static_20",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_radiance",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "creator_optimism"
+        },
+        {
+          "id": "hollow_20",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_radiance",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "creator_optimism"
+        },
+        {
+          "id": "calm_20",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_radiance",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "creator_optimism"
+        }
+      ]
+    },
+    {
+      "id": "q21_creator_optimism_3",
+      "source_topic_id": "creator_optimism",
+      "category": "dreams",
+      "centroid": "optimism",
+      "topic_summary": "Entrepreneurship and self-improvement content pushed possibility and ambition.",
+      "prompt": "Entrepreneurship and self-improvement content pushed possibility and ambition. What would you need from music after absorbing this kind of signal?",
+      "options": [
+        {
+          "id": "current_21",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_radiance",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "creator_optimism"
+        },
+        {
+          "id": "static_21",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_radiance",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "creator_optimism"
+        },
+        {
+          "id": "hollow_21",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_radiance",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "creator_optimism"
+        },
+        {
+          "id": "calm_21",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_radiance",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "creator_optimism"
+        }
+      ]
+    },
+    {
+      "id": "q22_sad_music_1",
+      "source_topic_id": "sad_music",
+      "category": "dreams",
+      "centroid": "melancholy",
+      "topic_summary": "Sad music and emotional edits held a reflective lane.",
+      "prompt": "Sad music and emotional edits held a reflective lane. When this shows up in your feed, what is your honest first response?",
+      "options": [
+        {
+          "id": "current_22",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_weight",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "sad_music"
+        },
+        {
+          "id": "static_22",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_weight",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "sad_music"
+        },
+        {
+          "id": "hollow_22",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_weight",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "sad_music"
+        },
+        {
+          "id": "calm_22",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_weight",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "sad_music"
+        }
+      ]
+    },
+    {
+      "id": "q23_sad_music_2",
+      "source_topic_id": "sad_music",
+      "category": "dreams",
+      "centroid": "melancholy",
+      "topic_summary": "Sad music and emotional edits held a reflective lane.",
+      "prompt": "Sad music and emotional edits held a reflective lane. If this became the mood of your day, how would you move with it?",
+      "options": [
+        {
+          "id": "current_23",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_weight",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "sad_music"
+        },
+        {
+          "id": "static_23",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_weight",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "sad_music"
+        },
+        {
+          "id": "hollow_23",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_weight",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "sad_music"
+        },
+        {
+          "id": "calm_23",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_weight",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "sad_music"
+        }
+      ]
+    },
+    {
+      "id": "q24_sad_music_3",
+      "source_topic_id": "sad_music",
+      "category": "dreams",
+      "centroid": "melancholy",
+      "topic_summary": "Sad music and emotional edits held a reflective lane.",
+      "prompt": "Sad music and emotional edits held a reflective lane. What would you need from music after absorbing this kind of signal?",
+      "options": [
+        {
+          "id": "current_24",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_weight",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "sad_music"
+        },
+        {
+          "id": "static_24",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_weight",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "sad_music"
+        },
+        {
+          "id": "hollow_24",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_weight",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "sad_music"
+        },
+        {
+          "id": "calm_24",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_weight",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "sad_music"
+        }
+      ]
+    },
+    {
+      "id": "q25_sleep_rest_1",
+      "source_topic_id": "sleep_rest",
+      "category": "dreams",
+      "centroid": "fatigue",
+      "topic_summary": "Sleep, ASMR, and recovery content showed a need for lower stimulation.",
+      "prompt": "Sleep, ASMR, and recovery content showed a need for lower stimulation. When this shows up in your feed, what is your honest first response?",
+      "options": [
+        {
+          "id": "current_25",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_hollow",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "sleep_rest"
+        },
+        {
+          "id": "static_25",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_hollow",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "sleep_rest"
+        },
+        {
+          "id": "hollow_25",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_hollow",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "sleep_rest"
+        },
+        {
+          "id": "calm_25",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_hollow",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "sleep_rest"
+        }
+      ]
+    },
+    {
+      "id": "q26_sleep_rest_2",
+      "source_topic_id": "sleep_rest",
+      "category": "dreams",
+      "centroid": "fatigue",
+      "topic_summary": "Sleep, ASMR, and recovery content showed a need for lower stimulation.",
+      "prompt": "Sleep, ASMR, and recovery content showed a need for lower stimulation. If this became the mood of your day, how would you move with it?",
+      "options": [
+        {
+          "id": "current_26",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_hollow",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "sleep_rest"
+        },
+        {
+          "id": "static_26",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_hollow",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "sleep_rest"
+        },
+        {
+          "id": "hollow_26",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_hollow",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "sleep_rest"
+        },
+        {
+          "id": "calm_26",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_hollow",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "sleep_rest"
+        }
+      ]
+    },
+    {
+      "id": "q27_sleep_rest_3",
+      "source_topic_id": "sleep_rest",
+      "category": "dreams",
+      "centroid": "fatigue",
+      "topic_summary": "Sleep, ASMR, and recovery content showed a need for lower stimulation.",
+      "prompt": "Sleep, ASMR, and recovery content showed a need for lower stimulation. What would you need from music after absorbing this kind of signal?",
+      "options": [
+        {
+          "id": "current_27",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_hollow",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "sleep_rest"
+        },
+        {
+          "id": "static_27",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_hollow",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "sleep_rest"
+        },
+        {
+          "id": "hollow_27",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_hollow",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "sleep_rest"
+        },
+        {
+          "id": "calm_27",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_hollow",
+          "domains": [
+            "dreams"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "sleep_rest"
+        }
+      ]
+    },
+    {
+      "id": "q28_play_culture_1",
+      "source_topic_id": "play_culture",
+      "category": "creation",
+      "centroid": "playfulness",
+      "topic_summary": "Entertainment and creator culture gave the month a lighter social outlet.",
+      "prompt": "Entertainment and creator culture gave the month a lighter social outlet. When this shows up in your feed, what is your honest first response?",
+      "options": [
+        {
+          "id": "current_28",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_gathering",
+          "domains": [
+            "creation"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "play_culture"
+        },
+        {
+          "id": "static_28",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_gathering",
+          "domains": [
+            "creation"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "play_culture"
+        },
+        {
+          "id": "hollow_28",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_gathering",
+          "domains": [
+            "creation"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "play_culture"
+        },
+        {
+          "id": "calm_28",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_gathering",
+          "domains": [
+            "creation"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "play_culture"
+        }
+      ]
+    },
+    {
+      "id": "q29_play_culture_2",
+      "source_topic_id": "play_culture",
+      "category": "creation",
+      "centroid": "playfulness",
+      "topic_summary": "Entertainment and creator culture gave the month a lighter social outlet.",
+      "prompt": "Entertainment and creator culture gave the month a lighter social outlet. If this became the mood of your day, how would you move with it?",
+      "options": [
+        {
+          "id": "current_29",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_gathering",
+          "domains": [
+            "creation"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "play_culture"
+        },
+        {
+          "id": "static_29",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_gathering",
+          "domains": [
+            "creation"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "play_culture"
+        },
+        {
+          "id": "hollow_29",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_gathering",
+          "domains": [
+            "creation"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "play_culture"
+        },
+        {
+          "id": "calm_29",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_gathering",
+          "domains": [
+            "creation"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "play_culture"
+        }
+      ]
+    },
+    {
+      "id": "q30_play_culture_3",
+      "source_topic_id": "play_culture",
+      "category": "creation",
+      "centroid": "playfulness",
+      "topic_summary": "Entertainment and creator culture gave the month a lighter social outlet.",
+      "prompt": "Entertainment and creator culture gave the month a lighter social outlet. What would you need from music after absorbing this kind of signal?",
+      "options": [
+        {
+          "id": "current_30",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_gathering",
+          "domains": [
+            "creation"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "play_culture"
+        },
+        {
+          "id": "static_30",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_gathering",
+          "domains": [
+            "creation"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "play_culture"
+        },
+        {
+          "id": "hollow_30",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_gathering",
+          "domains": [
+            "creation"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "play_culture"
+        },
+        {
+          "id": "calm_30",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_gathering",
+          "domains": [
+            "creation"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "play_culture"
+        }
+      ]
+    },
+    {
+      "id": "q31_debate_conflict_1",
+      "source_topic_id": "debate_conflict",
+      "category": "disputes",
+      "centroid": "aggression",
+      "topic_summary": "Debate and confrontation content concentrated heat and stance-taking.",
+      "prompt": "Debate and confrontation content concentrated heat and stance-taking. When this shows up in your feed, what is your honest first response?",
+      "options": [
+        {
+          "id": "current_31",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_raw",
+          "domains": [
+            "disputes"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "debate_conflict"
+        },
+        {
+          "id": "static_31",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_raw",
+          "domains": [
+            "disputes"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "debate_conflict"
+        },
+        {
+          "id": "hollow_31",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_raw",
+          "domains": [
+            "disputes"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "debate_conflict"
+        },
+        {
+          "id": "calm_31",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_raw",
+          "domains": [
+            "disputes"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "debate_conflict"
+        }
+      ]
+    },
+    {
+      "id": "q32_debate_conflict_2",
+      "source_topic_id": "debate_conflict",
+      "category": "disputes",
+      "centroid": "aggression",
+      "topic_summary": "Debate and confrontation content concentrated heat and stance-taking.",
+      "prompt": "Debate and confrontation content concentrated heat and stance-taking. If this became the mood of your day, how would you move with it?",
+      "options": [
+        {
+          "id": "current_32",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_raw",
+          "domains": [
+            "disputes"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "debate_conflict"
+        },
+        {
+          "id": "static_32",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_raw",
+          "domains": [
+            "disputes"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "debate_conflict"
+        },
+        {
+          "id": "hollow_32",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_raw",
+          "domains": [
+            "disputes"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "debate_conflict"
+        },
+        {
+          "id": "calm_32",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_raw",
+          "domains": [
+            "disputes"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "debate_conflict"
+        }
+      ]
+    },
+    {
+      "id": "q33_debate_conflict_3",
+      "source_topic_id": "debate_conflict",
+      "category": "disputes",
+      "centroid": "aggression",
+      "topic_summary": "Debate and confrontation content concentrated heat and stance-taking.",
+      "prompt": "Debate and confrontation content concentrated heat and stance-taking. What would you need from music after absorbing this kind of signal?",
+      "options": [
+        {
+          "id": "current_33",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_raw",
+          "domains": [
+            "disputes"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "debate_conflict"
+        },
+        {
+          "id": "static_33",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_raw",
+          "domains": [
+            "disputes"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "debate_conflict"
+        },
+        {
+          "id": "hollow_33",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_raw",
+          "domains": [
+            "disputes"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "debate_conflict"
+        },
+        {
+          "id": "calm_33",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_raw",
+          "domains": [
+            "disputes"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "debate_conflict"
+        }
+      ]
+    },
+    {
+      "id": "q34_spiritual_grounding_1",
+      "source_topic_id": "spiritual_grounding",
+      "category": "personal_relationships",
+      "centroid": "serenity",
+      "topic_summary": "Spirituality, nature, and meditation content offered grounding.",
+      "prompt": "Spirituality, nature, and meditation content offered grounding. When this shows up in your feed, what is your honest first response?",
+      "options": [
+        {
+          "id": "current_34",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_ethereal",
+          "domains": [
+            "personal_relationships"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "spiritual_grounding"
+        },
+        {
+          "id": "static_34",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_ethereal",
+          "domains": [
+            "personal_relationships"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "spiritual_grounding"
+        },
+        {
+          "id": "hollow_34",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_ethereal",
+          "domains": [
+            "personal_relationships"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "spiritual_grounding"
+        },
+        {
+          "id": "calm_34",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_ethereal",
+          "domains": [
+            "personal_relationships"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "spiritual_grounding"
+        }
+      ]
+    },
+    {
+      "id": "q35_spiritual_grounding_2",
+      "source_topic_id": "spiritual_grounding",
+      "category": "personal_relationships",
+      "centroid": "serenity",
+      "topic_summary": "Spirituality, nature, and meditation content offered grounding.",
+      "prompt": "Spirituality, nature, and meditation content offered grounding. If this became the mood of your day, how would you move with it?",
+      "options": [
+        {
+          "id": "current_35",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_ethereal",
+          "domains": [
+            "personal_relationships"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "spiritual_grounding"
+        },
+        {
+          "id": "static_35",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_ethereal",
+          "domains": [
+            "personal_relationships"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "spiritual_grounding"
+        },
+        {
+          "id": "hollow_35",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_ethereal",
+          "domains": [
+            "personal_relationships"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "spiritual_grounding"
+        },
+        {
+          "id": "calm_35",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_ethereal",
+          "domains": [
+            "personal_relationships"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "spiritual_grounding"
+        }
+      ]
+    },
+    {
+      "id": "q36_spiritual_grounding_3",
+      "source_topic_id": "spiritual_grounding",
+      "category": "personal_relationships",
+      "centroid": "serenity",
+      "topic_summary": "Spirituality, nature, and meditation content offered grounding.",
+      "prompt": "Spirituality, nature, and meditation content offered grounding. What would you need from music after absorbing this kind of signal?",
+      "options": [
+        {
+          "id": "current_36",
+          "label": "Move toward it. Use the energy before it cools.",
+          "faction": "current",
+          "territory": "the_ethereal",
+          "domains": [
+            "personal_relationships"
+          ],
+          "vac": {
+            "v": 0.7,
+            "a": 0.7,
+            "c": 0.45
+          },
+          "weight": 1,
+          "source_topic_id": "spiritual_grounding"
+        },
+        {
+          "id": "static_36",
+          "label": "Hold position. Let the pressure reveal what matters.",
+          "faction": "static",
+          "territory": "the_ethereal",
+          "domains": [
+            "personal_relationships"
+          ],
+          "vac": {
+            "v": -0.45,
+            "a": 0.65,
+            "c": -0.15
+          },
+          "weight": 1,
+          "source_topic_id": "spiritual_grounding"
+        },
+        {
+          "id": "hollow_36",
+          "label": "Step back. Let the feeling pass through without forcing it.",
+          "faction": "hollow",
+          "territory": "the_ethereal",
+          "domains": [
+            "personal_relationships"
+          ],
+          "vac": {
+            "v": -0.55,
+            "a": -0.55,
+            "c": -0.45
+          },
+          "weight": 1,
+          "source_topic_id": "spiritual_grounding"
+        },
+        {
+          "id": "calm_36",
+          "label": "Find the quiet structure. Choose the clean next step.",
+          "faction": "calm",
+          "territory": "the_ethereal",
+          "domains": [
+            "personal_relationships"
+          ],
+          "vac": {
+            "v": 0.5,
+            "a": -0.45,
+            "c": 0.6
+          },
+          "weight": 1,
+          "source_topic_id": "spiritual_grounding"
+        }
+      ]
+    }
+  ]
+}

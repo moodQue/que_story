@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MoodQue Monthly Territory Scan</title>
+  <link rel="stylesheet" href="css/monthly-territory-scan.css" />
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database-compat.js"></script>
+</head>
+<body>
+  <main class="shell">
+    <section class="scan" aria-labelledby="title">
+      <header class="topline">
+        <span>moodQue · monthly assignment</span>
+        <span id="progress">0 / 36</span>
+      </header>
+
+      <section id="intro" class="panel">
+        <p class="kicker" id="source-month">Loading</p>
+        <h1 id="title">Monthly Territory Scan</h1>
+        <p class="copy">
+          This scan assigns your faction, computes your personal VAC, and places you inside the MoodQue territory map.
+        </p>
+        <label class="field">
+          <span>Discord name or handle</span>
+          <input id="viewer-handle" type="text" autocomplete="nickname" placeholder="optional" />
+        </label>
+        <button id="start" class="action" type="button">Begin Scan</button>
+      </section>
+
+      <section id="quiz" class="panel" hidden>
+        <p class="kicker" id="question-meta"></p>
+        <h2 id="question-text"></h2>
+        <div id="answers" class="answers"></div>
+      </section>
+
+      <section id="results" class="panel" hidden>
+        <p class="kicker">Assignment Complete</p>
+        <h2 id="result-faction"></h2>
+        <p id="result-territory" class="copy"></p>
+        <dl class="metrics">
+          <div><dt>Valence</dt><dd id="metric-v"></dd></div>
+          <div><dt>Arousal</dt><dd id="metric-a"></dd></div>
+          <div><dt>Control</dt><dd id="metric-c"></dd></div>
+          <div><dt>Confidence</dt><dd id="metric-confidence"></dd></div>
+        </dl>
+        <p id="save-state" class="save-state">Saving assignment...</p>
+        <button id="restart" class="action secondary" type="button">Retake</button>
+      </section>
+    </section>
+  </main>
+
+  <script src="assets/monthly-territory-scan.js"></script>
+</body>
+</html>
