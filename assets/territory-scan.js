@@ -1,11 +1,40 @@
 const DATA_URL = "output/quiz/field_scan_daily.json";
 
+// Same Firebase project/pattern as monthly-territory-scan.js.
+// Daily scans land in RTDB under: daily_scans/{YYYY-MM-DD}/{push_id}
+// MIS then syncs them into SQLite (scripts/sync_firebase_daily_scans.py).
+const firebaseConfig = {
+  apiKey: "AIzaSyD5wmZYrsEWzWX0widS8BI_yjFfPPHuxRg",
+  authDomain: "moodque-data.firebaseapp.com",
+  databaseURL: "https://moodque-data-default-rtdb.firebaseio.com",
+  projectId: "moodque-data",
+  storageBucket: "moodque-data.appspot.com",
+  messagingSenderId: "118808686621",
+  appId: "1:118808686621:web:fe7cb9d05a916b9448d6f",
+};
+
+firebase.initializeApp(firebaseConfig);
+const db = firebase.database();
+
 const scoreLabels = {
   storm_lands: "Storm Lands",
   hollow_grounds: "Hollow Grounds",
   still_places: "Still Places",
   lit_realms: "Lit Realms",
 };
+
+// The 4 self-scan quadrants. These are the canonical keys MIS stores in
+// daily_field_scans.self_quadrant. (13 territories is unscannable; 4 is.)
+const quadrantKeys = {
+  lit_realms: "LIT",
+  storm_lands: "STORM",
+  hollow_grounds: "HOLLOW",
+  still_places: "STILL",
+};
+
+// Holds the option the viewer picked, so the save button knows what to log.
+let selected = null;
+let scanData = null;
 
 function formatDate(value) {
   if (!value) return "Daily Field Report";
@@ -17,7 +46,82 @@ function formatDate(value) {
   });
 }
 
+/** Strip a leading @ and normalise, so the same person is one identity. */
+function normaliseHandle(raw) {
+  return (raw || "").trim().replace(/^@+/, "").toLowerCase();
+}
+
+/**
+ * Firebase keys may not contain . $ # [ ] or /.
+ * Using the handle as the key (rather than push()) makes the write idempotent:
+ * one scan per person per day, and a re-submit overwrites instead of duplicating.
+ */
+function handleToKey(handle) {
+  return handle.replace(/[.$#[\]/]/g, "_");
+}
+
+/** One scan per day is the point of the ritual — remember locally that we logged. */
+function alreadyLoggedKey(date) {
+  return `moodque_scan_${date}`;
+}
+
+/**
+ * Write the scan to Firebase.
+ *
+ * We send the field reading the page already knows about, but MIS treats
+ * mood_territory_snapshots as authoritative and re-resolves the true field
+ * quadrant on sync — so a stale/odd value here can never corrupt the metric.
+ */
+async function saveScan() {
+  const saveState = document.getElementById("save-state");
+  const handleInput = document.getElementById("handle");
+  const saveButton = document.getElementById("save-scan");
+
+  if (!selected) {
+    saveState.textContent = "Pick your weather first.";
+    return;
+  }
+
+  const handle = normaliseHandle(handleInput.value);
+  if (!handle) {
+    saveState.textContent = "Add your handle so today's scan can be logged.";
+    handleInput.focus();
+    return;
+  }
+
+  saveButton.disabled = true;
+  saveState.textContent = "Logging your scan...";
+
+  const record = {
+    source: "web",
+    platform: "web",
+    platform_user_id: handle, // for web, the handle IS the stable id
+    viewer_handle: handle,
+    scan_date: scanData.date,
+    self_quadrant: quadrantKeys[selected.score_key] || null,
+    score_key: selected.score_key,
+    raw_text: selected.label || "",
+    field_territory: scanData.territory || null,
+    field_quadrant: scanData.quadrant || null,
+    quiz_version: scanData.quiz_version || null,
+    captured_at: new Date().toISOString(),
+  };
+
+  try {
+    await db.ref(`daily_scans/${scanData.date}/${handleToKey(handle)}`).set(record);
+    localStorage.setItem(alreadyLoggedKey(scanData.date), "1");
+    saveState.textContent = "Scan logged. Come back tonight and tell us if the field matched.";
+    handleInput.disabled = true;
+  } catch (error) {
+    saveButton.disabled = false;
+    saveState.textContent = "Your reading is shown above, but the scan could not be logged.";
+    console.error(error);
+  }
+}
+
 function renderQuiz(scan) {
+  scanData = scan;
+
   const question = scan.questions?.[0];
   const optionsEl = document.getElementById("options");
   const resultEl = document.getElementById("result");
@@ -55,6 +159,7 @@ function renderQuiz(scan) {
         el.setAttribute("aria-pressed", "false");
       }
       button.setAttribute("aria-pressed", "true");
+      selected = option;
 
       resultEl.hidden = false;
       resultTitle.textContent = option.reading || scoreLabels[option.score_key] || "Field Reading";
@@ -65,6 +170,15 @@ function renderQuiz(scan) {
 
     optionsEl.appendChild(button);
   }
+
+  // If they already logged today, keep the scan usable but don't double-count.
+  const saveState = document.getElementById("save-state");
+  const saveButton = document.getElementById("save-scan");
+  if (localStorage.getItem(alreadyLoggedKey(scan.date))) {
+    saveButton.disabled = true;
+    saveState.textContent = "You've already logged today's scan. See you tomorrow.";
+  }
+  saveButton.addEventListener("click", saveScan);
 }
 
 async function init() {

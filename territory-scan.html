@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MoodQue Territory Scan</title>
   <link rel="stylesheet" href="css/territory-scan.css" />
+  <!-- Firebase (same version/pattern as monthly-territory-scan.html) -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database-compat.js"></script>
 </head>
 <body>
   <main class="scan-shell">
@@ -27,6 +30,15 @@
         <h2 id="result-title"></h2>
         <p id="result-copy"></p>
         <p id="result-context" class="muted"></p>
+
+        <!-- Capture: the handle is what links this scan to a durable viewer identity. -->
+        <div id="capture" class="capture">
+          <label for="handle">Log today's scan — your handle</label>
+          <input id="handle" type="text" inputmode="text" autocomplete="nickname"
+                 placeholder="@yourhandle" maxlength="40" />
+          <button id="save-scan" type="button">Log my scan</button>
+          <p id="save-state" class="muted" aria-live="polite"></p>
+        </div>
       </section>
 
       <footer class="report-foot">
