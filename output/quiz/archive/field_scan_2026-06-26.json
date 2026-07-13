@@ -1,14 +1,15 @@
 {
   "quiz_id": "field_scan_daily",
-  "quiz_version": "2026.07.13",
+  "quiz_version": "2026.06.26",
   "quiz_type": "field_scan",
-  "date": "2026-07-13",
-  "territory": "The Ethereal",
-  "quadrant": "The Still Places",
-  "lunar_phase": "Waning Crescent",
-  "dominant_signal": "studies",
+  "date": "2026-06-26",
+  "territory": "The Wandering",
+  "territory_id": "the_wandering",
+  "quadrant": "The Wandering",
+  "lunar_phase": "waxing_gibbous",
+  "dominant_signal": "daily_launch",
   "question_count": 1,
-  "variant": "C",
+  "variant": "A",
   "result_mode": "temporary_reading",
   "official_assignment": false,
   "full_quiz_url": "https://moodque.github.io/que_story/territory-scan.html",
@@ -16,31 +17,31 @@
   "questions": [
     {
       "id": "q1",
-      "prompt": "If your inner state had weather today, what's the forecast?",
+      "prompt": "When the noise finally stops — what's left in the room?",
       "options": [
         {
-          "label": "Bright, open, moving",
-          "symbol": "🌕",
-          "score_key": "lit_realms",
-          "reading": "The Gathering"
-        },
-        {
-          "label": "Pressure building, no release",
+          "label": "A charge that won't sit still",
           "symbol": "⚡",
           "score_key": "storm_lands",
           "reading": "The Storm"
         },
         {
-          "label": "Low, grey, and slow",
+          "label": "A weight you're still carrying",
           "symbol": "🌧",
           "score_key": "hollow_grounds",
           "reading": "The Hollow"
         },
         {
-          "label": "Clear and still",
+          "label": "A quiet that feels complete",
           "symbol": "🌙",
           "score_key": "still_places",
           "reading": "The Ethereal"
+        },
+        {
+          "label": "A pull toward other people",
+          "symbol": "🌕",
+          "score_key": "lit_realms",
+          "reading": "The Gathering"
         }
       ]
     }
