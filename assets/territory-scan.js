@@ -32,6 +32,55 @@ const quadrantKeys = {
   still_places: "STILL",
 };
 
+// Traffic attribution. One page serves every network — the link just carries ?src=
+//   territory-scan.html?src=ig   (also: yt, tt, dc)
+// Whitelisted so a junk/hostile value can never pollute the cohort data.
+const networkAliases = {
+  ig: "instagram", instagram: "instagram",
+  yt: "youtube",   youtube: "youtube",
+  tt: "tiktok",    tiktok: "tiktok",
+  dc: "discord",   discord: "discord",
+  x: "x", tw: "x",
+};
+
+const FIRST_TOUCH_KEY = "moodque_first_touch";
+
+/**
+ * Resolve which network sent this viewer.
+ * Priority: ?src= → remembered first touch → referrer sniff → "direct".
+ * First touch is persisted so a later bookmark/direct visit still attributes
+ * to the platform that originally brought them in.
+ */
+function resolveNetwork() {
+  const params = new URLSearchParams(location.search);
+  const raw = (params.get("src") || params.get("utm_source") || "").trim().toLowerCase();
+
+  if (networkAliases[raw]) {
+    localStorage.setItem(FIRST_TOUCH_KEY, networkAliases[raw]);
+    return networkAliases[raw];
+  }
+
+  const remembered = localStorage.getItem(FIRST_TOUCH_KEY);
+  if (remembered) return remembered;
+
+  // Weak fallback — in-app browsers and link-in-bio tools routinely strip this,
+  // so it's a hint, never truth.
+  const ref = (document.referrer || "").toLowerCase();
+  if (ref.includes("instagram")) return "instagram";
+  if (ref.includes("youtube") || ref.includes("youtu.be")) return "youtube";
+  if (ref.includes("tiktok")) return "tiktok";
+  if (ref.includes("discord")) return "discord";
+
+  return "direct";
+}
+
+/** Optional: which post/campaign drove the visit (?c=2026-07-13). */
+function resolveCampaign() {
+  const params = new URLSearchParams(location.search);
+  const raw = (params.get("c") || params.get("utm_campaign") || "").trim();
+  return raw ? raw.slice(0, 60) : null;
+}
+
 // Holds the option the viewer picked, so the save button knows what to log.
 let selected = null;
 let scanData = null;
@@ -93,10 +142,13 @@ async function saveScan() {
   saveState.textContent = "Logging your scan...";
 
   const record = {
+    // HOW it was captured (this page). Distinct from WHICH network sent them.
     source: "web",
     platform: "web",
     platform_user_id: handle, // for web, the handle IS the stable id
     viewer_handle: handle,
+    referrer_network: resolveNetwork(),
+    campaign: resolveCampaign(),
     scan_date: scanData.date,
     self_quadrant: quadrantKeys[selected.score_key] || null,
     score_key: selected.score_key,
