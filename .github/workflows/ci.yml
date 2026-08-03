@@ -71,6 +71,56 @@ jobs:
           sys.exit(1 if failed else 0)
           PY
 
+      - name: Validate story territory_id values
+        run: |
+          python - <<'PY'
+          # WHY THIS CHECK EXISTS: territory_id was derived in
+          # que_engine/core/stories_publisher.py as issue_id.split("_")[1].
+          # Issue ids look like "2026-06-02_the_calm_aries_513", so parts[1]
+          # was "the" for every two-word territory — which is all of them.
+          # 66 of 158 published stories carried territory_id "the", leaving
+          # the site unable to group or filter them, and nothing caught it:
+          # the JSON parsed perfectly. The generator is fixed, but a
+          # regression here is silent and expensive, so it is asserted.
+          import json, sys, pathlib, collections
+
+          p = pathlib.Path("data/stories.json")
+          if not p.exists():
+              print("SKIP  data/stories.json (not present)")
+              sys.exit(0)
+
+          data = json.loads(p.read_text(encoding="utf-8"))
+          stories = data.get("stories", data) if isinstance(data, dict) else {}
+
+          # A territory_id must be a real id, never a bare article or empty.
+          BAD = {"", "the", "a", "an"}
+          bad = collections.defaultdict(list)
+          for issue_id, story in stories.items():
+              if not isinstance(story, dict):
+                  continue
+              tid = (story.get("territory_id") or "").strip()
+              if tid in BAD:
+                  bad[tid or "<empty>"].append(issue_id)
+
+          total = sum(len(v) for v in bad.values())
+          if total:
+              for value, ids in sorted(bad.items()):
+                  print(f"FAIL  {len(ids)} stories with territory_id={value!r}")
+                  for i in ids[:5]:
+                      print(f"        {i}")
+                  if len(ids) > 5:
+                      print(f"        ... and {len(ids) - 5} more")
+              print()
+              print("territory_id is derived in que_engine/core/stories_publisher.py")
+              print("from the `territory` display field via _TERRITORY_ALIASES.")
+              print("A new territory display name needs an entry in that table.")
+              sys.exit(1)
+
+          ids = {(s.get("territory_id") or "") for s in stories.values()
+                 if isinstance(s, dict)}
+          print(f"OK    {len(stories)} stories, {len(ids)} distinct territory_id values")
+          PY
+
       - name: Report known stale token (informational)
         run: |
           if grep -q "flowstate" tokens.json 2>/dev/null; then
