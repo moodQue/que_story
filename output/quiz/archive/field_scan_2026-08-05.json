@@ -4,11 +4,12 @@
   "quiz_type": "field_scan",
   "date": "2026-08-05",
   "territory": "The Focus",
-  "quadrant": "The Still Places",
-  "lunar_phase": "Last Quarter",
-  "dominant_signal": "business",
+  "territory_id": "the_focus",
+  "quadrant": "Still Places",
+  "lunar_phase": "last_quarter",
+  "dominant_signal": "daily_launch",
   "question_count": 1,
-  "variant": "C",
+  "variant": "B",
   "result_mode": "temporary_reading",
   "official_assignment": false,
   "full_quiz_url": "https://moodque.github.io/que_story/territory-scan.html",
@@ -16,28 +17,28 @@
   "questions": [
     {
       "id": "q1",
-      "prompt": "If your inner state had weather today, what's the forecast?",
+      "prompt": "Right now — what's pulling on you the hardest?",
       "options": [
         {
-          "label": "Bright, open, moving",
+          "label": "Toward connection, motion, light",
           "symbol": "🌕",
           "score_key": "lit_realms",
           "reading": "The Gathering"
         },
         {
-          "label": "Pressure building, no release",
+          "label": "Toward something unresolved",
           "symbol": "⚡",
           "score_key": "storm_lands",
           "reading": "The Storm"
         },
         {
-          "label": "Low, grey, and slow",
+          "label": "Toward what's missing",
           "symbol": "🌧",
           "score_key": "hollow_grounds",
           "reading": "The Hollow"
         },
         {
-          "label": "Clear and still",
+          "label": "Toward stillness, away from it all",
           "symbol": "🌙",
           "score_key": "still_places",
           "reading": "The Ethereal"
