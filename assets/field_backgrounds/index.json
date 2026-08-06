@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-08-06T23:09:18Z",
+  "backgrounds": {
+    "the_calm": "the_calm.png",
+    "the_current": "the_current.png",
+    "the_drift": "the_drift.png",
+    "the_ethereal": "the_ethereal.png",
+    "the_focus": "the_focus.png",
+    "the_gathering": "the_gathering.png",
+    "the_hollow": "the_hollow.png",
+    "the_pressure": "the_pressure.png",
+    "the_radiance": "the_radiance.png",
+    "the_raw": "the_raw.png",
+    "the_static": "the_static.png",
+    "the_wandering": "the_wandering.png",
+    "the_weight": "the_weight.png",
+    "apex": "the_radiance.png",
+    "nova": "the_current.png",
+    "pulse": "the_raw.png",
+    "ember": "the_pressure.png",
+    "flux": "the_raw.png",
+    "zenith": "the_focus.png",
+    "drift": "the_drift.png",
+    "echo": "the_hollow.png",
+    "veil": "the_ethereal.png",
+    "haven": "the_calm.png",
+    "lumen": "the_gathering.png",
+    "terra": "the_weight.png"
+  }
+}
