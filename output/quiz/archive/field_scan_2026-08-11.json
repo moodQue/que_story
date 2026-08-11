@@ -8,7 +8,7 @@
   "lunar_phase": "Waning Crescent",
   "dominant_signal": "creation",
   "question_count": 1,
-  "variant": "B",
+  "variant": "C",
   "result_mode": "temporary_reading",
   "official_assignment": false,
   "full_quiz_url": "https://moodque.github.io/que_story/territory-scan.html",
@@ -16,28 +16,28 @@
   "questions": [
     {
       "id": "q1",
-      "prompt": "Right now — what's pulling on you the hardest?",
+      "prompt": "If your inner state had weather today, what's the forecast?",
       "options": [
         {
-          "label": "Toward connection, motion, light",
+          "label": "Bright, open, moving",
           "symbol": "🌕",
           "score_key": "lit_realms",
           "reading": "The Gathering"
         },
         {
-          "label": "Toward something unresolved",
+          "label": "Pressure building, no release",
           "symbol": "⚡",
           "score_key": "storm_lands",
           "reading": "The Storm"
         },
         {
-          "label": "Toward what's missing",
+          "label": "Low, grey, and slow",
           "symbol": "🌧",
           "score_key": "hollow_grounds",
           "reading": "The Hollow"
         },
         {
-          "label": "Toward stillness, away from it all",
+          "label": "Clear and still",
           "symbol": "🌙",
           "score_key": "still_places",
           "reading": "The Ethereal"
