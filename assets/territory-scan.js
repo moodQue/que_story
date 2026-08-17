@@ -33,11 +33,16 @@ const quadrantKeys = {
 };
 
 // Traffic attribution. One page serves every network — the link just carries ?src=
-//   territory-scan.html?src=ig   (also: yt, tt, dc)
+//   territory-scan.html?src=ig   (also: yt, th, tt, dc)
 // Whitelisted so a junk/hostile value can never pollute the cohort data.
 const networkAliases = {
   ig: "instagram", instagram: "instagram",
   yt: "youtube",   youtube: "youtube",
+  // Threads added 2026-08-17: it is one of the three live engagement channels,
+  // and without an entry here its traffic fell through to "direct" — silently
+  // merging a real cohort into the unattributed bucket in daily_scan_rollup,
+  // which cohorts on exactly this column.
+  th: "threads",   threads: "threads",
   tt: "tiktok",    tiktok: "tiktok",
   dc: "discord",   discord: "discord",
   x: "x", tw: "x",
@@ -68,6 +73,7 @@ function resolveNetwork() {
   const ref = (document.referrer || "").toLowerCase();
   if (ref.includes("instagram")) return "instagram";
   if (ref.includes("youtube") || ref.includes("youtu.be")) return "youtube";
+  if (ref.includes("threads")) return "threads";
   if (ref.includes("tiktok")) return "tiktok";
   if (ref.includes("discord")) return "discord";
 
