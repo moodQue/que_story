@@ -1,0 +1,42 @@
+{
+  "_comment": [
+    "RTDB rules for the territory_views counter. MERGE this into the project's",
+    "existing rules alongside daily_scans — do not paste it over them.",
+    "",
+    "WHAT THIS PROTECTS AGAINST",
+    "  The page writes anonymously, so without a rule anyone could set a counter",
+    "  to any number. These counts are meant to steer how the system evolves, so",
+    "  a poisoned counter is not a vanity problem — it is someone steering the",
+    "  mood engine. The write rule allows ONLY +1 from the current value, so a",
+    "  counter cannot be set to an arbitrary number, cannot be lowered, and",
+    "  cannot be deleted.",
+    "",
+    "WHAT IT DOES NOT PROTECT AGAINST",
+    "  Increment-only stops a one-shot 'set it to 999999'. It does NOT stop a",
+    "  determined script calling increment in a loop. If these numbers ever carry",
+    "  real weight, add Firebase App Check — that is the control that actually",
+    "  binds writes to your own page. Until then, treat a sudden spike as",
+    "  suspicious rather than as demand, and sanity-check against the plausible",
+    "  ceiling in sync_territory_views.py.",
+    "",
+    "  Reads are closed. MIS pulls these with the admin SDK, which bypasses",
+    "  rules, so nothing legitimate needs public read — and leaving it open would",
+    "  hand anyone a live traffic dashboard."
+  ],
+
+  "rules": {
+    "territory_views": {
+      ".read": false,
+
+      "$date": {
+        ".validate": "$date.matches(/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/)",
+
+        "$territory": {
+          ".validate": "newData.isNumber() && $territory.matches(/^[a-z_]{3,40}$/)",
+
+          ".write": "newData.isNumber() && (data.exists() ? newData.val() === data.val() + 1 : newData.val() === 1)"
+        }
+      }
+    }
+  }
+}
