@@ -34,9 +34,36 @@
         return;
       }
 
-      // Inject story body (blurb from discord export)
+      // Inject story body.
+      //
+      // Prefer the weekly mythology story (`story`: an array of paragraphs, the last one
+      // an engagement question), attached by stories_publisher from 2026-09-14. Fall back
+      // to `blurb` -- the Discord teaser template ("In the space of X, under the influence
+      // of Y -- a story occurred") -- which is all this page ever showed before, and all
+      // that older entries have.
       const bodyEl = document.querySelector(".episode-body");
-      if (bodyEl && story.blurb) {
+      if (bodyEl && Array.isArray(story.story) && story.story.length) {
+        bodyEl.textContent = "";
+        story.story.forEach(function (para, i) {
+          const p = document.createElement("p");
+          p.textContent = para;
+          // The closing question is the ask; let it read as one.
+          if (i === story.story.length - 1 && story.story.length > 1) {
+            p.className = "episode-question";
+          }
+          bodyEl.appendChild(p);
+        });
+        if (story.story_title) {
+          const label = document.querySelector(".episode-label");
+          if (label) label.textContent = story.story_title;
+        }
+        if (story.story_week) {
+          const meta = document.createElement("p");
+          meta.className = "episode-meta";
+          meta.textContent = "The week of " + story.story_week.replace(" to ", " → ");
+          bodyEl.appendChild(meta);
+        }
+      } else if (bodyEl && story.blurb) {
         bodyEl.textContent = story.blurb;
       }
 
