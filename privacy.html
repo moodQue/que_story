@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - moodQue</title>
+  <style>
+    :root {
+      --bg: #07111c;
+      --ink: #f4f1df;
+      --gold: #f1c76a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: "Trebuchet MS", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      margin: 0;
+      padding: clamp(24px, 6vw, 64px);
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 40px);
+      margin-bottom: 4px;
+      border-bottom: 3px solid var(--ink);
+      padding-bottom: 16px;
+    }
+    .updated {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin: 12px 0 32px;
+    }
+    h2 {
+      color: var(--gold);
+      font-size: 18px;
+      margin-top: 36px;
+    }
+    a { color: var(--gold); }
+    ul { padding-left: 20px; }
+    footer {
+      margin-top: 48px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(244,241,223,.25);
+      font-size: 13px;
+      opacity: .75;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Privacy Policy</h1>
+    <div class="updated">Last updated September 2026</div>
+
+    <p>
+      This policy covers moodQue's personal home-automation software
+      ("moodQue Home"), a project run by a single household for its own use.
+      It is not a commercial product, is not offered to the public, and is
+      not used by anyone outside the household that runs it.
+    </p>
+
+    <h2>What this connects to</h2>
+    <p>
+      moodQue Home integrates with Google's Smart Device Management (SDM)
+      API to read and control smart-home devices (for example, a Nest
+      thermostat) that belong to the household running it. It may connect to
+      other Google APIs for the same, single-household purpose.
+    </p>
+
+    <h2>What data is accessed</h2>
+    <ul>
+      <li>Device state needed for automation: e.g. current and target temperature, heating/cooling mode.</li>
+      <li>No data is collected about anyone other than the household running the software.</li>
+      <li>No continuous location history, no voice recordings or transcripts, and no financial or medical information are collected.</li>
+    </ul>
+
+    <h2>Where data goes</h2>
+    <p>
+      Data stays on infrastructure owned and operated by the household running
+      moodQue Home. It is never sold, shared with advertisers, or forwarded to
+      any third party. It is used only to decide what the household's own
+      devices should do (for example, warming the house before someone
+      arrives).
+    </p>
+
+    <h2>Retention and revocation</h2>
+    <p>
+      Data is retained only as long as needed to run the automation and is
+      deleted when no longer needed. Access can be revoked at any time from
+      your <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account permissions page</a>,
+      which immediately stops moodQue Home from reading or controlling any
+      device.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Questions about this policy can be raised via an issue on the
+      <a href="https://github.com/moodQue" target="_blank" rel="noopener">moodQue GitHub organization</a>.
+    </p>
+
+    <footer>moodQue &middot; personal project, not a commercial service</footer>
+  </div>
+</body>
+</html>
