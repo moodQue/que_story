@@ -41,6 +41,67 @@
         </div>
       </section>
 
+      <!-- Six-question Daily Field Scan (assets/daily-scan.js). Hidden until today's quiz
+           is published AND the scoring service answers; otherwise the one-tap scan above
+           stays exactly as it was. Scoring is private: answers go to the moodQue API and
+           the reading comes back into this page — nothing navigates away. -->
+      <section id="scenario" class="scenario" hidden aria-labelledby="sc-title">
+        <div id="sc-shared" class="sc-shared" hidden></div>
+
+        <div id="sc-intro" class="hero-block">
+          <p class="kicker">Today's Field Scan</p>
+          <h1 id="sc-title">Where are you in the field?</h1>
+          <p class="prompt">Six quick everyday scenes. About a minute. Pick what's true right now. There are no wrong answers.</p>
+          <button id="sc-start" class="sc-primary" type="button">Start</button>
+        </div>
+
+        <div id="sc-question" class="hero-block" hidden>
+          <p class="kicker"><span id="sc-progress">1 / 6</span></p>
+          <h2 id="sc-prompt" tabindex="-1"></h2>
+          <div id="sc-options" class="options" role="group" aria-labelledby="sc-prompt"></div>
+          <div class="sc-nav">
+            <button id="sc-back" type="button" class="sc-secondary">Back</button>
+            <button id="sc-skip" type="button" class="sc-link">Skip</button>
+            <button id="sc-next" type="button" class="sc-primary" disabled>Next</button>
+          </div>
+        </div>
+
+        <div id="sc-finish" class="hero-block" hidden>
+          <p class="kicker">Almost there</p>
+          <h2 tabindex="-1" id="sc-finish-title">Before we read it</h2>
+          <div class="capture">
+            <label class="sc-check"><input id="sc-vote" type="checkbox" />
+              Count my scan toward the Evening Rebalance (Mon · Wed · Fri, anonymous, one per person)</label>
+            <label class="sc-check"><input id="sc-profile" type="checkbox" />
+              Save this reading to my moodQue profile</label>
+            <div id="sc-handle-row" hidden>
+              <label for="sc-handle">Your handle (optional)</label>
+              <input id="sc-handle" type="text" maxlength="40" autocomplete="nickname" placeholder="@yourhandle" />
+            </div>
+            <button id="sc-submit" type="button" class="sc-primary">See my reading</button>
+            <button id="sc-review" type="button" class="sc-secondary">Change an answer</button>
+            <p id="sc-state" class="muted" aria-live="polite"></p>
+          </div>
+        </div>
+
+        <div id="sc-result" class="result" hidden aria-live="polite">
+          <p class="kicker" id="sc-r-kicker">Today's reading</p>
+          <h2 id="sc-r-faction" tabindex="-1"></h2>
+          <p id="sc-r-status" class="muted"></p>
+          <p id="sc-r-direction"></p>
+          <p id="sc-r-step"></p>
+          <details class="sc-why"><summary>Why this reading</summary><ul id="sc-r-why"></ul></details>
+          <p id="sc-r-vote" class="muted"></p>
+          <p class="muted">Weather, not identity. It's a read of today, and today moves.</p>
+          <div class="sc-nav">
+            <button id="sc-share" type="button" class="sc-primary">Share my reading</button>
+            <button id="sc-retake" type="button" class="sc-secondary">Retake</button>
+          </div>
+          <p id="sc-share-state" class="muted" aria-live="polite"></p>
+          <p class="muted">Evening Rebalance: Mon · Wed · Fri, 6 PM ET on the moodQue live stream.</p>
+        </div>
+      </section>
+
       <footer class="report-foot">
         <p id="scan-disclaimer">This is a daily scan, not your confirmed faction.</p>
         <a id="full-scan-link" href="territory.html">Take the full Territory Scan</a>
@@ -49,5 +110,6 @@
   </main>
 
   <script src="assets/territory-scan.js"></script>
+  <script src="assets/daily-scan.js" data-scan-api="https://web-production-ed9ad.up.railway.app/api/v1/scan"></script>
 </body>
 </html>
