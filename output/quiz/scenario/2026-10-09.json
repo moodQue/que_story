@@ -1,0 +1,158 @@
+{
+  "scan_set_id": "2026-10-09-daily-v1",
+  "date": "2026-10-09",
+  "timezone": "America/New_York",
+  "closes_at": null,
+  "questions": [
+    {
+      "id": "muse_20261009_q1_v1",
+      "theme": "morning_scene",
+      "state_target": "current_state",
+      "prompt": "First frost on the ground this morning — the season's first real cold snap. What's your first move?",
+      "options": [
+        {
+          "id": "snooze",
+          "text": "Back under the covers. The day can wait ten minutes."
+        },
+        {
+          "id": "scraper",
+          "text": "Outside already, clearing things off, mentally running late."
+        },
+        {
+          "id": "kettle",
+          "text": "Kettle on first. I'll face the cold once there's tea."
+        },
+        {
+          "id": "moving",
+          "text": "Dressed, keys in hand, already halfway out the door."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261009_q2_v1",
+      "theme": "midday_check",
+      "state_target": "current_state",
+      "prompt": "Mid-morning check-in. The cold start is behind you — where's your head now?",
+      "options": [
+        {
+          "id": "locked",
+          "text": "Locked in. I know exactly what's next."
+        },
+        {
+          "id": "spinning",
+          "text": "Spinning a little — half excited, half overthinking."
+        },
+        {
+          "id": "fumes",
+          "text": "Running on fumes, honestly."
+        },
+        {
+          "id": "drifting",
+          "text": "Just going where the day takes me."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261009_q3_v1",
+      "theme": "canceled_plans",
+      "state_target": "response_tendency",
+      "prompt": "Your evening plans just fell through — friend cancels an hour before. You…",
+      "options": [
+        {
+          "id": "relieved",
+          "text": "Feel a quiet relief. Couch night sounds perfect."
+        },
+        {
+          "id": "rally",
+          "text": "Start texting around. The night isn't over yet."
+        },
+        {
+          "id": "stung",
+          "text": "Feel stung — I'd rearranged things for this."
+        },
+        {
+          "id": "restless",
+          "text": "End up restless, not sure what to do with myself."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261009_q4_v1",
+      "theme": "dinner_table",
+      "state_target": "desired_state",
+      "prompt": "Someone else is handling dinner tonight. You just pick the vibe — what sounds right?",
+      "options": [
+        {
+          "id": "steady",
+          "text": "The usual comfort food. No surprises needed."
+        },
+        {
+          "id": "together",
+          "text": "Doesn't matter what it is — I want people around the table."
+        },
+        {
+          "id": "surprise",
+          "text": "Something I've never tried. Surprise me."
+        },
+        {
+          "id": "graze",
+          "text": "Honestly just snacks. I'm grazing tonight."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261009_q5_v1",
+      "theme": "evening_sound",
+      "state_target": "desired_state",
+      "prompt": "Dark by dinner now. What should the evening sound like?",
+      "options": [
+        {
+          "id": "hush",
+          "text": "Near-quiet. Rain sounds or nothing at all."
+        },
+        {
+          "id": "anthem",
+          "text": "My fall playlist, loud, singing along."
+        },
+        {
+          "id": "story",
+          "text": "A podcast — company without the small talk."
+        },
+        {
+          "id": "crowd",
+          "text": "Only counts if friends are here making noise too."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261009_q6_v1",
+      "theme": "hour_ahead",
+      "state_target": "desired_state",
+      "prompt": "One hour from now — how do you want to feel?",
+      "options": [
+        {
+          "id": "settled",
+          "text": "Settled. Day closed, mind quiet."
+        },
+        {
+          "id": "done",
+          "text": "Like I actually finished something today."
+        },
+        {
+          "id": "light",
+          "text": "Lighter — laughing at something stupid."
+        },
+        {
+          "id": "soft",
+          "text": "Soft and unwound, the week off my shoulders."
+        }
+      ],
+      "allow_skip": true
+    }
+  ]
+}
