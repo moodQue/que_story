@@ -196,6 +196,21 @@ async function saveScan() {
   }
 }
 
+/** Personal balance: where you and today's field meet, plus that scene's playlist. */
+function showBalance(balance) {
+  const box = document.getElementById("result-balance");
+  if (!box) return;
+  if (!balance || !balance.text) {
+    box.hidden = true;
+    return;
+  }
+  document.getElementById("balance-text").textContent = balance.text;
+  const link = document.getElementById("balance-link");
+  link.href = balance.url || "https://www.youtube.com/@moodQue/live";
+  link.textContent = `Listen: ${balance.scene_label || "the live stream"} →`;
+  box.hidden = false;
+}
+
 function renderQuiz(scan) {
   scanData = scan;
 
@@ -242,6 +257,7 @@ function renderQuiz(scan) {
       resultTitle.textContent = option.reading || scoreLabels[option.score_key] || "Field Reading";
       resultCopy.textContent = scan.field_readings?.[option.score_key] || "Your answer is today's temporary field reading.";
       resultContext.textContent = `The field today reads ${scan.territory || "Unknown"} (${scan.quadrant || "Unknown"}).`;
+      showBalance(scan.balances?.[option.score_key]);
       resultEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
     });
 

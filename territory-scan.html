@@ -26,10 +26,17 @@
       <div id="options" class="options" aria-live="polite"></div>
 
       <section id="result" class="result" hidden>
-        <p class="kicker">Today's Field Reading</p>
+        <p class="kicker">Your Reading</p>
         <h2 id="result-title"></h2>
         <p id="result-copy"></p>
         <p id="result-context" class="muted"></p>
+
+        <!-- Personal balance (2026-10-11): where you and today's field meet, and a scene
+             playlist to sit in. Computed by MIS (core/personal_balance.py) into the scan JSON. -->
+        <div id="result-balance" class="balance" hidden>
+          <p id="balance-text"></p>
+          <a id="balance-link" class="balance-link" href="#" target="_blank" rel="noopener">Listen on YouTube →</a>
+        </div>
 
         <!-- Capture: the handle is what links this scan to a durable viewer identity. -->
         <div id="capture" class="capture">

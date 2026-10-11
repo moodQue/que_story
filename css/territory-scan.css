@@ -386,3 +386,30 @@ h2 {
   border-width: 2px;
   box-shadow: inset 4px 0 0 var(--accent);
 }
+
+/* Personal balance (2026-10-11) */
+.balance {
+  margin-top: 22px;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+}
+
+.result .balance p {
+  margin: 0;
+}
+
+.balance-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--accent);
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+
+.balance-link:hover,
+.balance-link:focus-visible {
+  text-decoration: underline;
+}
