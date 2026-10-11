@@ -3,10 +3,10 @@
   "quiz_version": "2026.10.11",
   "quiz_type": "field_scan",
   "date": "2026-10-11",
-  "territory": "The Hollow",
-  "quadrant": "The Hollow Grounds",
+  "territory": "The Ethereal",
+  "quadrant": "The Still Places",
   "lunar_phase": "New Moon",
-  "dominant_signal": "disputes",
+  "dominant_signal": "studies",
   "question_count": 1,
   "variant": "C",
   "result_mode": "temporary_reading",
@@ -50,6 +50,56 @@
     "hollow_grounds": "Your Field Scan reads like Hollow Grounds energy today.",
     "still_places": "Your Field Scan reads like Still Places energy today.",
     "lit_realms": "Your Field Scan reads like Lit Realms energy today."
+  },
+  "balances": {
+    "lit_realms": {
+      "scene": "Nature",
+      "scene_label": "Nature",
+      "invite": "step outside into Nature for a while",
+      "url": "https://www.youtube.com/playlist?list=PLDz1shJrVQtUmwbyaK-6YC9ynNWAv-wed",
+      "in_step": false,
+      "you": "Lit",
+      "field": "The Ethereal",
+      "territory": "the_gathering",
+      "display_name": "The Gathering",
+      "text": "Your scan reads Lit · the field reads The Ethereal. Balance sits in The Gathering — step outside into Nature for a while."
+    },
+    "storm_lands": {
+      "scene": "Jazz",
+      "scene_label": "Late Night Jazz",
+      "invite": "slip into some Late Night Jazz",
+      "url": "https://www.youtube.com/playlist?list=PLDz1shJrVQtXrFz4hy6HpZVifVwEOL3Kd",
+      "in_step": false,
+      "you": "Storm",
+      "field": "The Ethereal",
+      "territory": "the_wandering",
+      "display_name": "The Wandering",
+      "text": "Your scan reads Storm · the field reads The Ethereal. Balance sits in The Wandering — slip into some Late Night Jazz."
+    },
+    "hollow_grounds": {
+      "scene": "Jazz",
+      "scene_label": "Late Night Jazz",
+      "invite": "slip into some Late Night Jazz",
+      "url": "https://www.youtube.com/playlist?list=PLDz1shJrVQtXrFz4hy6HpZVifVwEOL3Kd",
+      "in_step": false,
+      "you": "Hollow",
+      "field": "The Ethereal",
+      "territory": "the_wandering",
+      "display_name": "The Wandering",
+      "text": "Your scan reads Hollow · the field reads The Ethereal. Balance sits in The Wandering — slip into some Late Night Jazz."
+    },
+    "still_places": {
+      "scene": "Ocean_Waves",
+      "scene_label": "Ocean Waves",
+      "invite": "wander down to the Ocean Waves",
+      "url": "https://www.youtube.com/playlist?list=PLDz1shJrVQtX3O5Dty0Dj2iRaQmIfJ_rQ",
+      "in_step": true,
+      "you": "Still",
+      "field": "The Ethereal",
+      "territory": "the_ethereal",
+      "display_name": "The Ethereal",
+      "text": "Your scan matches the field — you're in step with The Ethereal today. Wander down to the Ocean Waves."
+    }
   },
   "disclaimer": "This is a daily scan, not your confirmed faction."
 }
