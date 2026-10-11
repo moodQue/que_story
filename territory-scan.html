@@ -35,7 +35,14 @@
              playlist to sit in. Computed by MIS (core/personal_balance.py) into the scan JSON. -->
         <div id="result-balance" class="balance" hidden>
           <p id="balance-text"></p>
-          <a id="balance-link" class="balance-link" href="#" target="_blank" rel="noopener">Listen on YouTube →</a>
+          <!-- The live stream is the main invitation (2026-10-11): it moves through scenes
+               every 2 hours, and @moodQue/live always resolves to the current broadcast.
+               Framed as useful to the viewer — never as helping the channel's numbers. -->
+          <p class="balance-tip">Follow the live stream and see where the day takes you — leave it
+            playing in a tab while you work, and turn it up or down whenever you like.</p>
+          <a id="balance-live" class="balance-cta" href="https://www.youtube.com/@moodQue/live"
+             target="_blank" rel="noopener">Watch live →</a>
+          <a id="balance-link" class="balance-link" href="#" target="_blank" rel="noopener">or the playlist →</a>
         </div>
 
         <!-- Capture: the handle is what links this scan to a durable viewer identity. -->

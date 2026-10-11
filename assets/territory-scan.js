@@ -205,9 +205,16 @@ function showBalance(balance) {
     return;
   }
   document.getElementById("balance-text").textContent = balance.text;
+  // Main invitation: the live stream. The scene's playlist is the quieter second option,
+  // hidden when the scene has no playlist (its url is then the live stream itself).
+  const live = "https://www.youtube.com/@moodQue/live";
   const link = document.getElementById("balance-link");
-  link.href = balance.url || "https://www.youtube.com/@moodQue/live";
-  link.textContent = `Listen: ${balance.scene_label || "the live stream"} →`;
+  const hasPlaylist = balance.url && balance.url !== live && balance.url.includes("playlist");
+  link.hidden = !hasPlaylist;
+  if (hasPlaylist) {
+    link.href = balance.url;
+    link.textContent = `or the ${balance.scene_label || "scene"} playlist →`;
+  }
   box.hidden = false;
 }
 
