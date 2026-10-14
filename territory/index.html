@@ -115,6 +115,7 @@
                 id="kick-username"
                 placeholder="your_kick_name"
                 autocomplete="off"
+                maxlength="40"
                 spellcheck="false"
               />
               <div class="btns" style="margin-top:14px;">
@@ -268,26 +269,47 @@
 
     // ── Firebase write ──────────────────────────────────────────────────────
     // Path: /hunts/week_{wk}/{tid}/{kick_username}
-    // Returns the existing phrase if the user already logged this territory this week.
+    //
+    // The database rules (configs/rtdb_rules_full.json, hardened 2026-09-11) do NOT allow
+    // reading hunt entries — otherwise anyone could look up another viewer's phrase. The page
+    // used to read the entry first ("already visited?"), so every submit failed with
+    // "Something went wrong" (found 2026-10-14). Now it only WRITES:
+    //   - the phrase is remembered in this browser, so a return visit shows the same one;
+    //   - a write over an already-CONFIRMED entry is refused by the rules → "already confirmed".
+
+    function rememberedPhrase(wk, tid, kickUsername) {
+      try { return localStorage.getItem(`hunt:${wk}:${tid}:${kickUsername}`); } catch (e) { return null; }
+    }
+
+    function rememberPhrase(wk, tid, kickUsername, phrase) {
+      try { localStorage.setItem(`hunt:${wk}:${tid}:${kickUsername}`, phrase); } catch (e) { /* private mode */ }
+    }
 
     async function logVisit(kickUsername, tid, wk, phrase) {
-      const ref      = db.ref(`hunts/week_${wk}/${tid}/${kickUsername}`);
-      const snapshot = await ref.once("value");
+      const ref        = db.ref(`hunts/week_${wk}/${tid}/${kickUsername}`);
+      const remembered = rememberedPhrase(wk, tid, kickUsername);
+      const usePhrase  = remembered || phrase;
 
-      if (snapshot.exists()) {
-        return { alreadyVisited: true, phrase: snapshot.val().phrase };
+      try {
+        await ref.set({
+          kick_username: kickUsername,
+          territory_id:  tid,
+          week:          wk,
+          phrase:        usePhrase,
+          confirmed:     false,
+          timestamp:     Date.now(),
+        });
+      } catch (err) {
+        // The only write the rules refuse for a valid username: this territory is already
+        // confirmed for this user this week.
+        if (String(err && (err.code || err.message)).toUpperCase().includes("PERMISSION")) {
+          return { alreadyConfirmed: true, phrase: remembered };
+        }
+        throw err;
       }
 
-      await ref.set({
-        kick_username: kickUsername,
-        territory_id:  tid,
-        week:          wk,
-        phrase:        phrase,
-        confirmed:     false,
-        timestamp:     Date.now(),
-      });
-
-      return { alreadyVisited: false, phrase };
+      rememberPhrase(wk, tid, kickUsername, usePhrase);
+      return { alreadyVisited: Boolean(remembered), phrase: usePhrase };
     }
 
     // ── Init ────────────────────────────────────────────────────────────────
@@ -323,6 +345,11 @@
 
         try {
           const result = await logVisit(kickUsername, tid, wk, phrase);
+
+          if (result.alreadyConfirmed) {
+            statusMsg.textContent = "You've already confirmed this territory this week — find the next one!";
+            return;
+          }
 
           phraseDisplay.textContent   = result.phrase;
           phraseDisplay.style.display = "block";
