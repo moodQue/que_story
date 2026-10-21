@@ -1,0 +1,105 @@
+{
+  "quiz_id": "field_scan_daily",
+  "quiz_version": "2026.10.21",
+  "quiz_type": "field_scan",
+  "date": "2026-10-21",
+  "territory": "The Focus",
+  "quadrant": "The Still Places",
+  "lunar_phase": "First Quarter",
+  "dominant_signal": "creation",
+  "question_count": 1,
+  "variant": "C",
+  "result_mode": "temporary_reading",
+  "official_assignment": false,
+  "full_quiz_url": "https://moodque.github.io/que_story/territory-scan.html",
+  "cta": "Take the full 12-question Territory Scan to confirm your faction.",
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "If your inner state had weather today, what's the forecast?",
+      "options": [
+        {
+          "label": "Bright, open, moving",
+          "symbol": "🌕",
+          "score_key": "lit_realms",
+          "reading": "The Gathering"
+        },
+        {
+          "label": "Pressure building, no release",
+          "symbol": "⚡",
+          "score_key": "storm_lands",
+          "reading": "The Storm"
+        },
+        {
+          "label": "Low, grey, and slow",
+          "symbol": "🌧",
+          "score_key": "hollow_grounds",
+          "reading": "The Hollow"
+        },
+        {
+          "label": "Clear and still",
+          "symbol": "🌙",
+          "score_key": "still_places",
+          "reading": "The Ethereal"
+        }
+      ]
+    }
+  ],
+  "field_readings": {
+    "storm_lands": "Your Field Scan reads like Storm Lands energy today.",
+    "hollow_grounds": "Your Field Scan reads like Hollow Grounds energy today.",
+    "still_places": "Your Field Scan reads like Still Places energy today.",
+    "lit_realms": "Your Field Scan reads like Lit Realms energy today."
+  },
+  "balances": {
+    "lit_realms": {
+      "scene": "Nature",
+      "scene_label": "Nature",
+      "invite": "step outside into Nature for a while",
+      "url": "https://www.youtube.com/playlist?list=PLDz1shJrVQtUmwbyaK-6YC9ynNWAv-wed",
+      "in_step": false,
+      "you": "Lit",
+      "field": "The Focus",
+      "territory": "the_gathering",
+      "display_name": "The Gathering",
+      "text": "Your scan reads Lit · the field reads The Focus. Balance sits in The Gathering — step outside into Nature for a while."
+    },
+    "storm_lands": {
+      "scene": "Coffee_Shop",
+      "scene_label": "Coffee Shop",
+      "invite": "head over to the Coffee Shop and sit for a bit",
+      "url": "https://www.youtube.com/playlist?list=PLDz1shJrVQtVYc9cbm8mmMfRe6RU15bXg",
+      "in_step": false,
+      "you": "Storm",
+      "field": "The Focus",
+      "territory": "the_focus",
+      "display_name": "The Focus",
+      "text": "Your scan reads Storm · the field reads The Focus. Balance sits in The Focus — head over to the Coffee Shop and sit for a bit."
+    },
+    "hollow_grounds": {
+      "scene": "Jazz",
+      "scene_label": "Late Night Jazz",
+      "invite": "slip into some Late Night Jazz",
+      "url": "https://www.youtube.com/playlist?list=PLDz1shJrVQtXrFz4hy6HpZVifVwEOL3Kd",
+      "in_step": false,
+      "you": "Hollow",
+      "field": "The Focus",
+      "territory": "the_wandering",
+      "display_name": "The Wandering",
+      "text": "Your scan reads Hollow · the field reads The Focus. Balance sits in The Wandering — slip into some Late Night Jazz."
+    },
+    "still_places": {
+      "scene": "Coffee_Shop",
+      "scene_label": "Coffee Shop",
+      "invite": "head over to the Coffee Shop and sit for a bit",
+      "url": "https://www.youtube.com/playlist?list=PLDz1shJrVQtVYc9cbm8mmMfRe6RU15bXg",
+      "in_step": true,
+      "you": "Still",
+      "field": "The Focus",
+      "territory": "the_focus",
+      "display_name": "The Focus",
+      "text": "Your scan matches the field — you're in step with The Focus today. Head over to the Coffee Shop and sit for a bit."
+    }
+  },
+  "disclaimer": "This is a daily scan, not your confirmed faction."
+}
