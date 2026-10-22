@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>moodQue \u2014 Latest Territory Story</title>
+<style>
+  body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+         background:#0b0614; color:#e9e2f5; font-family: Georgia, 'Times New Roman', serif; text-align:center; }
+  .wrap { padding:2rem; }
+  .moon { font-size:2rem; }
+  a { color:#c9a7ff; }
+</style>
+<script>
+fetch('data/stories.json', { cache: 'no-store' })
+  .then(function (r) { return r.json(); })
+  .then(function (data) {
+    var ids = Object.keys(data).sort();
+    var latest = ids[ids.length - 1];
+    window.location.replace('story.html?story=' + encodeURIComponent(latest));
+  })
+  .catch(function () { window.location.replace('index.html'); });
+</script>
+</head>
+<body>
+<div class="wrap">
+  <div class="moon">\U0001F319</div>
+  <p>Stepping into the signal \u2014 taking you to the latest territory story\u2026</p>
+  <p><a href="index.html">Browse all territory stories</a></p>
+</div>
+</body>
+</html>
