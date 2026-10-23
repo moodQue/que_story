@@ -1,0 +1,158 @@
+{
+  "scan_set_id": "2026-10-23-daily-v1",
+  "date": "2026-10-23",
+  "timezone": "America/New_York",
+  "closes_at": null,
+  "questions": [
+    {
+      "id": "muse_20261023_q1_v1",
+      "theme": "evening_scene",
+      "state_target": "current_state",
+      "prompt": "The World Series is on screens everywhere tonight. Which scene sounds most like your evening right now?",
+      "options": [
+        {
+          "id": "settled",
+          "text": "Snacks ready, settled in — I'm here all night."
+        },
+        {
+          "id": "checking",
+          "text": "Checking the score between everything else I'm doing."
+        },
+        {
+          "id": "deep",
+          "text": "The game's on, but I'm deep in my own thing."
+        },
+        {
+          "id": "texting",
+          "text": "Only really watching if friends are texting about it."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261023_q2_v1",
+      "theme": "anticipation_check",
+      "state_target": "current_state",
+      "prompt": "A trailer leaked today for Mass Effect 5 — a game people have waited years for. What's your first move?",
+      "options": [
+        {
+          "id": "now",
+          "text": "Watch it immediately — no waiting, no spoilers missed."
+        },
+        {
+          "id": "proper",
+          "text": "Save it for later — lights low, watched properly."
+        },
+        {
+          "id": "whenever",
+          "text": "Interesting, but I'll catch up whenever I get to it."
+        },
+        {
+          "id": "dodging",
+          "text": "Dodging every spoiler until I see it fresh."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261023_q3_v1",
+      "theme": "plan_breakdown",
+      "state_target": "response_tendency",
+      "prompt": "The one screening of 'Heated Rivalry' you wanted is sold out — your night plan just fell apart. What now?",
+      "options": [
+        {
+          "id": "wing",
+          "text": "Wing it — something better might turn up."
+        },
+        {
+          "id": "replan",
+          "text": "Rebuild the whole evening on the spot."
+        },
+        {
+          "id": "sign",
+          "text": "Take it as a sign to do nothing instead."
+        },
+        {
+          "id": "vent",
+          "text": "Text everyone about how annoying that is."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261023_q4_v1",
+      "theme": "comfort_meal",
+      "state_target": "desired_state",
+      "prompt": "Country classics are trending today (John Anderson's essential songs). If someone handled dinner with that playlist on, what hits the spot?",
+      "options": [
+        {
+          "id": "slowcook",
+          "text": "Something slow-cooked — no hurry at all."
+        },
+        {
+          "id": "quick",
+          "text": "Whatever's quick — I'm eating between things."
+        },
+        {
+          "id": "spread",
+          "text": "A big spread — the more people, the better."
+        },
+        {
+          "id": "treat",
+          "text": "Something indulgent, just for me tonight."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261023_q5_v1",
+      "theme": "night_sound",
+      "state_target": "context_only",
+      "prompt": "Daft Punk are trending again (now in Lego form). Which sound fits your night right now?",
+      "options": [
+        {
+          "id": "move",
+          "text": "Something I can move to — 'One More Time' energy."
+        },
+        {
+          "id": "glow",
+          "text": "Smooth and steady — a background glow."
+        },
+        {
+          "id": "quiet",
+          "text": "Silence — my head needs the quiet tonight."
+        },
+        {
+          "id": "new",
+          "text": "Something I've never heard before."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261023_q6_v1",
+      "theme": "hour_ahead",
+      "state_target": "desired_state",
+      "prompt": "The 2030 World Cup bidding just opened — everyone's looking way ahead. What do you want the next hour to feel like?",
+      "options": [
+        {
+          "id": "clear",
+          "text": "Clear-headed — one thing done well."
+        },
+        {
+          "id": "soft",
+          "text": "Slow and easy — nothing demanding."
+        },
+        {
+          "id": "laughing",
+          "text": "Around people, laughing."
+        },
+        {
+          "id": "charged",
+          "text": "Charged up — ready for anything."
+        }
+      ],
+      "allow_skip": true
+    }
+  ]
+}
