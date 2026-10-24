@@ -1,147 +1,147 @@
 {
-  "scan_set_id": "2026-10-23-daily-v1",
+  "scan_set_id": "2026-10-24-daily-v1",
   "date": "2026-10-24",
   "timezone": "America/New_York",
   "closes_at": null,
   "questions": [
     {
-      "id": "muse_20261023_q1_v1",
+      "id": "muse_20261024_q1_v1",
       "theme": "evening_scene",
       "state_target": "current_state",
       "prompt": "The World Series is on screens everywhere tonight. Which scene sounds most like your evening right now?",
       "options": [
         {
-          "id": "settled",
-          "text": "Snacks ready, settled in — I'm here all night."
+          "id": "firstpitch",
+          "text": "Settled in before first pitch \u2014 the whole night's ahead."
         },
         {
-          "id": "checking",
-          "text": "Checking the score between everything else I'm doing."
+          "id": "innings",
+          "text": "Catching innings between other things."
         },
         {
-          "id": "deep",
-          "text": "The game's on, but I'm deep in my own thing."
+          "id": "background",
+          "text": "It's on, but I'm doing my own quiet thing."
         },
         {
-          "id": "texting",
-          "text": "Only really watching if friends are texting about it."
+          "id": "groupchat",
+          "text": "Only here for the group chat energy."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261023_q2_v1",
-      "theme": "anticipation_check",
+      "id": "muse_20261024_q2_v1",
+      "theme": "energy_check",
       "state_target": "current_state",
-      "prompt": "A trailer leaked today for Mass Effect 5 — a game people have waited years for. What's your first move?",
+      "prompt": "Chappell Roan is everywhere tonight \u2014 big sound, main-character energy. Where's your energy right now?",
       "options": [
         {
-          "id": "now",
-          "text": "Watch it immediately — no waiting, no spoilers missed."
+          "id": "match",
+          "text": "Match her \u2014 loud, all the way up."
         },
         {
-          "id": "proper",
-          "text": "Save it for later — lights low, watched properly."
+          "id": "fumes",
+          "text": "Opposite end \u2014 running on fumes."
         },
         {
-          "id": "whenever",
-          "text": "Interesting, but I'll catch up whenever I get to it."
+          "id": "middle",
+          "text": "Steady in the middle \u2014 feeling fine."
         },
         {
-          "id": "dodging",
-          "text": "Dodging every spoiler until I see it fresh."
+          "id": "grates",
+          "text": "Big energy would grate on me right now."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261023_q3_v1",
-      "theme": "plan_breakdown",
+      "id": "muse_20261024_q3_v1",
+      "theme": "cancelled_night",
       "state_target": "response_tendency",
-      "prompt": "The one screening of 'Heated Rivalry' you wanted is sold out — your night plan just fell apart. What now?",
+      "prompt": "Slayyyter just cancelled \u2014 your night's main event fell through. What's your first move?",
       "options": [
         {
-          "id": "wing",
-          "text": "Wing it — something better might turn up."
+          "id": "pivot",
+          "text": "Pivot \u2014 find something better tonight."
         },
         {
-          "id": "replan",
-          "text": "Rebuild the whole evening on the spot."
+          "id": "stayin",
+          "text": "Take it as a sign to stay in."
         },
         {
-          "id": "sign",
-          "text": "Take it as a sign to do nothing instead."
+          "id": "rebuild",
+          "text": "Rebuild the whole plan on the spot."
         },
         {
           "id": "vent",
-          "text": "Text everyone about how annoying that is."
+          "text": "Text everyone about how annoying this is."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261023_q4_v1",
+      "id": "muse_20261024_q4_v1",
       "theme": "comfort_meal",
       "state_target": "desired_state",
-      "prompt": "Country classics are trending today (John Anderson's essential songs). If someone handled dinner with that playlist on, what hits the spot?",
+      "prompt": "Kacey Musgraves' new sound is the slow, mellow kind. If someone made dinner with that playing, what hits the spot?",
       "options": [
         {
           "id": "slowcook",
-          "text": "Something slow-cooked — no hurry at all."
+          "text": "Something slow-cooked \u2014 no hurry at all."
         },
         {
           "id": "quick",
-          "text": "Whatever's quick — I'm eating between things."
+          "text": "Whatever's quick \u2014 I'm eating between things."
         },
         {
           "id": "spread",
-          "text": "A big spread — the more people, the better."
+          "text": "A big spread \u2014 the more people, the better."
         },
         {
-          "id": "treat",
-          "text": "Something indulgent, just for me tonight."
+          "id": "event",
+          "text": "Something fun \u2014 dinner as an event."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261023_q5_v1",
+      "id": "muse_20261024_q5_v1",
       "theme": "night_sound",
-      "state_target": "context_only",
-      "prompt": "Daft Punk are trending again (now in Lego form). Which sound fits your night right now?",
+      "state_target": "desired_state",
+      "prompt": "Same artist, different question \u2014 Chappell Roan again, but this is about the night's music. Which sound fits your night right now?",
       "options": [
         {
-          "id": "move",
-          "text": "Something I can move to — 'One More Time' energy."
+          "id": "volume",
+          "text": "Big pop, full volume."
         },
         {
-          "id": "glow",
-          "text": "Smooth and steady — a background glow."
+          "id": "smooth",
+          "text": "Something smooth and steady."
         },
         {
           "id": "quiet",
-          "text": "Silence — my head needs the quiet tonight."
+          "text": "Quiet \u2014 my head needs the silence."
         },
         {
-          "id": "new",
-          "text": "Something I've never heard before."
+          "id": "putmeon",
+          "text": "Something new \u2014 put me on to it."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261023_q6_v1",
+      "id": "muse_20261024_q6_v1",
       "theme": "hour_ahead",
       "state_target": "desired_state",
-      "prompt": "The 2030 World Cup bidding just opened — everyone's looking way ahead. What do you want the next hour to feel like?",
+      "prompt": "The World Series goes deep tonight \u2014 long game, late innings. What do you want the next hour to feel like?",
       "options": [
         {
           "id": "clear",
-          "text": "Clear-headed — one thing done well."
+          "text": "Clear-headed \u2014 one thing done well."
         },
         {
           "id": "soft",
-          "text": "Slow and easy — nothing demanding."
+          "text": "Slow and easy \u2014 nothing demanding."
         },
         {
           "id": "laughing",
@@ -149,7 +149,7 @@
         },
         {
           "id": "charged",
-          "text": "Charged up — ready for anything."
+          "text": "Charged up \u2014 ready for anything."
         }
       ],
       "allow_skip": true
