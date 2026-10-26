@@ -1,0 +1,158 @@
+{
+  "scan_set_id": "2026-10-26-daily-v1",
+  "date": "2026-10-26",
+  "timezone": "America/New_York",
+  "closes_at": null,
+  "questions": [
+    {
+      "id": "muse_20261026_q1_v1",
+      "theme": "new_week_new_world",
+      "state_target": "current_state",
+      "prompt": "A whole parallel Mass Effect universe that never was just got revealed — another galaxy, other timelines, all imagined. Monday morning, a new week opening up. Which scene sounds most like yours right now?",
+      "options": [
+        {
+          "id": "slow",
+          "text": "Still easing in — nowhere I have to be yet."
+        },
+        {
+          "id": "mapping",
+          "text": "Already mapping the week ahead, one thing at a time."
+        },
+        {
+          "id": "whatifs",
+          "text": "Brain buzzing with what-ifs from the weekend."
+        },
+        {
+          "id": "dragging",
+          "text": "Dragging — the weekend went by too fast."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261026_q2_v1",
+      "theme": "morning_after_game_night",
+      "state_target": "current_state",
+      "prompt": "Sunday Night Football is in the books — Chiefs vs Seahawks under the lights, the weekend's big game done. Monday's here now. Where's your energy sitting?",
+      "options": [
+        {
+          "id": "buzzing",
+          "text": "Still buzzing from the finish under the lights."
+        },
+        {
+          "id": "winding",
+          "text": "Quiet — winding down from the weekend."
+        },
+        {
+          "id": "onto",
+          "text": "Already onto the next thing, game behind me."
+        },
+        {
+          "id": "fumes",
+          "text": "Running on fumes after a late Sunday night."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261026_q3_v1",
+      "theme": "plans_fall_apart",
+      "state_target": "response_tendency",
+      "prompt": "Fight night came and went — UFC 333's results are everywhere and everyone's got a take. But say your watch party fell apart at the last minute and the main event passed you by. What's your move?",
+      "options": [
+        {
+          "id": "replay",
+          "text": "Watch the replay, no spoilers, start to finish."
+        },
+        {
+          "id": "letgo",
+          "text": "Let it go — quiet night in instead."
+        },
+        {
+          "id": "takes",
+          "text": "Text everyone for their takes on what happened."
+        },
+        {
+          "id": "newplan",
+          "text": "Start something else entirely — new plan, new night."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261026_q4_v1",
+      "theme": "listening_dinner",
+      "state_target": "desired_state",
+      "prompt": "Olivia Rodrigo's album is back at No. 1 on the Billboard 200 — the whole thing's playing everywhere. Have you heard it? How would you pair the evening with it?",
+      "options": [
+        {
+          "id": "comfort",
+          "text": "Comfort food, big bowl, no notes."
+        },
+        {
+          "id": "light",
+          "text": "Something light — saving room for the encore."
+        },
+        {
+          "id": "table",
+          "text": "A table full of people, plates everywhere."
+        },
+        {
+          "id": "fridge",
+          "text": "Whatever's already in the fridge — I'm not fussy tonight."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261026_q5_v1",
+      "theme": "legendary_live_sound",
+      "state_target": "desired_state",
+      "prompt": "Jay-Z brought out Dr. Dre and Snoop Dogg at the LA tour closer — a legendary live moment. What does your legendary live moment look like tonight?",
+      "options": [
+        {
+          "id": "classics",
+          "text": "Big West Coast classics, full volume."
+        },
+        {
+          "id": "smooth",
+          "text": "Something smooth and steady underneath it all."
+        },
+        {
+          "id": "silence",
+          "text": "Nothing — just the room, quiet."
+        },
+        {
+          "id": "new",
+          "text": "Something I've never heard — put me on."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261026_q6_v1",
+      "theme": "hour_ahead",
+      "state_target": "desired_state",
+      "prompt": "A parallel Mass Effect universe that never was — whole timelines that could've been. The next hour is yours. What do you want it to feel like?",
+      "options": [
+        {
+          "id": "explore",
+          "text": "Exploring something new — a world I haven't seen."
+        },
+        {
+          "id": "quest",
+          "text": "Locked in — one quest, no distractions."
+        },
+        {
+          "id": "easy",
+          "text": "Slow and easy — nothing demanding."
+        },
+        {
+          "id": "people",
+          "text": "Around people, laughing."
+        }
+      ],
+      "allow_skip": true
+    }
+  ]
+}
