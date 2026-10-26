@@ -1,0 +1,105 @@
+{
+  "quiz_id": "field_scan_daily",
+  "quiz_version": "2026.10.26",
+  "quiz_type": "field_scan",
+  "date": "2026-10-26",
+  "territory": "The Raw",
+  "quadrant": "The Storm Lands",
+  "lunar_phase": "Full Moon",
+  "dominant_signal": "disputes",
+  "question_count": 1,
+  "variant": "C",
+  "result_mode": "temporary_reading",
+  "official_assignment": false,
+  "full_quiz_url": "https://moodque.github.io/que_story/territory-scan.html",
+  "cta": "Take the full 12-question Territory Scan to confirm your faction.",
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "If your inner state had weather today, what's the forecast?",
+      "options": [
+        {
+          "label": "Bright, open, moving",
+          "symbol": "🌕",
+          "score_key": "lit_realms",
+          "reading": "The Gathering"
+        },
+        {
+          "label": "Pressure building, no release",
+          "symbol": "⚡",
+          "score_key": "storm_lands",
+          "reading": "The Storm"
+        },
+        {
+          "label": "Low, grey, and slow",
+          "symbol": "🌧",
+          "score_key": "hollow_grounds",
+          "reading": "The Hollow"
+        },
+        {
+          "label": "Clear and still",
+          "symbol": "🌙",
+          "score_key": "still_places",
+          "reading": "The Ethereal"
+        }
+      ]
+    }
+  ],
+  "field_readings": {
+    "storm_lands": "Your Field Scan reads like Storm Lands energy today.",
+    "hollow_grounds": "Your Field Scan reads like Hollow Grounds energy today.",
+    "still_places": "Your Field Scan reads like Still Places energy today.",
+    "lit_realms": "Your Field Scan reads like Lit Realms energy today."
+  },
+  "balances": {
+    "lit_realms": {
+      "scene": "Nature",
+      "scene_label": "Nature",
+      "invite": "step outside into Nature for a while",
+      "url": "https://www.youtube.com/playlist?list=PLDz1shJrVQtUmwbyaK-6YC9ynNWAv-wed",
+      "in_step": false,
+      "you": "Lit",
+      "field": "The Raw",
+      "territory": "the_gathering",
+      "display_name": "The Gathering",
+      "text": "Your scan reads Lit · the field reads The Raw. Balance sits in The Gathering — step outside into Nature for a while."
+    },
+    "storm_lands": {
+      "scene": "Thunderstorm",
+      "scene_label": "Thunderstorm",
+      "invite": "let the Thunderstorm roll through",
+      "url": "https://www.youtube.com/playlist?list=PLDz1shJrVQtW7yDXEQLe1Va_zJGRe9QAP",
+      "in_step": true,
+      "you": "Storm",
+      "field": "The Raw",
+      "territory": "the_raw",
+      "display_name": "The Raw",
+      "text": "Your scan matches the field — you're in step with The Raw today. Let the Thunderstorm roll through."
+    },
+    "hollow_grounds": {
+      "scene": "Synthwave",
+      "scene_label": "Synthwave",
+      "invite": "take a Synthwave night drive",
+      "url": "https://www.youtube.com/playlist?list=PLDz1shJrVQtV9Bq-zbtvq9CrFolhXnBu4",
+      "in_step": false,
+      "you": "Hollow",
+      "field": "The Raw",
+      "territory": "the_pressure",
+      "display_name": "The Pressure",
+      "text": "Your scan reads Hollow · the field reads The Raw. Balance sits in The Pressure — take a Synthwave night drive."
+    },
+    "still_places": {
+      "scene": "Coffee_Shop",
+      "scene_label": "Coffee Shop",
+      "invite": "head over to the Coffee Shop and sit for a bit",
+      "url": "https://www.youtube.com/playlist?list=PLDz1shJrVQtVYc9cbm8mmMfRe6RU15bXg",
+      "in_step": false,
+      "you": "Still",
+      "field": "The Raw",
+      "territory": "the_focus",
+      "display_name": "The Focus",
+      "text": "Your scan reads Still · the field reads The Raw. Balance sits in The Focus — head over to the Coffee Shop and sit for a bit."
+    }
+  },
+  "disclaimer": "This is a daily scan, not your confirmed faction."
+}
