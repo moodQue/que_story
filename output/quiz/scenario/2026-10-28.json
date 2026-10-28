@@ -1,155 +1,155 @@
 {
-  "scan_set_id": "2026-10-27-daily-v1",
+  "scan_set_id": "2026-10-28-daily-v1",
   "date": "2026-10-28",
   "timezone": "America/New_York",
   "closes_at": null,
   "questions": [
     {
-      "id": "muse_20261027_q1_v1",
-      "theme": "new_world_tuesday",
+      "id": "muse_20261028_q1_v1",
+      "theme": "install_size_scene",
       "state_target": "current_state",
-      "prompt": "Phantom Blade Zero's reviews are landing everywhere — a brand-new world, all blade and shadow, and everyone's standing at the edge deciding whether to step in. Tuesday night, the week just getting going. Where are you with it right now?",
+      "prompt": "GTA 6's install size is officially out \u2014 the countdown suddenly has a download bar and a storage question. Tonight, the wait just got real. Where are you with it right now?",
       "options": [
         {
-          "id": "stepin",
-          "text": "Controller in hand, ready to step in."
+          "id": "clearing",
+          "text": "Clearing space right now \u2014 making room for the big one."
         },
         {
-          "id": "ahead",
-          "text": "Brain already three quests ahead — I've read every review twice."
+          "id": "numbers",
+          "text": "Checking the numbers \u2014 how many gigs, really?"
         },
         {
-          "id": "edge",
-          "text": "Still on the edge — watching the reviews roll in before I commit."
+          "id": "leaving",
+          "text": "Leaving it be \u2014 the download can sort itself out."
         },
         {
-          "id": "toomuch",
-          "text": "Too much already — a whole new world is the last thing I need tonight."
+          "id": "fulldrive",
+          "text": "Staring at a full drive \u2014 something's got to go."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261027_q2_v1",
-      "theme": "warming_up_for_gta",
+      "id": "muse_20261028_q2_v1",
+      "theme": "mw4_reviews",
       "state_target": "current_state",
-      "prompt": "GTA 6 prep is everywhere — finger exercises, countdowns, everyone getting ready for the big return. Tuesday night, the hype building. Where's your energy sitting?",
+      "prompt": "Call of Duty: Modern Warfare 4's reviews are out and everyone's weighing in \u2014 the lobby's calling, the verdicts are landing. Tonight, the reviews are the moment. Where's your head at?",
+      "options": [
+        {
+          "id": "diving",
+          "text": "Diving in tonight \u2014 reviews or no reviews."
+        },
+        {
+          "id": "reading",
+          "text": "Reading every review first \u2014 I want the full picture."
+        },
+        {
+          "id": "friends",
+          "text": "Waiting to hear what my people say."
+        },
+        {
+          "id": "sittingout",
+          "text": "Sitting this one out \u2014 the noise is too much tonight."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261028_q3_v1",
+      "theme": "three_hour_epic",
+      "state_target": "response_tendency",
+      "prompt": "The Elden Ring movie could run nearly three hours \u2014 a whole evening, one world, no shortcuts. Your night's on the line. What's the call?",
+      "options": [
+        {
+          "id": "whole",
+          "text": "Clearing the whole night \u2014 big screen, no interruptions."
+        },
+        {
+          "id": "split",
+          "text": "Splitting it in two \u2014 slow and easy, no rush."
+        },
+        {
+          "id": "streaming",
+          "text": "Waiting for the streaming cut \u2014 the couch can wait."
+        },
+        {
+          "id": "evaporated",
+          "text": "Three hours? My whole evening just evaporated."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261028_q4_v1",
+      "theme": "world_series_table",
+      "state_target": "desired_state",
+      "prompt": "World Series night \u2014 the table's set, the room's locked in, and the biggest stage in baseball is on the screen. If tonight's your watch party, what's on the table?",
+      "options": [
+        {
+          "id": "ballpark",
+          "text": "The ballpark spread \u2014 popcorn, peanuts, the works."
+        },
+        {
+          "id": "warm",
+          "text": "Something warm and slow \u2014 a pot that took all afternoon."
+        },
+        {
+          "id": "graze",
+          "text": "Finger food \u2014 something to graze on between innings."
+        },
+        {
+          "id": "light",
+          "text": "Something light \u2014 I want to stay locked in, not weighed down."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261028_q5_v1",
+      "theme": "halftime_sound",
+      "state_target": "desired_state",
+      "prompt": "The Jay-Z halftime debate is everywhere \u2014 the Super Bowl stage, the biggest show in music, and everyone's picturing who owns it. Step into that stadium tonight: what does the show sound like to you?",
+      "options": [
+        {
+          "id": "anthem",
+          "text": "The anthem everyone sings along to."
+        },
+        {
+          "id": "deepcut",
+          "text": "The deep cut only the real fans know."
+        },
+        {
+          "id": "drop",
+          "text": "The beat drop \u2014 the whole place erupts."
+        },
+        {
+          "id": "build",
+          "text": "The slow build \u2014 lights down, crowd holding its breath."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261028_q6_v1",
+      "theme": "hour_ahead",
+      "state_target": "desired_state",
+      "prompt": "GTA 6's countdown is ticking \u2014 the install size is out, the wait has a shape now, and the whole city is warming up. The next hour is yours. What do you want the wait to feel like?",
       "options": [
         {
           "id": "buzzing",
-          "text": "Buzzing — already counting down to launch day."
+          "text": "Buzzing \u2014 counting down, ready to go."
         },
         {
           "id": "steady",
-          "text": "Steady — I'll get there when I get there."
+          "text": "Steady \u2014 I'll get there when I get there."
         },
         {
           "id": "warming",
-          "text": "Warming up — knocking little things off the list first."
+          "text": "Warming up \u2014 knocking little things off the list first."
         },
         {
           "id": "tabs",
-          "text": "Scattered — too many tabs open, none of them the game."
-        }
-      ],
-      "allow_skip": true
-    },
-    {
-      "id": "muse_20261027_q3_v1",
-      "theme": "save_mass_effect_rally",
-      "state_target": "response_tendency",
-      "prompt": "187,000 fans are rallying to save Mass Effect — the galaxy's not going quietly, and everyone's picking a side. The rally's loud tonight. What's your move?",
-      "options": [
-        {
-          "id": "join",
-          "text": "Join in — loud and proud, the galaxy's worth it."
-        },
-        {
-          "id": "watch",
-          "text": "Watch from the sidelines — I hear it, I'm just not marching."
-        },
-        {
-          "id": "replay",
-          "text": "Dive back into the old games — the trilogy's still right there."
-        },
-        {
-          "id": "tuneout",
-          "text": "Tune it out — I've heard enough about it tonight."
-        }
-      ],
-      "allow_skip": true
-    },
-    {
-      "id": "muse_20261027_q4_v1",
-      "theme": "finals_night_dinner",
-      "state_target": "desired_state",
-      "prompt": "Finals night — Kiah Stokes set a WNBA Finals record, the highlights are on loop and the whole room's watching. If tonight's your watch party, what's on the table?",
-      "options": [
-        {
-          "id": "warm",
-          "text": "Something warm and slow — a pot that took all afternoon."
-        },
-        {
-          "id": "table",
-          "text": "A table full of people, plates everywhere."
-        },
-        {
-          "id": "snack",
-          "text": "Finger food — something to snack on between plays."
-        },
-        {
-          "id": "fridge",
-          "text": "Whatever's already in the fridge — I'm not fussy tonight."
-        }
-      ],
-      "allow_skip": true
-    },
-    {
-      "id": "muse_20261027_q5_v1",
-      "theme": "new_world_sound",
-      "state_target": "desired_state",
-      "prompt": "Phantom Blade Zero's world is all shadow and steel — and the sound of a new world is half the pull. Step into it tonight: what does it sound like to you?",
-      "options": [
-        {
-          "id": "new",
-          "text": "A brand-new soundtrack — put me on to something."
-        },
-        {
-          "id": "smooth",
-          "text": "Something smooth and steady underneath it all."
-        },
-        {
-          "id": "silence",
-          "text": "Nothing but the quiet — the world holding its breath."
-        },
-        {
-          "id": "loud",
-          "text": "Big and loud — full volume, full immersion."
-        }
-      ],
-      "allow_skip": true
-    },
-    {
-      "id": "muse_20261027_q6_v1",
-      "theme": "hour_ahead",
-      "state_target": "desired_state",
-      "prompt": "GTA 6's countdown is ticking — the whole city waiting, engines warm. The next hour is yours, and the wait is the feeling. What do you want the wait to feel like?",
-      "options": [
-        {
-          "id": "openworld",
-          "text": "Wandering — killing time out in the open world until it drops."
-        },
-        {
-          "id": "locked",
-          "text": "Locked in on the countdown — one mission, no distractions."
-        },
-        {
-          "id": "easy",
-          "text": "Slow and easy — the wait can take its time."
-        },
-        {
-          "id": "people",
-          "text": "Counting down with people — the wait's better shared."
+          "text": "Scattered \u2014 too many tabs open, none of them the game."
         }
       ],
       "allow_skip": true
