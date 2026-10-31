@@ -178,7 +178,7 @@
     }
     const notes = [];
     if (voteCounted) notes.push([1, 3, 5].includes(new Date(quiz.date + "T12:00:00").getDay())
-      ? "Your scan counts toward tonight's Evening Rebalance if you scanned before 5 PM ET."
+      ? "Your scan counts toward tonight's 8 PM Evening Rebalance if you scanned before 7 PM ET."
       : "Your scan is counted. Evening Rebalance runs Mon · Wed · Fri.");
     if (savedToProfile) notes.push("Saved to your moodQue profile.");
     $("sc-r-vote").textContent = notes.join(" ");
