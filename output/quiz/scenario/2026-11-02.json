@@ -1,0 +1,158 @@
+{
+  "scan_set_id": "2026-11-01-daily-v1",
+  "date": "2026-11-02",
+  "timezone": "America/New_York",
+  "closes_at": null,
+  "questions": [
+    {
+      "id": "muse_20261101_q1_v1",
+      "theme": "pikmin_day_explorers",
+      "state_target": "current_state",
+      "prompt": "It's Pikmin Day tonight \u2014 the tiny explorers are out marching, whistling, and hauling treasures bigger than they are. You step into their little world for a minute. Which explorer are you tonight?",
+      "options": [
+        {
+          "id": "charging",
+          "text": "Charging ahead \u2014 treasure first, questions later."
+        },
+        {
+          "id": "wandering",
+          "text": "Wandering slow \u2014 sniffing every flower on the way."
+        },
+        {
+          "id": "checking",
+          "text": "Checking the map first \u2014 I want the whole route planned."
+        },
+        {
+          "id": "buzzing",
+          "text": "Buzzing everywhere \u2014 so many little guys, so much to do."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261101_q2_v1",
+      "theme": "ffxiv_evercold_delay",
+      "state_target": "current_state",
+      "prompt": "Final Fantasy XIV's Evercold just got pushed back at the Tokyo Fan Fest tonight \u2014 the wait for that world gets longer. How does the longer wait sit with you right now?",
+      "options": [
+        {
+          "id": "hyped",
+          "text": "Still hyped \u2014 a longer wait just builds the moment."
+        },
+        {
+          "id": "patient",
+          "text": "Patient and steady \u2014 good things take their time."
+        },
+        {
+          "id": "flat",
+          "text": "A bit flat \u2014 I was already packed and ready to go."
+        },
+        {
+          "id": "drifting",
+          "text": "Drifting to other games \u2014 I'll come back when it's here."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261101_q3_v1",
+      "theme": "switch2_emulator_first_try",
+      "state_target": "response_tendency",
+      "prompt": "The first public Switch 2 emulator is out tonight, and you're giving it a spin \u2014 but it's early days, so it stutters right when you're getting into it. What's your call?",
+      "options": [
+        {
+          "id": "pushing",
+          "text": "Pushing through the stutters \u2014 rough edges and all."
+        },
+        {
+          "id": "waiting",
+          "text": "Waiting for a smoother build \u2014 it'll still be there."
+        },
+        {
+          "id": "tweaking",
+          "text": "Lost in the settings \u2014 too many toggles, losing the thread."
+        },
+        {
+          "id": "calling",
+          "text": "Calling it \u2014 tonight it's more chore than game."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261101_q4_v1",
+      "theme": "night_after_halloween_table",
+      "state_target": "desired_state",
+      "prompt": "Halloween's over, the costumes are coming off tonight, and the candy bowl is still sitting out on the table. If someone handled the food for the night-after wind-down, what would you want on the table?",
+      "options": [
+        {
+          "id": "warm",
+          "text": "Something warm and slow \u2014 comfort food after the big night."
+        },
+        {
+          "id": "graze",
+          "text": "Finger food to graze on \u2014 a little of everything, no fuss."
+        },
+        {
+          "id": "light",
+          "text": "Something light \u2014 I want to feel clear, not weighed down."
+        },
+        {
+          "id": "spread",
+          "text": "The full leftover spread \u2014 bowl, snacks, the works."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261101_q5_v1",
+      "theme": "pikmin_day_sound",
+      "state_target": "context_only",
+      "prompt": "Back in the Pikmin world tonight \u2014 tiny footsteps, rustling leaves, and that little whistle calling the crew together. What does it sound like around you?",
+      "options": [
+        {
+          "id": "chirpy",
+          "text": "Bright and chirpy \u2014 little voices bouncing all around."
+        },
+        {
+          "id": "hum",
+          "text": "A soft hum underneath \u2014 gentle, easy, holding the scene."
+        },
+        {
+          "id": "surge",
+          "text": "A bold little fanfare \u2014 the crew marching, all together."
+        },
+        {
+          "id": "static",
+          "text": "A tense edge \u2014 quiet, then a rustle you can't place."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261101_q6_v1",
+      "theme": "ffxiv_wait_hour_ahead",
+      "state_target": "desired_state",
+      "prompt": "Evercold isn't coming tonight after all \u2014 the wait stretches on, and the next hour is yours while that world stays on the horizon. What do you want the wait to feel like?",
+      "options": [
+        {
+          "id": "buzzing",
+          "text": "Buzzing \u2014 counting down, ready whenever it lands."
+        },
+        {
+          "id": "steady",
+          "text": "Steady \u2014 I'll get there when I get there."
+        },
+        {
+          "id": "warming",
+          "text": "Warming up \u2014 getting little things done first."
+        },
+        {
+          "id": "scattered",
+          "text": "Scattered \u2014 too many tabs open, none of them the game."
+        }
+      ],
+      "allow_skip": true
+    }
+  ]
+}
