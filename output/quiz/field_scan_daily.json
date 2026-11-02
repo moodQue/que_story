@@ -1,10 +1,10 @@
 {
   "quiz_id": "field_scan_daily",
-  "quiz_version": "2026.11.01",
+  "quiz_version": "2026.11.02",
   "quiz_type": "field_scan",
-  "date": "2026-11-01",
-  "territory": "The Current",
-  "quadrant": "The Lit Realms",
+  "date": "2026-11-02",
+  "territory": "The Focus",
+  "quadrant": "The Still Places",
   "lunar_phase": "Last Quarter",
   "dominant_signal": "creation",
   "question_count": 1,
@@ -53,28 +53,28 @@
   },
   "balances": {
     "lit_realms": {
-      "scene": "City_Walk",
-      "scene_label": "City Walk",
-      "invite": "take a City Walk for a while",
-      "url": "https://www.youtube.com/playlist?list=PLJY1Gdczy9_U",
-      "in_step": true,
-      "you": "Lit",
-      "field": "The Current",
-      "territory": "the_current",
-      "display_name": "The Current",
-      "text": "Your scan matches the field — you're in step with The Current today. Take a City Walk for a while."
-    },
-    "storm_lands": {
       "scene": "Nature",
       "scene_label": "Nature",
       "invite": "step outside into Nature for a while",
       "url": "https://www.youtube.com/playlist?list=PLDz1shJrVQtUmwbyaK-6YC9ynNWAv-wed",
       "in_step": false,
-      "you": "Storm",
-      "field": "The Current",
+      "you": "Lit",
+      "field": "The Focus",
       "territory": "the_gathering",
       "display_name": "The Gathering",
-      "text": "Your scan reads Storm · the field reads The Current. Balance sits in The Gathering — step outside into Nature for a while."
+      "text": "Your scan reads Lit · the field reads The Focus. Balance sits in The Gathering — step outside into Nature for a while."
+    },
+    "storm_lands": {
+      "scene": "Coffee_Shop",
+      "scene_label": "Coffee Shop",
+      "invite": "head over to the Coffee Shop and sit for a bit",
+      "url": "https://www.youtube.com/playlist?list=PLDz1shJrVQtVYc9cbm8mmMfRe6RU15bXg",
+      "in_step": false,
+      "you": "Storm",
+      "field": "The Focus",
+      "territory": "the_focus",
+      "display_name": "The Focus",
+      "text": "Your scan reads Storm · the field reads The Focus. Balance sits in The Focus — head over to the Coffee Shop and sit for a bit."
     },
     "hollow_grounds": {
       "scene": "Jazz",
@@ -83,22 +83,22 @@
       "url": "https://www.youtube.com/playlist?list=PLDz1shJrVQtXrFz4hy6HpZVifVwEOL3Kd",
       "in_step": false,
       "you": "Hollow",
-      "field": "The Current",
+      "field": "The Focus",
       "territory": "the_wandering",
       "display_name": "The Wandering",
-      "text": "Your scan reads Hollow · the field reads The Current. Balance sits in The Wandering — slip into some Late Night Jazz."
+      "text": "Your scan reads Hollow · the field reads The Focus. Balance sits in The Wandering — slip into some Late Night Jazz."
     },
     "still_places": {
-      "scene": "Nature",
-      "scene_label": "Nature",
-      "invite": "step outside into Nature for a while",
-      "url": "https://www.youtube.com/playlist?list=PLDz1shJrVQtUmwbyaK-6YC9ynNWAv-wed",
-      "in_step": false,
+      "scene": "Coffee_Shop",
+      "scene_label": "Coffee Shop",
+      "invite": "head over to the Coffee Shop and sit for a bit",
+      "url": "https://www.youtube.com/playlist?list=PLDz1shJrVQtVYc9cbm8mmMfRe6RU15bXg",
+      "in_step": true,
       "you": "Still",
-      "field": "The Current",
-      "territory": "the_gathering",
-      "display_name": "The Gathering",
-      "text": "Your scan reads Still · the field reads The Current. Balance sits in The Gathering — step outside into Nature for a while."
+      "field": "The Focus",
+      "territory": "the_focus",
+      "display_name": "The Focus",
+      "text": "Your scan matches the field — you're in step with The Focus today. Head over to the Coffee Shop and sit for a bit."
     }
   },
   "disclaimer": "This is a daily scan, not your confirmed faction."
