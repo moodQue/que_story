@@ -1,0 +1,158 @@
+{
+  "scan_set_id": "2026-11-02-daily-v1",
+  "date": "2026-11-03",
+  "timezone": "America/New_York",
+  "closes_at": null,
+  "questions": [
+    {
+      "id": "muse_20261102_q1_v1",
+      "theme": "costume_party_arrival",
+      "state_target": "current_state",
+      "prompt": "You're invited to the big Halloween costume party tonight — the reveals are everywhere, and the room is full of capes, masks, and last-minute costumes. You step through the door in your own look. Which party guest are you tonight?",
+      "options": [
+        {
+          "id": "charging",
+          "text": "Charging in first — costume front and center, ready for the reveal."
+        },
+        {
+          "id": "wandering",
+          "text": "Wandering slow — taking in every costume, no rush to be seen."
+        },
+        {
+          "id": "settled",
+          "text": "Settled in a corner — watching the costumes parade by."
+        },
+        {
+          "id": "bouncing",
+          "text": "Bouncing between groups — a little of every conversation."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261102_q2_v1",
+      "theme": "persona1_remake_leak",
+      "state_target": "current_state",
+      "prompt": "A leak tonight says a Persona 1 remake is in the works — a classic from way back, maybe coming back. How does the rumor sit with you right now?",
+      "options": [
+        {
+          "id": "hyped",
+          "text": "Still hyped — a remake would be worth the wait."
+        },
+        {
+          "id": "patient",
+          "text": "Patient and steady — I'll believe it when it's real."
+        },
+        {
+          "id": "flat",
+          "text": "A bit flat — leaks come and go, I'm not holding my breath."
+        },
+        {
+          "id": "drifting",
+          "text": "Drifting to other games — I'll come back if it lands."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261102_q3_v1",
+      "theme": "switch2_freeze_dilemma",
+      "state_target": "response_tendency",
+      "prompt": "You're mid-rally on the Switch 2 tonight and the game freezes — right in the middle of a run. What's your call?",
+      "options": [
+        {
+          "id": "pushing",
+          "text": "Pushing through — reload and run it back, freeze and all."
+        },
+        {
+          "id": "waiting",
+          "text": "Waiting for a smoother patch — it'll still be there."
+        },
+        {
+          "id": "tweaking",
+          "text": "Lost in the settings — too many toggles, losing the thread."
+        },
+        {
+          "id": "calling",
+          "text": "Calling it — tonight it's more chore than game."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261102_q4_v1",
+      "theme": "snl_halloween_watch_drinks",
+      "state_target": "desired_state",
+      "prompt": "SNL's Halloween show is on tonight — costumes swapping mid-song, Juliet turning Romeo right on stage — and you're settled in to watch it all unfold. If someone handled the drinks for your watch night, what would you want?",
+      "options": [
+        {
+          "id": "mule",
+          "text": "Virgin or hard — a Moscow mule hits just right tonight."
+        },
+        {
+          "id": "cocoa",
+          "text": "Something warm and slow — hot chocolate for the whole show."
+        },
+        {
+          "id": "tea",
+          "text": "Herbal tea — winding down while the costumes change."
+        },
+        {
+          "id": "closest",
+          "text": "Whatever's closest — I'm not missing a costume change to pick."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261102_q5_v1",
+      "theme": "mcr_billboard_return_sound",
+      "state_target": "context_only",
+      "prompt": "My Chemical Romance is back on top tonight — a 20-year-old album climbing to number one again, like the old songs never left. What does it sound like around you?",
+      "options": [
+        {
+          "id": "surge",
+          "text": "A bold anthem swelling — the whole room singing along."
+        },
+        {
+          "id": "hum",
+          "text": "A soft hum underneath — gentle, easy, holding the scene."
+        },
+        {
+          "id": "singalong",
+          "text": "Bright and singalong — old favorites bouncing all around."
+        },
+        {
+          "id": "static",
+          "text": "A tense edge — loud, then a quiet you can't place."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261102_q6_v1",
+      "theme": "harryween_afterglow_hour",
+      "state_target": "desired_state",
+      "prompt": "Harryween's final show just wrapped tonight — the last notes fading, costumes still out in the crowd, and the next hour is yours. What do you want the afterglow to feel like?",
+      "options": [
+        {
+          "id": "buzzing",
+          "text": "Buzzing — still carrying the show, ready for more."
+        },
+        {
+          "id": "steady",
+          "text": "Steady — letting it settle, no rush to move on."
+        },
+        {
+          "id": "warming",
+          "text": "Warming up — getting little things done first."
+        },
+        {
+          "id": "scattered",
+          "text": "Scattered — too many photos open, none of them the moment."
+        }
+      ],
+      "allow_skip": true
+    }
+  ]
+}
