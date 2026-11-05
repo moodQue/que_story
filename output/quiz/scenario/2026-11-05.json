@@ -1,0 +1,158 @@
+{
+  "scan_set_id": "2026-11-05-daily-v1",
+  "date": "2026-11-05",
+  "timezone": "America/New_York",
+  "closes_at": null,
+  "questions": [
+    {
+      "id": "muse_20261105_q1_v1",
+      "theme": "ocarina_review_return",
+      "state_target": "current_state",
+      "prompt": "The Ocarina of Time reviews are out tonight, and Hyrule is back in the conversation — a world you already know by heart. Which returner are you?",
+      "options": [
+        {
+          "id": "backin",
+          "text": "Back in — boots on, ready to replay it all tonight."
+        },
+        {
+          "id": "steady",
+          "text": "Steady return — a little at a time, no rush to finish."
+        },
+        {
+          "id": "wandering",
+          "text": "Wandering back slow — just soaking in the familiar places."
+        },
+        {
+          "id": "flat",
+          "text": "A bit flat — the return is nice, but I'm not feeling the pull tonight."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261105_q2_v1",
+      "theme": "elder_scrolls_sentinel_theories",
+      "state_target": "current_state",
+      "prompt": "Everyone's trading theories tonight about what should actually happen in Sentinel, the newly named Elder Scrolls 6 world. How does the speculating sit with you right now?",
+      "options": [
+        {
+          "id": "racing",
+          "text": "Mind racing — theory after theory, I can't stop picturing it."
+        },
+        {
+          "id": "headsdown",
+          "text": "Heads-down imagining — one idea at a time, building it out."
+        },
+        {
+          "id": "trading",
+          "text": "Trading theories with everyone — half the fun is the talk."
+        },
+        {
+          "id": "drifting",
+          "text": "Drifting past the theories — I'll believe it when I'm walking there."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261105_q3_v1",
+      "theme": "ocarina_review_noise_dilemma",
+      "state_target": "response_tendency",
+      "prompt": "You'd planned a quiet Ocarina replay tonight, but the reviews are everywhere — takes, clips, and spoiler-adjacent chatter on every feed. What's your move?",
+      "options": [
+        {
+          "id": "playing",
+          "text": "Tuning it out and playing anyway — the game first, the takes later."
+        },
+        {
+          "id": "muting",
+          "text": "Muting the feeds — replaying at my own pace, no rush."
+        },
+        {
+          "id": "calling",
+          "text": "Calling it — the chatter is spoiling the return before it starts."
+        },
+        {
+          "id": "lost",
+          "text": "Lost in the scroll — too many takes, losing the thread of the night."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261105_q4_v1",
+      "theme": "sentinel_theory_night_drinks",
+      "state_target": "desired_state",
+      "prompt": "It's a Sentinel theory night tonight — theories flying about what should happen in the new world, nowhere to go yet, just the imagining. If someone handled the drinks, what would you want?",
+      "options": [
+        {
+          "id": "mule",
+          "text": "Virgin or hard — a Moscow mule hits just right tonight."
+        },
+        {
+          "id": "cocoa",
+          "text": "Something warm and slow — hot chocolate for the whole theory session."
+        },
+        {
+          "id": "tea",
+          "text": "Herbal tea — winding down while the theories do the wandering."
+        },
+        {
+          "id": "water",
+          "text": "Just water, I don't need anything else tonight."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261105_q5_v1",
+      "theme": "ocarina_returning_theme_sound",
+      "state_target": "context_only",
+      "prompt": "Tonight Hyrule's old theme is back in the air — the Ocarina reviews have that melody returning after all these years. What does that returning sound feel like around you?",
+      "options": [
+        {
+          "id": "rising",
+          "text": "A rising melody — the old theme back, lifting the whole room."
+        },
+        {
+          "id": "hum",
+          "text": "A soft, familiar tune underneath — steady, easy, holding the night."
+        },
+        {
+          "id": "lone",
+          "text": "A lone note hanging — quiet, a little heavy, the past coming back."
+        },
+        {
+          "id": "scattered",
+          "text": "Notes scattering — too many memories at once, can't hold the tune."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261105_q6_v1",
+      "theme": "sentinel_unwalkable_world_hour_ahead",
+      "state_target": "desired_state",
+      "prompt": "The next hour is yours, and Sentinel is still just theories — no streets to walk yet, just a named world on the horizon. What do you want that hour to feel like?",
+      "options": [
+        {
+          "id": "progress",
+          "text": "Steady progress — one theory, one idea, building the world in my head."
+        },
+        {
+          "id": "settled",
+          "text": "Settled and calm — picturing it slowly, no agenda."
+        },
+        {
+          "id": "drifting",
+          "text": "Drifting — flipping between theories, not landing anywhere."
+        },
+        {
+          "id": "heavy",
+          "text": "A bit heavy — sitting with how far away that world still feels."
+        }
+      ],
+      "allow_skip": true
+    }
+  ]
+}
