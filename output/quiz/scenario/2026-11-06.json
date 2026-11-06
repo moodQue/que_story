@@ -1,101 +1,101 @@
 {
-  "scan_set_id": "2026-11-05-daily-v1",
+  "scan_set_id": "2026-11-06-daily-v1",
   "date": "2026-11-06",
   "timezone": "America/New_York",
   "closes_at": null,
   "questions": [
     {
-      "id": "muse_20261105_q1_v1",
-      "theme": "ocarina_review_return",
+      "id": "muse_20261106_q1_v1",
+      "theme": "switch2_top_selling_list",
       "state_target": "current_state",
-      "prompt": "The Ocarina of Time reviews are out tonight, and Hyrule is back in the conversation — a world you already know by heart. Which returner are you?",
+      "prompt": "Nintendo's top-selling Switch 2 games list is out tonight, and everyone's got a pick. You grab the Switch 2 — which game energy matches yours right now?",
       "options": [
         {
-          "id": "backin",
-          "text": "Back in — boots on, ready to replay it all tonight."
+          "id": "cozy",
+          "text": "A slow, cozy one — I'm in no rush tonight."
         },
         {
-          "id": "steady",
-          "text": "Steady return — a little at a time, no rush to finish."
+          "id": "adventure",
+          "text": "The big adventure — straight into the thick of it."
         },
         {
-          "id": "wandering",
-          "text": "Wandering back slow — just soaking in the familiar places."
+          "id": "friends",
+          "text": "Whatever my friends are playing — I'm joining in."
         },
         {
-          "id": "flat",
-          "text": "A bit flat — the return is nice, but I'm not feeling the pull tonight."
+          "id": "menu",
+          "text": "Honestly? I'm just staring at the menu, can't pick."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261105_q2_v1",
-      "theme": "elder_scrolls_sentinel_theories",
+      "id": "muse_20261106_q2_v1",
+      "theme": "ocarina_manga_return",
       "state_target": "current_state",
-      "prompt": "Everyone's trading theories tonight about what should actually happen in Sentinel, the newly named Elder Scrolls 6 world. How does the speculating sit with you right now?",
+      "prompt": "The Ocarina of Time manga is everywhere tonight, and Hyrule's calling again. How are you stepping back in?",
       "options": [
         {
-          "id": "racing",
-          "text": "Mind racing — theory after theory, I can't stop picturing it."
+          "id": "quiet",
+          "text": "Quietly — just me and the story, lights low."
         },
         {
-          "id": "headsdown",
-          "text": "Heads-down imagining — one idea at a time, building it out."
+          "id": "replaying",
+          "text": "All in — my brain's already replaying the whole quest."
         },
         {
-          "id": "trading",
-          "text": "Trading theories with everyone — half the fun is the talk."
+          "id": "geekout",
+          "text": "With a friend — I want someone to geek out with."
         },
         {
-          "id": "drifting",
-          "text": "Drifting past the theories — I'll believe it when I'm walking there."
+          "id": "winddown",
+          "text": "Flipping pages to wind down — I'm running on empty."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261105_q3_v1",
-      "theme": "ocarina_review_noise_dilemma",
+      "id": "muse_20261106_q3_v1",
+      "theme": "fan_hall_of_fame_moment",
       "state_target": "response_tendency",
-      "prompt": "You'd planned a quiet Ocarina replay tonight, but the reviews are everywhere — takes, clips, and spoiler-adjacent chatter on every feed. What's your move?",
+      "prompt": "The Packers are taking Fan Hall of Fame nominations, and tonight it's your big moment — they call your name. How does your acceptance speech go?",
       "options": [
         {
-          "id": "playing",
-          "text": "Tuning it out and playing anyway — the game first, the takes later."
+          "id": "short",
+          "text": "Short and sweet — I thank everyone and sit down fast."
         },
         {
-          "id": "muting",
-          "text": "Muting the feeds — replaying at my own pace, no rush."
+          "id": "ownit",
+          "text": "I ham it up — this is my moment, I'm owning it."
         },
         {
-          "id": "calling",
-          "text": "Calling it — the chatter is spoiling the return before it starts."
+          "id": "freeze",
+          "text": "I freeze a little — the room is huge and everyone's watching."
         },
         {
-          "id": "lost",
-          "text": "Lost in the scroll — too many takes, losing the thread of the night."
+          "id": "stage",
+          "text": "I pull my people up on stage with me."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261105_q4_v1",
-      "theme": "sentinel_theory_night_drinks",
+      "id": "muse_20261106_q4_v1",
+      "theme": "miniseries_binge_table",
       "state_target": "desired_state",
-      "prompt": "It's a Sentinel theory night tonight — theories flying about what should happen in the new world, nowhere to go yet, just the imagining. If someone handled the drinks, what would you want?",
+      "prompt": "Six near-perfect miniseries, eight episodes or less — tonight's a one-sitting binge on the couch. If someone handled the snacks and drinks, what would you want beside you?",
       "options": [
         {
-          "id": "mule",
-          "text": "Virgin or hard — a Moscow mule hits just right tonight."
+          "id": "popcorn",
+          "text": "A big bowl of popcorn — the crunch is half the show."
         },
         {
-          "id": "cocoa",
-          "text": "Something warm and slow — hot chocolate for the whole theory session."
+          "id": "warm",
+          "text": "Something warm and slow — tea or cocoa, slow sips."
         },
         {
-          "id": "tea",
-          "text": "Herbal tea — winding down while the theories do the wandering."
+          "id": "feast",
+          "text": "A full takeaway spread — tonight's a feast."
         },
         {
           "id": "water",
@@ -105,51 +105,51 @@
       "allow_skip": true
     },
     {
-      "id": "muse_20261105_q5_v1",
-      "theme": "ocarina_returning_theme_sound",
+      "id": "muse_20261106_q5_v1",
+      "theme": "mass_effect_goodbye_sound",
       "state_target": "context_only",
-      "prompt": "Tonight Hyrule's old theme is back in the air — the Ocarina reviews have that melody returning after all these years. What does that returning sound feel like around you?",
+      "prompt": "A movie about the Mass Effect studio's closure is coming — the story of a world saying goodbye. What does that goodbye sound like to you tonight?",
       "options": [
         {
-          "id": "rising",
-          "text": "A rising melody — the old theme back, lifting the whole room."
+          "id": "piano",
+          "text": "A quiet piano piece — soft, a little sad, still hopeful."
         },
         {
-          "id": "hum",
-          "text": "A soft, familiar tune underneath — steady, easy, holding the night."
+          "id": "theme",
+          "text": "The game's own theme, on repeat — one more run through the galaxy."
         },
         {
-          "id": "lone",
-          "text": "A lone note hanging — quiet, a little heavy, the past coming back."
+          "id": "loud",
+          "text": "Something loud and driving — the story fights on."
         },
         {
-          "id": "scattered",
-          "text": "Notes scattering — too many memories at once, can't hold the tune."
+          "id": "silence",
+          "text": "Silence — I just want the quiet after the credits."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261105_q6_v1",
-      "theme": "sentinel_unwalkable_world_hour_ahead",
+      "id": "muse_20261106_q6_v1",
+      "theme": "ocarina_game_world_hour",
       "state_target": "desired_state",
-      "prompt": "The next hour is yours, and Sentinel is still just theories — no streets to walk yet, just a named world on the horizon. What do you want that hour to feel like?",
+      "prompt": "The manga got you thinking about Hyrule — the next hour is yours. How do you spend it back in Ocarina's world tonight?",
       "options": [
         {
-          "id": "progress",
-          "text": "Steady progress — one theory, one idea, building the world in my head."
+          "id": "wandering",
+          "text": "Slow wandering — no quests, just the fields and the music."
         },
         {
-          "id": "settled",
-          "text": "Settled and calm — picturing it slowly, no agenda."
+          "id": "dungeon",
+          "text": "Locked in — I'm finishing that dungeon tonight."
         },
         {
-          "id": "drifting",
-          "text": "Drifting — flipping between theories, not landing anywhere."
+          "id": "memories",
+          "text": "Calling a friend to trade memories and theories."
         },
         {
-          "id": "heavy",
-          "text": "A bit heavy — sitting with how far away that world still feels."
+          "id": "asleep",
+          "text": "Honestly, I'll probably fall asleep mid-quest."
         }
       ],
       "allow_skip": true

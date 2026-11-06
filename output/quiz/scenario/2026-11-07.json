@@ -1,0 +1,158 @@
+{
+  "scan_set_id": "2026-11-06-daily-v1",
+  "date": "2026-11-07",
+  "timezone": "America/New_York",
+  "closes_at": null,
+  "questions": [
+    {
+      "id": "muse_20261106_q1_v1",
+      "theme": "switch2_top_selling_list",
+      "state_target": "current_state",
+      "prompt": "Nintendo's top-selling Switch 2 games list is out tonight, and everyone's got a pick. You grab the Switch 2 — which game energy matches yours right now?",
+      "options": [
+        {
+          "id": "cozy",
+          "text": "A slow, cozy one — I'm in no rush tonight."
+        },
+        {
+          "id": "adventure",
+          "text": "The big adventure — straight into the thick of it."
+        },
+        {
+          "id": "friends",
+          "text": "Whatever my friends are playing — I'm joining in."
+        },
+        {
+          "id": "menu",
+          "text": "Honestly? I'm just staring at the menu, can't pick."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261106_q2_v1",
+      "theme": "ocarina_manga_return",
+      "state_target": "current_state",
+      "prompt": "The Ocarina of Time manga is everywhere tonight, and Hyrule's calling again. How are you stepping back in?",
+      "options": [
+        {
+          "id": "quiet",
+          "text": "Quietly — just me and the story, lights low."
+        },
+        {
+          "id": "replaying",
+          "text": "All in — my brain's already replaying the whole quest."
+        },
+        {
+          "id": "geekout",
+          "text": "With a friend — I want someone to geek out with."
+        },
+        {
+          "id": "winddown",
+          "text": "Flipping pages to wind down — I'm running on empty."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261106_q3_v1",
+      "theme": "fan_hall_of_fame_moment",
+      "state_target": "response_tendency",
+      "prompt": "The Packers are taking Fan Hall of Fame nominations, and tonight it's your big moment — they call your name. How does your acceptance speech go?",
+      "options": [
+        {
+          "id": "short",
+          "text": "Short and sweet — I thank everyone and sit down fast."
+        },
+        {
+          "id": "ownit",
+          "text": "I ham it up — this is my moment, I'm owning it."
+        },
+        {
+          "id": "freeze",
+          "text": "I freeze a little — the room is huge and everyone's watching."
+        },
+        {
+          "id": "stage",
+          "text": "I pull my people up on stage with me."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261106_q4_v1",
+      "theme": "miniseries_binge_table",
+      "state_target": "desired_state",
+      "prompt": "Six near-perfect miniseries, eight episodes or less — tonight's a one-sitting binge on the couch. If someone handled the snacks and drinks, what would you want beside you?",
+      "options": [
+        {
+          "id": "popcorn",
+          "text": "A big bowl of popcorn — the crunch is half the show."
+        },
+        {
+          "id": "warm",
+          "text": "Something warm and slow — tea or cocoa, slow sips."
+        },
+        {
+          "id": "feast",
+          "text": "A full takeaway spread — tonight's a feast."
+        },
+        {
+          "id": "water",
+          "text": "Just water, I don't need anything else tonight."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261106_q5_v1",
+      "theme": "mass_effect_goodbye_sound",
+      "state_target": "context_only",
+      "prompt": "A movie about the Mass Effect studio's closure is coming — the story of a world saying goodbye. What does that goodbye sound like to you tonight?",
+      "options": [
+        {
+          "id": "piano",
+          "text": "A quiet piano piece — soft, a little sad, still hopeful."
+        },
+        {
+          "id": "theme",
+          "text": "The game's own theme, on repeat — one more run through the galaxy."
+        },
+        {
+          "id": "loud",
+          "text": "Something loud and driving — the story fights on."
+        },
+        {
+          "id": "silence",
+          "text": "Silence — I just want the quiet after the credits."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261106_q6_v1",
+      "theme": "ocarina_game_world_hour",
+      "state_target": "desired_state",
+      "prompt": "The manga got you thinking about Hyrule — the next hour is yours. How do you spend it back in Ocarina's world tonight?",
+      "options": [
+        {
+          "id": "wandering",
+          "text": "Slow wandering — no quests, just the fields and the music."
+        },
+        {
+          "id": "dungeon",
+          "text": "Locked in — I'm finishing that dungeon tonight."
+        },
+        {
+          "id": "memories",
+          "text": "Calling a friend to trade memories and theories."
+        },
+        {
+          "id": "asleep",
+          "text": "Honestly, I'll probably fall asleep mid-quest."
+        }
+      ],
+      "allow_skip": true
+    }
+  ]
+}
