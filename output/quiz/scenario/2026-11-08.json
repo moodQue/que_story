@@ -1,0 +1,158 @@
+{
+  "scan_set_id": "2026-11-07-daily-v1",
+  "date": "2026-11-08",
+  "timezone": "America/New_York",
+  "closes_at": null,
+  "questions": [
+    {
+      "id": "muse_20261107_q1_v1",
+      "theme": "godzilla_previews_big_night",
+      "state_target": "current_state",
+      "prompt": "Godzilla Minus Zero just stomped to $6.7 million in previews — opening night is here and the big screen is calling. Which scene sounds most like your tonight?",
+      "options": [
+        {
+          "id": "couch",
+          "text": "Couch, lights low, letting the big night come to me."
+        },
+        {
+          "id": "buzzing",
+          "text": "Already buzzing — I'm lining up what to watch next."
+        },
+        {
+          "id": "quieter",
+          "text": "The hype's loud — I'm slipping somewhere quieter."
+        },
+        {
+          "id": "halfway",
+          "text": "Half in, half out — my brain's still catching up."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261107_q2_v1",
+      "theme": "ocarina_songs_nostalgia",
+      "state_target": "current_state",
+      "prompt": "Every Ocarina of Time song is in one place tonight — the whole soundtrack of Hyrule, melody by melody. When a tune you know by heart comes on, where does it take you?",
+      "options": [
+        {
+          "id": "lit",
+          "text": "Lit right up — like the adventure's starting again."
+        },
+        {
+          "id": "warm",
+          "text": "Slow and warm — just letting it wash over me."
+        },
+        {
+          "id": "heavy",
+          "text": "A little heavy — it hits the missing-it feeling."
+        },
+        {
+          "id": "racing",
+          "text": "My head's racing ahead to everywhere it takes me."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261107_q3_v1",
+      "theme": "gta6_mural_wait",
+      "state_target": "response_tendency",
+      "prompt": "A pilot just drew a GTA 6 mural with his flight path — the wait for the game has fans doing wild things. Tonight the countdown feels endless. What do you do with the wait?",
+      "options": [
+        {
+          "id": "plan",
+          "text": "Lean in — I'm sketching my own plan for launch day."
+        },
+        {
+          "id": "laugh",
+          "text": "Laugh it off and let the hype roll past me."
+        },
+        {
+          "id": "itch",
+          "text": "Itch to jump in now — waiting is the worst part."
+        },
+        {
+          "id": "drift",
+          "text": "Drift off to something else entirely until it's here."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261107_q4_v1",
+      "theme": "stranger_things_return_table",
+      "state_target": "desired_state",
+      "prompt": "Stranger Things is officially coming back in 2028 — the gang's return is on the calendar, and tonight you're already planning the night they come back. If someone handled the table for the big return night, what would you want on it?",
+      "options": [
+        {
+          "id": "bowl",
+          "text": "Something warm and slow — a big bowl to settle into."
+        },
+        {
+          "id": "share",
+          "text": "Snacks to share, passed around while we all watch."
+        },
+        {
+          "id": "spread",
+          "text": "A full spread — the night deserves a little ceremony."
+        },
+        {
+          "id": "water",
+          "text": "Just water, I don't need anything else tonight."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261107_q5_v1",
+      "theme": "ocarina_songs_sound",
+      "state_target": "context_only",
+      "prompt": "Every Ocarina song is out there tonight — the sound of Hyrule itself, melody by melody. Which sound is your vibe right now?",
+      "options": [
+        {
+          "id": "theme",
+          "text": "The title theme, swelling — the adventure's starting again."
+        },
+        {
+          "id": "melody",
+          "text": "A soft ocarina melody, low and easy in the background."
+        },
+        {
+          "id": "quiet",
+          "text": "The quiet after the last note — just the night and me."
+        },
+        {
+          "id": "driving",
+          "text": "A fast, driving tune — my feet are already moving."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261107_q6_v1",
+      "theme": "nier_file_size_hour",
+      "state_target": "desired_state",
+      "prompt": "Nier Automata's file size now tells the story — a game so good it needs the room. Tonight, the next hour is yours to sink into a world that big. What should it feel like?",
+      "options": [
+        {
+          "id": "deep",
+          "text": "Deep in — lost in the world, hours gone."
+        },
+        {
+          "id": "chipping",
+          "text": "Chipping away, one quest at a time."
+        },
+        {
+          "id": "floating",
+          "text": "Floating — letting the world wash over me."
+        },
+        {
+          "id": "restless",
+          "text": "Restless — too much world, can't pick a thread."
+        }
+      ],
+      "allow_skip": true
+    }
+  ]
+}
