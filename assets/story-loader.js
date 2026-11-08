@@ -71,7 +71,7 @@
       if (story.title) {
         const h1 = document.querySelector("h1");
         if (h1) h1.textContent = story.title;
-        document.title = story.title + " | MoodQue";
+        document.title = story.title + " | moodQue";
       }
 
       // Update eyebrow with territory + emoji
