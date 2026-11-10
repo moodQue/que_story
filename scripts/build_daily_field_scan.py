@@ -74,6 +74,7 @@ def build_daily_field_scan(
     dominant_signal: str,
     variant: str,
     balances: dict = None,
+    yesterday: dict = None,
 ) -> dict:
     """Build the scan JSON. `balances` (score_key -> suggestion) comes from MIS
     (core/personal_balance.py via refresh_daily_field_scan.py); without it the page simply
@@ -114,6 +115,8 @@ def build_daily_field_scan(
         "questions": questions,
         "field_readings": FIELD_READINGS,
         "balances": balances or {},
+        # Yesterday's scan recap + Que's daily beat from MIS (aggregate only); {} hides the box.
+        "yesterday": yesterday or {},
         "disclaimer": "This is a daily scan, not your confirmed faction.",
     }
 
@@ -140,6 +143,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--variant", default="C", choices=sorted(VARIANTS))
     parser.add_argument("--balances", default="",
                         help="JSON: score_key -> personal balance suggestion (from MIS)")
+    parser.add_argument("--yesterday", default="",
+                        help="JSON: {recap, beat} from MIS core/daily_scan_recap.py (aggregate only)")
     return parser.parse_args()
 
 
@@ -153,6 +158,7 @@ def main() -> None:
         dominant_signal=args.dominant_signal,
         variant=args.variant,
         balances=json.loads(args.balances) if args.balances else None,
+        yesterday=json.loads(args.yesterday) if args.yesterday else None,
     )
     write_scan(scan)
     print(f"Wrote {OUT_DIR / 'field_scan_daily.json'}")

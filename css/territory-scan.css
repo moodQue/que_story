@@ -434,3 +434,21 @@ h2 {
 .balance-link:focus-visible {
   text-decoration: underline;
 }
+
+/* Yesterday's scan recap + Que's daily beat (2026-11-10) */
+.yesterday {
+  margin: 0 0 22px;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+}
+
+.yesterday p {
+  margin: 0;
+}
+
+.yesterday .yesterday-beat {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 15px;
+}

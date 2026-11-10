@@ -196,6 +196,22 @@ async function saveScan() {
   }
 }
 
+/** Yesterday's scan recap + Que's daily beat (aggregate only, written by MIS core/daily_scan_recap.py). */
+function showYesterday(yesterday) {
+  const box = document.getElementById("yesterday");
+  if (!box) return;
+  const recap = yesterday?.recap || "";
+  const beat = yesterday?.beat || "";
+  if (!recap && !beat) {
+    box.hidden = true;
+    return;
+  }
+  document.getElementById("yesterday-recap").textContent = recap;
+  document.getElementById("yesterday-beat").textContent = beat;
+  document.getElementById("yesterday-recap").hidden = !recap;
+  box.hidden = false;
+}
+
 /** Personal balance: where you and today's field meet, plus that scene's playlist. */
 function showBalance(balance) {
   const box = document.getElementById("result-balance");
@@ -229,6 +245,7 @@ function renderQuiz(scan) {
   const resultContext = document.getElementById("result-context");
 
   document.getElementById("scan-date").textContent = formatDate(scan.date);
+  showYesterday(scan.yesterday);
   document.getElementById("scan-title").textContent = scan.quiz_type === "field_scan"
     ? "Daily Field Scan"
     : "Territory Scan";
