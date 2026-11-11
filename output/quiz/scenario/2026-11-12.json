@@ -1,0 +1,158 @@
+{
+  "scan_set_id": "2026-11-11-daily-v1",
+  "date": "2026-11-12",
+  "timezone": "America/New_York",
+  "closes_at": null,
+  "questions": [
+    {
+      "id": "muse_20261111_q1_v1",
+      "theme": "gta6_preloads_live",
+      "state_target": "current_state",
+      "prompt": "GTA 6 preloads just went live — the download bar is filling tonight and the city opens soon. Which scene sounds most like yours right now?",
+      "options": [
+        {
+          "id": "diving",
+          "text": "Download's running — I'm in the city the second the doors open."
+        },
+        {
+          "id": "steady",
+          "text": "Steady — letting the download finish while I take my time."
+        },
+        {
+          "id": "curb",
+          "text": "Just watching the hype roll by, easy tonight."
+        },
+        {
+          "id": "racing",
+          "text": "My head's already bouncing between the download bar and the city."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261111_q2_v1",
+      "theme": "ocarina_scarecrow_song_quest",
+      "state_target": "current_state",
+      "prompt": "Somewhere in Hyrule there's a little melody only the scarecrow knows — and unlocking it takes a bit of wandering tonight. When a tiny secret is hiding in a big world, where does it pull you?",
+      "options": [
+        {
+          "id": "tracking",
+          "text": "Tracking it down — one clue at a time till the song's mine."
+        },
+        {
+          "id": "wandering",
+          "text": "Wandering easy — the song will find me when it finds me."
+        },
+        {
+          "id": "scattered",
+          "text": "My head's full of half-remembered tunes and wrong turns."
+        },
+        {
+          "id": "drift",
+          "text": "Drifting with the quest — Hyrule decides where tonight goes."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261111_q3_v1",
+      "theme": "gta6_record_preorders",
+      "state_target": "response_tendency",
+      "prompt": "GTA 6 just became the most pre-ordered game in PlayStation Store history — millions already locked in before launch night. Where do you land in the rush?",
+      "options": [
+        {
+          "id": "lockedin",
+          "text": "Pre-ordered already — locked in and counting down."
+        },
+        {
+          "id": "waiting",
+          "text": "Waiting to see — I'll decide when the reviews land."
+        },
+        {
+          "id": "backlog",
+          "text": "Skipping the rush — my backlog's a city of its own."
+        },
+        {
+          "id": "torn",
+          "text": "Torn between the hype and my wallet."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261111_q4_v1",
+      "theme": "rings_of_power_watch_night_drink",
+      "state_target": "desired_state",
+      "prompt": "Season 3 of The Rings of Power is big and dense — a whole evening of Middle-earth to sink into tonight. If someone handled the wind-down drink for your long watch, what would you want in your hands?",
+      "options": [
+        {
+          "id": "tea",
+          "text": "A slow mug of herbal tea — settling in for a long night in Middle-earth."
+        },
+        {
+          "id": "cocoa",
+          "text": "Hot chocolate — warm, sweet, and nowhere to be tonight."
+        },
+        {
+          "id": "mule",
+          "text": "Virgin or hard — a Moscow mule hits just right tonight."
+        },
+        {
+          "id": "water",
+          "text": "Just water, I don't need anything else tonight."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261111_q5_v1",
+      "theme": "big_walk_trail_sound",
+      "state_target": "context_only",
+      "prompt": "Big Walk is a game about nothing but walking — slow steps, open trail, friends alongside. Tonight, which sound is the sound of a good walk for you?",
+      "options": [
+        {
+          "id": "steps",
+          "text": "Soft footsteps and a low hum — the trail at its own pace."
+        },
+        {
+          "id": "chatter",
+          "text": "Friends chatting along the way — the walk's better shared."
+        },
+        {
+          "id": "quiet",
+          "text": "Just the night air — no music, no noise, only the path."
+        },
+        {
+          "id": "beat",
+          "text": "An upbeat trail mix — every step's got a little bounce."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261111_q6_v1",
+      "theme": "ocarina_song_afterglow_hour",
+      "state_target": "desired_state",
+      "prompt": "The Scarecrow Song is yours now — a little tune tucked away in Hyrule, waiting to be played. The next hour is yours. What should it feel like?",
+      "options": [
+        {
+          "id": "humming",
+          "text": "Humming the tune as I wander — no plan, just the night."
+        },
+        {
+          "id": "sharing",
+          "text": "Showing a friend the trick — the best secrets are shared."
+        },
+        {
+          "id": "deep",
+          "text": "Deep in the world — the song opens doors I haven't tried yet."
+        },
+        {
+          "id": "restless",
+          "text": "Restless — one secret found and now I want them all."
+        }
+      ],
+      "allow_skip": true
+    }
+  ]
+}
