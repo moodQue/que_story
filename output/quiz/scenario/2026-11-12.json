@@ -1,97 +1,97 @@
 {
-  "scan_set_id": "2026-11-11-daily-v1",
+  "scan_set_id": "2026-11-12-daily-v1",
   "date": "2026-11-12",
   "timezone": "America/New_York",
   "closes_at": null,
   "questions": [
     {
-      "id": "muse_20261111_q1_v1",
-      "theme": "gta6_preloads_live",
+      "id": "muse_20261112_q1_v1",
+      "theme": "gta6_new_gameplay_stunned",
       "state_target": "current_state",
-      "prompt": "GTA 6 preloads just went live — the download bar is filling tonight and the city opens soon. Which scene sounds most like yours right now?",
+      "prompt": "New GTA 6 gameplay just dropped and fans are stunned — the city's alive on screen tonight and everyone's talking about it. Which scene sounds most like yours right now?",
       "options": [
         {
-          "id": "diving",
-          "text": "Download's running — I'm in the city the second the doors open."
+          "id": "rewatching",
+          "text": "Already rewatching every clip — I'm in the city the moment it opens."
+        },
+        {
+          "id": "sinking",
+          "text": "Sitting with it, letting the new streets sink in slow."
+        },
+        {
+          "id": "bouncing",
+          "text": "My head's bouncing from clip to clip — too much to take in at once."
         },
         {
           "id": "steady",
-          "text": "Steady — letting the download finish while I take my time."
-        },
-        {
-          "id": "curb",
-          "text": "Just watching the hype roll by, easy tonight."
-        },
-        {
-          "id": "racing",
-          "text": "My head's already bouncing between the download bar and the city."
+          "text": "Watching it through once, steady — saving the rush for later."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261111_q2_v1",
-      "theme": "ocarina_scarecrow_song_quest",
+      "id": "muse_20261112_q2_v1",
+      "theme": "ocarina_zora_tunic_dive",
       "state_target": "current_state",
-      "prompt": "Somewhere in Hyrule there's a little melody only the scarecrow knows — and unlocking it takes a bit of wandering tonight. When a tiny secret is hiding in a big world, where does it pull you?",
+      "prompt": "There's a tunic in Ocarina of Time that lets you breathe underwater — and getting it means diving deep into Hyrule's waters tonight. When the deep water calls, where does it pull you?",
       "options": [
         {
-          "id": "tracking",
-          "text": "Tracking it down — one clue at a time till the song's mine."
+          "id": "diving",
+          "text": "Straight down — I've got the route mapped and I'm going for it."
         },
         {
-          "id": "wandering",
-          "text": "Wandering easy — the song will find me when it finds me."
+          "id": "easing",
+          "text": "Easing in slow — the water's not going anywhere tonight."
         },
         {
-          "id": "scattered",
-          "text": "My head's full of half-remembered tunes and wrong turns."
+          "id": "drifting",
+          "text": "Drifting with the current — the lake decides where tonight goes."
         },
         {
-          "id": "drift",
-          "text": "Drifting with the quest — Hyrule decides where tonight goes."
+          "id": "edge",
+          "text": "Standing at the edge, head full of 'what if I miss something?'"
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261111_q3_v1",
-      "theme": "gta6_record_preorders",
+      "id": "muse_20261112_q3_v1",
+      "theme": "xbox_series_s_hardware_holds_back",
       "state_target": "response_tendency",
-      "prompt": "GTA 6 just became the most pre-ordered game in PlayStation Store history — millions already locked in before launch night. Where do you land in the rush?",
+      "prompt": "A fighting-game legend just said he wishes weaker consoles like the Xbox Series S didn't exist — the hardware holds the games back. Tonight, a game you love is running rough because the box can't keep up. What do you do?",
       "options": [
         {
-          "id": "lockedin",
-          "text": "Pre-ordered already — locked in and counting down."
+          "id": "pushing",
+          "text": "Play through it anyway — the game's worth the rough edges."
         },
         {
           "id": "waiting",
-          "text": "Waiting to see — I'll decide when the reviews land."
+          "text": "Wait it out — I'll play it properly when I can."
         },
         {
-          "id": "backlog",
-          "text": "Skipping the rush — my backlog's a city of its own."
+          "id": "venting",
+          "text": "Vent about it first — the hardware had one job."
         },
         {
-          "id": "torn",
-          "text": "Torn between the hype and my wallet."
+          "id": "switching",
+          "text": "Shrug and switch off — tonight's not a fight-the-box night."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261111_q4_v1",
-      "theme": "rings_of_power_watch_night_drink",
+      "id": "muse_20261112_q4_v1",
+      "theme": "coachella_headliners_festival_drink",
       "state_target": "desired_state",
-      "prompt": "Season 3 of The Rings of Power is big and dense — a whole evening of Middle-earth to sink into tonight. If someone handled the wind-down drink for your long watch, what would you want in your hands?",
+      "prompt": "Dua Lipa, Tame Impala, and SZA are headlining Coachella 2027 — the lineup just dropped and the desert night is calling. If someone handled the festival-night drink for you, what would you want in your hand tonight?",
       "options": [
         {
-          "id": "tea",
-          "text": "A slow mug of herbal tea — settling in for a long night in Middle-earth."
+          "id": "lemonade",
+          "text": "A cold lemonade — sweet, slow, and made for the desert air."
         },
         {
-          "id": "cocoa",
-          "text": "Hot chocolate — warm, sweet, and nowhere to be tonight."
+          "id": "sparkling",
+          "text": "Something sparkling and cold — easy sipping while the sun goes down."
         },
         {
           "id": "mule",
@@ -105,51 +105,51 @@
       "allow_skip": true
     },
     {
-      "id": "muse_20261111_q5_v1",
-      "theme": "big_walk_trail_sound",
+      "id": "muse_20261112_q5_v1",
+      "theme": "rings_of_power_rings_return_sound",
       "state_target": "context_only",
-      "prompt": "Big Walk is a game about nothing but walking — slow steps, open trail, friends alongside. Tonight, which sound is the sound of a good walk for you?",
+      "prompt": "Rings of Power season 3 is showing where the rings are — old magic waking up across Middle-earth tonight. Which sound is the sound of that world opening up for you?",
       "options": [
         {
-          "id": "steps",
-          "text": "Soft footsteps and a low hum — the trail at its own pace."
+          "id": "score",
+          "text": "A low, swelling score — the mountains and the forests breathing."
         },
         {
           "id": "chatter",
-          "text": "Friends chatting along the way — the walk's better shared."
+          "text": "Friends talking it over — the lore's better when it's shared."
         },
         {
           "id": "quiet",
-          "text": "Just the night air — no music, no noise, only the path."
+          "text": "Just the night air — no music, only the world itself."
         },
         {
-          "id": "beat",
-          "text": "An upbeat trail mix — every step's got a little bounce."
+          "id": "drums",
+          "text": "Deep drums and a rising pulse — the rings are calling and I'm answering."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261111_q6_v1",
-      "theme": "ocarina_song_afterglow_hour",
+      "id": "muse_20261112_q6_v1",
+      "theme": "avengers_doomsday_countdown_hour",
       "state_target": "desired_state",
-      "prompt": "The Scarecrow Song is yours now — a little tune tucked away in Hyrule, waiting to be played. The next hour is yours. What should it feel like?",
+      "prompt": "Avengers: Doomsday is coming — the trailer, the cast, the date, all lining up tonight. The next hour is yours before the big reveal lands. What should it feel like?",
       "options": [
         {
-          "id": "humming",
-          "text": "Humming the tune as I wander — no plan, just the night."
+          "id": "counting",
+          "text": "Counting down loud — the reveal can't come fast enough."
         },
         {
-          "id": "sharing",
-          "text": "Showing a friend the trick — the best secrets are shared."
+          "id": "ready",
+          "text": "Steady and ready — I've waited this long, one more hour is easy."
         },
         {
-          "id": "deep",
-          "text": "Deep in the world — the song opens doors I haven't tried yet."
+          "id": "wandering",
+          "text": "Wandering easy — the hour's mine, the trailer can wait."
         },
         {
           "id": "restless",
-          "text": "Restless — one secret found and now I want them all."
+          "text": "Restless — too many theories, too many trailers to rewatch."
         }
       ],
       "allow_skip": true

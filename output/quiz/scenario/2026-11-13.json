@@ -1,0 +1,158 @@
+{
+  "scan_set_id": "2026-11-12-daily-v1",
+  "date": "2026-11-13",
+  "timezone": "America/New_York",
+  "closes_at": null,
+  "questions": [
+    {
+      "id": "muse_20261112_q1_v1",
+      "theme": "gta6_new_gameplay_stunned",
+      "state_target": "current_state",
+      "prompt": "New GTA 6 gameplay just dropped and fans are stunned — the city's alive on screen tonight and everyone's talking about it. Which scene sounds most like yours right now?",
+      "options": [
+        {
+          "id": "rewatching",
+          "text": "Already rewatching every clip — I'm in the city the moment it opens."
+        },
+        {
+          "id": "sinking",
+          "text": "Sitting with it, letting the new streets sink in slow."
+        },
+        {
+          "id": "bouncing",
+          "text": "My head's bouncing from clip to clip — too much to take in at once."
+        },
+        {
+          "id": "steady",
+          "text": "Watching it through once, steady — saving the rush for later."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261112_q2_v1",
+      "theme": "ocarina_zora_tunic_dive",
+      "state_target": "current_state",
+      "prompt": "There's a tunic in Ocarina of Time that lets you breathe underwater — and getting it means diving deep into Hyrule's waters tonight. When the deep water calls, where does it pull you?",
+      "options": [
+        {
+          "id": "diving",
+          "text": "Straight down — I've got the route mapped and I'm going for it."
+        },
+        {
+          "id": "easing",
+          "text": "Easing in slow — the water's not going anywhere tonight."
+        },
+        {
+          "id": "drifting",
+          "text": "Drifting with the current — the lake decides where tonight goes."
+        },
+        {
+          "id": "edge",
+          "text": "Standing at the edge, head full of 'what if I miss something?'"
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261112_q3_v1",
+      "theme": "xbox_series_s_hardware_holds_back",
+      "state_target": "response_tendency",
+      "prompt": "A fighting-game legend just said he wishes weaker consoles like the Xbox Series S didn't exist — the hardware holds the games back. Tonight, a game you love is running rough because the box can't keep up. What do you do?",
+      "options": [
+        {
+          "id": "pushing",
+          "text": "Play through it anyway — the game's worth the rough edges."
+        },
+        {
+          "id": "waiting",
+          "text": "Wait it out — I'll play it properly when I can."
+        },
+        {
+          "id": "venting",
+          "text": "Vent about it first — the hardware had one job."
+        },
+        {
+          "id": "switching",
+          "text": "Shrug and switch off — tonight's not a fight-the-box night."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261112_q4_v1",
+      "theme": "coachella_headliners_festival_drink",
+      "state_target": "desired_state",
+      "prompt": "Dua Lipa, Tame Impala, and SZA are headlining Coachella 2027 — the lineup just dropped and the desert night is calling. If someone handled the festival-night drink for you, what would you want in your hand tonight?",
+      "options": [
+        {
+          "id": "lemonade",
+          "text": "A cold lemonade — sweet, slow, and made for the desert air."
+        },
+        {
+          "id": "sparkling",
+          "text": "Something sparkling and cold — easy sipping while the sun goes down."
+        },
+        {
+          "id": "mule",
+          "text": "Virgin or hard — a Moscow mule hits just right tonight."
+        },
+        {
+          "id": "water",
+          "text": "Just water, I don't need anything else tonight."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261112_q5_v1",
+      "theme": "rings_of_power_rings_return_sound",
+      "state_target": "context_only",
+      "prompt": "Rings of Power season 3 is showing where the rings are — old magic waking up across Middle-earth tonight. Which sound is the sound of that world opening up for you?",
+      "options": [
+        {
+          "id": "score",
+          "text": "A low, swelling score — the mountains and the forests breathing."
+        },
+        {
+          "id": "chatter",
+          "text": "Friends talking it over — the lore's better when it's shared."
+        },
+        {
+          "id": "quiet",
+          "text": "Just the night air — no music, only the world itself."
+        },
+        {
+          "id": "drums",
+          "text": "Deep drums and a rising pulse — the rings are calling and I'm answering."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261112_q6_v1",
+      "theme": "avengers_doomsday_countdown_hour",
+      "state_target": "desired_state",
+      "prompt": "Avengers: Doomsday is coming — the trailer, the cast, the date, all lining up tonight. The next hour is yours before the big reveal lands. What should it feel like?",
+      "options": [
+        {
+          "id": "counting",
+          "text": "Counting down loud — the reveal can't come fast enough."
+        },
+        {
+          "id": "ready",
+          "text": "Steady and ready — I've waited this long, one more hour is easy."
+        },
+        {
+          "id": "wandering",
+          "text": "Wandering easy — the hour's mine, the trailer can wait."
+        },
+        {
+          "id": "restless",
+          "text": "Restless — too many theories, too many trailers to rewatch."
+        }
+      ],
+      "allow_skip": true
+    }
+  ]
+}
