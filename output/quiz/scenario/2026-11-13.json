@@ -1,18 +1,18 @@
 {
-  "scan_set_id": "2026-11-12-daily-v1",
+  "scan_set_id": "2026-11-13-daily-v1",
   "date": "2026-11-13",
   "timezone": "America/New_York",
   "closes_at": null,
   "questions": [
     {
-      "id": "muse_20261112_q1_v1",
-      "theme": "gta6_new_gameplay_stunned",
+      "id": "muse_20261113_q1_v1",
+      "theme": "gta6_map_leak_merch_drop",
       "state_target": "current_state",
-      "prompt": "New GTA 6 gameplay just dropped and fans are stunned — the city's alive on screen tonight and everyone's talking about it. Which scene sounds most like yours right now?",
+      "prompt": "GTA 6's map seemingly leaked at a merch drop event tonight — the streets of Leonida spilling out early, and everyone's passing the screenshots around. Which scene sounds most like yours right now?",
       "options": [
         {
-          "id": "rewatching",
-          "text": "Already rewatching every clip — I'm in the city the moment it opens."
+          "id": "tracing",
+          "text": "Already tracing every leaked street — I'm in Leonida before the game even opens."
         },
         {
           "id": "sinking",
@@ -20,78 +20,78 @@
         },
         {
           "id": "bouncing",
-          "text": "My head's bouncing from clip to clip — too much to take in at once."
+          "text": "My head's bouncing from leak to leak — too much map to take in at once."
         },
         {
           "id": "steady",
-          "text": "Watching it through once, steady — saving the rush for later."
+          "text": "One careful look, then I put it down — saving the real exploring for launch."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261112_q2_v1",
-      "theme": "ocarina_zora_tunic_dive",
+      "id": "muse_20261113_q2_v1",
+      "theme": "wolfenstein_3_announced",
       "state_target": "current_state",
-      "prompt": "There's a tunic in Ocarina of Time that lets you breathe underwater — and getting it means diving deep into Hyrule's waters tonight. When the deep water calls, where does it pull you?",
+      "prompt": "Xbox just announced Wolfenstein 3 — a new fight on the horizon tonight, and the trailer's got everyone talking. When a new war story calls, where does it pull you?",
       "options": [
         {
           "id": "diving",
-          "text": "Straight down — I've got the route mapped and I'm going for it."
+          "text": "Straight in — aim steady, ready for the next mission."
         },
         {
           "id": "easing",
-          "text": "Easing in slow — the water's not going anywhere tonight."
+          "text": "Easing in slow — the announcement can breathe, I'll get there when I get there."
         },
         {
           "id": "drifting",
-          "text": "Drifting with the current — the lake decides where tonight goes."
+          "text": "Swept along with the hype — the trailer decides where tonight goes."
         },
         {
-          "id": "edge",
-          "text": "Standing at the edge, head full of 'what if I miss something?'"
+          "id": "questions",
+          "text": "Head full of questions — what if it can't live up to the last one?"
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261112_q3_v1",
-      "theme": "xbox_series_s_hardware_holds_back",
+      "id": "muse_20261113_q3_v1",
+      "theme": "star_wars_imax_rerelease_plans",
       "state_target": "response_tendency",
-      "prompt": "A fighting-game legend just said he wishes weaker consoles like the Xbox Series S didn't exist — the hardware holds the games back. Tonight, a game you love is running rough because the box can't keep up. What do you do?",
+      "prompt": "You'd planned a quiet night in — then the news lands that A New Hope is coming back to IMAX in 70mm, and suddenly everyone's making plans. What do you do?",
       "options": [
         {
-          "id": "pushing",
-          "text": "Play through it anyway — the game's worth the rough edges."
+          "id": "planning",
+          "text": "Start planning the trip — the big screen's worth rearranging the night for."
         },
         {
           "id": "waiting",
-          "text": "Wait it out — I'll play it properly when I can."
+          "text": "Hold steady — I'll see it when I see it, the film's waited this long."
         },
         {
-          "id": "venting",
-          "text": "Vent about it first — the hardware had one job."
+          "id": "grumbling",
+          "text": "Grumble about the hype — everyone's suddenly a Star Wars expert tonight."
         },
         {
-          "id": "switching",
-          "text": "Shrug and switch off — tonight's not a fight-the-box night."
+          "id": "staying",
+          "text": "Stay in — the couch and the quiet win over the crowd tonight."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261112_q4_v1",
-      "theme": "coachella_headliners_festival_drink",
+      "id": "muse_20261113_q4_v1",
+      "theme": "avengers_doomsday_surprise_credit_drink",
       "state_target": "desired_state",
-      "prompt": "Dua Lipa, Tame Impala, and SZA are headlining Coachella 2027 — the lineup just dropped and the desert night is calling. If someone handled the festival-night drink for you, what would you want in your hand tonight?",
+      "prompt": "Deadpool and Wolverine just got a surprise credit on Avengers: Doomsday — the reveal nobody saw coming, and everyone's talking about it tonight. If someone handled the reveal-night drink for you, what would you want in your hand?",
       "options": [
         {
           "id": "lemonade",
-          "text": "A cold lemonade — sweet, slow, and made for the desert air."
+          "text": "A cold lemonade — sweet, slow, made for a long night of theories."
         },
         {
           "id": "sparkling",
-          "text": "Something sparkling and cold — easy sipping while the sun goes down."
+          "text": "Something sparkling and cold — easy sipping while the theories fly."
         },
         {
           "id": "mule",
@@ -105,51 +105,51 @@
       "allow_skip": true
     },
     {
-      "id": "muse_20261112_q5_v1",
-      "theme": "rings_of_power_rings_return_sound",
+      "id": "muse_20261113_q5_v1",
+      "theme": "duran_duran_drummer_quits_sound",
       "state_target": "context_only",
-      "prompt": "Rings of Power season 3 is showing where the rings are — old magic waking up across Middle-earth tonight. Which sound is the sound of that world opening up for you?",
+      "prompt": "Duran Duran's drummer just stepped away — tinnitus, the sound itself catching up with him after all these years. Tonight, which sound is the sound of that beat going quiet for you?",
       "options": [
         {
-          "id": "score",
-          "text": "A low, swelling score — the mountains and the forests breathing."
-        },
-        {
-          "id": "chatter",
-          "text": "Friends talking it over — the lore's better when it's shared."
+          "id": "fading",
+          "text": "A low, fading drumbeat — the rhythm easing out slow."
         },
         {
           "id": "quiet",
-          "text": "Just the night air — no music, only the world itself."
+          "text": "Just the quiet — no music tonight, only the room itself."
         },
         {
-          "id": "drums",
-          "text": "Deep drums and a rising pulse — the rings are calling and I'm answering."
+          "id": "chatter",
+          "text": "Friends talking it over — the songs are better when they're shared."
+        },
+        {
+          "id": "loud",
+          "text": "The old hits turned up loud — the band's beat still going strong."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261112_q6_v1",
-      "theme": "avengers_doomsday_countdown_hour",
+      "id": "muse_20261113_q6_v1",
+      "theme": "hall_of_fame_empty_chairs_hour",
       "state_target": "desired_state",
-      "prompt": "Avengers: Doomsday is coming — the trailer, the cast, the date, all lining up tonight. The next hour is yours before the big reveal lands. What should it feel like?",
+      "prompt": "Three inductees are refusing to show up to the Rock and Roll Hall of Fame ceremony — the stage set, the chairs empty, the music still playing. The next hour is yours before the ceremony starts. What should it feel like?",
       "options": [
         {
-          "id": "counting",
-          "text": "Counting down loud — the reveal can't come fast enough."
+          "id": "loud",
+          "text": "Loud and proud — the music's the point, the empty chairs can wait."
         },
         {
-          "id": "ready",
-          "text": "Steady and ready — I've waited this long, one more hour is easy."
+          "id": "steady",
+          "text": "Steady and easy — I'll take the songs and leave the ceremony to itself."
         },
         {
           "id": "wandering",
-          "text": "Wandering easy — the hour's mine, the trailer can wait."
+          "text": "Wandering easy — the hour's mine, the speeches can wait."
         },
         {
           "id": "restless",
-          "text": "Restless — too many theories, too many trailers to rewatch."
+          "text": "Restless — too many speeches, too many names, too much noise."
         }
       ],
       "allow_skip": true

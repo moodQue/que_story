@@ -1,0 +1,158 @@
+{
+  "scan_set_id": "2026-11-13-daily-v1",
+  "date": "2026-11-14",
+  "timezone": "America/New_York",
+  "closes_at": null,
+  "questions": [
+    {
+      "id": "muse_20261113_q1_v1",
+      "theme": "gta6_map_leak_merch_drop",
+      "state_target": "current_state",
+      "prompt": "GTA 6's map seemingly leaked at a merch drop event tonight — the streets of Leonida spilling out early, and everyone's passing the screenshots around. Which scene sounds most like yours right now?",
+      "options": [
+        {
+          "id": "tracing",
+          "text": "Already tracing every leaked street — I'm in Leonida before the game even opens."
+        },
+        {
+          "id": "sinking",
+          "text": "Sitting with it, letting the new streets sink in slow."
+        },
+        {
+          "id": "bouncing",
+          "text": "My head's bouncing from leak to leak — too much map to take in at once."
+        },
+        {
+          "id": "steady",
+          "text": "One careful look, then I put it down — saving the real exploring for launch."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261113_q2_v1",
+      "theme": "wolfenstein_3_announced",
+      "state_target": "current_state",
+      "prompt": "Xbox just announced Wolfenstein 3 — a new fight on the horizon tonight, and the trailer's got everyone talking. When a new war story calls, where does it pull you?",
+      "options": [
+        {
+          "id": "diving",
+          "text": "Straight in — aim steady, ready for the next mission."
+        },
+        {
+          "id": "easing",
+          "text": "Easing in slow — the announcement can breathe, I'll get there when I get there."
+        },
+        {
+          "id": "drifting",
+          "text": "Swept along with the hype — the trailer decides where tonight goes."
+        },
+        {
+          "id": "questions",
+          "text": "Head full of questions — what if it can't live up to the last one?"
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261113_q3_v1",
+      "theme": "star_wars_imax_rerelease_plans",
+      "state_target": "response_tendency",
+      "prompt": "You'd planned a quiet night in — then the news lands that A New Hope is coming back to IMAX in 70mm, and suddenly everyone's making plans. What do you do?",
+      "options": [
+        {
+          "id": "planning",
+          "text": "Start planning the trip — the big screen's worth rearranging the night for."
+        },
+        {
+          "id": "waiting",
+          "text": "Hold steady — I'll see it when I see it, the film's waited this long."
+        },
+        {
+          "id": "grumbling",
+          "text": "Grumble about the hype — everyone's suddenly a Star Wars expert tonight."
+        },
+        {
+          "id": "staying",
+          "text": "Stay in — the couch and the quiet win over the crowd tonight."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261113_q4_v1",
+      "theme": "avengers_doomsday_surprise_credit_drink",
+      "state_target": "desired_state",
+      "prompt": "Deadpool and Wolverine just got a surprise credit on Avengers: Doomsday — the reveal nobody saw coming, and everyone's talking about it tonight. If someone handled the reveal-night drink for you, what would you want in your hand?",
+      "options": [
+        {
+          "id": "lemonade",
+          "text": "A cold lemonade — sweet, slow, made for a long night of theories."
+        },
+        {
+          "id": "sparkling",
+          "text": "Something sparkling and cold — easy sipping while the theories fly."
+        },
+        {
+          "id": "mule",
+          "text": "Virgin or hard — a Moscow mule hits just right tonight."
+        },
+        {
+          "id": "water",
+          "text": "Just water, I don't need anything else tonight."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261113_q5_v1",
+      "theme": "duran_duran_drummer_quits_sound",
+      "state_target": "context_only",
+      "prompt": "Duran Duran's drummer just stepped away — tinnitus, the sound itself catching up with him after all these years. Tonight, which sound is the sound of that beat going quiet for you?",
+      "options": [
+        {
+          "id": "fading",
+          "text": "A low, fading drumbeat — the rhythm easing out slow."
+        },
+        {
+          "id": "quiet",
+          "text": "Just the quiet — no music tonight, only the room itself."
+        },
+        {
+          "id": "chatter",
+          "text": "Friends talking it over — the songs are better when they're shared."
+        },
+        {
+          "id": "loud",
+          "text": "The old hits turned up loud — the band's beat still going strong."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261113_q6_v1",
+      "theme": "hall_of_fame_empty_chairs_hour",
+      "state_target": "desired_state",
+      "prompt": "Three inductees are refusing to show up to the Rock and Roll Hall of Fame ceremony — the stage set, the chairs empty, the music still playing. The next hour is yours before the ceremony starts. What should it feel like?",
+      "options": [
+        {
+          "id": "loud",
+          "text": "Loud and proud — the music's the point, the empty chairs can wait."
+        },
+        {
+          "id": "steady",
+          "text": "Steady and easy — I'll take the songs and leave the ceremony to itself."
+        },
+        {
+          "id": "wandering",
+          "text": "Wandering easy — the hour's mine, the speeches can wait."
+        },
+        {
+          "id": "restless",
+          "text": "Restless — too many speeches, too many names, too much noise."
+        }
+      ],
+      "allow_skip": true
+    }
+  ]
+}
