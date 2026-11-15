@@ -1,0 +1,158 @@
+{
+  "scan_set_id": "2026-11-15-daily-v1",
+  "date": "2026-11-16",
+  "timezone": "America/New_York",
+  "closes_at": null,
+  "questions": [
+    {
+      "id": "muse_20261115_q1_v1",
+      "theme": "ufc_334_live_fight_night",
+      "state_target": "current_state",
+      "prompt": "UFC 334 is live tonight — Gane vs. Hokit, the arena roaring right now, and everyone's got a corner of the fight. Which scene sounds most like yours tonight?",
+      "options": [
+        {
+          "id": "locked",
+          "text": "Locked in on every round — I'm not missing a second of it."
+        },
+        {
+          "id": "roaring",
+          "text": "Buzzing with the crowd — the big-night energy is the whole point."
+        },
+        {
+          "id": "halfwatching",
+          "text": "Half-watching while I do my own thing — the fight's just background tonight."
+        },
+        {
+          "id": "toomuch",
+          "text": "Too much noise at once — the whole night feels loud and scattered."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261115_q2_v1",
+      "theme": "pokemon_go_mighty_hunt",
+      "state_target": "current_state",
+      "prompt": "The mighty Pokémon are out in Pokémon Go tonight, and the hunt is on. When a hunt like that calls, where does it pull you?",
+      "options": [
+        {
+          "id": "outdoor",
+          "text": "Out the door — I'm chasing the mighty ones right now."
+        },
+        {
+          "id": "onecheck",
+          "text": "One careful look at the map, then I let it be — they'll still be there."
+        },
+        {
+          "id": "together",
+          "text": "Calling a friend — a hunt like this is better together."
+        },
+        {
+          "id": "fullhead",
+          "text": "My head's already full — maybe tomorrow, when it's quieter."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261115_q3_v1",
+      "theme": "professor_layton_ds_classic_returns",
+      "state_target": "response_tendency",
+      "prompt": "Twenty years later, a classic Nintendo DS puzzle game is officially coming back — Professor Layton returns in 2027, but the wait is years long and the old cases are right there tonight. How do you sit with a wait like that?",
+      "options": [
+        {
+          "id": "replaying",
+          "text": "Already replaying the old cases — the wait is half the fun."
+        },
+        {
+          "id": "patient",
+          "text": "Happy to wait — good things take their time."
+        },
+        {
+          "id": "impatient",
+          "text": "Impatient already — 2027 is too far away, I want it now."
+        },
+        {
+          "id": "onepuzzle",
+          "text": "Easing in slow — one puzzle a night until it's real."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261115_q4_v1",
+      "theme": "rings_of_power_number_one_watch_night",
+      "state_target": "desired_state",
+      "prompt": "Rings of Power just claimed the No. 1 stream — the biggest fantasy night on, the fellowship on screen, and a long watch ahead. If someone handled tonight's watch-night drink for you, what would you want in your hand?",
+      "options": [
+        {
+          "id": "cider",
+          "text": "Virgin or hard — a big mug of spiced cider, made for an epic night."
+        },
+        {
+          "id": "tea",
+          "text": "Herbal tea, slow and warm — no rush, the episode can wait for me."
+        },
+        {
+          "id": "sparkling",
+          "text": "Something sparkling and cold — easy sipping through the long watch."
+        },
+        {
+          "id": "water",
+          "text": "Just water, I don't need anything else tonight."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261115_q5_v1",
+      "theme": "magic_star_trek_references_table_sound",
+      "state_target": "context_only",
+      "prompt": "Magic: The Gathering is hiding Star Trek references in its cards — the five best and weirdest ones are all over the table tonight. What does a discovery like that sound like at your table?",
+      "options": [
+        {
+          "id": "lofi",
+          "text": "Like lofi in the background while I sort through the cards slow."
+        },
+        {
+          "id": "geeking",
+          "text": "Like friends geeking out — everyone pointing at a different reference."
+        },
+        {
+          "id": "quiet",
+          "text": "Like quiet focus — just me and the hunt for the weirdest one."
+        },
+        {
+          "id": "toomany",
+          "text": "Like too many references at once — I can't keep up with the weirdness."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261115_q6_v1",
+      "theme": "superman_man_of_tomorrow_wait",
+      "state_target": "desired_state",
+      "prompt": "Superman: Man of Tomorrow is coming, but the studio hasn't even seen it yet — tonight the next chapter is still just out of reach. In the hour ahead, how do you want to feel while you wait for it?",
+      "options": [
+        {
+          "id": "dreaming",
+          "text": "Buzzing — already dreaming up the first scene in my head."
+        },
+        {
+          "id": "steady",
+          "text": "Calm and steady — it'll arrive when it arrives."
+        },
+        {
+          "id": "rewatch",
+          "text": "Cozy — rewatching the last Superman tonight instead of chasing glimpses."
+        },
+        {
+          "id": "restless",
+          "text": "Restless — I want a glimpse now, not someday."
+        }
+      ],
+      "allow_skip": true
+    }
+  ]
+}

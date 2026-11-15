@@ -1,101 +1,101 @@
 {
-  "scan_set_id": "2026-11-14-daily-v1",
+  "scan_set_id": "2026-11-15-daily-v1",
   "date": "2026-11-15",
   "timezone": "America/New_York",
   "closes_at": null,
   "questions": [
     {
-      "id": "muse_20261114_q1_v1",
-      "theme": "gta6_animated_series_trailer_drop",
+      "id": "muse_20261115_q1_v1",
+      "theme": "ufc_334_live_fight_night",
       "state_target": "current_state",
-      "prompt": "The first official trailer for the GTA 6 animated series just dropped tonight — Leonida on screen at last, and everyone's passing it around. Which scene sounds most like yours right now?",
+      "prompt": "UFC 334 is live tonight — Gane vs. Hokit, the arena roaring right now, and everyone's got a corner of the fight. Which scene sounds most like yours tonight?",
       "options": [
         {
-          "id": "rewatching",
-          "text": "Already rewatching it frame by frame — buzzing."
+          "id": "locked",
+          "text": "Locked in on every round — I'm not missing a second of it."
         },
         {
-          "id": "sinking",
-          "text": "Watching it once, letting the new streets sink in slow."
+          "id": "roaring",
+          "text": "Buzzing with the crowd — the big-night energy is the whole point."
         },
         {
-          "id": "saving",
-          "text": "Saving it for the right moment tonight — one careful look."
+          "id": "halfwatching",
+          "text": "Half-watching while I do my own thing — the fight's just background tonight."
         },
         {
-          "id": "bouncing",
-          "text": "Half-watching, half-scrolling — my head's bouncing everywhere."
+          "id": "toomuch",
+          "text": "Too much noise at once — the whole night feels loud and scattered."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261114_q2_v1",
-      "theme": "magic_planeswalker_series_reveal",
+      "id": "muse_20261115_q2_v1",
+      "theme": "pokemon_go_mighty_hunt",
       "state_target": "current_state",
-      "prompt": "Netflix just revealed the Magic: The Gathering animated series — PLANESWALKER, a whole new world opening up tonight. When a new world calls like that, where does it pull you?",
+      "prompt": "The mighty Pokémon are out in Pokémon Go tonight, and the hunt is on. When a hunt like that calls, where does it pull you?",
       "options": [
         {
-          "id": "diving",
-          "text": "Straight in — lore, cards, all of it, right now."
+          "id": "outdoor",
+          "text": "Out the door — I'm chasing the mighty ones right now."
         },
         {
-          "id": "settling",
-          "text": "One look, then I let it settle — it'll still be there tomorrow."
+          "id": "onecheck",
+          "text": "One careful look at the map, then I let it be — they'll still be there."
         },
         {
-          "id": "gathering",
-          "text": "Rounding up friends — this one's better watched together."
+          "id": "together",
+          "text": "Calling a friend — a hunt like this is better together."
         },
         {
-          "id": "waiting",
-          "text": "Too much at once — I'll catch up when the noise dies down."
+          "id": "fullhead",
+          "text": "My head's already full — maybe tomorrow, when it's quieter."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261114_q3_v1",
-      "theme": "wolfenstein_3_in_production_wait",
+      "id": "muse_20261115_q3_v1",
+      "theme": "professor_layton_ds_classic_returns",
       "state_target": "response_tendency",
-      "prompt": "Wolfenstein 3 is officially in production — the wait is on, and there's no launch date yet, just the promise. Tonight, how do you sit with a wait like that?",
+      "prompt": "Twenty years later, a classic Nintendo DS puzzle game is officially coming back — Professor Layton returns in 2027, but the wait is years long and the old cases are right there tonight. How do you sit with a wait like that?",
       "options": [
         {
-          "id": "planning",
-          "text": "Already planning my first run — the wait is half the fun."
+          "id": "replaying",
+          "text": "Already replaying the old cases — the wait is half the fun."
         },
         {
-          "id": "steady",
+          "id": "patient",
           "text": "Happy to wait — good things take their time."
         },
         {
           "id": "impatient",
-          "text": "Impatient already — I want it now, not someday."
+          "text": "Impatient already — 2027 is too far away, I want it now."
         },
         {
-          "id": "replaying",
-          "text": "Filling the gap with an old favourite until it's real."
+          "id": "onepuzzle",
+          "text": "Easing in slow — one puzzle a night until it's real."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261114_q4_v1",
-      "theme": "latin_grammys_winners_night_toast",
+      "id": "muse_20261115_q4_v1",
+      "theme": "rings_of_power_number_one_watch_night",
       "state_target": "desired_state",
-      "prompt": "The Latin Grammys crowned their winners tonight — a big music night, worth a little toast. If someone handled tonight's celebration drink for you, what would you want in your hand?",
+      "prompt": "Rings of Power just claimed the No. 1 stream — the biggest fantasy night on, the fellowship on screen, and a long watch ahead. If someone handled tonight's watch-night drink for you, what would you want in your hand?",
       "options": [
         {
-          "id": "margarita",
-          "text": "Virgin or frozen — a margarita made for a winners' night."
+          "id": "cider",
+          "text": "Virgin or hard — a big mug of spiced cider, made for an epic night."
         },
         {
-          "id": "warm",
-          "text": "Something warm and slow — cocoa or tea, no rush."
+          "id": "tea",
+          "text": "Herbal tea, slow and warm — no rush, the episode can wait for me."
         },
         {
           "id": "sparkling",
-          "text": "Something sparkling and cold — easy sipping while the speeches roll."
+          "text": "Something sparkling and cold — easy sipping through the long watch."
         },
         {
           "id": "water",
@@ -105,51 +105,51 @@
       "allow_skip": true
     },
     {
-      "id": "muse_20261114_q5_v1",
-      "theme": "dolly_parton_u2_duet_voice_returns",
+      "id": "muse_20261115_q5_v1",
+      "theme": "magic_star_trek_references_table_sound",
       "state_target": "context_only",
-      "prompt": "U2 just released their duet with Dolly Parton — a voice from the past back on a brand-new track tonight. What does a comeback like that sound like to you?",
+      "prompt": "Magic: The Gathering is hiding Star Trek references in its cards — the five best and weirdest ones are all over the table tonight. What does a discovery like that sound like at your table?",
       "options": [
         {
+          "id": "lofi",
+          "text": "Like lofi in the background while I sort through the cards slow."
+        },
+        {
+          "id": "geeking",
+          "text": "Like friends geeking out — everyone pointing at a different reference."
+        },
+        {
           "id": "quiet",
-          "text": "Like the room going quiet so I can really hear it."
+          "text": "Like quiet focus — just me and the hunt for the weirdest one."
         },
         {
-          "id": "loud",
-          "text": "Like turning it up loud and letting it fill the place."
-        },
-        {
-          "id": "slow",
-          "text": "Like a slow song for a slow night — let it linger."
-        },
-        {
-          "id": "deep",
-          "text": "Like something I have to sit with — it hits deep."
+          "id": "toomany",
+          "text": "Like too many references at once — I can't keep up with the weirdness."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261114_q6_v1",
-      "theme": "kpop_demon_hunters_tour_wait",
+      "id": "muse_20261115_q6_v1",
+      "theme": "superman_man_of_tomorrow_wait",
       "state_target": "desired_state",
-      "prompt": "KPop Demon Hunters are officially going on tour — the show is really coming, and the wait starts tonight. In the hour ahead, how do you want to feel while you wait for it?",
+      "prompt": "Superman: Man of Tomorrow is coming, but the studio hasn't even seen it yet — tonight the next chapter is still just out of reach. In the hour ahead, how do you want to feel while you wait for it?",
       "options": [
         {
-          "id": "buzzing",
-          "text": "Buzzing — already picking my favourite songs for the setlist."
+          "id": "dreaming",
+          "text": "Buzzing — already dreaming up the first scene in my head."
         },
         {
           "id": "steady",
-          "text": "Calm and steady — it'll come when it comes."
+          "text": "Calm and steady — it'll arrive when it arrives."
         },
         {
-          "id": "replaying",
-          "text": "Cozy — replaying the film tonight instead of chasing dates."
+          "id": "rewatch",
+          "text": "Cozy — rewatching the last Superman tonight instead of chasing glimpses."
         },
         {
           "id": "restless",
-          "text": "Restless — I want the tour dates now, not someday."
+          "text": "Restless — I want a glimpse now, not someday."
         }
       ],
       "allow_skip": true
