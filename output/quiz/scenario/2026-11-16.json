@@ -1,101 +1,101 @@
 {
-  "scan_set_id": "2026-11-15-daily-v1",
+  "scan_set_id": "2026-11-16-daily-v1",
   "date": "2026-11-16",
   "timezone": "America/New_York",
   "closes_at": null,
   "questions": [
     {
-      "id": "muse_20261115_q1_v1",
-      "theme": "ufc_334_live_fight_night",
+      "id": "muse_20261116_q1_v1",
+      "theme": "gta6_world_waiting",
       "state_target": "current_state",
-      "prompt": "UFC 334 is live tonight — Gane vs. Hokit, the arena roaring right now, and everyone's got a corner of the fight. Which scene sounds most like yours tonight?",
+      "prompt": "GTA 6 is everywhere tonight — and the talk isn't just the story, it's the size of the world waiting behind it, side streets and all. Which scene sounds most like yours tonight?",
       "options": [
         {
-          "id": "locked",
-          "text": "Locked in on every round — I'm not missing a second of it."
+          "id": "mainstory",
+          "text": "Locked in — main story first, I've already got my route planned."
         },
         {
-          "id": "roaring",
-          "text": "Buzzing with the crowd — the big-night energy is the whole point."
+          "id": "wandering",
+          "text": "Already wandering in my head — side streets first, the story can wait."
         },
         {
-          "id": "halfwatching",
-          "text": "Half-watching while I do my own thing — the fight's just background tonight."
+          "id": "racing",
+          "text": "My brain's racing through everything I want to do first."
         },
         {
           "id": "toomuch",
-          "text": "Too much noise at once — the whole night feels loud and scattered."
+          "text": "Too much world at once — the map's so big I don't know where to start."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261115_q2_v1",
-      "theme": "pokemon_go_mighty_hunt",
+      "id": "muse_20261116_q2_v1",
+      "theme": "phoebe_bridgers_snl_glow",
       "state_target": "current_state",
-      "prompt": "The mighty Pokémon are out in Pokémon Go tonight, and the hunt is on. When a hunt like that calls, where does it pull you?",
+      "prompt": "Phoebe Bridgers lit up SNL — and the clips are still glowing tonight, that slow-burn kind of performance that stays in the room. When a song hits like that, where does it pull you tonight?",
       "options": [
         {
-          "id": "outdoor",
-          "text": "Out the door — I'm chasing the mighty ones right now."
+          "id": "leanin",
+          "text": "Leaning all the way in — letting every note land, slow and full."
         },
         {
-          "id": "onecheck",
-          "text": "One careful look at the map, then I let it be — they'll still be there."
+          "id": "sendit",
+          "text": "Sending it to someone right away — a song like that is meant to be shared."
         },
         {
-          "id": "together",
-          "text": "Calling a friend — a hunt like this is better together."
+          "id": "turnup",
+          "text": "Turning it up — the glow is the whole night now."
         },
         {
-          "id": "fullhead",
-          "text": "My head's already full — maybe tomorrow, when it's quieter."
+          "id": "empty",
+          "text": "Too tired to feel it tonight — the glow's there, I'm just running on empty."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261115_q3_v1",
-      "theme": "professor_layton_ds_classic_returns",
+      "id": "muse_20261116_q3_v1",
+      "theme": "gta6_main_story_or_wander",
       "state_target": "response_tendency",
-      "prompt": "Twenty years later, a classic Nintendo DS puzzle game is officially coming back — Professor Layton returns in 2027, but the wait is years long and the old cases are right there tonight. How do you sit with a wait like that?",
+      "prompt": "GTA 6 is coming, and everyone's already arguing about the same thing: when the world finally opens, do you follow the main story — or ignore it and wander off into everything else? Tonight, with the wait still on, which way are you leaning?",
       "options": [
         {
-          "id": "replaying",
-          "text": "Already replaying the old cases — the wait is half the fun."
+          "id": "storyfirst",
+          "text": "Straight down the main story — I'm finishing what they built first."
         },
         {
-          "id": "patient",
-          "text": "Happy to wait — good things take their time."
+          "id": "sidestreets",
+          "text": "Side streets first — the story can wait, I want to see everything."
         },
         {
-          "id": "impatient",
-          "text": "Impatient already — 2027 is too far away, I want it now."
+          "id": "onething",
+          "text": "One thing at a time, no rush — I'll wander when I feel like it."
         },
         {
-          "id": "onepuzzle",
-          "text": "Easing in slow — one puzzle a night until it's real."
+          "id": "stuck",
+          "text": "Stuck choosing — too many directions, I keep starting and stopping."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261115_q4_v1",
-      "theme": "rings_of_power_number_one_watch_night",
+      "id": "muse_20261116_q4_v1",
+      "theme": "phoebe_wind_down_drink",
       "state_target": "desired_state",
-      "prompt": "Rings of Power just claimed the No. 1 stream — the biggest fantasy night on, the fellowship on screen, and a long watch ahead. If someone handled tonight's watch-night drink for you, what would you want in your hand?",
+      "prompt": "The SNL glow is still in the air, and tonight's turning into a slow Phoebe Bridgers listen — songs on low, lights down. If someone handled tonight's wind-down drink for you, what would you want in your hand?",
       "options": [
+        {
+          "id": "chamomile",
+          "text": "Chamomile, slow and warm — unwinding one sip at a time."
+        },
         {
           "id": "cider",
-          "text": "Virgin or hard — a big mug of spiced cider, made for an epic night."
-        },
-        {
-          "id": "tea",
-          "text": "Herbal tea, slow and warm — no rush, the episode can wait for me."
+          "text": "Virgin or hard — a spiced cider with a little kick, made for a glowing night."
         },
         {
           "id": "sparkling",
-          "text": "Something sparkling and cold — easy sipping through the long watch."
+          "text": "Something sparkling and cold — easy sipping while the playlist rolls."
         },
         {
           "id": "water",
@@ -105,51 +105,51 @@
       "allow_skip": true
     },
     {
-      "id": "muse_20261115_q5_v1",
-      "theme": "magic_star_trek_references_table_sound",
+      "id": "muse_20261116_q5_v1",
+      "theme": "phil_collins_comeback_sound",
       "state_target": "context_only",
-      "prompt": "Magic: The Gathering is hiding Star Trek references in its cards — the five best and weirdest ones are all over the table tonight. What does a discovery like that sound like at your table?",
+      "prompt": "Phil Collins stood up at the Rock Hall and told the crowd: you haven't heard the last of me — and the line is still echoing tonight. What does a comeback like that sound like to you?",
       "options": [
         {
-          "id": "lofi",
-          "text": "Like lofi in the background while I sort through the cards slow."
+          "id": "drums",
+          "text": "Like the opening drums rolling back in — a comeback you can feel in your chest."
         },
         {
-          "id": "geeking",
-          "text": "Like friends geeking out — everyone pointing at a different reference."
+          "id": "quietreturn",
+          "text": "Like a quiet return — just him, steady, no need to prove anything."
         },
         {
-          "id": "quiet",
-          "text": "Like quiet focus — just me and the hunt for the weirdest one."
+          "id": "favorites",
+          "text": "Like the old favorites on repeat — songs I already know by heart."
         },
         {
-          "id": "toomany",
-          "text": "Like too many references at once — I can't keep up with the weirdness."
+          "id": "spotlight",
+          "text": "Like a spotlight that won't let up — everyone's watching to see if he still has it."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261115_q6_v1",
-      "theme": "superman_man_of_tomorrow_wait",
+      "id": "muse_20261116_q6_v1",
+      "theme": "oak_ridge_classics_hour_ahead",
       "state_target": "desired_state",
-      "prompt": "Superman: Man of Tomorrow is coming, but the studio hasn't even seen it yet — tonight the next chapter is still just out of reach. In the hour ahead, how do you want to feel while you wait for it?",
+      "prompt": "The Oak Ridge Boys' ten essential songs are making the rounds tonight — the kind of classics that have been playing for decades. In the hour ahead, how do you want it to feel while the old favorites play?",
       "options": [
         {
-          "id": "dreaming",
-          "text": "Buzzing — already dreaming up the first scene in my head."
+          "id": "easy",
+          "text": "Easy — let the songs roll one after another, no skipping."
         },
         {
-          "id": "steady",
-          "text": "Calm and steady — it'll arrive when it arrives."
+          "id": "settled",
+          "text": "Steady — settled in, the classics doing what they've always done."
         },
         {
-          "id": "rewatch",
-          "text": "Cozy — rewatching the last Superman tonight instead of chasing glimpses."
+          "id": "deepcut",
+          "text": "Curious — digging for the deep cut I forgot I loved."
         },
         {
-          "id": "restless",
-          "text": "Restless — I want a glimpse now, not someday."
+          "id": "fading",
+          "text": "Fading — the songs are just background while I wind down to nothing."
         }
       ],
       "allow_skip": true

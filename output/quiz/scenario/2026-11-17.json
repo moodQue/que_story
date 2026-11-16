@@ -1,0 +1,158 @@
+{
+  "scan_set_id": "2026-11-16-daily-v1",
+  "date": "2026-11-17",
+  "timezone": "America/New_York",
+  "closes_at": null,
+  "questions": [
+    {
+      "id": "muse_20261116_q1_v1",
+      "theme": "gta6_world_waiting",
+      "state_target": "current_state",
+      "prompt": "GTA 6 is everywhere tonight — and the talk isn't just the story, it's the size of the world waiting behind it, side streets and all. Which scene sounds most like yours tonight?",
+      "options": [
+        {
+          "id": "mainstory",
+          "text": "Locked in — main story first, I've already got my route planned."
+        },
+        {
+          "id": "wandering",
+          "text": "Already wandering in my head — side streets first, the story can wait."
+        },
+        {
+          "id": "racing",
+          "text": "My brain's racing through everything I want to do first."
+        },
+        {
+          "id": "toomuch",
+          "text": "Too much world at once — the map's so big I don't know where to start."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261116_q2_v1",
+      "theme": "phoebe_bridgers_snl_glow",
+      "state_target": "current_state",
+      "prompt": "Phoebe Bridgers lit up SNL — and the clips are still glowing tonight, that slow-burn kind of performance that stays in the room. When a song hits like that, where does it pull you tonight?",
+      "options": [
+        {
+          "id": "leanin",
+          "text": "Leaning all the way in — letting every note land, slow and full."
+        },
+        {
+          "id": "sendit",
+          "text": "Sending it to someone right away — a song like that is meant to be shared."
+        },
+        {
+          "id": "turnup",
+          "text": "Turning it up — the glow is the whole night now."
+        },
+        {
+          "id": "empty",
+          "text": "Too tired to feel it tonight — the glow's there, I'm just running on empty."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261116_q3_v1",
+      "theme": "gta6_main_story_or_wander",
+      "state_target": "response_tendency",
+      "prompt": "GTA 6 is coming, and everyone's already arguing about the same thing: when the world finally opens, do you follow the main story — or ignore it and wander off into everything else? Tonight, with the wait still on, which way are you leaning?",
+      "options": [
+        {
+          "id": "storyfirst",
+          "text": "Straight down the main story — I'm finishing what they built first."
+        },
+        {
+          "id": "sidestreets",
+          "text": "Side streets first — the story can wait, I want to see everything."
+        },
+        {
+          "id": "onething",
+          "text": "One thing at a time, no rush — I'll wander when I feel like it."
+        },
+        {
+          "id": "stuck",
+          "text": "Stuck choosing — too many directions, I keep starting and stopping."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261116_q4_v1",
+      "theme": "phoebe_wind_down_drink",
+      "state_target": "desired_state",
+      "prompt": "The SNL glow is still in the air, and tonight's turning into a slow Phoebe Bridgers listen — songs on low, lights down. If someone handled tonight's wind-down drink for you, what would you want in your hand?",
+      "options": [
+        {
+          "id": "chamomile",
+          "text": "Chamomile, slow and warm — unwinding one sip at a time."
+        },
+        {
+          "id": "cider",
+          "text": "Virgin or hard — a spiced cider with a little kick, made for a glowing night."
+        },
+        {
+          "id": "sparkling",
+          "text": "Something sparkling and cold — easy sipping while the playlist rolls."
+        },
+        {
+          "id": "water",
+          "text": "Just water, I don't need anything else tonight."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261116_q5_v1",
+      "theme": "phil_collins_comeback_sound",
+      "state_target": "context_only",
+      "prompt": "Phil Collins stood up at the Rock Hall and told the crowd: you haven't heard the last of me — and the line is still echoing tonight. What does a comeback like that sound like to you?",
+      "options": [
+        {
+          "id": "drums",
+          "text": "Like the opening drums rolling back in — a comeback you can feel in your chest."
+        },
+        {
+          "id": "quietreturn",
+          "text": "Like a quiet return — just him, steady, no need to prove anything."
+        },
+        {
+          "id": "favorites",
+          "text": "Like the old favorites on repeat — songs I already know by heart."
+        },
+        {
+          "id": "spotlight",
+          "text": "Like a spotlight that won't let up — everyone's watching to see if he still has it."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261116_q6_v1",
+      "theme": "oak_ridge_classics_hour_ahead",
+      "state_target": "desired_state",
+      "prompt": "The Oak Ridge Boys' ten essential songs are making the rounds tonight — the kind of classics that have been playing for decades. In the hour ahead, how do you want it to feel while the old favorites play?",
+      "options": [
+        {
+          "id": "easy",
+          "text": "Easy — let the songs roll one after another, no skipping."
+        },
+        {
+          "id": "settled",
+          "text": "Steady — settled in, the classics doing what they've always done."
+        },
+        {
+          "id": "deepcut",
+          "text": "Curious — digging for the deep cut I forgot I loved."
+        },
+        {
+          "id": "fading",
+          "text": "Fading — the songs are just background while I wind down to nothing."
+        }
+      ],
+      "allow_skip": true
+    }
+  ]
+}
