@@ -1,0 +1,158 @@
+{
+  "scan_set_id": "2026-11-17-daily-v1",
+  "date": "2026-11-18",
+  "timezone": "America/New_York",
+  "closes_at": null,
+  "questions": [
+    {
+      "id": "muse_20261117_q1_v1",
+      "theme": "gta6_launch_countdown",
+      "state_target": "current_state",
+      "prompt": "GTA 6 lands Thursday — and EA is out here begging players not to delete Madden 27 to make room for it. Three days out, the countdown is the whole mood. Which scene sounds most like yours tonight?",
+      "options": [
+        {
+          "id": "buzzing",
+          "text": "Buzzing — counting down the hours, already planning launch night."
+        },
+        {
+          "id": "steady",
+          "text": "Steady — the wait is fine, I've got my plan and I'm sticking to it."
+        },
+        {
+          "id": "warmingup",
+          "text": "Warming up — clearing space, dusting off the console, getting ready slow."
+        },
+        {
+          "id": "scattered",
+          "text": "Scattered — too much to do before Thursday, my brain's everywhere."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261117_q2_v1",
+      "theme": "ps_black_friday_sale_rush",
+      "state_target": "current_state",
+      "prompt": "PlayStation's Black Friday sale just went live — deals dropping everywhere, and every gamer's feed is suddenly a storefront. When a sale like that hits, where are you tonight?",
+      "options": [
+        {
+          "id": "buzzing",
+          "text": "Buzzing — scrolling every deal like it's launch night."
+        },
+        {
+          "id": "steady",
+          "text": "Steady — browsing slow, the good stuff will still be there."
+        },
+        {
+          "id": "torn",
+          "text": "Torn — everything's on sale and I can't pick just one."
+        },
+        {
+          "id": "unbothered",
+          "text": "Unbothered — the sale can wait, I'm good with what I've got."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261117_q3_v1",
+      "theme": "spiderman_rerelease_second_chance",
+      "state_target": "response_tendency",
+      "prompt": "Spider-Man: Brand New Day is coming back to theaters in December — with new scenes you haven't seen yet. You already know the story, but the new scenes are calling. Tonight, which way are you leaning?",
+      "options": [
+        {
+          "id": "openingnight",
+          "text": "Opening night, big screen — new scenes deserve the full room."
+        },
+        {
+          "id": "quietshowing",
+          "text": "A quiet showing later — just me, the new scenes, no crowd."
+        },
+        {
+          "id": "couch",
+          "text": "Couch rewatch when it streams — the new scenes can wait for my couch."
+        },
+        {
+          "id": "crew",
+          "text": "Bring the whole crew — a second showing is better with everyone."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261117_q4_v1",
+      "theme": "geese_first_nom_toast",
+      "state_target": "desired_state",
+      "prompt": "The Grammy nominations are out — and Geese just earned their first one. A first nomination is a toast kind of night. If someone handled tonight's drink for you, what would you want in your hand?",
+      "options": [
+        {
+          "id": "mule",
+          "text": "Virgin or hard — a Moscow mule, made for a night worth toasting."
+        },
+        {
+          "id": "warm",
+          "text": "Something warm and slow — tea or cocoa, sipping while the news sinks in."
+        },
+        {
+          "id": "soda",
+          "text": "A fancy soda — bubbles, a good glass, no occasion needed."
+        },
+        {
+          "id": "water",
+          "text": "Just water, I don't need anything else tonight."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261117_q5_v1",
+      "theme": "grammy_nominees_list_listen",
+      "state_target": "context_only",
+      "prompt": "The full Grammy nominees list is out — Raye, Rosalía, and Ella Langley leading the pack. A list like that is basically a playlist waiting to happen. What does tonight's listen sound like?",
+      "options": [
+        {
+          "id": "loud",
+          "text": "The big names on loud — start at the top and let it rip."
+        },
+        {
+          "id": "trackbytrack",
+          "text": "Track by track — discovering the new names before everyone else does."
+        },
+        {
+          "id": "background",
+          "text": "Let it wash over in the background — the list on low while I do my thing."
+        },
+        {
+          "id": "ownsound",
+          "text": "Skip the list — my own sound tonight, the nominees can wait."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261117_q6_v1",
+      "theme": "ebenezer_comeback_second_act",
+      "state_target": "desired_state",
+      "prompt": "Johnny Depp's comeback film 'Ebenezer' is holding its own at the box office — a familiar story stepping back into the light after years away. In the hour ahead, what does your own second act feel like?",
+      "options": [
+        {
+          "id": "freshstart",
+          "text": "A fresh start — picking something back up that I set down."
+        },
+        {
+          "id": "settle",
+          "text": "A slow settle — the story's warmth, lights low, nowhere to be."
+        },
+        {
+          "id": "bignight",
+          "text": "A big night — second-act energy, all in."
+        },
+        {
+          "id": "quiet",
+          "text": "A quiet hour to myself — just me and the quiet."
+        }
+      ],
+      "allow_skip": true
+    }
+  ]
+}

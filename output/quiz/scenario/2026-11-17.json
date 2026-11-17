@@ -1,101 +1,101 @@
 {
-  "scan_set_id": "2026-11-16-daily-v1",
+  "scan_set_id": "2026-11-17-daily-v1",
   "date": "2026-11-17",
   "timezone": "America/New_York",
   "closes_at": null,
   "questions": [
     {
-      "id": "muse_20261116_q1_v1",
-      "theme": "gta6_world_waiting",
+      "id": "muse_20261117_q1_v1",
+      "theme": "gta6_launch_countdown",
       "state_target": "current_state",
-      "prompt": "GTA 6 is everywhere tonight — and the talk isn't just the story, it's the size of the world waiting behind it, side streets and all. Which scene sounds most like yours tonight?",
+      "prompt": "GTA 6 lands Thursday — and EA is out here begging players not to delete Madden 27 to make room for it. Three days out, the countdown is the whole mood. Which scene sounds most like yours tonight?",
       "options": [
         {
-          "id": "mainstory",
-          "text": "Locked in — main story first, I've already got my route planned."
+          "id": "buzzing",
+          "text": "Buzzing — counting down the hours, already planning launch night."
         },
         {
-          "id": "wandering",
-          "text": "Already wandering in my head — side streets first, the story can wait."
+          "id": "steady",
+          "text": "Steady — the wait is fine, I've got my plan and I'm sticking to it."
         },
         {
-          "id": "racing",
-          "text": "My brain's racing through everything I want to do first."
+          "id": "warmingup",
+          "text": "Warming up — clearing space, dusting off the console, getting ready slow."
         },
         {
-          "id": "toomuch",
-          "text": "Too much world at once — the map's so big I don't know where to start."
+          "id": "scattered",
+          "text": "Scattered — too much to do before Thursday, my brain's everywhere."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261116_q2_v1",
-      "theme": "phoebe_bridgers_snl_glow",
+      "id": "muse_20261117_q2_v1",
+      "theme": "ps_black_friday_sale_rush",
       "state_target": "current_state",
-      "prompt": "Phoebe Bridgers lit up SNL — and the clips are still glowing tonight, that slow-burn kind of performance that stays in the room. When a song hits like that, where does it pull you tonight?",
+      "prompt": "PlayStation's Black Friday sale just went live — deals dropping everywhere, and every gamer's feed is suddenly a storefront. When a sale like that hits, where are you tonight?",
       "options": [
         {
-          "id": "leanin",
-          "text": "Leaning all the way in — letting every note land, slow and full."
+          "id": "buzzing",
+          "text": "Buzzing — scrolling every deal like it's launch night."
         },
         {
-          "id": "sendit",
-          "text": "Sending it to someone right away — a song like that is meant to be shared."
+          "id": "steady",
+          "text": "Steady — browsing slow, the good stuff will still be there."
         },
         {
-          "id": "turnup",
-          "text": "Turning it up — the glow is the whole night now."
+          "id": "torn",
+          "text": "Torn — everything's on sale and I can't pick just one."
         },
         {
-          "id": "empty",
-          "text": "Too tired to feel it tonight — the glow's there, I'm just running on empty."
+          "id": "unbothered",
+          "text": "Unbothered — the sale can wait, I'm good with what I've got."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261116_q3_v1",
-      "theme": "gta6_main_story_or_wander",
+      "id": "muse_20261117_q3_v1",
+      "theme": "spiderman_rerelease_second_chance",
       "state_target": "response_tendency",
-      "prompt": "GTA 6 is coming, and everyone's already arguing about the same thing: when the world finally opens, do you follow the main story — or ignore it and wander off into everything else? Tonight, with the wait still on, which way are you leaning?",
+      "prompt": "Spider-Man: Brand New Day is coming back to theaters in December — with new scenes you haven't seen yet. You already know the story, but the new scenes are calling. Tonight, which way are you leaning?",
       "options": [
         {
-          "id": "storyfirst",
-          "text": "Straight down the main story — I'm finishing what they built first."
+          "id": "openingnight",
+          "text": "Opening night, big screen — new scenes deserve the full room."
         },
         {
-          "id": "sidestreets",
-          "text": "Side streets first — the story can wait, I want to see everything."
+          "id": "quietshowing",
+          "text": "A quiet showing later — just me, the new scenes, no crowd."
         },
         {
-          "id": "onething",
-          "text": "One thing at a time, no rush — I'll wander when I feel like it."
+          "id": "couch",
+          "text": "Couch rewatch when it streams — the new scenes can wait for my couch."
         },
         {
-          "id": "stuck",
-          "text": "Stuck choosing — too many directions, I keep starting and stopping."
+          "id": "crew",
+          "text": "Bring the whole crew — a second showing is better with everyone."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261116_q4_v1",
-      "theme": "phoebe_wind_down_drink",
+      "id": "muse_20261117_q4_v1",
+      "theme": "geese_first_nom_toast",
       "state_target": "desired_state",
-      "prompt": "The SNL glow is still in the air, and tonight's turning into a slow Phoebe Bridgers listen — songs on low, lights down. If someone handled tonight's wind-down drink for you, what would you want in your hand?",
+      "prompt": "The Grammy nominations are out — and Geese just earned their first one. A first nomination is a toast kind of night. If someone handled tonight's drink for you, what would you want in your hand?",
       "options": [
         {
-          "id": "chamomile",
-          "text": "Chamomile, slow and warm — unwinding one sip at a time."
+          "id": "mule",
+          "text": "Virgin or hard — a Moscow mule, made for a night worth toasting."
         },
         {
-          "id": "cider",
-          "text": "Virgin or hard — a spiced cider with a little kick, made for a glowing night."
+          "id": "warm",
+          "text": "Something warm and slow — tea or cocoa, sipping while the news sinks in."
         },
         {
-          "id": "sparkling",
-          "text": "Something sparkling and cold — easy sipping while the playlist rolls."
+          "id": "soda",
+          "text": "A fancy soda — bubbles, a good glass, no occasion needed."
         },
         {
           "id": "water",
@@ -105,51 +105,51 @@
       "allow_skip": true
     },
     {
-      "id": "muse_20261116_q5_v1",
-      "theme": "phil_collins_comeback_sound",
+      "id": "muse_20261117_q5_v1",
+      "theme": "grammy_nominees_list_listen",
       "state_target": "context_only",
-      "prompt": "Phil Collins stood up at the Rock Hall and told the crowd: you haven't heard the last of me — and the line is still echoing tonight. What does a comeback like that sound like to you?",
+      "prompt": "The full Grammy nominees list is out — Raye, Rosalía, and Ella Langley leading the pack. A list like that is basically a playlist waiting to happen. What does tonight's listen sound like?",
       "options": [
         {
-          "id": "drums",
-          "text": "Like the opening drums rolling back in — a comeback you can feel in your chest."
+          "id": "loud",
+          "text": "The big names on loud — start at the top and let it rip."
         },
         {
-          "id": "quietreturn",
-          "text": "Like a quiet return — just him, steady, no need to prove anything."
+          "id": "trackbytrack",
+          "text": "Track by track — discovering the new names before everyone else does."
         },
         {
-          "id": "favorites",
-          "text": "Like the old favorites on repeat — songs I already know by heart."
+          "id": "background",
+          "text": "Let it wash over in the background — the list on low while I do my thing."
         },
         {
-          "id": "spotlight",
-          "text": "Like a spotlight that won't let up — everyone's watching to see if he still has it."
+          "id": "ownsound",
+          "text": "Skip the list — my own sound tonight, the nominees can wait."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261116_q6_v1",
-      "theme": "oak_ridge_classics_hour_ahead",
+      "id": "muse_20261117_q6_v1",
+      "theme": "ebenezer_comeback_second_act",
       "state_target": "desired_state",
-      "prompt": "The Oak Ridge Boys' ten essential songs are making the rounds tonight — the kind of classics that have been playing for decades. In the hour ahead, how do you want it to feel while the old favorites play?",
+      "prompt": "Johnny Depp's comeback film 'Ebenezer' is holding its own at the box office — a familiar story stepping back into the light after years away. In the hour ahead, what does your own second act feel like?",
       "options": [
         {
-          "id": "easy",
-          "text": "Easy — let the songs roll one after another, no skipping."
+          "id": "freshstart",
+          "text": "A fresh start — picking something back up that I set down."
         },
         {
-          "id": "settled",
-          "text": "Steady — settled in, the classics doing what they've always done."
+          "id": "settle",
+          "text": "A slow settle — the story's warmth, lights low, nowhere to be."
         },
         {
-          "id": "deepcut",
-          "text": "Curious — digging for the deep cut I forgot I loved."
+          "id": "bignight",
+          "text": "A big night — second-act energy, all in."
         },
         {
-          "id": "fading",
-          "text": "Fading — the songs are just background while I wind down to nothing."
+          "id": "quiet",
+          "text": "A quiet hour to myself — just me and the quiet."
         }
       ],
       "allow_skip": true
