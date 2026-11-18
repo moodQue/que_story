@@ -1,12 +1,12 @@
 {
   "quiz_id": "field_scan_daily",
-  "quiz_version": "2026.11.17",
+  "quiz_version": "2026.11.18",
   "quiz_type": "field_scan",
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "territory": "The Focus",
   "quadrant": "The Still Places",
   "lunar_phase": "First Quarter",
-  "dominant_signal": "creation",
+  "dominant_signal": "physical_activity",
   "question_count": 1,
   "variant": "C",
   "result_mode": "temporary_reading",
@@ -103,7 +103,7 @@
   },
   "yesterday": {
     "recap": "",
-    "beat": "The field read Lit, so Que kept moving and left a little light behind. 0 of 5 scans yesterday. At 5 we show the split. Tell Que how you're really starting."
+    "beat": "The field read Still, so Que sat a while and swept the step on his way out. 0 of 5 scans yesterday. At 5 we show the split. Tell Que how you're really starting."
   },
   "disclaimer": "This is a daily scan, not your confirmed faction."
 }
