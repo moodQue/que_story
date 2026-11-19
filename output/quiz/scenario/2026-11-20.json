@@ -1,0 +1,158 @@
+{
+  "scan_set_id": "2026-11-19-daily-v1",
+  "date": "2026-11-20",
+  "timezone": "America/New_York",
+  "closes_at": null,
+  "questions": [
+    {
+      "id": "muse_20261119_q1_v1",
+      "theme": "gta6_reviews_launch_day",
+      "state_target": "current_state",
+      "prompt": "GTA 6 is out today — the reviews landed yesterday and after years of waiting, it's finally here. Which scene sounds most like yours tonight?",
+      "options": [
+        {
+          "id": "buzzing",
+          "text": "Buzzing — refreshing reviews, checking scores, the wait is over and my brain won't sit still."
+        },
+        {
+          "id": "diving",
+          "text": "Diving straight in tonight — launch day is the whole point, I'm playing."
+        },
+        {
+          "id": "steady",
+          "text": "Playing it steady — I'll get to it when the evening allows, no rush."
+        },
+        {
+          "id": "waiting",
+          "text": "Letting the dust settle — everyone else can rush in, I'll stroll in when it's quiet."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261119_q2_v1",
+      "theme": "wow_15_year_record_falls",
+      "state_target": "current_state",
+      "prompt": "World of Warcraft just broke a 15-year-old record — a world that's been running longer than some players have been alive just made history again. When a record like that falls, where are you tonight?",
+      "options": [
+        {
+          "id": "backin",
+          "text": "Jumping back in — a record like that pulls me straight back into the world."
+        },
+        {
+          "id": "respect",
+          "text": "Tipping my hat to the grind — fifteen years of players built that moment."
+        },
+        {
+          "id": "sharing",
+          "text": "Sharing it with friends — the record is fun, the group chat is better."
+        },
+        {
+          "id": "movedon",
+          "text": "Watching from the outside — that world was mine once, but I've moved on."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261119_q3_v1",
+      "theme": "gta6_launch_day_choice",
+      "state_target": "response_tendency",
+      "prompt": "It's launch day — GTA 6 is out, your evening is free, and everyone's either playing, watching, or waiting their turn. The game is right there. Tonight, which way are you leaning?",
+      "options": [
+        {
+          "id": "straightin",
+          "text": "Straight in — the new world is open and I'm not waiting another night."
+        },
+        {
+          "id": "watching",
+          "text": "Watching first — I'll see how the first players find it before I jump in."
+        },
+        {
+          "id": "torn",
+          "text": "Torn — my backlog is already a mountain and this just added a whole city."
+        },
+        {
+          "id": "sticking",
+          "text": "Sticking with what I know — the new world can wait for me."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261119_q4_v1",
+      "theme": "cma_awards_night_spread",
+      "state_target": "desired_state",
+      "prompt": "The CMA Awards winners are in — it's an awards-night kind of evening, the kind where the show runs long and the couch is the best seat. If someone handled tonight's awards-night spread for you, what would you want in front of you?",
+      "options": [
+        {
+          "id": "popcorn",
+          "text": "A big buttery popcorn bowl — the full awards-night spread, no shortcuts."
+        },
+        {
+          "id": "warm",
+          "text": "Something warm and slow — tea or cocoa to sip through the show."
+        },
+        {
+          "id": "share",
+          "text": "Snacks to share — half the fun is passing the bowl around."
+        },
+        {
+          "id": "water",
+          "text": "Just water, I don't need anything else tonight."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261119_q5_v1",
+      "theme": "taylor_swift_cma_return_sound",
+      "state_target": "context_only",
+      "prompt": "Taylor Swift is back at the CMAs after 13 years — a stage she left a long time ago is welcoming her home last night. What does a return like that sound like to you?",
+      "options": [
+        {
+          "id": "anthem",
+          "text": "The comeback anthem loud — thirteen years away deserves a big sound."
+        },
+        {
+          "id": "oldfavs",
+          "text": "The old favorites, easy — the songs I already know by heart."
+        },
+        {
+          "id": "lofi",
+          "text": "My own lofi underneath — the return can wait, I'm keeping it calm."
+        },
+        {
+          "id": "quiet",
+          "text": "Quiet — the homecoming is loud enough out there, I want stillness in here."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261119_q6_v1",
+      "theme": "glastonbury_2027_lineup_dream",
+      "state_target": "desired_state",
+      "prompt": "The Glastonbury 2027 headliners just dropped — Harry Styles, Billie Eilish, Cher — and suddenly next summer has a soundtrack. In the hour ahead, what does your evening feel like?",
+      "options": [
+        {
+          "id": "planning",
+          "text": "Mapping the summer with friends — which day, which stage, who's coming."
+        },
+        {
+          "id": "daydream",
+          "text": "A slow daydream — picturing the field, the music, the long light."
+        },
+        {
+          "id": "winddown",
+          "text": "A quiet wind-down — the lineup can wait, one cozy thing done properly."
+        },
+        {
+          "id": "off",
+          "text": "A full stop — the day is done, I'm switching off entirely."
+        }
+      ],
+      "allow_skip": true
+    }
+  ]
+}
