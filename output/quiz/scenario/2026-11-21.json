@@ -1,0 +1,158 @@
+{
+  "scan_set_id": "2026-11-20-daily-v1",
+  "date": "2026-11-21",
+  "timezone": "America/New_York",
+  "closes_at": null,
+  "questions": [
+    {
+      "id": "muse_20261120_q1_v1",
+      "theme": "gta6_cheat_codes_launch_night",
+      "state_target": "current_state",
+      "prompt": "GTA 6 is out and the cheat codes are already everywhere — the whole city is an open toy box tonight, every secret on the table at once. Which scene sounds most like yours tonight?",
+      "options": [
+        {
+          "id": "buzzing",
+          "text": "Buzzing — scrolling the cheat list, my brain already three heists ahead."
+        },
+        {
+          "id": "cheatson",
+          "text": "Cheats on, straight in — tonight I'm bending the city to see what it can do."
+        },
+        {
+          "id": "straight",
+          "text": "Playing it straight first — I'll learn the city before I start breaking its rules."
+        },
+        {
+          "id": "waiting",
+          "text": "Letting the rush pass — everyone else can chase the secrets, I'll stroll in when it's quiet."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261120_q2_v1",
+      "theme": "taylor_swift_our_song_throwback",
+      "state_target": "current_state",
+      "prompt": "Taylor Swift threw it back at the CMAs with 'Our Song' — a song from 2006, back on the stage she left thirteen years ago. When a song from another era of your life comes home like that, where are you tonight?",
+      "options": [
+        {
+          "id": "singing",
+          "text": "Singing every word — a song from 2006 coming home pulls me right back."
+        },
+        {
+          "id": "soaking",
+          "text": "Soaking in the nostalgia — slow and easy, letting the throwback wash over me."
+        },
+        {
+          "id": "craft",
+          "text": "Appreciating the craft — thirteen years away, and she walked back on that stage like she never left."
+        },
+        {
+          "id": "movedon",
+          "text": "That era's behind me — a sweet song, but I've moved on from it."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261120_q3_v1",
+      "theme": "black_friday_sale_live_dilemma",
+      "state_target": "response_tendency",
+      "prompt": "Best Buy's Black Friday sale is live — the deals are out there tonight, the clock's ticking, and everyone's either hunting or holding back. The deal you want is right there. Tonight, which way are you leaning?",
+      "options": [
+        {
+          "id": "grabbing",
+          "text": "Grabbing it now — the good stuff goes fast and I'm not missing it."
+        },
+        {
+          "id": "waiting",
+          "text": "Waiting it out — I'll compare, sleep on it, and buy when I'm sure."
+        },
+        {
+          "id": "scrolling",
+          "text": "Stuck scrolling — too many deals, too many tabs, and I can't pick one."
+        },
+        {
+          "id": "skipping",
+          "text": "Skipping it entirely — the couch wins tonight, the sale can wait."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261120_q4_v1",
+      "theme": "cliff_booth_movie_night_spread",
+      "state_target": "desired_state",
+      "prompt": "The new Cliff Booth film just landed and the reviews are in — it's a movie-night kind of evening, the kind where the lights go down and the couch is the best seat. If someone handled tonight's movie-night spread for you, what would you want in front of you?",
+      "options": [
+        {
+          "id": "fullspread",
+          "text": "The full spread — loaded nachos, popcorn, the works, no shortcuts."
+        },
+        {
+          "id": "warmmug",
+          "text": "A warm mug to cradle — cocoa or tea, slow sips through the film."
+        },
+        {
+          "id": "shareboard",
+          "text": "A shareable board — something for everyone to pick at."
+        },
+        {
+          "id": "water",
+          "text": "Just water, I don't need anything else tonight."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261120_q5_v1",
+      "theme": "gta_vi_launch_night_sound",
+      "state_target": "context_only",
+      "prompt": "GTA VI is finally out — Vice City is open tonight, and the city's got its own soundtrack waiting: the radio, the streets, the hum of a world years in the making. What does stepping into it sound like to you tonight?",
+      "options": [
+        {
+          "id": "radio",
+          "text": "The radio up loud — a new city's soundtrack is half the point of going in."
+        },
+        {
+          "id": "cityhum",
+          "text": "The city hum, easy — windows down, driving slow, letting Vice City wash over me."
+        },
+        {
+          "id": "lofi",
+          "text": "My own lofi underneath — the new world can wait, I'm keeping tonight calm."
+        },
+        {
+          "id": "quiet",
+          "text": "Quiet — launch night is loud enough out there, I want stillness in here."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261120_q6_v1",
+      "theme": "james_bond_reveal_hour_ahead",
+      "state_target": "desired_state",
+      "prompt": "The next James Bond has been revealed — a new era just started, and suddenly the evening has a new daydream in it. In the hour ahead, what does your evening feel like?",
+      "options": [
+        {
+          "id": "debating",
+          "text": "Debating the pick with friends — everyone has a take on the new Bond."
+        },
+        {
+          "id": "daydream",
+          "text": "A slow daydream — picturing the new era, the car, the theme, the whole thing."
+        },
+        {
+          "id": "winddown",
+          "text": "A quiet wind-down — the reveal can wait, one cozy thing done properly."
+        },
+        {
+          "id": "off",
+          "text": "A full stop — the day is done, I'm switching off entirely."
+        }
+      ],
+      "allow_skip": true
+    }
+  ]
+}
