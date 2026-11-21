@@ -1,0 +1,158 @@
+{
+  "scan_set_id": "2026-11-21-daily-v1",
+  "date": "2026-11-22",
+  "timezone": "America/New_York",
+  "closes_at": null,
+  "questions": [
+    {
+      "id": "muse_20261121_q1_v1",
+      "theme": "gta6_launch_weekend_settling_in",
+      "state_target": "current_state",
+      "prompt": "It's the first Saturday with GTA 6 — Vice City is open, and the save guides are everywhere because nobody wants to lose a night's progress. Which scene sounds most like yours tonight?",
+      "options": [
+        {
+          "id": "threeheists",
+          "text": "Already three heists deep in my head — saving often, chasing the next score."
+        },
+        {
+          "id": "exploring",
+          "text": "Out exploring — every street's new, I'm seeing what the city hides."
+        },
+        {
+          "id": "takingitslow",
+          "text": "Taking it slow — learning the map, saving often, no rush."
+        },
+        {
+          "id": "sidelines",
+          "text": "Watching from the sidelines tonight — the city's not going anywhere."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261121_q2_v1",
+      "theme": "hunger_games_opening_weekend_homecoming",
+      "state_target": "current_state",
+      "prompt": "Sunrise on the Reaping opened last night — a fan who grew up on the Games is now in them, and the whole opening weekend feels like a homecoming. Where are you tonight?",
+      "options": [
+        {
+          "id": "frontrow",
+          "text": "Front-row energy — opening weekend, the crowd, the whole thing."
+        },
+        {
+          "id": "washingover",
+          "text": "Letting it wash over me — a slow, easy return to a world I know."
+        },
+        {
+          "id": "lockedonstory",
+          "text": "Locked in on the story — I've waited for this one, I'm giving it my full attention."
+        },
+        {
+          "id": "sittingout",
+          "text": "Sitting this one out — the hype is loud, my battery's not there tonight."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261121_q3_v1",
+      "theme": "sega_black_friday_sale_dilemma",
+      "state_target": "response_tendency",
+      "prompt": "Sega's Black Friday sale just dropped — Sonic, Persona, Yakuza, all on the table, and the good stuff never lasts. The deal you want is right there. Tonight, which way are you leaning?",
+      "options": [
+        {
+          "id": "grabbing",
+          "text": "Grabbing it now — the good stuff goes fast and I'm not missing it."
+        },
+        {
+          "id": "waiting",
+          "text": "Waiting it out — I'll compare, sleep on it, and buy when I'm sure."
+        },
+        {
+          "id": "scrolling",
+          "text": "Stuck scrolling — too many deals, too many tabs, and I can't pick one."
+        },
+        {
+          "id": "skipping",
+          "text": "Skipping it entirely — the couch wins tonight, the sale can wait."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261121_q4_v1",
+      "theme": "home_alone_cozy_movie_night_spread",
+      "state_target": "desired_state",
+      "prompt": "A Home Alone sequel with Macaulay Culkin is in the works — and just like that, the original is back on the screen, the holidays are in the air, and it's a cozy movie night in. If someone handled tonight's spread for you, what would you want in front of you?",
+      "options": [
+        {
+          "id": "cheesepizza",
+          "text": "A lovely cheese pizza, just for me — the full Home Alone ritual."
+        },
+        {
+          "id": "warmmug",
+          "text": "A warm mug to cradle — cocoa or tea, slow sips while the traps go off."
+        },
+        {
+          "id": "shareboard",
+          "text": "A shareable board — something for everyone to pick at while we quote the film."
+        },
+        {
+          "id": "water",
+          "text": "Just water, I don't need anything else tonight."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261121_q5_v1",
+      "theme": "gta_vi_album_drop_sound",
+      "state_target": "context_only",
+      "prompt": "Grand Theft Auto VI: The Album is out now — Vice City finally has a soundtrack you can carry around with you, not just hear inside the game. What does the album landing sound like to you tonight?",
+      "options": [
+        {
+          "id": "albumrepeat",
+          "text": "The album on repeat — the whole Vice City sound, front to back, tonight."
+        },
+        {
+          "id": "onetrack",
+          "text": "One track at a time — letting each new song find its place."
+        },
+        {
+          "id": "ownlofi",
+          "text": "My own lofi underneath — the album can wait, I'm keeping tonight calm."
+        },
+        {
+          "id": "quiet",
+          "text": "Quiet — the city's loud enough out there, I want stillness in here."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261121_q6_v1",
+      "theme": "cma_awards_afterglow_hour_ahead",
+      "state_target": "desired_state",
+      "prompt": "The CMAs wrapped earlier this week — country's biggest night, the winners crowned, the throwbacks sung, and now the dust is settling. In the hour ahead, what does your evening feel like?",
+      "options": [
+        {
+          "id": "talkingover",
+          "text": "Still talking it over — the performances, the wins, everyone's got a take."
+        },
+        {
+          "id": "softening",
+          "text": "A slow wind-down — the big night's done, I'm letting the evening soften."
+        },
+        {
+          "id": "winnerssongs",
+          "text": "A quiet hour with the winners' songs — one more listen, properly."
+        },
+        {
+          "id": "fullstop",
+          "text": "A full stop — the week is done, I'm switching off entirely."
+        }
+      ],
+      "allow_skip": true
+    }
+  ]
+}
