@@ -1,12 +1,12 @@
 {
   "quiz_id": "field_scan_daily",
-  "quiz_version": "2026.11.20",
+  "quiz_version": "2026.11.21",
   "quiz_type": "field_scan",
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "territory": "The Pressure",
   "quadrant": "The Storm Lands",
   "lunar_phase": "Waxing Gibbous",
-  "dominant_signal": "disputes",
+  "dominant_signal": "studies",
   "question_count": 1,
   "variant": "C",
   "result_mode": "temporary_reading",
@@ -103,7 +103,7 @@
   },
   "yesterday": {
     "recap": "",
-    "beat": "The field read Hollow, so Que slowed down and left a lantern lit. 1 of 5 scans yesterday. At 5 we show the split. Tell Que how you're really starting."
+    "beat": "The field read Storm, so Que found a new way through the wind. 0 of 5 scans yesterday. At 5 we show the split. Tell Que how you're really starting."
   },
   "disclaimer": "This is a daily scan, not your confirmed faction."
 }
