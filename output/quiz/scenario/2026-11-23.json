@@ -1,0 +1,158 @@
+{
+  "scan_set_id": "2026-11-22-daily-v1",
+  "date": "2026-11-23",
+  "timezone": "America/New_York",
+  "closes_at": null,
+  "questions": [
+    {
+      "id": "muse_20261122_q1_v1",
+      "theme": "gta6_cozy_game_launch_weekend",
+      "state_target": "current_state",
+      "prompt": "GTA 6's launch weekend — and the surprise is the biggest game of the year turns out to be a cozy one. Vice City's open, no rush, no score to chase. Which scene sounds most like yours tonight?",
+      "options": [
+        {
+          "id": "cruising",
+          "text": "Cruising slow, radio on — the city's a place to be, not a race to win."
+        },
+        {
+          "id": "mainstory",
+          "text": "Main story, fully locked in — I've waited years for tonight."
+        },
+        {
+          "id": "quietcorner",
+          "text": "A quiet corner of Vice City, just me and the sunset."
+        },
+        {
+          "id": "alongfortheride",
+          "text": "The night has its own plans — I'm just along for the ride."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261122_q2_v1",
+      "theme": "yellowjackets_five_year_mystery_solved",
+      "state_target": "current_state",
+      "prompt": "Five years later, Yellowjackets finally answers one of its biggest mysteries — the wait is over, the answer's right there. How are you meeting it tonight?",
+      "options": [
+        {
+          "id": "straightin",
+          "text": "Straight in — I've waited five years, I'm not waiting another hour."
+        },
+        {
+          "id": "savoring",
+          "text": "Savoring it slow — one episode, no rush, let it land."
+        },
+        {
+          "id": "textinggroup",
+          "text": "Texting the group first — we waited together, we react together."
+        },
+        {
+          "id": "torn",
+          "text": "Honestly torn — half of me wants the answer, half wants the mystery back."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261122_q3_v1",
+      "theme": "blade_director_walks_away_dilemma",
+      "state_target": "response_tendency",
+      "prompt": "The Blade director walked away from a Marvel movie — 'life's too short to make s**t films.' You've been pouring time into something that isn't working. Tonight, which way are you leaning?",
+      "options": [
+        {
+          "id": "walkingaway",
+          "text": "Walking away clean — life's too short, and I feel lighter already."
+        },
+        {
+          "id": "onemoreshot",
+          "text": "One more honest shot — tonight I give it a real try, then decide."
+        },
+        {
+          "id": "shelving",
+          "text": "Shelving it for now — I'll come back fresh, or I won't."
+        },
+        {
+          "id": "doublingdown",
+          "text": "Doubling down — I can't let it go, even if it's costing me."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261122_q4_v1",
+      "theme": "gta6_cozy_session_drink",
+      "state_target": "desired_state",
+      "prompt": "GTA 6 turns out to be a cozy game — so tonight's session is a night in, controller in hand, nowhere to rush to. If someone handled tonight's drink for you, what would you want beside you?",
+      "options": [
+        {
+          "id": "toastpour",
+          "text": "A toast-worthy pour — virgin or hard, launch weekend deserves it."
+        },
+        {
+          "id": "cocoa",
+          "text": "Cocoa, slow sips — the controller can wait a minute."
+        },
+        {
+          "id": "pitcher",
+          "text": "A shareable pitcher — something for everyone in the room to pass around."
+        },
+        {
+          "id": "water",
+          "text": "Just water, I don't need anything else tonight."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261122_q5_v1",
+      "theme": "gta_vi_24_radio_stations_sound",
+      "state_target": "context_only",
+      "prompt": "Every song across all 24 radio stations in GTA VI is out there now — Vice City has a whole dial to turn. What does tonight's drive sound like to you?",
+      "options": [
+        {
+          "id": "surfing",
+          "text": "Station surfing, volume up — every station's a new mood tonight."
+        },
+        {
+          "id": "onestation",
+          "text": "One station locked in — letting it ride, no skipping."
+        },
+        {
+          "id": "talkstation",
+          "text": "The talk station — I'm here for the city's voices and the chatter."
+        },
+        {
+          "id": "radiooff",
+          "text": "Radio off, windows down — just the city humming underneath."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261122_q6_v1",
+      "theme": "hunger_games_opening_weekend_hour_ahead",
+      "state_target": "desired_state",
+      "prompt": "Sunrise on the Reaping's opening weekend is winding down — the books are ranked, the arena's open, and the story's still buzzing. In the hour ahead, what does your evening feel like?",
+      "options": [
+        {
+          "id": "straightintostory",
+          "text": "Straight into the story — one more chapter, one more scene, no stopping."
+        },
+        {
+          "id": "easingin",
+          "text": "Easing in slow — rereading a favorite part, letting it wash over me."
+        },
+        {
+          "id": "ranking",
+          "text": "Ranking the books with a friend — we've all got a different favorite."
+        },
+        {
+          "id": "stilldeciding",
+          "text": "Still deciding — too many good ways back into the story tonight."
+        }
+      ],
+      "allow_skip": true
+    }
+  ]
+}
