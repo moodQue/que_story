@@ -1,10 +1,10 @@
 {
   "quiz_id": "field_scan_daily",
-  "quiz_version": "2026.11.22",
+  "quiz_version": "2026.11.23",
   "quiz_type": "field_scan",
-  "date": "2026-11-22",
-  "territory": "The Raw",
-  "quadrant": "The Storm Lands",
+  "date": "2026-11-23",
+  "territory": "The Current",
+  "quadrant": "The Lit Realms",
   "lunar_phase": "Waxing Gibbous",
   "dominant_signal": "physical_activity",
   "question_count": 1,
@@ -53,57 +53,57 @@
   },
   "balances": {
     "lit_realms": {
+      "scene": "City_Walk",
+      "scene_label": "City Walk",
+      "invite": "take a City Walk for a while",
+      "url": "https://www.youtube.com/playlist?list=PLJY1Gdczy9_U",
+      "in_step": true,
+      "you": "Lit",
+      "field": "The Current",
+      "territory": "the_current",
+      "display_name": "The Current",
+      "text": "Your scan matches the field — you're in step with The Current today. Take a City Walk for a while."
+    },
+    "storm_lands": {
       "scene": "Nature",
       "scene_label": "Nature",
       "invite": "step outside into Nature for a while",
       "url": "https://www.youtube.com/playlist?list=PLDz1shJrVQtUmwbyaK-6YC9ynNWAv-wed",
       "in_step": false,
-      "you": "Lit",
-      "field": "The Raw",
+      "you": "Storm",
+      "field": "The Current",
       "territory": "the_gathering",
       "display_name": "The Gathering",
-      "text": "Your scan reads Lit · the field reads The Raw. Balance sits in The Gathering — step outside into Nature for a while."
-    },
-    "storm_lands": {
-      "scene": "Thunderstorm",
-      "scene_label": "Thunderstorm",
-      "invite": "let the Thunderstorm roll through",
-      "url": "https://www.youtube.com/playlist?list=PLDz1shJrVQtW7yDXEQLe1Va_zJGRe9QAP",
-      "in_step": true,
-      "you": "Storm",
-      "field": "The Raw",
-      "territory": "the_raw",
-      "display_name": "The Raw",
-      "text": "Your scan matches the field — you're in step with The Raw today. Let the Thunderstorm roll through."
+      "text": "Your scan reads Storm · the field reads The Current. Balance sits in The Gathering — step outside into Nature for a while."
     },
     "hollow_grounds": {
-      "scene": "Synthwave",
-      "scene_label": "Synthwave",
-      "invite": "take a Synthwave night drive",
-      "url": "https://www.youtube.com/playlist?list=PLDz1shJrVQtV9Bq-zbtvq9CrFolhXnBu4",
+      "scene": "Jazz",
+      "scene_label": "Late Night Jazz",
+      "invite": "slip into some Late Night Jazz",
+      "url": "https://www.youtube.com/playlist?list=PLDz1shJrVQtXrFz4hy6HpZVifVwEOL3Kd",
       "in_step": false,
       "you": "Hollow",
-      "field": "The Raw",
-      "territory": "the_pressure",
-      "display_name": "The Pressure",
-      "text": "Your scan reads Hollow · the field reads The Raw. Balance sits in The Pressure — take a Synthwave night drive."
+      "field": "The Current",
+      "territory": "the_wandering",
+      "display_name": "The Wandering",
+      "text": "Your scan reads Hollow · the field reads The Current. Balance sits in The Wandering — slip into some Late Night Jazz."
     },
     "still_places": {
-      "scene": "Coffee_Shop",
-      "scene_label": "Coffee Shop",
-      "invite": "head over to the Coffee Shop and sit for a bit",
-      "url": "https://www.youtube.com/playlist?list=PLDz1shJrVQtVYc9cbm8mmMfRe6RU15bXg",
+      "scene": "Nature",
+      "scene_label": "Nature",
+      "invite": "step outside into Nature for a while",
+      "url": "https://www.youtube.com/playlist?list=PLDz1shJrVQtUmwbyaK-6YC9ynNWAv-wed",
       "in_step": false,
       "you": "Still",
-      "field": "The Raw",
-      "territory": "the_focus",
-      "display_name": "The Focus",
-      "text": "Your scan reads Still · the field reads The Raw. Balance sits in The Focus — head over to the Coffee Shop and sit for a bit."
+      "field": "The Current",
+      "territory": "the_gathering",
+      "display_name": "The Gathering",
+      "text": "Your scan reads Still · the field reads The Current. Balance sits in The Gathering — step outside into Nature for a while."
     }
   },
   "yesterday": {
     "recap": "",
-    "beat": "The field read Storm, so Que found a new way through the wind. 0 of 5 scans yesterday. At 5 we show the split. Tell Que how you're really starting."
+    "beat": "The field read Storm, so Que found a new way through the wind. 1 of 5 scans yesterday. At 5 we show the split. Tell Que how you're really starting."
   },
   "disclaimer": "This is a daily scan, not your confirmed faction."
 }
