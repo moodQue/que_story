@@ -1,0 +1,158 @@
+{
+  "scan_set_id": "2026-11-23-daily-v1",
+  "date": "2026-11-24",
+  "timezone": "America/New_York",
+  "closes_at": null,
+  "questions": [
+    {
+      "id": "muse_20261123_q1_v1",
+      "theme": "nintendo_black_friday_sale_live_hunt",
+      "state_target": "current_state",
+      "prompt": "Nintendo's Black Friday sale is officially live — the doors are open, the deals are out, and the hunt is on tonight. Which scene sounds most like yours tonight?",
+      "options": [
+        {
+          "id": "lockedindrop",
+          "text": "Locked in, list in hand — I've been waiting for this drop."
+        },
+        {
+          "id": "browsingslow",
+          "text": "Browsing slow — if something calls to me, great, if not, no rush."
+        },
+        {
+          "id": "drowningtabs",
+          "text": "Drowning in tabs — too many deals, I can't pick one."
+        },
+        {
+          "id": "knowwhatiwant",
+          "text": "Already know what I want — in, out, done, no fuss."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261123_q2_v1",
+      "theme": "gta6_bf_bandito_steal_heist",
+      "state_target": "current_state",
+      "prompt": "GTA 6's guides are out — and the BF Bandito is sitting there in Vice City, waiting to be stolen. The heist is right in front of you tonight. How are you meeting it?",
+      "options": [
+        {
+          "id": "goingforit",
+          "text": "Going for it — engine running, no more planning."
+        },
+        {
+          "id": "casingit",
+          "text": "Casing it first — one clean run, no mistakes."
+        },
+        {
+          "id": "bringingcrew",
+          "text": "Bringing the crew — a steal this good needs witnesses."
+        },
+        {
+          "id": "lettingitroll",
+          "text": "Letting it roll past — the city's full of rides, no rush."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261123_q3_v1",
+      "theme": "american_psycho_reboot_not_happening_dilemma",
+      "state_target": "response_tendency",
+      "prompt": "Guadagnino's American Psycho isn't happening — he said so himself. The thing you were waiting for just... isn't coming. Tonight, how are you sitting with that?",
+      "options": [
+        {
+          "id": "relieved",
+          "text": "Honestly relieved — some stories are better left exactly as they are."
+        },
+        {
+          "id": "annoyed",
+          "text": "Annoyed — I was ready for it, and now there's nothing to wait for."
+        },
+        {
+          "id": "movingon",
+          "text": "Moving on — already lining up the next thing to look forward to."
+        },
+        {
+          "id": "shelvingit",
+          "text": "Quietly shelving it — a little disappointed, and not in the mood to talk about it."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261123_q4_v1",
+      "theme": "hunger_games_dystopian_marathon_watchparty_table",
+      "state_target": "desired_state",
+      "prompt": "The Hunger Games debate is on tonight — five dystopian shows that might just top it, and the marathon's already started. If someone handled the table for your watch-party, what would you want on it?",
+      "options": [
+        {
+          "id": "arenafeast",
+          "text": "A full arena feast — big spread, everyone digging in."
+        },
+        {
+          "id": "comfortbowl",
+          "text": "Something warm and simple — comfort food for a heavy night."
+        },
+        {
+          "id": "passaround",
+          "text": "Snacks to pass around — something for every ranking debate."
+        },
+        {
+          "id": "water",
+          "text": "Just water, I don't need anything else tonight."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261123_q5_v1",
+      "theme": "taylor_swift_handwritten_cma_note_social",
+      "state_target": "context_only",
+      "prompt": "Taylor Swift left Megan Moroney a handwritten note at the CMAs — a small quiet gesture in the middle of music's loudest night. Tonight, what kind of note are you in the mood for?",
+      "options": [
+        {
+          "id": "longnote",
+          "text": "A long one to someone who needs it — the real words, on paper."
+        },
+        {
+          "id": "groupchat",
+          "text": "A quick funny one to the group chat — keep the night light."
+        },
+        {
+          "id": "quietone",
+          "text": "A quiet one, just for one person — no audience needed."
+        },
+        {
+          "id": "nonote",
+          "text": "No note tonight — keeping the evening to myself."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261123_q6_v1",
+      "theme": "gta_vi_4b_day_one_record_afterglow_hour_ahead",
+      "state_target": "desired_state",
+      "prompt": "GTA VI made nearly $4 billion on day one — the biggest launch in entertainment history, and tonight's the afterglow. In the hour ahead, what does your evening feel like?",
+      "options": [
+        {
+          "id": "straightbackin",
+          "text": "Straight back in — a night this big doesn't end early."
+        },
+        {
+          "id": "easingoff",
+          "text": "Easing off — letting the record sink in, nice and slow."
+        },
+        {
+          "id": "callingfriend",
+          "text": "Calling a friend — did you see the number?"
+        },
+        {
+          "id": "stillbuzzing",
+          "text": "Still buzzing — too many good ways to spend the hour."
+        }
+      ],
+      "allow_skip": true
+    }
+  ]
+}

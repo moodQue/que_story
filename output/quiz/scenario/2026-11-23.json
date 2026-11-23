@@ -1,101 +1,101 @@
 {
-  "scan_set_id": "2026-11-22-daily-v1",
+  "scan_set_id": "2026-11-23-daily-v1",
   "date": "2026-11-23",
   "timezone": "America/New_York",
   "closes_at": null,
   "questions": [
     {
-      "id": "muse_20261122_q1_v1",
-      "theme": "gta6_cozy_game_launch_weekend",
+      "id": "muse_20261123_q1_v1",
+      "theme": "nintendo_black_friday_sale_live_hunt",
       "state_target": "current_state",
-      "prompt": "GTA 6's launch weekend — and the surprise is the biggest game of the year turns out to be a cozy one. Vice City's open, no rush, no score to chase. Which scene sounds most like yours tonight?",
+      "prompt": "Nintendo's Black Friday sale is officially live — the doors are open, the deals are out, and the hunt is on tonight. Which scene sounds most like yours tonight?",
       "options": [
         {
-          "id": "cruising",
-          "text": "Cruising slow, radio on — the city's a place to be, not a race to win."
+          "id": "lockedindrop",
+          "text": "Locked in, list in hand — I've been waiting for this drop."
         },
         {
-          "id": "mainstory",
-          "text": "Main story, fully locked in — I've waited years for tonight."
+          "id": "browsingslow",
+          "text": "Browsing slow — if something calls to me, great, if not, no rush."
         },
         {
-          "id": "quietcorner",
-          "text": "A quiet corner of Vice City, just me and the sunset."
+          "id": "drowningtabs",
+          "text": "Drowning in tabs — too many deals, I can't pick one."
         },
         {
-          "id": "alongfortheride",
-          "text": "The night has its own plans — I'm just along for the ride."
+          "id": "knowwhatiwant",
+          "text": "Already know what I want — in, out, done, no fuss."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261122_q2_v1",
-      "theme": "yellowjackets_five_year_mystery_solved",
+      "id": "muse_20261123_q2_v1",
+      "theme": "gta6_bf_bandito_steal_heist",
       "state_target": "current_state",
-      "prompt": "Five years later, Yellowjackets finally answers one of its biggest mysteries — the wait is over, the answer's right there. How are you meeting it tonight?",
+      "prompt": "GTA 6's guides are out — and the BF Bandito is sitting there in Vice City, waiting to be stolen. The heist is right in front of you tonight. How are you meeting it?",
       "options": [
         {
-          "id": "straightin",
-          "text": "Straight in — I've waited five years, I'm not waiting another hour."
+          "id": "goingforit",
+          "text": "Going for it — engine running, no more planning."
         },
         {
-          "id": "savoring",
-          "text": "Savoring it slow — one episode, no rush, let it land."
+          "id": "casingit",
+          "text": "Casing it first — one clean run, no mistakes."
         },
         {
-          "id": "textinggroup",
-          "text": "Texting the group first — we waited together, we react together."
+          "id": "bringingcrew",
+          "text": "Bringing the crew — a steal this good needs witnesses."
         },
         {
-          "id": "torn",
-          "text": "Honestly torn — half of me wants the answer, half wants the mystery back."
+          "id": "lettingitroll",
+          "text": "Letting it roll past — the city's full of rides, no rush."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261122_q3_v1",
-      "theme": "blade_director_walks_away_dilemma",
+      "id": "muse_20261123_q3_v1",
+      "theme": "american_psycho_reboot_not_happening_dilemma",
       "state_target": "response_tendency",
-      "prompt": "The Blade director walked away from a Marvel movie — 'life's too short to make s**t films.' You've been pouring time into something that isn't working. Tonight, which way are you leaning?",
+      "prompt": "Guadagnino's American Psycho isn't happening — he said so himself. The thing you were waiting for just... isn't coming. Tonight, how are you sitting with that?",
       "options": [
         {
-          "id": "walkingaway",
-          "text": "Walking away clean — life's too short, and I feel lighter already."
+          "id": "relieved",
+          "text": "Honestly relieved — some stories are better left exactly as they are."
         },
         {
-          "id": "onemoreshot",
-          "text": "One more honest shot — tonight I give it a real try, then decide."
+          "id": "annoyed",
+          "text": "Annoyed — I was ready for it, and now there's nothing to wait for."
         },
         {
-          "id": "shelving",
-          "text": "Shelving it for now — I'll come back fresh, or I won't."
+          "id": "movingon",
+          "text": "Moving on — already lining up the next thing to look forward to."
         },
         {
-          "id": "doublingdown",
-          "text": "Doubling down — I can't let it go, even if it's costing me."
+          "id": "shelvingit",
+          "text": "Quietly shelving it — a little disappointed, and not in the mood to talk about it."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261122_q4_v1",
-      "theme": "gta6_cozy_session_drink",
+      "id": "muse_20261123_q4_v1",
+      "theme": "hunger_games_dystopian_marathon_watchparty_table",
       "state_target": "desired_state",
-      "prompt": "GTA 6 turns out to be a cozy game — so tonight's session is a night in, controller in hand, nowhere to rush to. If someone handled tonight's drink for you, what would you want beside you?",
+      "prompt": "The Hunger Games debate is on tonight — five dystopian shows that might just top it, and the marathon's already started. If someone handled the table for your watch-party, what would you want on it?",
       "options": [
         {
-          "id": "toastpour",
-          "text": "A toast-worthy pour — virgin or hard, launch weekend deserves it."
+          "id": "arenafeast",
+          "text": "A full arena feast — big spread, everyone digging in."
         },
         {
-          "id": "cocoa",
-          "text": "Cocoa, slow sips — the controller can wait a minute."
+          "id": "comfortbowl",
+          "text": "Something warm and simple — comfort food for a heavy night."
         },
         {
-          "id": "pitcher",
-          "text": "A shareable pitcher — something for everyone in the room to pass around."
+          "id": "passaround",
+          "text": "Snacks to pass around — something for every ranking debate."
         },
         {
           "id": "water",
@@ -105,51 +105,51 @@
       "allow_skip": true
     },
     {
-      "id": "muse_20261122_q5_v1",
-      "theme": "gta_vi_24_radio_stations_sound",
+      "id": "muse_20261123_q5_v1",
+      "theme": "taylor_swift_handwritten_cma_note_social",
       "state_target": "context_only",
-      "prompt": "Every song across all 24 radio stations in GTA VI is out there now — Vice City has a whole dial to turn. What does tonight's drive sound like to you?",
+      "prompt": "Taylor Swift left Megan Moroney a handwritten note at the CMAs — a small quiet gesture in the middle of music's loudest night. Tonight, what kind of note are you in the mood for?",
       "options": [
         {
-          "id": "surfing",
-          "text": "Station surfing, volume up — every station's a new mood tonight."
+          "id": "longnote",
+          "text": "A long one to someone who needs it — the real words, on paper."
         },
         {
-          "id": "onestation",
-          "text": "One station locked in — letting it ride, no skipping."
+          "id": "groupchat",
+          "text": "A quick funny one to the group chat — keep the night light."
         },
         {
-          "id": "talkstation",
-          "text": "The talk station — I'm here for the city's voices and the chatter."
+          "id": "quietone",
+          "text": "A quiet one, just for one person — no audience needed."
         },
         {
-          "id": "radiooff",
-          "text": "Radio off, windows down — just the city humming underneath."
+          "id": "nonote",
+          "text": "No note tonight — keeping the evening to myself."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261122_q6_v1",
-      "theme": "hunger_games_opening_weekend_hour_ahead",
+      "id": "muse_20261123_q6_v1",
+      "theme": "gta_vi_4b_day_one_record_afterglow_hour_ahead",
       "state_target": "desired_state",
-      "prompt": "Sunrise on the Reaping's opening weekend is winding down — the books are ranked, the arena's open, and the story's still buzzing. In the hour ahead, what does your evening feel like?",
+      "prompt": "GTA VI made nearly $4 billion on day one — the biggest launch in entertainment history, and tonight's the afterglow. In the hour ahead, what does your evening feel like?",
       "options": [
         {
-          "id": "straightintostory",
-          "text": "Straight into the story — one more chapter, one more scene, no stopping."
+          "id": "straightbackin",
+          "text": "Straight back in — a night this big doesn't end early."
         },
         {
-          "id": "easingin",
-          "text": "Easing in slow — rereading a favorite part, letting it wash over me."
+          "id": "easingoff",
+          "text": "Easing off — letting the record sink in, nice and slow."
         },
         {
-          "id": "ranking",
-          "text": "Ranking the books with a friend — we've all got a different favorite."
+          "id": "callingfriend",
+          "text": "Calling a friend — did you see the number?"
         },
         {
-          "id": "stilldeciding",
-          "text": "Still deciding — too many good ways back into the story tonight."
+          "id": "stillbuzzing",
+          "text": "Still buzzing — too many good ways to spend the hour."
         }
       ],
       "allow_skip": true
