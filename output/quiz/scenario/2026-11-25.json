@@ -1,0 +1,158 @@
+{
+  "scan_set_id": "2026-11-24-daily-v1",
+  "date": "2026-11-25",
+  "timezone": "America/New_York",
+  "closes_at": null,
+  "questions": [
+    {
+      "id": "muse_20261124_q1_v1",
+      "theme": "hunger_games_120m_debut_opening_weekend",
+      "state_target": "current_state",
+      "prompt": "The Hunger Games just owned the weekend — a $120 million debut, and everyone's talking about it. Tonight, which scene sounds most like yours?",
+      "options": [
+        {
+          "id": "ticketinhand",
+          "text": "Already got my ticket — opening weekend waits for no one."
+        },
+        {
+          "id": "crewdebut",
+          "text": "Going with the crew — a debut this big needs witnesses."
+        },
+        {
+          "id": "lettingcrowdsthin",
+          "text": "Letting the crowds thin first — I'll catch it when the rush fades."
+        },
+        {
+          "id": "stilldeciding",
+          "text": "Still deciding — too many showtimes, too many takes, can't pick one."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261124_q2_v1",
+      "theme": "tesla_fsd_gta_visuals_drive",
+      "state_target": "current_state",
+      "prompt": "Tesla's new update turns your drive into Grand Theft Auto — the road, the cars, the whole view rendered like the game. Tonight, how are you meeting a drive that looks like Vice City?",
+      "options": [
+        {
+          "id": "showingeveryone",
+          "text": "Showing everyone — look, my car thinks it's in Vice City."
+        },
+        {
+          "id": "eyesonroad",
+          "text": "Eyes on the road — the game's fun, but I'm still driving."
+        },
+        {
+          "id": "toomuchscreen",
+          "text": "Too much on the screen — I can't tell the game from the road."
+        },
+        {
+          "id": "turningitoff",
+          "text": "Turning it off — I want my drive quiet, not a game."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261124_q3_v1",
+      "theme": "don_toliver_show_postponed_plans_fall_apart",
+      "state_target": "response_tendency",
+      "prompt": "Don Toliver just postponed his London O2 show — the night you were waiting for isn't happening. Tonight, how are you sitting with a plan that just fell apart?",
+      "options": [
+        {
+          "id": "annoyed",
+          "text": "Annoyed — I had the night planned around it."
+        },
+        {
+          "id": "instride",
+          "text": "Taking it in stride — the night's still mine, show or no show."
+        },
+        {
+          "id": "movingon",
+          "text": "Moving on — already lining up something else for tonight."
+        },
+        {
+          "id": "quietlygutted",
+          "text": "Quietly gutted — I was looking forward to it, and nothing else sounds right."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261124_q4_v1",
+      "theme": "black_friday_ps5_15_deal_hunt_table",
+      "state_target": "desired_state",
+      "prompt": "PS5 games are $15 for Black Friday — the hunt's on tonight, deals scrolling past, wishlist in hand. If someone handled the table for your deal-hunt night, what would you want on it?",
+      "options": [
+        {
+          "id": "fizzytoast",
+          "text": "Something fizzy to crack open — sparkling cider or champagne, a $15 steal deserves a toast."
+        },
+        {
+          "id": "warmmug",
+          "text": "A warm mug of cocoa or tea — slow sips between deals."
+        },
+        {
+          "id": "sharestack",
+          "text": "Snacks to pass around — the hunt's better with someone to show the finds to."
+        },
+        {
+          "id": "justwater",
+          "text": "Just water, I don't need anything else tonight."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261124_q5_v1",
+      "theme": "blade_runner_2099_rain_neon_world_sound",
+      "state_target": "context_only",
+      "prompt": "Blade Runner 2099 is almost here — the reviews are in, and the rain-soaked neon world is back tomorrow. Tonight, which sound of that world is your vibe?",
+      "options": [
+        {
+          "id": "rainonneon",
+          "text": "Rain on neon — the slow patter over the city hum."
+        },
+        {
+          "id": "synthdrone",
+          "text": "The low synth drone — the sound of the city breathing."
+        },
+        {
+          "id": "citybuzz",
+          "text": "The full city buzz — sirens, crowds, all of it turned up."
+        },
+        {
+          "id": "ownquiet",
+          "text": "None of it tonight — my own quiet, the rain can wait."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261124_q6_v1",
+      "theme": "thanksgiving_travel_packing_hour_ahead",
+      "state_target": "desired_state",
+      "prompt": "Thanksgiving travel is here — the bags, the lists, the 'did I forget something' feeling before Thursday. In the hour ahead, what does your evening feel like?",
+      "options": [
+        {
+          "id": "packinglist",
+          "text": "Packing with a list — checking it twice, no surprises."
+        },
+        {
+          "id": "buzzingroad",
+          "text": "Buzzing for the road — the trip's the best part, let's go."
+        },
+        {
+          "id": "stillspinning",
+          "text": "Still spinning — too many lists, too many 'did I forgets'."
+        },
+        {
+          "id": "notpacking",
+          "text": "Not packing tonight — the bags can wait, I'm staying put."
+        }
+      ],
+      "allow_skip": true
+    }
+  ]
+}
