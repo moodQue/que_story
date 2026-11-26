@@ -1,8 +1,8 @@
 {
   "quiz_id": "field_scan_daily",
-  "quiz_version": "2026.11.25",
+  "quiz_version": "2026.11.26",
   "quiz_type": "field_scan",
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "territory": "The Current",
   "quadrant": "The Lit Realms",
   "lunar_phase": "Full Moon",
@@ -103,7 +103,7 @@
   },
   "yesterday": {
     "recap": "",
-    "beat": "The field read Lit, so Que kept moving and left a little light behind. 1 of 5 scans yesterday. At 5 we show the split. Tell Que how you're really starting."
+    "beat": "The field read Lit, so Que kept moving and left a little light behind. 0 of 5 scans yesterday. At 5 we show the split. Tell Que how you're really starting."
   },
   "disclaimer": "This is a daily scan, not your confirmed faction."
 }
