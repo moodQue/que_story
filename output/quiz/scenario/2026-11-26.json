@@ -1,101 +1,101 @@
 {
-  "scan_set_id": "2026-11-25-daily-v1",
+  "scan_set_id": "2026-11-26-daily-v1",
   "date": "2026-11-26",
   "timezone": "America/New_York",
   "closes_at": null,
   "questions": [
     {
-      "id": "muse_20261125_q1_v1",
-      "theme": "gta6_flip_car_vice_city_launch_week",
+      "id": "muse_20261126_q1_v1",
+      "theme": "thanksgiving_parade_postponed_holiday_morning",
       "state_target": "current_state",
-      "prompt": "GTA 6 is out in the world now, and everyone's learning the same trick: how to flip your car in Vice City. Tonight, which scene sounds most like yours?",
+      "prompt": "Thanksgiving is here — and the parade just got pushed to Saturday, so the morning's big opening act is off-script. Tonight, which scene sounds most like yours?",
       "options": [
         {
-          "id": "flipit",
-          "text": "Flipping it on purpose — the chaos is the whole point tonight."
+          "id": "allin",
+          "text": "All in anyway — the parade can wait, the day is happening and I'm here for all of it."
         },
         {
-          "id": "showcrew",
-          "text": "Showing the crew — look what I just pulled off in Vice City."
+          "id": "slowmorning",
+          "text": "Slowing the morning down — coffee, nowhere to be, the day can find its own pace."
         },
         {
-          "id": "carefuldrive",
-          "text": "Driving it careful — my ride stays shiny, flips are for other people."
+          "id": "rallyhouse",
+          "text": "Rallying the house — turning the delay into the first story of the day."
         },
         {
-          "id": "upsidedown",
-          "text": "Already upside down — too much city, too fast, send help."
+          "id": "quietcorner",
+          "text": "Quiet in the corner — the day's a lot already and I need a minute before it starts."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261125_q2_v1",
-      "theme": "avengers_doomsday_teams_reveal",
+      "id": "muse_20261126_q2_v1",
+      "theme": "silksong_expansion_reveal_friday_countdown",
       "state_target": "current_state",
-      "prompt": "The Avengers: Doomsday lineup is out — every team, all in one place, and the big night is starting to feel real. Tonight, how are you meeting a team-up this big?",
+      "prompt": "Silksong's first expansion details land tomorrow — the reveal is a day away and the wait is doing its thing. Tonight, how are you holding the countdown?",
       "options": [
         {
           "id": "buzzing",
-          "text": "Already buzzing — every team in one movie, I'm counting the days."
+          "text": "Already buzzing — refreshing the feed, the reveal can't come fast enough."
         },
         {
-          "id": "myteam",
-          "text": "Picking my team — arguing with the group chat about who's carrying it."
+          "id": "steady",
+          "text": "Steady — it'll be there tomorrow, I'm in no rush to get there first."
         },
         {
-          "id": "toomanythreads",
-          "text": "So many teams, so many threads — my head's spinning trying to keep up."
+          "id": "spinning",
+          "text": "Spinning on it — builds, bosses, what ifs, my head's running ahead of the news."
         },
         {
-          "id": "waittrailer",
-          "text": "Waiting for the trailer — the list is nice, but I want to see it move."
+          "id": "tuningout",
+          "text": "Tuning it out tonight — I'll catch the reveal when it's actually here."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261125_q3_v1",
-      "theme": "mass_effect_canceled_squad_fates_reveal",
+      "id": "muse_20261126_q3_v1",
+      "theme": "gta6_adrenaline_rush_chase",
       "state_target": "response_tendency",
-      "prompt": "The writer of the canceled Mass Effect revealed what would have happened to your squad — the ending you never got to play is finally out there. Tonight, what do you do with a goodbye you never got?",
+      "prompt": "Vice City has a new trick to learn — how to get the adrenaline pumping in GTA 6, and everyone's chasing the rush. Tonight, what do you do when the rush is right there?",
       "options": [
         {
-          "id": "readit",
-          "text": "Reading it tonight — I need to know how their story ends."
+          "id": "chaseit",
+          "text": "Chasing it — full speed, the rush is the whole point tonight."
         },
         {
-          "id": "slowgoodbye",
-          "text": "Saving it for a quiet night — that goodbye deserves a slow read."
+          "id": "showcrew",
+          "text": "Showing the crew — look what I just pulled off, then we all try it."
         },
         {
-          "id": "myending",
-          "text": "Leaving it alone — my version of their ending stands."
+          "id": "careful",
+          "text": "Playing it careful — my ride stays shiny, the rush can wait its turn."
         },
         {
-          "id": "torn",
-          "text": "Torn — half of me wants to know, half of me wants to keep wondering."
+          "id": "inoverhead",
+          "text": "In over my head — the city's moving faster than I can keep up."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261125_q4_v1",
-      "theme": "thanksgiving_table_ford_field_spread",
+      "id": "muse_20261126_q4_v1",
+      "theme": "blade_runner_2099_premiere_night_spread",
       "state_target": "desired_state",
-      "prompt": "Thanksgiving lands Thursday — and Ford Field just showed off what it's serving fans on the day. If someone handled the table tonight, what would you want on it?",
+      "prompt": "Blade Runner 2099 is here — the reviews are in, the rain-soaked neon world is back, and tonight's the night you settle in to watch it. If someone handled the table tonight, what would you want on it?",
       "options": [
         {
           "id": "fullspread",
-          "text": "The full spread — turkey, sides, all of it, the table groaning."
+          "text": "The full spread — snacks stacked, the neon night deserves a proper table."
         },
         {
           "id": "toast",
-          "text": "Something to toast with — sparkling cider or champagne, virgin or hard, the table deserves it."
+          "text": "Something to toast with — sparkling cider or champagne, virgin or hard, the premiere deserves it."
         },
         {
           "id": "warmmug",
-          "text": "A warm mug of cocoa or cider — slow sips while the kitchen does its thing."
+          "text": "A warm mug of tea or cocoa — slow sips while the rain falls on screen."
         },
         {
           "id": "justwater",
@@ -105,51 +105,51 @@
       "allow_skip": true
     },
     {
-      "id": "muse_20261125_q5_v1",
-      "theme": "rings_of_power_season4_middle_earth_sound",
+      "id": "muse_20261126_q5_v1",
+      "theme": "rings_of_power_season3_ranked_episodes_sound",
       "state_target": "context_only",
-      "prompt": "Rings of Power is coming back — Season 4 just got the green light, and Middle-earth is calling again. Tonight, which sound of that world is your vibe?",
+      "prompt": "All eight episodes of Rings of Power Season 3 are ranked now — the season's done, and everyone's arguing about which one ruled. Tonight, which sound of that season is your vibe?",
       "options": [
         {
-          "id": "fullscore",
-          "text": "The full sweeping score — strings swelling, the journey pulling me in."
+          "id": "biggest",
+          "text": "The episode that went biggest — horns, drums, the whole battle."
         },
         {
-          "id": "shirestrings",
-          "text": "The Shire's gentle strings — soft, warm, and in no hurry."
+          "id": "revealtheme",
+          "text": "The big reveal's theme — the moment the season turned, turned up loud."
         },
         {
-          "id": "forestquiet",
-          "text": "The deep forest quiet — leaves, wind, and nothing else."
+          "id": "quietepisode",
+          "text": "The quiet episode's strings — soft, warm, the one that stayed with you."
         },
         {
-          "id": "myquiet",
-          "text": "None of it tonight — my own quiet, Middle-earth can wait."
+          "id": "noneofit",
+          "text": "None of them tonight — my own quiet, the debate can wait."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261125_q6_v1",
-      "theme": "black_friday_deal_hunt_hour_ahead",
+      "id": "muse_20261126_q6_v1",
+      "theme": "black_friday_home_glow_up_hour_ahead",
       "state_target": "desired_state",
-      "prompt": "The Black Friday hunt is on — the deals are live, the clock's ticking, and the wishlist is staring back at you. In the hour ahead, what does your hunt feel like?",
+      "prompt": "The Black Friday glow-up deals are live — your place could look different by the weekend, and the wishlist is staring back at you. In the hour ahead, what does your hunt feel like?",
       "options": [
         {
-          "id": "refreshplan",
-          "text": "Refreshing with a plan — the deal's in the cart before the hour's out."
+          "id": "measuring",
+          "text": "Measuring the room — the lamp, the shelf, the glow-up is already taking shape."
         },
         {
-          "id": "victorylap",
-          "text": "Buzzing for the win — a steal this good deserves a little victory lap."
+          "id": "picturing",
+          "text": "Already picturing it — the place lit up, the deal locked in, the weekend's going to feel different."
         },
         {
-          "id": "stillscrolling",
-          "text": "Still scrolling — too many deals, too many tabs, can't pick one."
+          "id": "stuckbetween",
+          "text": "Stuck between three versions — every pick changes the whole room and I can't choose."
         },
         {
-          "id": "steppingaway",
-          "text": "Stepping away — the hunt can wait, I'm putting the phone down."
+          "id": "leaveasis",
+          "text": "Leaving the room as-is — the glow-up can wait, I like it fine tonight."
         }
       ],
       "allow_skip": true

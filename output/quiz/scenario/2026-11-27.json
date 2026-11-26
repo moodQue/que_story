@@ -1,0 +1,158 @@
+{
+  "scan_set_id": "2026-11-26-daily-v1",
+  "date": "2026-11-27",
+  "timezone": "America/New_York",
+  "closes_at": null,
+  "questions": [
+    {
+      "id": "muse_20261126_q1_v1",
+      "theme": "thanksgiving_parade_postponed_holiday_morning",
+      "state_target": "current_state",
+      "prompt": "Thanksgiving is here — and the parade just got pushed to Saturday, so the morning's big opening act is off-script. Tonight, which scene sounds most like yours?",
+      "options": [
+        {
+          "id": "allin",
+          "text": "All in anyway — the parade can wait, the day is happening and I'm here for all of it."
+        },
+        {
+          "id": "slowmorning",
+          "text": "Slowing the morning down — coffee, nowhere to be, the day can find its own pace."
+        },
+        {
+          "id": "rallyhouse",
+          "text": "Rallying the house — turning the delay into the first story of the day."
+        },
+        {
+          "id": "quietcorner",
+          "text": "Quiet in the corner — the day's a lot already and I need a minute before it starts."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261126_q2_v1",
+      "theme": "silksong_expansion_reveal_friday_countdown",
+      "state_target": "current_state",
+      "prompt": "Silksong's first expansion details land tomorrow — the reveal is a day away and the wait is doing its thing. Tonight, how are you holding the countdown?",
+      "options": [
+        {
+          "id": "buzzing",
+          "text": "Already buzzing — refreshing the feed, the reveal can't come fast enough."
+        },
+        {
+          "id": "steady",
+          "text": "Steady — it'll be there tomorrow, I'm in no rush to get there first."
+        },
+        {
+          "id": "spinning",
+          "text": "Spinning on it — builds, bosses, what ifs, my head's running ahead of the news."
+        },
+        {
+          "id": "tuningout",
+          "text": "Tuning it out tonight — I'll catch the reveal when it's actually here."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261126_q3_v1",
+      "theme": "gta6_adrenaline_rush_chase",
+      "state_target": "response_tendency",
+      "prompt": "Vice City has a new trick to learn — how to get the adrenaline pumping in GTA 6, and everyone's chasing the rush. Tonight, what do you do when the rush is right there?",
+      "options": [
+        {
+          "id": "chaseit",
+          "text": "Chasing it — full speed, the rush is the whole point tonight."
+        },
+        {
+          "id": "showcrew",
+          "text": "Showing the crew — look what I just pulled off, then we all try it."
+        },
+        {
+          "id": "careful",
+          "text": "Playing it careful — my ride stays shiny, the rush can wait its turn."
+        },
+        {
+          "id": "inoverhead",
+          "text": "In over my head — the city's moving faster than I can keep up."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261126_q4_v1",
+      "theme": "blade_runner_2099_premiere_night_spread",
+      "state_target": "desired_state",
+      "prompt": "Blade Runner 2099 is here — the reviews are in, the rain-soaked neon world is back, and tonight's the night you settle in to watch it. If someone handled the table tonight, what would you want on it?",
+      "options": [
+        {
+          "id": "fullspread",
+          "text": "The full spread — snacks stacked, the neon night deserves a proper table."
+        },
+        {
+          "id": "toast",
+          "text": "Something to toast with — sparkling cider or champagne, virgin or hard, the premiere deserves it."
+        },
+        {
+          "id": "warmmug",
+          "text": "A warm mug of tea or cocoa — slow sips while the rain falls on screen."
+        },
+        {
+          "id": "justwater",
+          "text": "Just water, I don't need anything else tonight."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261126_q5_v1",
+      "theme": "rings_of_power_season3_ranked_episodes_sound",
+      "state_target": "context_only",
+      "prompt": "All eight episodes of Rings of Power Season 3 are ranked now — the season's done, and everyone's arguing about which one ruled. Tonight, which sound of that season is your vibe?",
+      "options": [
+        {
+          "id": "biggest",
+          "text": "The episode that went biggest — horns, drums, the whole battle."
+        },
+        {
+          "id": "revealtheme",
+          "text": "The big reveal's theme — the moment the season turned, turned up loud."
+        },
+        {
+          "id": "quietepisode",
+          "text": "The quiet episode's strings — soft, warm, the one that stayed with you."
+        },
+        {
+          "id": "noneofit",
+          "text": "None of them tonight — my own quiet, the debate can wait."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261126_q6_v1",
+      "theme": "black_friday_home_glow_up_hour_ahead",
+      "state_target": "desired_state",
+      "prompt": "The Black Friday glow-up deals are live — your place could look different by the weekend, and the wishlist is staring back at you. In the hour ahead, what does your hunt feel like?",
+      "options": [
+        {
+          "id": "measuring",
+          "text": "Measuring the room — the lamp, the shelf, the glow-up is already taking shape."
+        },
+        {
+          "id": "picturing",
+          "text": "Already picturing it — the place lit up, the deal locked in, the weekend's going to feel different."
+        },
+        {
+          "id": "stuckbetween",
+          "text": "Stuck between three versions — every pick changes the whole room and I can't choose."
+        },
+        {
+          "id": "leaveasis",
+          "text": "Leaving the room as-is — the glow-up can wait, I like it fine tonight."
+        }
+      ],
+      "allow_skip": true
+    }
+  ]
+}
