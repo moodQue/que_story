@@ -1,101 +1,101 @@
 {
-  "scan_set_id": "2026-11-24-daily-v1",
+  "scan_set_id": "2026-11-25-daily-v1",
   "date": "2026-11-25",
   "timezone": "America/New_York",
   "closes_at": null,
   "questions": [
     {
-      "id": "muse_20261124_q1_v1",
-      "theme": "hunger_games_120m_debut_opening_weekend",
+      "id": "muse_20261125_q1_v1",
+      "theme": "gta6_flip_car_vice_city_launch_week",
       "state_target": "current_state",
-      "prompt": "The Hunger Games just owned the weekend — a $120 million debut, and everyone's talking about it. Tonight, which scene sounds most like yours?",
+      "prompt": "GTA 6 is out in the world now, and everyone's learning the same trick: how to flip your car in Vice City. Tonight, which scene sounds most like yours?",
       "options": [
         {
-          "id": "ticketinhand",
-          "text": "Already got my ticket — opening weekend waits for no one."
+          "id": "flipit",
+          "text": "Flipping it on purpose — the chaos is the whole point tonight."
         },
         {
-          "id": "crewdebut",
-          "text": "Going with the crew — a debut this big needs witnesses."
+          "id": "showcrew",
+          "text": "Showing the crew — look what I just pulled off in Vice City."
         },
         {
-          "id": "lettingcrowdsthin",
-          "text": "Letting the crowds thin first — I'll catch it when the rush fades."
+          "id": "carefuldrive",
+          "text": "Driving it careful — my ride stays shiny, flips are for other people."
         },
         {
-          "id": "stilldeciding",
-          "text": "Still deciding — too many showtimes, too many takes, can't pick one."
+          "id": "upsidedown",
+          "text": "Already upside down — too much city, too fast, send help."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261124_q2_v1",
-      "theme": "tesla_fsd_gta_visuals_drive",
+      "id": "muse_20261125_q2_v1",
+      "theme": "avengers_doomsday_teams_reveal",
       "state_target": "current_state",
-      "prompt": "Tesla's new update turns your drive into Grand Theft Auto — the road, the cars, the whole view rendered like the game. Tonight, how are you meeting a drive that looks like Vice City?",
+      "prompt": "The Avengers: Doomsday lineup is out — every team, all in one place, and the big night is starting to feel real. Tonight, how are you meeting a team-up this big?",
       "options": [
         {
-          "id": "showingeveryone",
-          "text": "Showing everyone — look, my car thinks it's in Vice City."
+          "id": "buzzing",
+          "text": "Already buzzing — every team in one movie, I'm counting the days."
         },
         {
-          "id": "eyesonroad",
-          "text": "Eyes on the road — the game's fun, but I'm still driving."
+          "id": "myteam",
+          "text": "Picking my team — arguing with the group chat about who's carrying it."
         },
         {
-          "id": "toomuchscreen",
-          "text": "Too much on the screen — I can't tell the game from the road."
+          "id": "toomanythreads",
+          "text": "So many teams, so many threads — my head's spinning trying to keep up."
         },
         {
-          "id": "turningitoff",
-          "text": "Turning it off — I want my drive quiet, not a game."
+          "id": "waittrailer",
+          "text": "Waiting for the trailer — the list is nice, but I want to see it move."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261124_q3_v1",
-      "theme": "don_toliver_show_postponed_plans_fall_apart",
+      "id": "muse_20261125_q3_v1",
+      "theme": "mass_effect_canceled_squad_fates_reveal",
       "state_target": "response_tendency",
-      "prompt": "Don Toliver just postponed his London O2 show — the night you were waiting for isn't happening. Tonight, how are you sitting with a plan that just fell apart?",
+      "prompt": "The writer of the canceled Mass Effect revealed what would have happened to your squad — the ending you never got to play is finally out there. Tonight, what do you do with a goodbye you never got?",
       "options": [
         {
-          "id": "annoyed",
-          "text": "Annoyed — I had the night planned around it."
+          "id": "readit",
+          "text": "Reading it tonight — I need to know how their story ends."
         },
         {
-          "id": "instride",
-          "text": "Taking it in stride — the night's still mine, show or no show."
+          "id": "slowgoodbye",
+          "text": "Saving it for a quiet night — that goodbye deserves a slow read."
         },
         {
-          "id": "movingon",
-          "text": "Moving on — already lining up something else for tonight."
+          "id": "myending",
+          "text": "Leaving it alone — my version of their ending stands."
         },
         {
-          "id": "quietlygutted",
-          "text": "Quietly gutted — I was looking forward to it, and nothing else sounds right."
+          "id": "torn",
+          "text": "Torn — half of me wants to know, half of me wants to keep wondering."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261124_q4_v1",
-      "theme": "black_friday_ps5_15_deal_hunt_table",
+      "id": "muse_20261125_q4_v1",
+      "theme": "thanksgiving_table_ford_field_spread",
       "state_target": "desired_state",
-      "prompt": "PS5 games are $15 for Black Friday — the hunt's on tonight, deals scrolling past, wishlist in hand. If someone handled the table for your deal-hunt night, what would you want on it?",
+      "prompt": "Thanksgiving lands Thursday — and Ford Field just showed off what it's serving fans on the day. If someone handled the table tonight, what would you want on it?",
       "options": [
         {
-          "id": "fizzytoast",
-          "text": "Something fizzy to crack open — sparkling cider or champagne, a $15 steal deserves a toast."
+          "id": "fullspread",
+          "text": "The full spread — turkey, sides, all of it, the table groaning."
+        },
+        {
+          "id": "toast",
+          "text": "Something to toast with — sparkling cider or champagne, virgin or hard, the table deserves it."
         },
         {
           "id": "warmmug",
-          "text": "A warm mug of cocoa or tea — slow sips between deals."
-        },
-        {
-          "id": "sharestack",
-          "text": "Snacks to pass around — the hunt's better with someone to show the finds to."
+          "text": "A warm mug of cocoa or cider — slow sips while the kitchen does its thing."
         },
         {
           "id": "justwater",
@@ -105,51 +105,51 @@
       "allow_skip": true
     },
     {
-      "id": "muse_20261124_q5_v1",
-      "theme": "blade_runner_2099_rain_neon_world_sound",
+      "id": "muse_20261125_q5_v1",
+      "theme": "rings_of_power_season4_middle_earth_sound",
       "state_target": "context_only",
-      "prompt": "Blade Runner 2099 is almost here — the reviews are in, and the rain-soaked neon world is back tomorrow. Tonight, which sound of that world is your vibe?",
+      "prompt": "Rings of Power is coming back — Season 4 just got the green light, and Middle-earth is calling again. Tonight, which sound of that world is your vibe?",
       "options": [
         {
-          "id": "rainonneon",
-          "text": "Rain on neon — the slow patter over the city hum."
+          "id": "fullscore",
+          "text": "The full sweeping score — strings swelling, the journey pulling me in."
         },
         {
-          "id": "synthdrone",
-          "text": "The low synth drone — the sound of the city breathing."
+          "id": "shirestrings",
+          "text": "The Shire's gentle strings — soft, warm, and in no hurry."
         },
         {
-          "id": "citybuzz",
-          "text": "The full city buzz — sirens, crowds, all of it turned up."
+          "id": "forestquiet",
+          "text": "The deep forest quiet — leaves, wind, and nothing else."
         },
         {
-          "id": "ownquiet",
-          "text": "None of it tonight — my own quiet, the rain can wait."
+          "id": "myquiet",
+          "text": "None of it tonight — my own quiet, Middle-earth can wait."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261124_q6_v1",
-      "theme": "thanksgiving_travel_packing_hour_ahead",
+      "id": "muse_20261125_q6_v1",
+      "theme": "black_friday_deal_hunt_hour_ahead",
       "state_target": "desired_state",
-      "prompt": "Thanksgiving travel is here — the bags, the lists, the 'did I forget something' feeling before Thursday. In the hour ahead, what does your evening feel like?",
+      "prompt": "The Black Friday hunt is on — the deals are live, the clock's ticking, and the wishlist is staring back at you. In the hour ahead, what does your hunt feel like?",
       "options": [
         {
-          "id": "packinglist",
-          "text": "Packing with a list — checking it twice, no surprises."
+          "id": "refreshplan",
+          "text": "Refreshing with a plan — the deal's in the cart before the hour's out."
         },
         {
-          "id": "buzzingroad",
-          "text": "Buzzing for the road — the trip's the best part, let's go."
+          "id": "victorylap",
+          "text": "Buzzing for the win — a steal this good deserves a little victory lap."
         },
         {
-          "id": "stillspinning",
-          "text": "Still spinning — too many lists, too many 'did I forgets'."
+          "id": "stillscrolling",
+          "text": "Still scrolling — too many deals, too many tabs, can't pick one."
         },
         {
-          "id": "notpacking",
-          "text": "Not packing tonight — the bags can wait, I'm staying put."
+          "id": "steppingaway",
+          "text": "Stepping away — the hunt can wait, I'm putting the phone down."
         }
       ],
       "allow_skip": true

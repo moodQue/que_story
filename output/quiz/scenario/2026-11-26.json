@@ -1,0 +1,158 @@
+{
+  "scan_set_id": "2026-11-25-daily-v1",
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "closes_at": null,
+  "questions": [
+    {
+      "id": "muse_20261125_q1_v1",
+      "theme": "gta6_flip_car_vice_city_launch_week",
+      "state_target": "current_state",
+      "prompt": "GTA 6 is out in the world now, and everyone's learning the same trick: how to flip your car in Vice City. Tonight, which scene sounds most like yours?",
+      "options": [
+        {
+          "id": "flipit",
+          "text": "Flipping it on purpose — the chaos is the whole point tonight."
+        },
+        {
+          "id": "showcrew",
+          "text": "Showing the crew — look what I just pulled off in Vice City."
+        },
+        {
+          "id": "carefuldrive",
+          "text": "Driving it careful — my ride stays shiny, flips are for other people."
+        },
+        {
+          "id": "upsidedown",
+          "text": "Already upside down — too much city, too fast, send help."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261125_q2_v1",
+      "theme": "avengers_doomsday_teams_reveal",
+      "state_target": "current_state",
+      "prompt": "The Avengers: Doomsday lineup is out — every team, all in one place, and the big night is starting to feel real. Tonight, how are you meeting a team-up this big?",
+      "options": [
+        {
+          "id": "buzzing",
+          "text": "Already buzzing — every team in one movie, I'm counting the days."
+        },
+        {
+          "id": "myteam",
+          "text": "Picking my team — arguing with the group chat about who's carrying it."
+        },
+        {
+          "id": "toomanythreads",
+          "text": "So many teams, so many threads — my head's spinning trying to keep up."
+        },
+        {
+          "id": "waittrailer",
+          "text": "Waiting for the trailer — the list is nice, but I want to see it move."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261125_q3_v1",
+      "theme": "mass_effect_canceled_squad_fates_reveal",
+      "state_target": "response_tendency",
+      "prompt": "The writer of the canceled Mass Effect revealed what would have happened to your squad — the ending you never got to play is finally out there. Tonight, what do you do with a goodbye you never got?",
+      "options": [
+        {
+          "id": "readit",
+          "text": "Reading it tonight — I need to know how their story ends."
+        },
+        {
+          "id": "slowgoodbye",
+          "text": "Saving it for a quiet night — that goodbye deserves a slow read."
+        },
+        {
+          "id": "myending",
+          "text": "Leaving it alone — my version of their ending stands."
+        },
+        {
+          "id": "torn",
+          "text": "Torn — half of me wants to know, half of me wants to keep wondering."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261125_q4_v1",
+      "theme": "thanksgiving_table_ford_field_spread",
+      "state_target": "desired_state",
+      "prompt": "Thanksgiving lands Thursday — and Ford Field just showed off what it's serving fans on the day. If someone handled the table tonight, what would you want on it?",
+      "options": [
+        {
+          "id": "fullspread",
+          "text": "The full spread — turkey, sides, all of it, the table groaning."
+        },
+        {
+          "id": "toast",
+          "text": "Something to toast with — sparkling cider or champagne, virgin or hard, the table deserves it."
+        },
+        {
+          "id": "warmmug",
+          "text": "A warm mug of cocoa or cider — slow sips while the kitchen does its thing."
+        },
+        {
+          "id": "justwater",
+          "text": "Just water, I don't need anything else tonight."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261125_q5_v1",
+      "theme": "rings_of_power_season4_middle_earth_sound",
+      "state_target": "context_only",
+      "prompt": "Rings of Power is coming back — Season 4 just got the green light, and Middle-earth is calling again. Tonight, which sound of that world is your vibe?",
+      "options": [
+        {
+          "id": "fullscore",
+          "text": "The full sweeping score — strings swelling, the journey pulling me in."
+        },
+        {
+          "id": "shirestrings",
+          "text": "The Shire's gentle strings — soft, warm, and in no hurry."
+        },
+        {
+          "id": "forestquiet",
+          "text": "The deep forest quiet — leaves, wind, and nothing else."
+        },
+        {
+          "id": "myquiet",
+          "text": "None of it tonight — my own quiet, Middle-earth can wait."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261125_q6_v1",
+      "theme": "black_friday_deal_hunt_hour_ahead",
+      "state_target": "desired_state",
+      "prompt": "The Black Friday hunt is on — the deals are live, the clock's ticking, and the wishlist is staring back at you. In the hour ahead, what does your hunt feel like?",
+      "options": [
+        {
+          "id": "refreshplan",
+          "text": "Refreshing with a plan — the deal's in the cart before the hour's out."
+        },
+        {
+          "id": "victorylap",
+          "text": "Buzzing for the win — a steal this good deserves a little victory lap."
+        },
+        {
+          "id": "stillscrolling",
+          "text": "Still scrolling — too many deals, too many tabs, can't pick one."
+        },
+        {
+          "id": "steppingaway",
+          "text": "Stepping away — the hunt can wait, I'm putting the phone down."
+        }
+      ],
+      "allow_skip": true
+    }
+  ]
+}
