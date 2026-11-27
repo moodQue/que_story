@@ -1,0 +1,158 @@
+{
+  "scan_set_id": "2026-11-27-daily-v1",
+  "date": "2026-11-28",
+  "timezone": "America/New_York",
+  "closes_at": null,
+  "questions": [
+    {
+      "id": "muse_20261127_q1_v1",
+      "theme": "black_friday_deal_hunt_live",
+      "state_target": "current_state",
+      "prompt": "Black Friday's here — the deals went live this morning and the whole feed is one long checkout line. Tonight, where are you in the hunt?",
+      "options": [
+        {
+          "id": "stillhunting",
+          "text": "Still hunting — one more deal, one more tab, the night's not over yet."
+        },
+        {
+          "id": "lockedin",
+          "text": "Locked in — the big one is bought, the rest is just browsing."
+        },
+        {
+          "id": "drowningtabs",
+          "text": "Drowning in tabs — every deal changes the plan and I can't pick."
+        },
+        {
+          "id": "donehunting",
+          "text": "Done hunting — the couch won, the deals can wait till next year."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261127_q2_v1",
+      "theme": "gta6_vice_city_fashion_community",
+      "state_target": "current_state",
+      "prompt": "Vice City's got a dress code now — the community's sharing their GTA 6 fits, and everyone's picking a look for the new world. Tonight, how are you stepping in?",
+      "options": [
+        {
+          "id": "showingoff",
+          "text": "Showing it off — the fit's the whole point, look at this."
+        },
+        {
+          "id": "goingbold",
+          "text": "Going bold — loud colors, big energy, Vice City can handle it."
+        },
+        {
+          "id": "keepingclassic",
+          "text": "Keeping it classic — my usual look, it works everywhere."
+        },
+        {
+          "id": "stilldeciding",
+          "text": "Still deciding — too many combos, my head's spinning through outfits."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261127_q3_v1",
+      "theme": "macys_parade_rescheduled_saturday_morning",
+      "state_target": "response_tendency",
+      "prompt": "The parade's tomorrow morning now — 8:30am, Saturday, balloons and all — after a Thanksgiving that already moved it once. Tonight, what do you do with a morning that's suddenly on the calendar?",
+      "options": [
+        {
+          "id": "alarmset",
+          "text": "Early night, alarm set — the balloons are back tomorrow and I'm there for it."
+        },
+        {
+          "id": "sleepingin",
+          "text": "Sleeping in — the parade will be all over my feed by lunch."
+        },
+        {
+          "id": "watchparty",
+          "text": "Making it a watch party — Saturday morning, everyone over, parade on."
+        },
+        {
+          "id": "waittomorrow",
+          "text": "Wait, it's tomorrow? — I hadn't planned for a parade morning at all."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261127_q4_v1",
+      "theme": "thanksgiving_leftover_table_friday_night",
+      "state_target": "desired_state",
+      "prompt": "Thanksgiving was yesterday — the feast happened, and tonight the leftovers are the whole table. If someone handled the table tonight, what would you want on it?",
+      "options": [
+        {
+          "id": "secondplate",
+          "text": "The full second plate — turkey, stuffing, all of it, round two."
+        },
+        {
+          "id": "sandwiches",
+          "text": "Sandwiches for the crew — stacked high, eaten standing in the kitchen."
+        },
+        {
+          "id": "lightwarm",
+          "text": "Something light and warm — a quiet bowl of soup, the feast can rest."
+        },
+        {
+          "id": "justwater",
+          "text": "Just water, I don't need anything else tonight."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261127_q5_v1",
+      "theme": "u2_dolly_parton_halftime_tribute_sound",
+      "state_target": "context_only",
+      "prompt": "On Thanksgiving Eve, U2 took the halftime stage to honor Dolly Parton — a tribute, under the lights, with the whole night watching. Tonight, which sound of that moment is yours?",
+      "options": [
+        {
+          "id": "anthem",
+          "text": "The big anthem moment — turned all the way up, the whole stadium singing."
+        },
+        {
+          "id": "singalong",
+          "text": "The singalong — everyone joining in on the chorus, all at once."
+        },
+        {
+          "id": "quietverse",
+          "text": "The quiet stripped-back verse — soft, warm, the one that lands."
+        },
+        {
+          "id": "noneofit",
+          "text": "None of it tonight — my own quiet, the tribute can wait."
+        }
+      ],
+      "allow_skip": true
+    },
+    {
+      "id": "muse_20261127_q6_v1",
+      "theme": "south_park_season_finale_aftertaste_hour",
+      "state_target": "desired_state",
+      "prompt": "South Park just wrapped its season — the finale's out, the ending's landed, and the show's done for now. In the hour ahead, what does the aftertaste feel like?",
+      "options": [
+        {
+          "id": "discourse",
+          "text": "Diving into the discourse — reviews, reactions, what it all meant."
+        },
+        {
+          "id": "textinggroup",
+          "text": "Texting the group — did you see that ending? We need to talk."
+        },
+        {
+          "id": "lettingsettle",
+          "text": "Letting it settle — something gentle next, the night slows down."
+        },
+        {
+          "id": "screensoff",
+          "text": "Screens off — the finale's done, and so am I for tonight."
+        }
+      ],
+      "allow_skip": true
+    }
+  ]
+}
