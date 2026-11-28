@@ -1,101 +1,101 @@
 {
-  "scan_set_id": "2026-11-27-daily-v1",
+  "scan_set_id": "2026-11-28-daily-v1",
   "date": "2026-11-28",
   "timezone": "America/New_York",
   "closes_at": null,
   "questions": [
     {
-      "id": "muse_20261127_q1_v1",
-      "theme": "black_friday_deal_hunt_live",
+      "id": "muse_20261128_q1_v1",
+      "theme": "macys_parade_finally_steps_off_saturday_morning",
       "state_target": "current_state",
-      "prompt": "Black Friday's here — the deals went live this morning and the whole feed is one long checkout line. Tonight, where are you in the hunt?",
+      "prompt": "The 100th Macy's parade finally steps off this morning — 8:30, balloons back in the sky after the storm pushed it a day. Tonight, where are you in the parade day?",
       "options": [
         {
-          "id": "stillhunting",
-          "text": "Still hunting — one more deal, one more tab, the night's not over yet."
+          "id": "frontrow",
+          "text": "Front row from the couch — up with the balloons, the whole morning."
         },
         {
-          "id": "lockedin",
-          "text": "Locked in — the big one is bought, the rest is just browsing."
+          "id": "paradecrew",
+          "text": "Parade crew — group chat going, everyone rating the floats."
         },
         {
-          "id": "drowningtabs",
-          "text": "Drowning in tabs — every deal changes the plan and I can't pick."
+          "id": "highlights",
+          "text": "Catching the highlights later — the big moments will find me."
         },
         {
-          "id": "donehunting",
-          "text": "Done hunting — the couch won, the deals can wait till next year."
+          "id": "wiped",
+          "text": "Still wiped from Thanksgiving — the parade can play to an empty room."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261127_q2_v1",
-      "theme": "gta6_vice_city_fashion_community",
+      "id": "muse_20261128_q2_v1",
+      "theme": "gta6_hurricane_chase_vice_city",
       "state_target": "current_state",
-      "prompt": "Vice City's got a dress code now — the community's sharing their GTA 6 fits, and everyone's picking a look for the new world. Tonight, how are you stepping in?",
+      "prompt": "GTA 6's got hurricanes you can unlock — a whole storm system rolling through Vice City. Tonight, you're out in it — how are you meeting the storm?",
       "options": [
         {
-          "id": "showingoff",
-          "text": "Showing it off — the fit's the whole point, look at this."
+          "id": "chargein",
+          "text": "Charging straight in — the storm's the whole point."
         },
         {
-          "id": "goingbold",
-          "text": "Going bold — loud colors, big energy, Vice City can handle it."
+          "id": "watchit",
+          "text": "Watching it roll in — steady, taking the whole sky in."
         },
         {
-          "id": "keepingclassic",
-          "text": "Keeping it classic — my usual look, it works everywhere."
+          "id": "crewchase",
+          "text": "Chasing it with the crew — storm-chasers tonight, everyone piling in."
         },
         {
-          "id": "stilldeciding",
-          "text": "Still deciding — too many combos, my head's spinning through outfits."
+          "id": "toomuch",
+          "text": "Too much at once — rain, wind, everywhere, I don't know where to look."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261127_q3_v1",
-      "theme": "macys_parade_rescheduled_saturday_morning",
+      "id": "muse_20261128_q3_v1",
+      "theme": "yooka_laylee_free_upgrade_skips_xbox",
       "state_target": "response_tendency",
-      "prompt": "The parade's tomorrow morning now — 8:30am, Saturday, balloons and all — after a Thanksgiving that already moved it once. Tonight, what do you do with a morning that's suddenly on the calendar?",
+      "prompt": "Yooka-Laylee's free upgrade is here — same cozy adventure, looking better than ever — but it's skipping Xbox, so if that's your console, you're watching from the sidelines. Tonight, the upgrade's out there and you're not in it — what do you do?",
       "options": [
         {
-          "id": "alarmset",
-          "text": "Early night, alarm set — the balloons are back tomorrow and I'm there for it."
+          "id": "jumpplatforms",
+          "text": "Jumping platforms — I'll play it wherever it lives."
         },
         {
-          "id": "sleepingin",
-          "text": "Sleeping in — the parade will be all over my feed by lunch."
+          "id": "waititout",
+          "text": "Waiting it out — it might come around eventually."
         },
         {
-          "id": "watchparty",
-          "text": "Making it a watch party — Saturday morning, everyone over, parade on."
+          "id": "oldversion",
+          "text": "The old version's fine — happy replaying what I've got."
         },
         {
-          "id": "waittomorrow",
-          "text": "Wait, it's tomorrow? — I hadn't planned for a parade morning at all."
+          "id": "gutted",
+          "text": "Gutted — free and still not for me, that stings."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261127_q4_v1",
-      "theme": "thanksgiving_leftover_table_friday_night",
+      "id": "muse_20261128_q4_v1",
+      "theme": "all_too_well_long_listen_drink",
       "state_target": "desired_state",
-      "prompt": "Thanksgiving was yesterday — the feast happened, and tonight the leftovers are the whole table. If someone handled the table tonight, what would you want on it?",
+      "prompt": "'All Too Well' — ten minutes long — is back in the charts conversation, five years after the re-recording ruled the Hot 100. Tonight, one long song, nowhere to rush to — if someone handled the table while it plays, what would you want beside you?",
       "options": [
         {
-          "id": "secondplate",
-          "text": "The full second plate — turkey, stuffing, all of it, round two."
+          "id": "cocoa",
+          "text": "A big mug of cocoa — slow sips, the song does the talking."
         },
         {
-          "id": "sandwiches",
-          "text": "Sandwiches for the crew — stacked high, eaten standing in the kitchen."
+          "id": "mule",
+          "text": "Virgin or hard — a Moscow mule hits just right tonight."
         },
         {
-          "id": "lightwarm",
-          "text": "Something light and warm — a quiet bowl of soup, the feast can rest."
+          "id": "tea",
+          "text": "A pot of tea — refills all night, nothing rushed."
         },
         {
           "id": "justwater",
@@ -105,51 +105,51 @@
       "allow_skip": true
     },
     {
-      "id": "muse_20261127_q5_v1",
-      "theme": "u2_dolly_parton_halftime_tribute_sound",
+      "id": "muse_20261128_q5_v1",
+      "theme": "goo_goo_dolls_halftime_iris_sound",
       "state_target": "context_only",
-      "prompt": "On Thanksgiving Eve, U2 took the halftime stage to honor Dolly Parton — a tribute, under the lights, with the whole night watching. Tonight, which sound of that moment is yours?",
+      "prompt": "Thanksgiving's halftime belonged to the Goo Goo Dolls — 'Iris' under the stadium lights, the whole crowd singing it back. Tonight, which sound of that moment is yours?",
       "options": [
         {
-          "id": "anthem",
-          "text": "The big anthem moment — turned all the way up, the whole stadium singing."
+          "id": "stadiumroar",
+          "text": "Full stadium roar — 'Iris' at full volume, lights and all."
         },
         {
-          "id": "singalong",
-          "text": "The singalong — everyone joining in on the chorus, all at once."
+          "id": "groupchorus",
+          "text": "Singing along with the group chat — everyone's on the chorus."
         },
         {
-          "id": "quietverse",
-          "text": "The quiet stripped-back verse — soft, warm, the one that lands."
+          "id": "hushedverse",
+          "text": "The hushed verse — the part where the whole stadium goes quiet."
         },
         {
-          "id": "noneofit",
-          "text": "None of it tonight — my own quiet, the tribute can wait."
+          "id": "skipreplay",
+          "text": "Skipping the replay — I've heard it, my quiet tonight is enough."
         }
       ],
       "allow_skip": true
     },
     {
-      "id": "muse_20261127_q6_v1",
-      "theme": "south_park_season_finale_aftertaste_hour",
+      "id": "muse_20261128_q6_v1",
+      "theme": "silksong_sea_of_sorrow_countdown_hour",
       "state_target": "desired_state",
-      "prompt": "South Park just wrapped its season — the finale's out, the ending's landed, and the show's done for now. In the hour ahead, what does the aftertaste feel like?",
+      "prompt": "Team Cherry just put a date on Sea of Sorrow — the Silksong DLC wait finally has a shape. In the hour ahead, how does the countdown feel?",
       "options": [
         {
-          "id": "discourse",
-          "text": "Diving into the discourse — reviews, reactions, what it all meant."
+          "id": "buzzing",
+          "text": "Buzzing — the date's circled and I'm counting down already."
         },
         {
-          "id": "textinggroup",
-          "text": "Texting the group — did you see that ending? We need to talk."
+          "id": "warmingup",
+          "text": "Warming up — back in Hallownest tonight, getting ready."
         },
         {
-          "id": "lettingsettle",
-          "text": "Letting it settle — something gentle next, the night slows down."
+          "id": "patient",
+          "text": "Patient — it'll come when it comes, no rush."
         },
         {
-          "id": "screensoff",
-          "text": "Screens off — the finale's done, and so am I for tonight."
+          "id": "parkingit",
+          "text": "Parking it — the wait can wait, I'm switching off tonight."
         }
       ],
       "allow_skip": true
